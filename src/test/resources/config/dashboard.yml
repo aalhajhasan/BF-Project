@@ -1,0 +1,20 @@
+aspire:
+  dashboard:
+    integration:
+      enabled: true
+      host: 172.17.100.33
+      port: 5060
+      path: api
+      protocol: http
+      logLevel: FULL
+      projectId: 1
+      
+
+ 
+
+   
+      
+
+
+
+   

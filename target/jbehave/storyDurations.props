@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Sun Mar 04 10:48:40 EET 2018
-stories/gilt/Sample.story=137000
-threads=1
-total=137000
-threadAverage=137000
+#Tue Feb 06 16:07:31 EET 2018
+stories/login/TC-login-001.story=80000
+threads=2
+total=80000
+threadAverage=40000
