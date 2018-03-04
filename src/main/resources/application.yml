@@ -1,28 +1,51 @@
 aspire:  
+  webdriver:
+     scope: 
+   
+   
+  dashboard:
+     integration:
+      enabled: true
+      host: 82.212.71.230
+      port: 5080
+      path: api
+      protocol: http
+      logLevel: 
+      projectId: 
+      
   jbehave:
     metat-data:
-    - -s2 
-    thread: 2
+    thread: 1
     story-time-out: 3000 
-    rerun: 0
+    rerun: 1 
     softassert: 
       enabled: true 
     stories:
       defaultloader:
         enabled: true   
         include: 
-        - stories/**/**login-001.story
-        - stories/**/TC-Deal_Center-006_2.story
-        - stories/**/**/TC-Roles-001.story
-         
-
-        
+          #- stories/01-login/TC-001**.story
+          #- stories/02-Profile/TC-001**.story
+          #- stories/03-Footer/TC-0**.story
+          #- stories/04-Google Verification/TC-**.story
+          - stories/08-Registration/**.story
+          #- stories/**/**.story
+          #- stories/**/TC-012-VerifySIGN UP FOR ALERTS.story
+          #- stories/07-Publishers/TC-**.story
+          #- stories/08-Registration/TC-**.story
+          #- stories/09-Search/TC-0001**.story
+          
+          
+          
+     
+          
         
   screenshot:
     enabled: true
+    only-on-failure: true
     filesaver:
       enabled: true
-      folder-location: C:\Users\Nalsouqi\Pictures\screenshots\
+      folder-location: ./screenshots/
 
 spring:
   output:
@@ -49,7 +72,7 @@ server:
 
 
 
-      
+
 
 
 

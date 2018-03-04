@@ -128,9 +128,9 @@ aspire:
       - --disable-extensions     
     ie: 
       enabled: false
-      name: ie64
-      processor: processor-64
-      mobile: true
+      name: ie32
+      processor: processor-32
+      mobile: false
       remote:
         enabled: false
         url: https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub
@@ -144,7 +144,7 @@ aspire:
  
       capabilities:
         browser : ie
-        browser_version : 3.8.1
+        browser_version : 58.0
         os : OS X
         os_version: Sierra
         project : WEB ASPIRE TEMPLATE TEST
@@ -155,6 +155,7 @@ aspire:
         profile.default_content_setting_values.notifications : 2
         download.default_directory : /Users/malzurqan/Documents/Temp 
       arguments:
+      - start-maximized
       - disable-popup-blocking
       - test-type
       - --disable-extensions  

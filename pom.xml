@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.aspire.kargo</groupId>
-	<artifactId>aspire-automation-kargo</artifactId>
+	<groupId>com.aspire.BF</groupId>
+	<artifactId>aspire-automation-BF</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>aspire-automation-kargo</name>
-	<description>Kargo Automation Project</description>
+	<name>aspire-automation-BF</name>
+	<description>BF Automation Project</description>
 
 	<!-- <parent> <groupId>com.aspire</groupId> <artifactId>automation-dependencies</artifactId> 
 		<version>1.0.0-SNAPSHOT</version> </parent> -->
@@ -25,7 +25,7 @@
 			<dependency> 
 				<groupId>com.github.AspireInfotech</groupId>
 				<artifactId>Automation-Dependencies</artifactId>
-				<version>1.0.9.992-GAMMA</version>
+				<version>1.1-BETA</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -62,12 +62,11 @@
 		</dependency>
 
 		<!-- <dependency> <groupId>com.aspire</groupId> <artifactId>aspire-automation-autoconfiguration</artifactId> 
-			<version>0.0.4-SNAPSHOT</version> </dependency> --> 
+			<version>0.0.4-SNAPSHOT</version> </dependency> -->
 
       <dependency> 
         <groupId>com.github.AspireInfotech</groupId>
         <artifactId>Aspire-Automation-Core</artifactId>
-        <version>1.0.9.993-GAMMA</version> 
       </dependency>
       <dependency> 
         <groupId>com.github.AspireInfotech</groupId> 
@@ -77,11 +76,6 @@
         <groupId>com.github.AspireInfotech</groupId>
         <artifactId>Automation-Web-Util</artifactId>
       </dependency>
-        <dependency>
-        <groupId>com.github.AspireInfotech</groupId>
-        <artifactId>Automation-Dashboard-Integration</artifactId>
-      </dependency>
-      
 		<dependency>
 			<groupId>org.jbehave</groupId>
 			<artifactId>jbehave-core</artifactId>

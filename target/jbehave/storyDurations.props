@@ -1,6 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Tue Feb 06 16:07:31 EET 2018
-stories/login/TC-login-001.story=80000
-threads=2
-total=80000
-threadAverage=40000
