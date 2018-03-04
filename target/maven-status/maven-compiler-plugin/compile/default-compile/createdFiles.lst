@@ -1,0 +1,5 @@
+com\aspire\sci\pages\GiltPage.class
+com\aspire\sci\pages\MacysPage.class
+com\aspire\sci\AspireAutomationSciApplication.class
+com\aspire\sci\steps\GiltSteps.class
+com\aspire\sci\steps\MacysSteps.class
