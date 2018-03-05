@@ -42,7 +42,7 @@ public class GiltSteps {
 		
 	}
 	
-	//s;gjkldsfjgkl;ks;glk;ldsf
+	
 	@Then("[8000-0003] the user check the sum of $valueOne and `$valueTwo with $total")
 	public boolean summation(String valueOne, String valueTwo, String total)
 	{
