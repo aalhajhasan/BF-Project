@@ -17,23 +17,15 @@ aspire:
     metat-data:
     thread: 1
     story-time-out: 3000 
-    rerun: 1 
+    rerun: 0 
     softassert: 
       enabled: true 
     stories:
       defaultloader:
         enabled: true   
         include: 
-          #- stories/01-login/TC-001**.story
-          #- stories/02-Profile/TC-001**.story
-          #- stories/03-Footer/TC-0**.story
-          #- stories/04-Google Verification/TC-**.story
-          - stories/08-Registration/**.story
-          #- stories/**/**.story
-          #- stories/**/TC-012-VerifySIGN UP FOR ALERTS.story
-          #- stories/07-Publishers/TC-**.story
-          #- stories/08-Registration/TC-**.story
-          #- stories/09-Search/TC-0001**.story
+          #- 
+           - stories/gilt/TC00_Verify_Welcome_Mat_Appear.story
           
           
           
