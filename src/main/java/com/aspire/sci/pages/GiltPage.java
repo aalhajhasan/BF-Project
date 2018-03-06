@@ -5,7 +5,7 @@ import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
 import com.aspire.automation.web.util.annotation.Page;
 
-@Page(name = "gilt", url = "${pages.gilt.url}")
+@Page(name = "gilt", url = "${pages.gilt.gilturl}")
 public interface GiltPage {
 
 	@CssSelector("${pages.gilt.registerLink}")
@@ -74,8 +74,8 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.quickViewProductName}")
 	public AspireWebElement quickViewProductName();
 	
-	@CssSelector("${pages.gilt.quickViewProductPric}")
-	public AspireWebElement quickViewProductPric();
+	@CssSelector("${pages.gilt.quickViewProductPrice}")
+	public AspireWebElement quickViewProductPrice();
 	
 	@CssSelector("${pages.gilt.viewMoreDetails}")
 	public AspireWebElement viewMoreDetails();

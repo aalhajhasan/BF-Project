@@ -1,9 +1,11 @@
 package com.aspire.sci.steps;
 
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
@@ -25,7 +27,7 @@ public class GiltSteps {
 		hitNumber = number * Double.parseDouble(value);
 	}
 	
-	@Then("[8000-0002] User compare between `cartProductPriceBefore` and `cartProductPriceAfter`")
+	@Then("[8000-0002] User compare between $valueOne and $valueTwo")
 	public boolean compare(String valueOne, String valueTwo)
 	{
 		double priceB = convert(valueOne);
@@ -43,7 +45,7 @@ public class GiltSteps {
 	}
 	
 	
-	@Then("[8000-0003] the user check the sum of $valueOne and `$valueTwo with $total")
+	@Then("[8000-0003] the user check the sum of $valueOne and $valueTwo with $total")
 	public boolean summation(String valueOne, String valueTwo, String total)
 	{
 		double priceOne = convert(valueOne);
@@ -82,6 +84,33 @@ public class GiltSteps {
 		}
 		
 	}
+	
+	
+	
+	@When("[8000-0005] user search for $element")
+	public void search(String element) throws InterruptedException
+	{
+		try
+		{
+			if (AspireBrowser.getElementByPropertyNameGlobaly(element).within(10).toBeDisplayed() != null)
+			{
+				System.out.println("valid PLP");
+			}
+		}
+		catch (NoSuchElementException e) 
+		{
+			
+			Random rand = new Random();
+			int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
+			AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("argument[0].click();", null);
+			Thread.sleep(10000);
+			int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
+			AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).click();
+			Thread.sleep(10000);
+			search(element);
+		}
+	}
+	
 	
 	public double convert(String element)
 	{   double result = 0;

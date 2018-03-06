@@ -1,3 +1,4 @@
+Meta:
 @DependOn |pdp3|0|
 
 @namedItAs pdp4
@@ -9,7 +10,8 @@ When [1100-1300] User clicks on the cartCloseButton
 And [1200-1302] For any element from topNavStore
 And [1100-0400] Execute `click` javascript on the element
 And [1200-1302] For any element from sales
-And [1100-0300] User click on it
+And [1100-0400] Execute `click` javascript on the element
+!-- And user search for $element
 And [1211-1080] products should be all displayed, Within 120 seconds
 And [1200-1302] For any element from products
 And [1100-0300] User click on it

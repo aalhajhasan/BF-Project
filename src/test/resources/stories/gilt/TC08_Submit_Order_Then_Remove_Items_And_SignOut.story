@@ -1,3 +1,4 @@
+Meta:
 @DependOn |checkout|0|
 
 Scenario: TC08_Submit_Order_Then_Remove_Items_And_SignOut
