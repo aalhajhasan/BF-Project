@@ -11,7 +11,7 @@ And [1200-1302] For any element from topNavStore
 And [1100-0400] Execute `click` javascript on the element
 And [1200-1302] For any element from sales
 And [1100-0400] Execute `click` javascript on the element
-!-- And user search for $element
+And [8000-0005] user search for availableSize
 And [1211-1080] products should be all displayed, Within 120 seconds
 And [1200-1302] For any element from products
 And [1100-0300] User click on it

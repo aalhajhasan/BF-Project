@@ -24,7 +24,7 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/harrods/TC**.story
+           - stories/gilt/test.story
           
           
           

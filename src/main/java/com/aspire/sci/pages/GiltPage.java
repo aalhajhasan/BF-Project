@@ -251,7 +251,8 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.cartContinueShoppingButton}")
 	public AspireWebElement cartContinueShoppingButton();
 	
-	
+	@CssSelector("${pages.gilt.availableSize}")
+	public AspireWebElements availableSize();
 	
 
 }

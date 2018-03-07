@@ -27,7 +27,7 @@ public class GiltSteps {
 		hitNumber = number * Double.parseDouble(value);
 	}
 	
-	@Then("[8000-0002] User compare between $valueOne and $valueTwo")
+	@Then("[8000-0002] User compare between $valueOne and $valueTwo")  //Custom step
 	public boolean compare(String valueOne, String valueTwo)
 	{
 		double priceB = convert(valueOne);
@@ -45,7 +45,7 @@ public class GiltSteps {
 	}
 	
 	
-	@Then("[8000-0003] the user check the sum of $valueOne and $valueTwo with $total")
+	@Then("[8000-0003] the user check the sum of $valueOne and $valueTwo with $total")  //Custom step
 	public boolean summation(String valueOne, String valueTwo, String total)
 	{
 		double priceOne = convert(valueOne);
@@ -65,7 +65,7 @@ public class GiltSteps {
 	
 	
 	
-	@Then("[8000-0004] $totalValue price should be matched with the summation of $subTotalValue and $vatValue and $shippingValue")
+	@Then("[8000-0004] $totalValue price should be matched with the summation of $subTotalValue and $vatValue and $shippingValue")  //Custom step
 	public boolean totalPrice(String totalValue, String subTotalValue, String vatValue, String shippingValue)
 	{
 		double total = convert(totalValue);
@@ -87,32 +87,44 @@ public class GiltSteps {
 	
 	
 	
-	@When("[8000-0005] user search for $element")
-	public void search(String element) throws InterruptedException
+	@When("[8000-0005] user search for $element")  //Custom step for searching on specific element
+	public void search(String element) throws InterruptedException 
 	{
+		
 		try
 		{
-			if (AspireBrowser.getElementByPropertyNameGlobaly(element).within(10).toBeDisplayed() != null)
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
 			{
 				System.out.println("valid PLP");
 			}
-		}
-		catch (NoSuchElementException e) 
-		{
+		
+	        else 
+	        {
+			   Random rand = new Random();
+			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
+			   AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("arguments[0].click();", null);
 			
+			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
+			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
+			   
+			   search(element);
+	        }
+		}
+		catch (NoSuchElementException e)
+		{
 			Random rand = new Random();
-			int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("argument[0].click();", null);
-			Thread.sleep(10000);
-			int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).click();
-			Thread.sleep(10000);
-			search(element);
+			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
+			   AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("arguments[0].click();", null);
+			
+			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
+			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
+			   
+			   search(element);
 		}
 	}
 	
 	
-	public double convert(String element)
+	public double convert(String element)   //Isolate numbers from text
 	{   double result = 0;
 		String value = element.replace(",", "");
 		Pattern pattern = Pattern.compile("(\\d+.\\d+)");

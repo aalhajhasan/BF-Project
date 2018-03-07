@@ -196,6 +196,10 @@ public interface HarrodsPage {
 	@CssSelector("${pages.harrods.submitErrorMessage}")
 	public AspireWebElement submitErrorMessage();
 	
+	@CssSelector("${pages.harrods.addedButton}")
+	public AspireWebElement addedButton();
 	
+	@CssSelector("${pages.harrods.moreThanOneQTY}")
+	public AspireWebElement moreThanOneQTY();
 	
 }

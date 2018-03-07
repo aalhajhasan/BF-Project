@@ -12,7 +12,7 @@ And [1111-0000] It should be clickable, Within 120 seconds
 And [1100-0300] User click on it
 And [1200-1302] For any element from sales
 And [1100-0400] Execute `click` javascript on the element
-!-- And user search for $element
+And [8001-0005] user search for products
 And [1211-1080] products should be all displayed, Within 120 seconds
 And [1200-1302] For any element from products
 And [1101-1181] the user saves productName text in global scope under name productName
