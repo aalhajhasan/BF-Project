@@ -1,4 +1,4 @@
-package com.aspire.automation.poc;
+package com.aspire.sci.test;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -21,8 +21,6 @@ import com.aspire.sci.AspireAutomationBFApplication;
 		AspireAutomationAutoconfigurationApplication.class }) 
 
 public class AspireAutomationBFApplicationTest extends AspireDefaultTestRunner {
-
-	
 
 
 	

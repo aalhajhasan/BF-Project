@@ -124,6 +124,37 @@ public class GiltSteps {
 	}
 	
 	
+	@Then("[8000-0006] user compare between $elementOne and $elementTwo and $elementThree")
+	public boolean imagecompare(String plp , String qv , String pdp)
+	{
+		String plpImage = plp.substring(plp.indexOf("uploads"), plp.indexOf(","));
+		String qvImage = qv.substring(qv.indexOf("uploads"), qv.indexOf(".jpg")-3);
+		String pdpImage = pdp.substring(pdp.indexOf("uploads"), pdp.indexOf(".jpg")-3);
+		
+		boolean status = false;
+		if (plpImage.equals(qvImage))
+		{
+			if (qvImage.equals(pdpImage))
+			{
+				status = true;
+			}
+			else
+			{
+				status = false;
+			}
+		}
+		else
+		{
+			status = false;
+		}
+		
+		return status;
+		
+	}
+	
+	
+	
+	
 	public double convert(String element)   //Isolate numbers from text
 	{   double result = 0;
 		String value = element.replace(",", "");
@@ -141,4 +172,6 @@ public class GiltSteps {
         }
 		return result;
 	}
+	
+	
 }

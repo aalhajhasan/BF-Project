@@ -200,6 +200,12 @@ public interface HarrodsPage {
 	public AspireWebElement addedButton();
 	
 	@CssSelector("${pages.harrods.moreThanOneQTY}")
-	public AspireWebElement moreThanOneQTY();
+	public AspireWebElements moreThanOneQTY();
+	
+	@CssSelector("${pages.harrods.quickViewImage}")
+	public AspireWebElement quickViewImage();
+	
+	@CssSelector("${pages.harrods.pdpImage}")
+	public AspireWebElement pdpImage();
 	
 }

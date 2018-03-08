@@ -59,8 +59,8 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.products}")
 	public AspireWebElements products();
 	
-	@CssSelector("${pages.gilt.productNametext}")
-	public AspireWebElement productNametext();
+	@CssSelector("${pages.gilt.productName}")
+	public AspireWebElement productName();
 	
 	@CssSelector("${pages.gilt.productPrice}")
 	public AspireWebElement productPrice();
@@ -253,6 +253,12 @@ public interface GiltPage {
 	
 	@CssSelector("${pages.gilt.availableSize}")
 	public AspireWebElements availableSize();
+	
+	@CssSelector("${pages.gilt.pdpImage}")
+	public AspireWebElement pdpImage();
+	
+	@CssSelector("${pages.gilt.quickViewImage}")
+	public AspireWebElement quickViewImage();
 	
 
 }
