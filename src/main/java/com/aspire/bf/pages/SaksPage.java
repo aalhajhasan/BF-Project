@@ -9,10 +9,13 @@ import com.aspire.automation.web.util.annotation.Page;
 
 public interface SaksPage {
 
-	@CssSelector("${pages.saks.registerLink}")
-	public AspireWebElement registerLink();
+	@CssSelector("${pages.saks.saksWelcomeMat}")
+	public AspireWebElement saksWelcomeMat();
 	
-	@CssSelector("${pages.saks.registerEmailSection}")
-	public AspireWebElements registerEmailSection();
+	@CssSelector("${pages.saks.saksWelcomeMatClose}")
+	public AspireWebElement saksWelcomeMatClose();
+	
+	@CssSelector("${pages.saks.saksTopNav}")
+	public AspireWebElements saksTopNav();
 	
 }
