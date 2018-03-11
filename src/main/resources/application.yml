@@ -25,7 +25,7 @@ aspire:
         enabled: true   
         include: 
            - stories/harrods/TC01_Verify_Quick_View_ProductName_And_Price.story
-           #- stories/harrods/TC02_Verify_PDP_PorductName_And_Price.story
+           - stories/harrods/TC02_Verify_PDP_PorductName_And_Price.story
           
           
           

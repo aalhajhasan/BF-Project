@@ -1,4 +1,4 @@
-package com.aspire.sci.steps;
+package com.aspire.bf.steps;
 
 import java.util.Random;
 import java.util.regex.Matcher;
@@ -10,24 +10,27 @@ import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
 import com.aspire.automation.web.util.annotation.Browser;
-import com.aspire.sci.pages.GiltPage;
+import com.aspire.bf.pages.HarrodsPage;;
+
 
 @Steps
 @Component
 
-public class GiltSteps {
-	@Browser("gilt")
-	AspireBrowser<GiltPage> giltPage;
+public class HarrodsSteps {
+
+	@Browser("harrods")
+	AspireBrowser<HarrodsPage> harrodsPage;
 	
 	public double hitNumber;
-	@When("[8000-0001] User hits $value with $data")
+	@When("[8001-0001] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
 		double number = convert(data);
 		hitNumber = number * Double.parseDouble(value);
 	}
 	
-	@Then("[8000-0002] User compare between $valueOne and $valueTwo")  //Custom step
+	
+	@Then("[8001-0002] User compare between $valueOne and $valueTwo")  //Custom step
 	public boolean compare(String valueOne, String valueTwo)
 	{
 		double priceB = convert(valueOne);
@@ -45,7 +48,7 @@ public class GiltSteps {
 	}
 	
 	
-	@Then("[8000-0003] the user check the sum of $valueOne and $valueTwo with $total")  //Custom step
+	@Then("[8001-0003] the user check the sum of $valueOne and $valueTwo with $total")  //Custom step
 	public boolean summation(String valueOne, String valueTwo, String total)
 	{
 		double priceOne = convert(valueOne);
@@ -65,7 +68,7 @@ public class GiltSteps {
 	
 	
 	
-	@Then("[8000-0004] $totalValue price should be matched with the summation of $subTotalValue and $vatValue and $shippingValue")  //Custom step
+	@Then("[8001-0004] $totalValue price should be matched with the summation of $subTotalValue and $vatValue and $shippingValue")  //Custom step
 	public boolean totalPrice(String totalValue, String subTotalValue, String vatValue, String shippingValue)
 	{
 		double total = convert(totalValue);
@@ -85,9 +88,8 @@ public class GiltSteps {
 		
 	}
 	
-	
-	
-	@When("[8000-0005] user search for $element")  //Custom step for searching on specific element
+	@Then("[8001-0005] user search for $element")
+	@When("[8001-0005] user search for $element")  //Custom step for searching on specific element
 	public void search(String element) throws InterruptedException 
 	{
 		
@@ -107,6 +109,14 @@ public class GiltSteps {
 			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
 			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
 			   
+			   Thread.sleep(10000);
+			   
+			   if (element.equals("moreThanOneQTY"))
+			   {
+				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("products").size());
+				   AspireBrowser.getElementsByPropertyNameGlobaly("products").index(value3).js("arguments[0].click();", null);
+			   }
+			   
 			   search(element);
 	        }
 		}
@@ -124,14 +134,18 @@ public class GiltSteps {
 	}
 	
 	
-	@Then("[8000-0006] user compare between $elementOne and $elementTwo and $elementThree")
-	public boolean imagecompare(String plp , String qv , String pdp)
+	@Then("[8001-0006] user compare between $elementOne and $elementTwo and $elementThree")
+	public void imagecompare(String plp , String qv , String pdp)
 	{
-		String plpImage = plp.substring(plp.indexOf("uploads"), plp.indexOf(","));
-		String qvImage = qv.substring(qv.indexOf("uploads"), qv.indexOf(".jpg")-3);
-		String pdpImage = pdp.substring(pdp.indexOf("uploads"), pdp.indexOf(".jpg")-3);
+		String plpImage = plp.substring(plp.indexOf("product"), plp.indexOf(".jpg"));
+		String qvImage = qv.substring(qv.indexOf("product"), qv.indexOf(".jpg")-2);
+		String pdpImage = pdp.substring(pdp.indexOf("product"), pdp.indexOf(".jpg"));
 		
-		boolean status = false;
+		System.out.println("plp image = " + plpImage);
+		System.out.println("qv image = " + qvImage);
+		System.out.println("pdp image = " + pdpImage);
+		
+		/*boolean status = false;
 		if (plpImage.equals(qvImage))
 		{
 			if (qvImage.equals(pdpImage))
@@ -148,14 +162,12 @@ public class GiltSteps {
 			status = false;
 		}
 		
-		return status;
+		return status;*/
 		
 	}
 	
 	
-	
-	
-	public double convert(String element)   //Isolate numbers from text
+	public double convert(String element)  //Isolate numbers from text
 	{   double result = 0;
 		String value = element.replace(",", "");
 		Pattern pattern = Pattern.compile("(\\d+.\\d+)");
@@ -172,6 +184,5 @@ public class GiltSteps {
         }
 		return result;
 	}
-	
 	
 }

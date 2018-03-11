@@ -1,4 +1,4 @@
-package com.aspire.sci.pages;
+package com.aspire.bf.pages;
 
 
 import com.aspire.automation.web.util.AspireWebElement;

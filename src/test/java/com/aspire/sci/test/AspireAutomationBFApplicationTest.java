@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.aspire.automation.AspireAutomationAutoconfigurationApplication;
 import com.aspire.automation.junitrunners.AspireDefaultTestRunner;
-import com.aspire.sci.AspireAutomationBFApplication;
+import com.aspire.bf.AspireAutomationBFApplication;
 /**
  * Main class used to start all test stories ( cases ).
  * 
