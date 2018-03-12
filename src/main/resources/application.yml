@@ -25,8 +25,7 @@ aspire:
         enabled: true   
         include: 
            - stories/saks/TC**.story
-          #- stories/saks/TC04_Verify_Cart_PorductName_And_Price.story
-          #- stories/saks/TC05_verify_price_correctness_after_updating_item_QTY.story
+          #- 
           
           
           

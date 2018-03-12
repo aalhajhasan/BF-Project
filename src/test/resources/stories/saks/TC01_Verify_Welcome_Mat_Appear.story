@@ -1,4 +1,4 @@
-Meta:
+
 @namedItAs welcome
 
 Scenario:  TC01_Verify_Welcome_Mat_Appear
