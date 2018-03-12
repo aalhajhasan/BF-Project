@@ -216,7 +216,8 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.submitErrorMessage}")
 	public AspireWebElement submitErrorMessage();
 	
-	
+	@CssSelector("${pages.saks.validPdp}")
+	public AspireWebElements validPdp();
 	
 	
 	

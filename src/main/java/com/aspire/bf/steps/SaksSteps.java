@@ -31,26 +31,34 @@ public class SaksSteps {
 		
 		try
 		{
-			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
+			if (element.equals("addToBagButton"))
 			{
-				System.out.println("valid PLP");
+				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			    {
+				   System.out.println("valid PLP");
+			    }
 			}
-		
+			else if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
+			   {
+			    
+				System.out.println("valid PLP");
+			    
+			   }
 	        else 
 	        {
 			   Random rand = new Random();
 			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").index(value1).js("arguments[0].click();", null);
+			   AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").index(value1).click();
 			
 			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").index(value2).js("arguments[0].click();", null);
+			   AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").index(value2).click();
 			   
-               Thread.sleep(10000);
+               //Thread.sleep(10000);
 			   
-			   if (element.equals("productSKUSelection") || element.equals("searchelement"))
+			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton"))
 			   {
 				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
-				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).js("arguments[0].click();", null);
+				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();
 			   }
 			   
 			   search(element);
@@ -58,14 +66,14 @@ public class SaksSteps {
 		}
 		catch (NoSuchElementException e)
 		{
-			Random rand = new Random();
+			/*Random rand = new Random();
 			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").size());
 			   AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").index(value1).js("arguments[0].click();", null);
 			
 			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").size());
 			   AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").index(value2).js("arguments[0].click();", null);
 			   
-			   search(element);
+			   search(element);*/
 		}
 	}
 	
@@ -134,7 +142,7 @@ public class SaksSteps {
 		}
 		else
 		{
-			AspireWebElement searchelement = AspireBrowser.getElementByPropertyNameGlobaly("productSKUSelection");
+			AspireWebElements searchelement = AspireBrowser.getElementsByPropertyNameGlobaly("productSKUSelection");
 			search(searchelement.toString());
 			
 			Thread.sleep(10000);

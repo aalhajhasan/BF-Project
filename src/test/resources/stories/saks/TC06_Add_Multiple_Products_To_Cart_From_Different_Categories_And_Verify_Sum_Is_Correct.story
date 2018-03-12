@@ -15,6 +15,7 @@ And [1211-1080] saksProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from saksProducts
 And [1100-0300] User click on it
 And [8002-0001] user search for productSKUSelection
+And [8002-0001] user search for validPdp
 And [1200-1302-S] For any element from availableColor
 And [1100-0300-S] User click on it
 And [1200-1302] For any element from availableSKU

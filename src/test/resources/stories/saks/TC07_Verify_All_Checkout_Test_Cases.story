@@ -51,6 +51,3 @@ And [1100-1340] User fills securityCode with `paymentSecurityCode`
 And [1100-1300] User clicks on the placeOrderButton
 Then [1111-1080] submitErrorMessage should be displayed, Within 120 seconds
 And [1101-1102] submitErrorMessage text is equal to `submitErrorMessage` case sensitive
-
-
-
