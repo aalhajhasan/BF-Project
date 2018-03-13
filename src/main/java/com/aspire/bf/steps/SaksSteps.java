@@ -10,7 +10,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
-import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.Browser;
 import com.aspire.bf.pages.SaksPage;
@@ -55,7 +54,7 @@ public class SaksSteps {
 			   
                //Thread.sleep(10000);
 			   
-			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton"))
+			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton") || element.equals("validPdp"))
 			   {
 				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
 				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();

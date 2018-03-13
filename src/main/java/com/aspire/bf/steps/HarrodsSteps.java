@@ -166,6 +166,37 @@ public class HarrodsSteps {
 		
 	}
 	
+	@When("[8001-0006] $totalToPay value should be equal to the sum of $itemsSubtotal , $excludingUKTaxes , $localTaxes , $importDuties and $deliveryCharge")
+	public boolean checkoutsum(String totalToPay, String itemsSubtotal, String excludingUKTaxes,String localTaxes,String importDuties,String deliveryCharge)
+	{
+		double excludingUKTaxesvalue;
+		if (excludingUKTaxes.contains("-"))
+		{
+			excludingUKTaxesvalue = - convert(excludingUKTaxes);
+		}
+		else
+		{
+			excludingUKTaxesvalue = convert(excludingUKTaxes);
+		}
+		double totalToPayvalue = convert(totalToPay);
+		double itemsSubtotalvalue = convert(itemsSubtotal);
+		
+		double localTaxesvalue = convert(localTaxes);
+		double importDutiesvalue = convert(importDuties);
+		double deliveryChargevalue = convert(deliveryCharge);
+		
+		double sum = itemsSubtotalvalue + excludingUKTaxesvalue + localTaxesvalue + importDutiesvalue + deliveryChargevalue;
+		if (sum == totalToPayvalue)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+		
+	}
 	
 	public double convert(String element)  //Isolate numbers from text
 	{   double result = 0;

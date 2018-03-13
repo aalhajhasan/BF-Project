@@ -27,7 +27,8 @@ And [1100-1340] User fills checkoutEmailAddress with `checkoutEmailAddress`
 And [1100-1340] User fills checkoutPhoneNumber with `checkoutPhoneNumber`
 And [1100-1300] User clicks on the continueCheckoutButton
 And [1111-1080] paymentPage should be displayed, Within 120 seconds
-And [1100-1321] User scroll to the paymentContinueCheckout then click it
+And [1100-1320] User scroll to the paymentContinueCheckout
+And [1100-0300] User click on it
 And [1101-1102] paymentCCNError text is equal to Please supply a valid credit card number. case sensitive
 And [1101-1102] paymentNameOnCardError text is equal to Please supply the name displayed on the credit card. case sensitive
 And [1101-1102] paymentExpirationError text is equal to Please supply a valid expiration date. case sensitive

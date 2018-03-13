@@ -208,4 +208,27 @@ public interface HarrodsPage {
 	@CssSelector("${pages.harrods.pdpImage}")
 	public AspireWebElement pdpImage();
 	
+	@CssSelector("${pages.harrods.checkoutItemsSubtotal}")
+	public AspireWebElement checkoutItemsSubtotal();
+	
+	@CssSelector("${pages.harrods.checkoutExcludingUKTaxes}")
+	public AspireWebElement checkoutExcludingUKTaxes();
+	
+	@CssSelector("${pages.harrods.checkoutLocalTaxes}")
+	public AspireWebElement checkoutLocalTaxes();
+	
+	@CssSelector("${pages.harrods.checkoutImportDuties}")
+	public AspireWebElement checkoutImportDuties();
+	
+	@CssSelector("${pages.harrods.checkoutDeliveryCharge}")
+	public AspireWebElement checkoutDeliveryCharge();
+	
+	@CssSelector("${pages.harrods.checkoutTotalToPa}")
+	public AspireWebElement checkoutTotalToPa();
+	
+	
+	
+	
+	
+	
 }

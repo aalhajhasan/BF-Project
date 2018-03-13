@@ -8,6 +8,13 @@ When [1100-1300] User clicks on the secureCheckoutNow
 And [1111-1080] startCheckoutPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the newCustomerButton
 And [1111-1080] detailsCheckoutPage should be displayed, Within 120 seconds
+And [1101-1184] the user saves checkoutItemsSubtotal text in scenario scope under name itemsSubtotal
+And [1101-1184] the user saves checkoutExcludingUKTaxes text in scenario scope under name excludingUKTaxes
+And [1101-1184] the user saves checkoutLocalTaxes text in scenario scope under name localTaxes
+And [1101-1184] the user saves checkoutImportDuties text in scenario scope under name importDuties
+And [1101-1184] the user saves checkoutDeliveryCharge text in scenario scope under name deliveryCharge
+And [1101-1184] the user saves checkoutTotalToPay text in scenario scope under name totalToPay
+And [8001-0006] `totalToPay` value should be equal to the sum of `itemsSubtotal` , `excludingUKTaxes` , `localTaxes` , `importDuties` and `deliveryCharge`
 And [1100-1300] User clicks on the continueToDeliveryButton
 And [1101-1102] detailsTitleError text is equal to Please select a title case sensitive
 And [1101-1102] detailsFirstNameError text is equal to Please enter a first name case sensitive
@@ -45,3 +52,5 @@ And [1100-1340] User fills paymentSecurityCodeSection with `paymentSecurityCode`
 And [1100-1300] User clicks on the paySecurelyNowButton
 And [1111-1080] submitErrorMessage should be displayed, Within 120 seconds
 Then [1101-1102] submitErrorMessage text is equal to `submitErrorMessage` case sensitive
+
+

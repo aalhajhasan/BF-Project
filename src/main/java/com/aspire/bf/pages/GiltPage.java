@@ -260,5 +260,7 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.quickViewImage}")
 	public AspireWebElement quickViewImage();
 	
+	@CssSelector("${pages.gilt.cartImage}")
+	public AspireWebElement cartImage();
 
 }

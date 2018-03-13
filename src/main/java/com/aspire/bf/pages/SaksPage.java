@@ -219,12 +219,26 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.validPdp}")
 	public AspireWebElements validPdp();
 	
+	@CssSelector("${pages.saks.checkoutTitle}")
+	public AspireWebElement checkoutTitle();
 	
+	@CssSelector("${pages.saks.itemTotal}")
+	public AspireWebElement itemTotal();
 	
+	@CssSelector("${pages.saks.shipping}")
+	public AspireWebElement shipping();
 	
+	@CssSelector("${pages.saks.promotionalSavings}")
+	public AspireWebElement promotionalSavings();
 	
+	@CssSelector("${pages.saks.landedCost}")
+	public AspireWebElement landedCost();
 	
+	@CssSelector("${pages.saks.dutiesAndTaxes}")
+	public AspireWebElement dutiesAndTaxes();
 	
+	@CssSelector("${pages.saks.orderTotal}")
+	public AspireWebElement orderTotal();
 	
 	
 	

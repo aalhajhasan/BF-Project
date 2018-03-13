@@ -24,7 +24,11 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/saks/TC**.story
+           - stories/saks/TC01**.story
+           - stories/saks/TC02**.story
+           - stories/saks/TC03**.story
+           - stories/saks/TC04**.story
+           - stories/saks/test.story
           #- 
           
           
