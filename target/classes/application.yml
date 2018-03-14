@@ -24,8 +24,8 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/saks/TC01_Verify_Welcome_Mat_Appear.story
-           #- 
+           - stories/nordstrom/TC**.story
+           
           
           
           

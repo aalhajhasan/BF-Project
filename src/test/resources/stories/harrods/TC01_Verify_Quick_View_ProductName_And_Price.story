@@ -5,7 +5,7 @@ Meta:
 Scenario:  TC01_Verify_Quick_View_ProductName_And_Price
 
 Given [1000-9130] Clear cache and cookies
-When [1000-9000] User opens harrods page
+When [1000-9001] User on harrods page
 And [1200-1302] For any element from topNavStore
 And [1111-0000] It should be clickable, Within 120 seconds
 And [1100-0300] User click on it
