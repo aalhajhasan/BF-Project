@@ -218,6 +218,10 @@ public class SaksSteps {
 		
 		
 	}
+	
+	
+	
+	
 	public double convert(String element)   //Isolate numbers from text
 	{   
 		double result = 0;
