@@ -84,8 +84,6 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.bagCloseButton}")
 	public AspireWebElement bagCloseButton();
 	
-	@CssSelector("${pages.saks.quantityIncrementButton}")
-	public AspireWebElement quantityIncrementButton();
 	
 	@CssSelector("${pages.saks.bagCheckoutButton}")
 	public AspireWebElement bagCheckoutButton();

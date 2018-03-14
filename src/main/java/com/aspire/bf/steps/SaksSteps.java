@@ -26,7 +26,10 @@ public class SaksSteps {
 	@When("[8002-0001] user search for $element")  //Custom step for searching on specific element
 	public void search(String element) throws InterruptedException 
 	{
-		
+		if (element.equals(".product-quantity, .add-to-bag"))
+		{
+			element = "validPdp";
+		}
 		try
 		{
 			if (element.equals("addToBagButton"))
@@ -53,7 +56,7 @@ public class SaksSteps {
 			   
                //Thread.sleep(10000);
 			   
-			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton") || element.equals("validPdp") || element.equals(".product-quantity, .add-to-bag"))
+			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton") || element.equals("validPdp"))
 			   {
 				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
 				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();
@@ -87,36 +90,27 @@ public class SaksSteps {
 	}
 	
 	
-	@Then("[8002-0003] user compare between $elementOne and $elementTwo and $elementThree")  //Custom step used to compare between three image as a string 
-	public void imagecompare(String plp , String qv , String pdp)
+	@Then("[8002-0003] user compare between $elementOne and $elementTwo")  //Custom step used to compare between two image as a string 
+	public boolean imagecompare(String qv , String pdp)
 	{
-		/*String plpImage = plp.substring(plp.indexOf("uploads"), plp.indexOf(","));
-		String qvImage = qv.substring(qv.indexOf("uploads"), qv.indexOf(".jpg")-3);
-		String pdpImage = pdp.substring(pdp.indexOf("uploads"), pdp.indexOf(".jpg")-3);*/
 		
+		String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
+		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);
 		
-		System.out.println("plp image = " + plp);
 		System.out.println("qv image = " + qv);
 		System.out.println("pdp image = " + pdp);
 		
-		/*boolean status = false;
-		if (plpImage.equals(qvImage))
+		boolean status = false;
+		if (qvImage.equals(pdpImage))
 		{
-			if (qvImage.equals(pdpImage))
-			{
-				status = true;
-			}
-			else
-			{
-				status = false;
-			}
+			status = true;
 		}
 		else
 		{
 			status = false;
 		}
 		
-		return status;*/
+		return status;
 		
 	}
 	
@@ -133,13 +127,19 @@ public class SaksSteps {
 		}
 		else
 		{
+			   AspireBrowser.getElementByPropertyNameGlobaly("bagCloseButton").click();
+			
+			   Random rand = new Random();
+			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").size());
+			   AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").index(value1).click();
+			
 			search(".product-quantity, .add-to-bag");
 			
 			Thread.sleep(10000);
 			
-			Random rand = new Random();
-			int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(value1).click();
+			Random random = new Random();
+			int  randomvalue = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").size());
+			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(randomvalue).click();
 			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
 			
 			Thread.sleep(10000);
