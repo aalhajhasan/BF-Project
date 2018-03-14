@@ -7,7 +7,8 @@ And [1100-0300-S] User click on it
 And [1101-1181] the user saves pdpProductPrice text in global scope under name pdpPrice
 And [1101-1181] the user saves pdpProductName text in global scope under name pdpProductName
 And [1100-1300] User clicks on the addToBagButton
-And [8002-0004] user check bagQTY with 2
 And [1111-1080] shoppingBag should be displayed, Within 120 seconds
+And [1100-1581] the user saves bagQTY attribute of innerText in global scope under name bagQTY
+And [8002-0004] user check `bagQTY` with 2
 And [1101-1181] the user saves bagProductPrice text in global scope under name bagPrice
 Then [8002-0002] User compare between `bagPrice` and `pdpPrice`

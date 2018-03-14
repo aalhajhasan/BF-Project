@@ -1,17 +1,6 @@
 aspire:  
   webdriver:
      scope: 
-   
-   
-  dashboard:
-     integration:
-      enabled: true
-      host: 82.212.71.230
-      port: 5080
-      path: api
-      protocol: http
-      logLevel: 
-      projectId: 
       
   jbehave:
     metat-data:

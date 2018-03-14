@@ -17,7 +17,7 @@ public class MyListner implements TestEventListener {
                 String stepName) {
             
             
-            log.error("Custome before Step: "+ stepName);
+            //log.error("Custome before Step: "+ stepName );
             
         }
 }

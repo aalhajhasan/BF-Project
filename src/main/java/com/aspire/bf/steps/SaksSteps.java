@@ -10,7 +10,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
-import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.Browser;
 import com.aspire.bf.pages.SaksPage;
 
@@ -54,7 +53,7 @@ public class SaksSteps {
 			   
                //Thread.sleep(10000);
 			   
-			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton") || element.equals("validPdp"))
+			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton") || element.equals("validPdp") || element.equals(".product-quantity, .add-to-bag"))
 			   {
 				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
 				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();
@@ -65,14 +64,7 @@ public class SaksSteps {
 		}
 		catch (NoSuchElementException e)
 		{
-			/*Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").index(value1).js("arguments[0].click();", null);
-			
-			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").index(value2).js("arguments[0].click();", null);
-			   
-			   search(element);*/
+			System.out.println("Catch");
 		}
 	}
 	
@@ -132,7 +124,7 @@ public class SaksSteps {
 	@When("[8002-0004] user check $element with $value")
 	public void checkQTY(String element, String value) throws InterruptedException
 	{
-		int qty = (int) convert(element);
+		int qty = Integer.parseInt(element.substring(10));
 		int checkvalue = Integer.parseInt(value);
 		
 		if (qty == checkvalue)
@@ -141,14 +133,13 @@ public class SaksSteps {
 		}
 		else
 		{
-			AspireWebElements searchelement = AspireBrowser.getElementsByPropertyNameGlobaly("productSKUSelection");
-			search(searchelement.toString());
+			search(".product-quantity, .add-to-bag");
 			
 			Thread.sleep(10000);
 			
 			Random rand = new Random();
 			int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(value1).js("arguments[0].click();", null);
+			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(value1).click();
 			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
 			
 			Thread.sleep(10000);
@@ -228,7 +219,8 @@ public class SaksSteps {
 		
 	}
 	public double convert(String element)   //Isolate numbers from text
-	{   double result = 0;
+	{   
+		double result = 0;
 		String value = element.replace(",", "");
 		Pattern pattern = Pattern.compile("(\\d+.\\d+)");
         Matcher matcher = pattern.matcher(value);
