@@ -18,5 +18,5 @@ And [1100-1300] User clicks on the saksoffPreviewThisProductIcon
 And [1111-1080] saksoffQuickViewDialog should be displayed, Within 120 seconds
 Then [1101-1100] saksoffQuickViewProductName text should equal to `productName`
 And [1101-1181] the user saves saksoffQuickViewProductPrice text in global scope under name quickViewPrice
-And [8002-0002] User compare between `productPrice` and `quickViewPrice`
+And [8003-0001] User compare between `productPrice` and `quickViewPrice`
 And [1100-1581] the user saves saksoffQuickViewImage attribute of data-default-image-set in global scope under name quickViewImage

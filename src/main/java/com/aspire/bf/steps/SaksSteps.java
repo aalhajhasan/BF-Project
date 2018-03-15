@@ -56,7 +56,7 @@ public class SaksSteps {
 			   
                //Thread.sleep(10000);
 			   
-			   if (element.equals("productSKUSelection") || element.equals("searchelement") || element.equals("addToBagButton") || element.equals("validPdp"))
+			   if (element.equals("productSKUSelection") || element.equals("addToBagButton") || element.equals("validPdp"))
 			   {
 				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
 				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();
@@ -97,8 +97,8 @@ public class SaksSteps {
 		String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
 		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);
 		
-		System.out.println("qv image = " + qv);
-		System.out.println("pdp image = " + pdp);
+		System.out.println("qv image = " + qvImage);
+		System.out.println("pdp image = " + pdpImage);
 		
 		boolean status = false;
 		if (qvImage.equals(pdpImage))
@@ -138,6 +138,8 @@ public class SaksSteps {
 			Thread.sleep(10000);
 			
 			Random random = new Random();
+			int  randomvalue1 = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableColor").size());
+			AspireBrowser.getElementsByPropertyNameGlobaly("availableColor").index(randomvalue1).click();
 			int  randomvalue = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").size());
 			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(randomvalue).click();
 			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
