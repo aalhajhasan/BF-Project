@@ -1,9 +1,0 @@
-aspire: 
-  run:
-    details:
-      Client Name: Border Free
-      Run: Manually
-      Version: 1.0
-      Build Number: 67
-      Title: Automation Report
-      SubTitle: Testing 

@@ -218,13 +218,10 @@ public interface SaksoffPage {
 	@CssSelector("${pages.saksoff.itemTotal}")
 	public AspireWebElement itemTotal();
 	
-	@CssSelector("${pages.saksoff.shipping}")
+	@XPathSelector("${pages.saksoff.shipping}")
 	public AspireWebElement shipping();
 	
-	@CssSelector("${pages.saksoff.promotionalSavings}")
-	public AspireWebElement promotionalSavings();
-	
-	@CssSelector("${pages.saksoff.landedCost}")
+	@XPathSelector("${pages.saksoff.landedCost}")
 	public AspireWebElement landedCost();
 	
 	@CssSelector("${pages.saksoff.dutiesAndTaxes}")

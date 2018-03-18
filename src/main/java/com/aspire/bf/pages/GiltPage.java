@@ -10,7 +10,13 @@ public interface GiltPage {
 
 	@CssSelector("${pages.gilt.registerLink}")
 	public AspireWebElement registerLink();
-
+	
+	@CssSelector("${pages.gilt.loginDialog}")
+	public AspireWebElement loginDialog();
+	
+	@CssSelector("${pages.gilt.registerDialog}")
+	public AspireWebElement registerDialog();
+	
 	@CssSelector("${pages.gilt.registerEmailSection}")
 	public AspireWebElement registerEmailSection();
 	

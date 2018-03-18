@@ -134,35 +134,29 @@ public class HarrodsSteps {
 	}
 	
 	
-	@Then("[8001-0006] user compare between $elementOne and $elementTwo and $elementThree")
-	public void imagecompare(String plp , String qv , String pdp)
+	@Then("[8001-0006] user compare between $elementTwo and $elementThree")
+	public boolean imagecompare(String qv , String pdp)
 	{
-		String plpImage = plp.substring(plp.indexOf("product"), plp.indexOf(".jpg"));
+		
 		String qvImage = qv.substring(qv.indexOf("product"), qv.indexOf(".jpg")-2);
 		String pdpImage = pdp.substring(pdp.indexOf("product"), pdp.indexOf(".jpg"));
 		
-		System.out.println("plp image = " + plpImage);
+		
 		System.out.println("qv image = " + qvImage);
 		System.out.println("pdp image = " + pdpImage);
 		
-		/*boolean status = false;
-		if (plpImage.equals(qvImage))
+		boolean status = false;
+		if (qvImage.equals(pdpImage))
 		{
-			if (qvImage.equals(pdpImage))
-			{
+			
 				status = true;
-			}
-			else
-			{
-				status = false;
-			}
 		}
 		else
 		{
 			status = false;
 		}
 		
-		return status;*/
+		return status;
 		
 	}
 	

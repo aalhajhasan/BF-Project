@@ -4,6 +4,7 @@ import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
 import com.aspire.automation.web.util.annotation.Page;
+import com.aspire.automation.web.util.annotation.XPathSelector;
 
 @Page(name = "saks", url = "${pages.saks.saksurl}")
 
@@ -72,8 +73,8 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.bagProductName}")
 	public AspireWebElement bagProductName();
 	
-	@CssSelector("${pages.saks.bagQTY}")
-	public AspireWebElement bagQTY();
+	@CssSelector("${pages.saks.saksBagQTY}")
+	public AspireWebElement saksBagQTY();
 	
 	@CssSelector("${pages.saks.productSKUSelection}")
 	public AspireWebElements productSKUSelection();
@@ -223,13 +224,13 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.itemTotal}")
 	public AspireWebElement itemTotal();
 	
-	@CssSelector("${pages.saks.shipping}")
+	@XPathSelector("${pages.saks.shipping}")
 	public AspireWebElement shipping();
 	
 	@CssSelector("${pages.saks.promotionalSavings}")
 	public AspireWebElement promotionalSavings();
 	
-	@CssSelector("${pages.saks.landedCost}")
+	@XPathSelector("${pages.saks.landedCost}")
 	public AspireWebElement landedCost();
 	
 	@CssSelector("${pages.saks.dutiesAndTaxes}")
