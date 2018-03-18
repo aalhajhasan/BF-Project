@@ -13,14 +13,11 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/saks/**.story
+           - stories/landsend/**.story
           #- 
           
           
-          
-     
-          
-        
+
   screenshot:
     enabled: true
     only-on-failure: true
