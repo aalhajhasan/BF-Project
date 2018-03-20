@@ -1,0 +1,8 @@
+
+Scenario:  TC01_Verify_Ebags_Welcome_Mat_Appear
+
+Given [1000-9130] Clear cache and cookies
+When [1000-9000] User opens ebags page
+And [1111-1080] ebagsWelcomeMat should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the ebagsWelcomeMatClose
+Then [1201-1080] ebagsTopNav should be all displayed

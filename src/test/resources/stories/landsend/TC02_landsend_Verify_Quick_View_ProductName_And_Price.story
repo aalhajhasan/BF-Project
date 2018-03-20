@@ -3,12 +3,15 @@ Scenario:  TC02_landsend_Verify_Quick_View_ProductName_And_Price
 
 Given [1000-9001] User on landsend page
 When [1200-1302] For any element from landsendTopNav
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0360] User move mouse to it
+And [1100-0300] User click on it
 And [1211-1080] landsendSales should be all displayed, Within 120 seconds
 And [1200-1302] For any element from landsendSales
 And [1100-0300] User click on it
-And [8004-0001] user search for landsendProducts
+And [1012-1000] page is loaded, within 120 seconds
 And [1211-1080] landsendProducts should be all displayed, Within 120 seconds
+And [8004-0001] user search for landsendProducts
+And [1012-1000] page is loaded, within 120 seconds
 And [1200-1302] For any element from landsendProducts
 And [1101-1181] the user saves landsendProductName text in global scope under name productName
 And [1101-1181] the user saves landsendProductPrice text in global scope under name productPrice
