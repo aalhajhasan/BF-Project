@@ -193,17 +193,16 @@ public class EbagsSteps {
 	}
 	
 	
-	@When("[8006-0008] $orderTotal price should be matched with the summation of $itemTotal , $shipping , $promotionalSavings , $landedCost and $dutiesAndTaxes")
-	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String promotionalSavings, String landedCost, String dutiesAndTaxes)
+	@When("[8006-0008] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")
+	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String promotionalSavings, String dutiesAndTaxes)
 	{
 		double orderTotalvalue = convert(orderTotal);
 		double itemTotalvalue = convert(itemTotal);
 		double shippingvalue = convert(shipping);
 		double promotionalSavingsvalue = convert(promotionalSavings);
-		double landedCostvalue = convert(landedCost);
 		double dutiesAndTaxesvalue = convert(dutiesAndTaxes);
 		
-		double sum = itemTotalvalue + shippingvalue + promotionalSavingsvalue + landedCostvalue + dutiesAndTaxesvalue;
+		double sum = itemTotalvalue + shippingvalue + promotionalSavingsvalue + dutiesAndTaxesvalue;
 		
 		if (sum ==  orderTotalvalue)
 		{
