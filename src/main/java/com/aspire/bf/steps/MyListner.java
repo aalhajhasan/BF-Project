@@ -21,13 +21,13 @@ public class MyListner implements TestEventListener {
             /*boolean dialogstatus = false;
             if (dialogstatus)
             {
-            	
+            	System.out.println("dialog status = " + dialogstatus);
             }
             else 
             {
-            	 if (AspireBrowser.getElementByPropertyNameGlobaly("saksTopNav").isDisplayed())
+            	 if (AspireBrowser.getElementByPropertyNameGlobaly("loveRuelal").isDisplayed())
                    {
-            		 AspireBrowser.getElementByPropertyNameGlobaly("saksTopNav").click();
+            		 AspireBrowser.getElementByPropertyNameGlobaly("loveRuelalaClose").click();
             		 dialogstatus = true;
                    }
             }*/

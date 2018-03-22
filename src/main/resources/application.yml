@@ -13,7 +13,13 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/ruelala/**.story
+           - stories/saks/TC01**.story
+           - stories/saks/TC02**.story
+           - stories/saks/TC03**.story
+           - stories/saks/TC04**.story
+           - stories/saks/TC05**.story
+           - stories/saks/TC06**.story
+           - stories/saks/TC07**.story
           #- 
           
           

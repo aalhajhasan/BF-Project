@@ -33,35 +33,41 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.ruelalaTopNav}")
 	public AspireWebElements ruelalaTopNav();
 	
+	@CssSelector("${pages.ruelala.ruelalaPLP}")
+	public AspireWebElements ruelalaPLP();
 	
+	@CssSelector("${pages.ruelala.loveRuelal}")
+	public AspireWebElement loveRuelal();
 	
+	@CssSelector("${pages.ruelala.loveRuelalaClose}")
+	public AspireWebElement loveRuelalaClose();
 	
+	@CssSelector("${pages.ruelala.productPrice}")
+	public AspireWebElement productPrice();
 	
+	@CssSelector("${pages.ruelala.productName}")
+	public AspireWebElement productName();
 	
+	@CssSelector("${pages.ruelala.ruelalaPDP}")
+	public AspireWebElement ruelalaPDP();
 	
+	@CssSelector("${pages.ruelala.pdpName}")
+	public AspireWebElement pdpName();
 	
+	@CssSelector("${pages.ruelala.pdpPrice}")
+	public AspireWebElement pdpPrice();
 	
+	@CssSelector("${pages.ruelala.ruelalaSales}")
+	public AspireWebElements ruelalaSales();
 	
+	@CssSelector("${pages.ruelala.ruelalaSalesTwo}")
+	public AspireWebElements ruelalaSalesTwo();
 	
+	@CssSelector("${pages.ruelala.sizes}")
+	public AspireWebElements sizes();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@CssSelector("${pages.ruelala.addToBagButton}")
+	public AspireWebElement addToBagButton();
 	
 	
 	
