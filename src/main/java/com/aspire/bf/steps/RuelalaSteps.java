@@ -105,7 +105,6 @@ public class RuelalaSteps {
 	        	   randomclick("ruelalaSales");
 	           }
 	           
-			   search(element);
 	        }
 		}
 		catch (NoSuchElementException e)

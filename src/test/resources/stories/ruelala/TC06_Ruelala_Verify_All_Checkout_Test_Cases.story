@@ -1,7 +1,7 @@
 
 Scenario:  TC06_Ruelala_Verify_All_Checkout_Test_Cases
 
-Given [1101-1080] bagPage should be displayed
+Given [1101-1080] ruelalaBagPage should be displayed
 When [1100-1300] User clicks on the proceedToCheckout
 And [1111-1080] checkoutPage should be displayed, Within 120 seconds
 And [1100-1340] User fills checkoutFirstName with `firstName`

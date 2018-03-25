@@ -138,7 +138,8 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.submitError}")
 	public AspireWebElement submitError();
 	
-	
+	@CssSelector("${pages.ruelala.ruelalaBagPage}")
+	public AspireWebElement ruelalaBagPage();
 	
 	
 	
