@@ -44,42 +44,67 @@ public class RuelalaSteps {
 	public void search(String element) throws InterruptedException 
 	{
 		
+		
 		try
 		{
 			if (element.equals("ruelalaPLP"))
 			{
-				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).allIsDisplayed())
+				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			    {
 				   System.out.println("Valid PLP");
+				   
 			    }
+				else 
+				{
+					if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
+			           {
+						   randomclick("ruelalaSalesTwo");
+						   search(element);
+			           }
+					else
+			           {
+						  randomclick("ruelalaTopNav");
+						  randomclick("ruelalaSales");
+						  search(element);
+			           }
+				}
+
 			}
+			
 	        else 
+	        	
 	        {
-	        	Random rand = new Random();
-	           if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").allIsDisplayed())	
-	           {
-	        	   int  sale2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size());
-				   AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").index(sale2).click();
-				   search(element);
-	           }
+	        	if (element.equals("validPDP"))
+	        	{
+	        		if (AspireBrowser.getElementByPropertyNameGlobaly("validPDP").isEnabled())
+	        		{
+	        			System.out.println("Valid PDP");
+	        		}
+	        		else 
+	        		{   
+	        			
+	        			randomclick("ruelalaTopNav");
+	        		    randomclick("ruelalaSales");
+	        			if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
+	     	           {
+	        				randomclick("ruelalaSalesTwo");
+	        				randomclick("ruelalaPLP");
+	     				    search(element);
+	     	           }
+	        			else
+	        			{
+	        				randomclick("ruelalaPLP");
+	     				    search(element);
+	        			}
+	        		}
+	        	}
+	           
 	           else
 	           {
-	        	   int  topnav = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaTopNav").size());
-			      AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaTopNav").index(topnav).click();
-			
-			      int  sale1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSales").size());
-			      AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSales").index(sale1).click();
+	        	   randomclick("ruelalaTopNav");
+	        	   randomclick("ruelalaSales");
 	           }
-			   
-			   
-               //Thread.sleep(10000);
-			   /*
-			   if (element.equals("productSKUSelection") || element.equals("addToBagButton") || element.equals("validPdp"))
-			   {
-				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
-				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();
-			   }*/
-			   
+	           
 			   search(element);
 	        }
 		}
@@ -90,8 +115,49 @@ public class RuelalaSteps {
 	}
 	
 	
+	public double hitNumber;
+	@When("[8007-0003] User hits $value with $data")  //Custom step
+	public void hit(String value,String data)
+	{
+		double number = convert(data);
+		hitNumber = number * Double.parseDouble(value);
+	}
 	
 	
+	@Then("[8007-0004] User compare between $valueOne and $valueTwo")  //Custom step
+	public boolean comparetwoprice(String valueOne, String valueTwo)
+	{
+		double priceB = convert(valueOne);
+		double priceA = convert(valueTwo);
+		
+		if ((priceB == hitNumber) && (priceA/priceB != 1))
+		{
+			return true;
+		}
+		else
+		{
+		    return false;
+		}
+		
+	}
+	
+	@Then("[8007-0005] the user check the sum of $valueOne and $valueTwo with $total")  //Custom step to check the summation of two value with result
+	public boolean summation(String valueOne, String valueTwo, String total)
+	{
+		double priceOne = convert(valueOne);
+		double priceTwo = convert(valueTwo);
+		double sum = convert(total);
+		double sumPrice = priceOne + priceTwo;
+		
+		if (sum == sumPrice)
+		{
+			return true;
+		}
+		else
+		{
+		    return false;
+		}
+	}
 	
 	
 	
@@ -129,5 +195,12 @@ public class RuelalaSteps {
             System.out.println("NO_NUMBER");
         }
 		return result;
+	}
+	
+	public void randomclick(String element)
+	{
+		Random rand = new Random();
+		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
 	}
 }

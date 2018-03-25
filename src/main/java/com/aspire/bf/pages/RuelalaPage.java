@@ -69,51 +69,74 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.addToBagButton}")
 	public AspireWebElement addToBagButton();
 	
+	@CssSelector("${pages.ruelala.validPDP}")
+	public AspireWebElement validPDP();
 	
+	@CssSelector("${pages.ruelala.bagProductName}")
+	public AspireWebElement bagProductName();
 	
+	@CssSelector("${pages.ruelala.bagProductPrice}")
+	public AspireWebElement bagProductPrice();
 	
+	@CssSelector("${pages.ruelala.bagQty}")
+	public AspireWebElement bagQty();
 	
+	@CssSelector("${pages.ruelala.bagProductTotalPrice}")
+	public AspireWebElement bagProductTotalPrice();
 	
+	@CssSelector("${pages.ruelala.bagProductOnePrice}")
+	public AspireWebElement bagProductOnePrice();
 	
+	@CssSelector("${pages.ruelala.bagProductTwoPrice}")
+	public AspireWebElement bagProductTwoPrice();
 	
+	@CssSelector("${pages.ruelala.proceedToCheckout}")
+	public AspireWebElement proceedToCheckout();
 	
+	@CssSelector("${pages.ruelala.checkoutPage}")
+	public AspireWebElement checkoutPage();
 	
+	@CssSelector("${pages.ruelala.placeOrder}")
+	public AspireWebElement placeOrder();
 	
+	@CssSelector("${pages.ruelala.checkoutFirstName}")
+	public AspireWebElement checkoutFirstName();
 	
+	@CssSelector("${pages.ruelala.checkoutLastName}")
+	public AspireWebElement checkoutLastName();
 	
+	@CssSelector("${pages.ruelala.checkoutAddress}")
+	public AspireWebElement checkoutAddress();
 	
+	@CssSelector("${pages.ruelala.checkoutcity}")
+	public AspireWebElement checkoutcity();
 	
+	@CssSelector("${pages.ruelala.checkoutZipCode}")
+	public AspireWebElement checkoutZipCode();
 	
+	@CssSelector("${pages.ruelala.checkoutPhoneNumber}")
+	public AspireWebElement checkoutPhoneNumber();
 	
+	@CssSelector("${pages.ruelala.checkoutState}")
+	public AspireWebElement checkoutState();
 	
+	@CssSelector("${pages.ruelala.checkoutNameOnCard}")
+	public AspireWebElement checkoutNameOnCard();
 	
+	@CssSelector("${pages.ruelala.paymentCardNumber}")
+	public AspireWebElement paymentCardNumber();
 	
+	@CssSelector("${pages.ruelala.paymentCardExpirationMonth}")
+	public AspireWebElement paymentCardExpirationMonth();
 	
+	@CssSelector("${pages.ruelala.paymentCardExpirationYear}")
+	public AspireWebElement paymentCardExpirationYear();
 	
+	@CssSelector("${pages.ruelala.paymentSecurityCode}")
+	public AspireWebElement paymentSecurityCode();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@CssSelector("${pages.ruelala.submitError}")
+	public AspireWebElement submitError();
 	
 	
 	
