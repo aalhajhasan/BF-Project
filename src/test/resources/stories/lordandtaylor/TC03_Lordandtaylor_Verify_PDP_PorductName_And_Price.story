@@ -8,4 +8,4 @@ And [1101-1181] the user saves pdpProductPrice text in global scope under name p
 Then [8009-0001] User compare between `productPrice` and `pdpProductPrice`
 And [1101-1100] pdpProductName text should equal to `productName`
 And [8009-0002] user compare between `productImage` , `quickViewImage` and `pdpImage`
-And [1101-1181] the user saves pdpPrice text in global scope under name pdpPrice
+And [1101-1181] the user saves lordandtaylor text in global scope under name pdpPrice
