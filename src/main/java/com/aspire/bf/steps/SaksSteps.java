@@ -47,19 +47,11 @@ public class SaksSteps {
 			   }
 	        else 
 	        {
-			   Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("saksTopNav").index(value1).click();
-			
-			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("saksSales").index(value2).click();
-			   
-               //Thread.sleep(10000);
-			   
+	        	randomclick("saksTopNav");
+	        	randomclick("saksSales");
 			   if (element.equals("productSKUSelection") || element.equals("addToBagButton") || element.equals("validPdp"))
 			   {
-				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").size());
-				   AspireBrowser.getElementsByPropertyNameGlobaly("saksProducts").index(value3).click();
+				   randomclick("saksProducts");
 			   }
 			   
 			   search(element);
@@ -136,12 +128,8 @@ public class SaksSteps {
 			search(".product-quantity, .add-to-bag");
 			
 			Thread.sleep(10000);
-			
-			Random random = new Random();
-			int  randomvalue1 = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableColor").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("availableColor").index(randomvalue1).click();
-			int  randomvalue = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(randomvalue).click();
+			randomclick("availableColor");
+			randomclick("availableSKU");
 			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
 			
 			Thread.sleep(10000);
@@ -242,4 +230,13 @@ public class SaksSteps {
         }
 		return result;
 	}
+	
+	
+	public void randomclick(String element)
+	{
+		Random rand = new Random();
+		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+	}
+	
 }

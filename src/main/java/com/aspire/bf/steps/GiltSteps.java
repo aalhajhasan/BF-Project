@@ -93,33 +93,22 @@ public class GiltSteps {
 		
 		try
 		{
-			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			{
-				System.out.println("valid PLP");
+				
+					System.out.println("Valid PDP");
 			}
-		
-	        else 
-	        {
-			   Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("arguments[0].click();", null);
-			
-			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
-			   
-			   search(element);
-	        }
+			else
+			{
+				randomclick("topNavStore");
+				randomclick("sales");
+				randomclick("products");
+				search(element);
+			}
 		}
 		catch (NoSuchElementException e)
 		{
-			Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("arguments[0].click();", null);
-			
-			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
-			   
-			   search(element);
+			System.out.println("Catch");
 		}
 	}
 	
@@ -181,5 +170,13 @@ public class GiltSteps {
 		return result;
 	}
 	
+	
+	
+	public void randomclick(String element)
+	{
+		Random rand = new Random();
+		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+	}
 	
 }

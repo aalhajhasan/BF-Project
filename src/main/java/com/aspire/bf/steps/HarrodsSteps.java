@@ -102,19 +102,14 @@ public class HarrodsSteps {
 		
 	        else 
 	        {
-			   Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("arguments[0].click();", null);
-			
-			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
+	           randomclick("topNavStore");
+	           randomclick("sales");
 			   
 			   Thread.sleep(10000);
 			   
 			   if (element.equals("moreThanOneQTY"))
 			   {
-				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("products").size());
-				   AspireBrowser.getElementsByPropertyNameGlobaly("products").index(value3).js("arguments[0].click();", null);
+				   randomclick("products");
 			   }
 			   
 			   search(element);
@@ -122,14 +117,7 @@ public class HarrodsSteps {
 		}
 		catch (NoSuchElementException e)
 		{
-			Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("topNavStore").index(value1).js("arguments[0].click();", null);
-			
-			   int  value2 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("sales").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("sales").index(value2).js("arguments[0].click();", null);
-			   
-			   search(element);
+			System.out.println("Catch");
 		}
 	}
 	
@@ -210,4 +198,12 @@ public class HarrodsSteps {
 		return result;
 	}
 	
+	
+	
+	public void randomclick(String element)
+	{
+		Random rand = new Random();
+		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+	}
 }

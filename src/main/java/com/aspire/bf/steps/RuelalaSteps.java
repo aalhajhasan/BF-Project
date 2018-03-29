@@ -200,6 +200,6 @@ public class RuelalaSteps {
 	{
 		Random rand = new Random();
 		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
-		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
 	}
 }
