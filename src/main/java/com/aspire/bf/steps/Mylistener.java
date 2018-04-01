@@ -25,7 +25,7 @@ public class Mylistener implements TestEventListener {
                 String stepName) {
             
     		
-    		AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
+    		/*AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
     		
             boolean dialogstatus = false;
             if (dialogstatus)
@@ -41,7 +41,7 @@ public class Mylistener implements TestEventListener {
                    }
             }
            
-            aspireBrowserState.setLastAccessedElement(lastelement);
+            aspireBrowserState.setLastAccessedElement(lastelement);*/
         }
 }
 
