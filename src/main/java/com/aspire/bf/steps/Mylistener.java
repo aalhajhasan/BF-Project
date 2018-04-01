@@ -7,7 +7,6 @@ import com.aspire.automation.configurations.TestEventListener;
 import com.aspire.automation.web.util.AspireBrowser;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.helper.AspireBrowserState;
-
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -17,13 +16,16 @@ import lombok.extern.slf4j.Slf4j;
 
 public class Mylistener implements TestEventListener {
 
-    	@Override
+    	
     	@Autowired
+    	AspireBrowserState aspireBrowserState;
+    	
+    	@Override
         public void beforeStep(String storyName, String scenarioName, Map<String, String> exampleData,
                 String stepName) {
             
-    		AspireBrowserState value = new AspireBrowserState();
-    		AspireWebElement lastelement = value.getLastAccessedElement();
+    		
+    		AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
     		
             boolean dialogstatus = false;
             if (dialogstatus)
@@ -39,7 +41,7 @@ public class Mylistener implements TestEventListener {
                    }
             }
            
-            value.setLastAccessedElement(lastelement);
+            aspireBrowserState.setLastAccessedElement(lastelement);
         }
 }
 

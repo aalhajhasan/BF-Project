@@ -1,7 +1,7 @@
 aspire:
  dashboard:
     integration:
-      enabled: true
+      enabled: false
       host: 172.17.100.33
       port: 5070
       path: api
