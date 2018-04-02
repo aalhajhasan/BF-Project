@@ -3,9 +3,9 @@ Scenario:  TC02_Jcrew_Verify_Quick_View_ProductName_And_Price
 
 Given [1000-9001] User on jcrew page
 When [1200-1302] For any element from jcrewTopNav
-And [1100-0300] User click on it
+And [1100-0400] Execute `click` javascript on the element
 And [1200-1302] For any element from jcrewSales
-And [1100-0300] User click on it
+And [1100-0400] Execute `click` javascript on the element
 And [8010-0001] user search for jcrewProducts
 And [1200-1302] For any element from jcrewProducts
 And [1101-1181] the user saves plpItemName text in global scope under name plpItemName
