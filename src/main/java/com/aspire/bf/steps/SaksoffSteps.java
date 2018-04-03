@@ -47,8 +47,8 @@ public class SaksoffSteps {
 		String qvImage = qv.substring(qv.indexOf("saksoff5th") + 11, qv.indexOf("_"));
 		String pdpImage = pdp.substring(pdp.indexOf("saksoff5th") + 11);
 		
-		System.out.println("qv image = " + qv);
-		System.out.println("pdp image = " + pdp);
+		System.out.println("qv image = " + qvImage);
+		System.out.println("pdp image = " + pdpImage);
 		
 		boolean status = false;
 		if (qvImage.equals(pdpImage))

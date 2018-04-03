@@ -1,5 +1,5 @@
 Meta:
-@ReportName Saksoff
+@ReportName Saks Fifth Avenue
 
 Scenario:  TC06_Saksoff_Add_Multiple_Products_To_Cart_From_Different_Categories_And_Verify_Sum_Is_Correct
 

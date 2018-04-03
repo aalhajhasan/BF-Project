@@ -1,5 +1,5 @@
 Meta:
-@ReportName Saksoff
+@ReportName Saks Fifth Avenue
 
 Scenario:  TC04_Saksoff_Verify_Cart_PorductName_And_Price
 
