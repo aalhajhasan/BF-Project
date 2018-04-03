@@ -29,14 +29,12 @@ public class JcrewSteps {
 		
 		try
 		{
-			if (element.equals("jcrewProducts"))
-			{
-				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
-			    {
-				   System.out.println("valid PLP");
-			    }
-			}
-	        else 
+			
+		   if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 1)
+			 {
+				 System.out.println("valid PLP");
+			 }
+	       else 
 	        {
 	        	randomclick("jcrewTopNav");
 	        	randomclick("jcrewSales");

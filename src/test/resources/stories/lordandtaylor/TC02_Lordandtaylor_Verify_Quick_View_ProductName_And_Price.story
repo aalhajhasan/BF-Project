@@ -1,3 +1,5 @@
+Meta:
+@ReportName LordandTaylor
 
 Scenario:  TC02_Lordandtaylor_Verify_Quick_View_ProductName_And_Price
 

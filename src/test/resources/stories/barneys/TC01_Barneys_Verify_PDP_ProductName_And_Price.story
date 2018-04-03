@@ -1,3 +1,5 @@
+Meta:
+@ReportName Barneys
 
 Scenario:  TC01_Barneys_Verify_PDP_ProductName_And_Price
 

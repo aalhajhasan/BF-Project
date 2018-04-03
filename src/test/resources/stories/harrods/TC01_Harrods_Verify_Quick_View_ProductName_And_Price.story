@@ -1,3 +1,5 @@
+Meta:
+@ReportName Harrods
 
 Scenario:  TC01_Harrods_Verify_Quick_View_ProductName_And_Price
 

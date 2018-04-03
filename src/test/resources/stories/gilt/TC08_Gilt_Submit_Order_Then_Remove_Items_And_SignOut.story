@@ -1,3 +1,5 @@
+Meta:
+@ReportName Gilt
 
 Scenario: TC08_Gilt_Submit_Order_Then_Remove_Items_And_SignOut
 

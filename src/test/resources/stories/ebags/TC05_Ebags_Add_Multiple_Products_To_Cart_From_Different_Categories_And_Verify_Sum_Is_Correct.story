@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ebags
 
 Scenario:  TC05_Ebags_Add_Multiple_Products_To_Cart_From_Different_Categories_And_Verify_Sum_Is_Correct
 

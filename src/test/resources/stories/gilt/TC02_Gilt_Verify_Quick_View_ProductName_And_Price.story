@@ -1,3 +1,5 @@
+Meta:
+@ReportName Gilt
 
 Scenario: TC02_Gilt_Verify_Quick_View_ProductName&_And_Price
 

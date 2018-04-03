@@ -1,3 +1,5 @@
+Meta:
+@ReportName Gilt
 
 Scenario: TC01_Gilt_Login
 

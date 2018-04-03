@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ruelala
 
 Scenario:  TC02_Ruelala_Verify_PDP_ProductName_And_Price
 

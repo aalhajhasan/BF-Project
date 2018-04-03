@@ -1,3 +1,5 @@
+Meta:
+@ReportName LordandTaylor
 
 Scenario:  TC07_Lordandtaylor_Verify_All_Checkout_Test_Cases
 

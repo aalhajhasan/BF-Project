@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ruelala
 
 Scenario:  TC04_Ruelala_Verify_price_correctness_after_updating_item_QTY
 

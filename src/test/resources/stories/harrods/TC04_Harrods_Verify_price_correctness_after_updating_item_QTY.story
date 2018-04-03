@@ -1,3 +1,5 @@
+Meta:
+@ReportName Harrods
 
 Scenario:  TC04_Harrods_Verify_price_correctness_after_updating_item_QTY
 

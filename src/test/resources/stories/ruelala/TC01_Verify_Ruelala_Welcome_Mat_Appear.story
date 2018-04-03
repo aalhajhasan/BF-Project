@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ruelala
 
 Scenario:  TC01_Verify_Ruelala_Welcome_Mat_Appear
 

@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ebags
 
 Scenario:  TC01_Verify_Ebags_Welcome_Mat_Appear
 

@@ -1,3 +1,5 @@
+Meta:
+@ReportName Saksoff
 
 Scenario:  TC04_Saksoff_Verify_Cart_PorductName_And_Price
 

@@ -1,3 +1,5 @@
+Meta:
+@ReportName Saksoff
 
 Scenario:  TC01_Saksoff_Verify_Welcome_Mat_Appear
 

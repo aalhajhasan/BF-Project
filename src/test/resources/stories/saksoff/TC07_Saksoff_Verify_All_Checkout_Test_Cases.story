@@ -1,3 +1,5 @@
+Meta:
+@ReportName Saksoff
 
 Scenario:  TC07_Saksoff_Verify_All_Checkout_Test_Cases
 

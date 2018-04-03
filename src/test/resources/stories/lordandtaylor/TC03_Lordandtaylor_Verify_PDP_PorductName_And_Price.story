@@ -1,3 +1,5 @@
+Meta:
+@ReportName LordandTaylor
 
 Scenario:  TC03_Lordandtaylor_Verify_PDP_PorductName_And_Price
 

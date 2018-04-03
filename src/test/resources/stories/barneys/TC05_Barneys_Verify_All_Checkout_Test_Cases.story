@@ -1,3 +1,5 @@
+Meta:
+@ReportName Barneys
 
 Scenario:  TC05_Barneys_Verify_All_Checkout_Test_Cases
 

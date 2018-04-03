@@ -1,3 +1,5 @@
+Meta:
+@ReportName Harrods
 
 Scenario:  TC02_Harrods_Verify_PDP_PorductName_And_Price
 

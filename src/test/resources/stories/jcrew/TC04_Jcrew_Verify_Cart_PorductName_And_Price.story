@@ -1,3 +1,5 @@
+Meta:
+@ReportName Jcrew
 
 Scenario:  TC04_Jcrew_Verify_Cart_PorductName_And_Price
 

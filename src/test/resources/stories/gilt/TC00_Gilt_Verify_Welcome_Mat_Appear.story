@@ -1,3 +1,6 @@
+Meta:
+@ReportName Gilt
+
 Scenario:  TC00_Gilt_Verify_Welcome_Mat_Appear
 
 Given [1000-9130] Clear cache and cookies

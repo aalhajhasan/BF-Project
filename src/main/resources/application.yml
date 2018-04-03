@@ -14,6 +14,7 @@ aspire:
         enabled: true   
         include: 
            - stories/jcrew/**.story
+           - stories/lordandtaylor/**.story
           #- 
           
           

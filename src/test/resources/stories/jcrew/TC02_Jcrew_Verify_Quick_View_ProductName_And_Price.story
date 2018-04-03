@@ -1,3 +1,5 @@
+Meta:
+@ReportName Jcrew
 
 Scenario:  TC02_Jcrew_Verify_Quick_View_ProductName_And_Price
 

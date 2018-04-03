@@ -1,3 +1,5 @@
+Meta:
+@ReportName Saksoff
 
 Scenario:  TC05_Saksoff_Verify_price_correctness_after_updating_item_QTY
 

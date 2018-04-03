@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ebags
 
 Scenario:  TC02_Ebags_Verify_PDP_ProductName_And_Price
 

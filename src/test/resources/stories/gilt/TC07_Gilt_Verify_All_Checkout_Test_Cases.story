@@ -1,3 +1,5 @@
+Meta:
+@ReportName Gilt
 
 Scenario: TC07_Gilt_Verify_All_Checkout_Test_Cases
 

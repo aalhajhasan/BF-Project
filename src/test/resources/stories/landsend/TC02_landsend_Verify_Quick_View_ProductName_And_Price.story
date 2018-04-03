@@ -1,3 +1,5 @@
+Meta:
+@ReportName Landsend
 
 Scenario:  TC02_landsend_Verify_Quick_View_ProductName_And_Price
 

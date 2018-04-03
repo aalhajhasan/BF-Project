@@ -1,3 +1,5 @@
+Meta:
+@ReportName LordandTaylor
 
 Scenario:  TC05_Lordandtaylor_Verify_price_correctness_after_updating_item_QTY
 

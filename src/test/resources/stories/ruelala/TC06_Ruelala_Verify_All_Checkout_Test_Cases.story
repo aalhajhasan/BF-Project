@@ -1,3 +1,5 @@
+Meta:
+@ReportName Ruelala
 
 Scenario:  TC06_Ruelala_Verify_All_Checkout_Test_Cases
 

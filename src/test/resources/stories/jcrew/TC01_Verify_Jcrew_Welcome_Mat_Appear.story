@@ -1,3 +1,5 @@
+Meta:
+@ReportName Jcrew
 
 Scenario:  TC01_Verify_Jcrew_Welcome_Mat_Appear
 

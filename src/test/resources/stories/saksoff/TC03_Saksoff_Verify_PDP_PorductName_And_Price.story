@@ -1,3 +1,5 @@
+Meta:
+@ReportName Saksoff
 
 Scenario:  TC03_Saksoff_Verify_PDP_PorductName_And_Price
 

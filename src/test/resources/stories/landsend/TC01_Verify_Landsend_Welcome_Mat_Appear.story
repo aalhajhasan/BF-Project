@@ -1,3 +1,5 @@
+Meta:
+@ReportName Landsend
 
 Scenario:  TC01_Verify_Landsend_Welcome_Mat_Appear
 

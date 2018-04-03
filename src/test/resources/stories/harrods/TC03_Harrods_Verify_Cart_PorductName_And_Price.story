@@ -1,3 +1,5 @@
+Meta:
+@ReportName Harrods
 
 Scenario:  TC03_Harrods_Verify_Cart_PorductName_And_Price
 

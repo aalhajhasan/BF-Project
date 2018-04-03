@@ -1,3 +1,5 @@
+Meta:
+@ReportName Jcrew
 
 Scenario: TC03_Jcrew_Verify_PDP_PorductName_And_Price
 
