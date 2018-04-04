@@ -15,10 +15,8 @@ And [1100-1400] Execute `click` javascript on quickShop
 And [1111-1080] quickShopDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the quickShopViewFullDetails
 And [1111-1080] itemDetailsPage should be displayed, Within 120 seconds
-And [1200-1302-S] For any element from itemColors
-And [1100-0400] Execute `click` javascript on the element
-And [1200-1302-S] For any element from itemSizes
-And [1100-0400] Execute `click` javascript on the element
+And [8010-0007] user randomly select an available itemColors
+And [8010-0007] user randomly select an available itemSizes
 And [1100-1300] User clicks on the itemAddToBag
 And [1111-1080] bagDialog should be displayed, Within 120 seconds
 Then [1100-1300] User clicks on the bagChceckout

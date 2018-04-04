@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 
 import com.aspire.automation.annotation.Steps;
@@ -112,7 +113,25 @@ public class UnderarmourSteps {
 	}
 	
 	
-	
+	@When("[8011-0006] user randomly select an available $element")
+	public void randomselect(String element)
+	{
+		try
+		{
+			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				randomclick(element);
+			}
+			else
+			{
+				System.out.println("Items Not Found");
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	

@@ -4,8 +4,7 @@ Meta:
 Scenario:  TC03_Ebags_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] pdpProductPage should be displayed
-When [1200-1302-S] For any element from availableColor
-And [1100-0300-S] User click on it
+When [8006-0009] user randomly select an available color
 And [1101-1181] the user saves ebagsPdpPrice text in global scope under name pdpPrice
 And [1101-1181] the user saves ebagsPdpName text in global scope under name pdpName
 And [1100-1300] User clicks on the addToCartButton

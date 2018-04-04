@@ -46,8 +46,8 @@ public interface BarneysPage {
 	@CssSelector("${pages.barneys.pdpImage}")
 	public AspireWebElement pdpImage();
 	
-	@CssSelector("${pages.barneys.availableSize}")
-	public AspireWebElements availableSize();
+	@CssSelector("${pages.barneys.size}")
+	public AspireWebElements size();
 	
 	@CssSelector("${pages.barneys.addToBagButton}")
 	public AspireWebElement addToBagButton();
@@ -178,7 +178,8 @@ public interface BarneysPage {
 	@CssSelector("${pages.barneys.errorMessage}")
 	public AspireWebElement errorMessage();
 	
-	
+	@CssSelector("${pages.barneys.shippingPage}")
+	public AspireWebElement shippingPage();
 	
 	
 }

@@ -150,7 +150,25 @@ public class JcrewSteps {
 	
 	
 	
-	
+	@When("[8010-0007] user randomly select an available $element")
+	public void randomselect(String element)
+	{
+		try
+		{
+			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				randomclick(element);
+			}
+			else
+			{
+				System.out.println("Items Not Found");
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	

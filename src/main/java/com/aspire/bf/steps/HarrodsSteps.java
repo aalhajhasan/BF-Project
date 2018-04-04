@@ -180,6 +180,30 @@ public class HarrodsSteps {
 		
 	}
 	
+	
+	@When("[8001-0007] user randomly select an available $element")
+	public void randomselect(String element)
+	{
+		try
+		{
+			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				randomclick(element);
+			}
+			else
+			{
+				System.out.println("Items Not Found");
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
+	
+	
+	
+	
 	public double convert(String element)  //Isolate numbers from text
 	{   double result = 0;
 		String value = element.replace(",", "");

@@ -5,8 +5,7 @@ Scenario:  TC03_Ruelala_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] ruelalaPDP should be displayed
 When [8007-0002] user search for validPDP
-And [1200-1302-S] For any element from sizes
-And [1100-0300-S] User click on it
+And [8007-0006] user randomly select an available sizes
 And [1101-1181] the user saves pdpPrice text in global scope under name pdpPrice
 And [1101-1181] the user saves pdpName text in global scope under name pdpName
 And [1100-1300] User clicks on the addToBagButton

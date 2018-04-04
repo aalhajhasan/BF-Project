@@ -209,7 +209,25 @@ public class SaksSteps {
 		
 	}
 	
-	
+	@When("[8002-0009] user randomly select an available $element")
+	public void randomselect(String element)
+	{
+		try
+		{
+			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				randomclick(element);
+			}
+			else
+			{
+				System.out.println("Items Not Found");
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	public double convert(String element)   //Isolate numbers from text

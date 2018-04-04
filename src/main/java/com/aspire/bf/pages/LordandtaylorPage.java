@@ -60,11 +60,11 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.pdpProductName}")
 	public AspireWebElement pdpProductName();
 	
-	@CssSelector("${pages.lordandtaylor.availableColor}")
-	public AspireWebElements availableColor();
+	@CssSelector("${pages.lordandtaylor.color}")
+	public AspireWebElements color();
 	
-	@CssSelector("${pages.lordandtaylor.availableSKU}")
-	public AspireWebElements availableSKU();
+	@CssSelector("${pages.lordandtaylor.sku}")
+	public AspireWebElements sku();
 	
 	@CssSelector("${pages.lordandtaylor.addToBagButton}")
 	public AspireWebElement addToBagButton();

@@ -4,8 +4,7 @@ Meta:
 Scenario:  TC02_Barneys_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] barneysPdp should be displayed
-When [1200-1302-S] For any element from availableSize
-And [1100-0300-S] User click on it
+When [8008-0006] user randomly select an available size
 And [1111-1080] addToBagButton should be displayed, Within 120 seconds
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] myBagDialog should be displayed, Within 120 seconds

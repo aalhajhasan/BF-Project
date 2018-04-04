@@ -79,8 +79,8 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.productSKUSelection}")
 	public AspireWebElements productSKUSelection();
 	
-	@CssSelector("${pages.saks.availableSKU}")
-	public AspireWebElements availableSKU();
+	@CssSelector("${pages.saks.sku}")
+	public AspireWebElements sku();
 	
 	@CssSelector("${pages.saks.bagCloseButton}")
 	public AspireWebElement bagCloseButton();
@@ -98,8 +98,8 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.saksBagPage}")
 	public AspireWebElement saksBagPage();
 	
-	@CssSelector("${pages.saks.availableColor}")
-	public AspireWebElements availableColor();
+	@CssSelector("${pages.saks.color}")
+	public AspireWebElements color();
 	
 	@CssSelector("${pages.saks.bagProductOnePrice}")
 	public AspireWebElement bagProductOnePrice();

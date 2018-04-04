@@ -160,7 +160,25 @@ public class RuelalaSteps {
 	
 	
 	
-	
+	@When("[8007-0006] user randomly select an available $element")
+	public void randomselect(String element)
+	{
+		try
+		{
+			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				randomclick(element);
+			}
+			else
+			{
+				System.out.println("Items Not Found");
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	

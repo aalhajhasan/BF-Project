@@ -4,9 +4,8 @@ Meta:
 Scenario:  TC04_Lordandtaylor_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] pdpProductPage should be displayed
-When [1200-1302-S] For any element from availableColor
-And [1100-0300-S] User click on it
-And [1200-1302-S] For any element from availableSKU
+When [8009-0006] user randomly select an available color
+And [8009-0006] user randomly select an available sku
 And [1100-0300-S] User click on it
 And [1100-1300] User clicks on the addToBagButton
 And [1111-1080] shoppingBag should be displayed, Within 120 seconds

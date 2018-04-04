@@ -12,10 +12,8 @@ And [1200-1302] For any element from saksoffProducts
 And [1100-0300] User click on it
 And [8003-0003] user search for productSKUSelection
 And [8003-0003] user search for validPdp
-!-- And [1200-1302-S] For any element from availableColor
-!-- And [1100-0300-S] User click on it
-And [1200-1302-S] For any element from availableSKU
-And [1100-0300-S] User click on it
+And [8003-0009] user randomly select an available color
+And [8003-0009] user randomly select an available sku
 And [1100-1300] User clicks on the addToBagButton
 And [1111-1080] shoppingBag should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the bagCheckoutButton

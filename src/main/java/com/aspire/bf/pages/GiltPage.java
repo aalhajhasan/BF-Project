@@ -95,8 +95,8 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.pdpProductName}")
 	public AspireWebElement pdpProductName();
 	
-	@CssSelector("${pages.gilt.availableSKU}")
-	public AspireWebElements availableSKU();
+	@CssSelector("${pages.gilt.sku}")
+	public AspireWebElements sku();
 	
 	@CssSelector("${pages.gilt.addToCartButton}")
 	public AspireWebElement addToCartButton();
@@ -268,5 +268,15 @@ public interface GiltPage {
 	
 	@CssSelector("${pages.gilt.cartImage}")
 	public AspireWebElement cartImage();
+	
+	@CssSelector("${pages.gilt.surveyDialog}")
+	public AspireWebElement surveyDialog();
+	
+	@CssSelector("${pages.gilt.closeSurveyDialog}")
+	public AspireWebElement closeSurveyDialog();
+	
+	@CssSelector("${pages.gilt.plpImage}")
+	public AspireWebElement plpImage();
+	
 
 }

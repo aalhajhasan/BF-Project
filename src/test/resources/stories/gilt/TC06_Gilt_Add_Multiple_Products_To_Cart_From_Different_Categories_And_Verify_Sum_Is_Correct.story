@@ -14,8 +14,7 @@ And [1211-1080] products should be all displayed, Within 120 seconds
 And [1200-1302] For any element from products
 And [1100-0300] User click on it
 And [1111-1080] pdpPage should be displayed, Within 120 seconds
-And [1200-1302-S] For any element from availableSKU
-And [1100-0300-S] User click on it
+And [8000-0007] user randomly select an available sku
 And [1100-1300] User clicks on the addToCartButton
 And [1111-1080] cartDialog should be displayed, Within 120 seconds
 And [1101-1184] the user saves cartProductOnePrice text in scenario scope under name ProductOnePrice

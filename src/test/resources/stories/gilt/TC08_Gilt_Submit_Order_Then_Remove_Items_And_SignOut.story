@@ -9,10 +9,10 @@ Then [1101-1102] submitError text is equal to `submitErrorMessage` case sensitiv
 And [1100-1300] User clicks on the continueShoppingLink
 And [1100-1300] User clicks on the cartIcon
 And [1200-1302-S] For any element from cartRemoveProduct
-And [1100-0300-S] User click on it
+And [1100-0400-S] Execute `click` javascript on the element
 And [1100-1300] User clicks on the cartRemoveProduct
 And [1101-1080] cartContinueShoppingButton should be displayed
-And [1100-0300] User click on it
+And [1100-0400-S] Execute `click` javascript on the element
 And [1100-1300] User clicks on the accountIcon
 And [1100-1300] User clicks on the signOutLink
 Then [1111-1080] registerLink should be displayed, Within 120 seconds

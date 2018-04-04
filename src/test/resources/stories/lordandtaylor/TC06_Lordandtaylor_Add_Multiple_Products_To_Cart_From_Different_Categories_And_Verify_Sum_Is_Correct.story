@@ -11,10 +11,8 @@ And [1211-1080] lordandtaylorProducts should be all displayed, Within 120 second
 And [1200-1302] For any element from lordandtaylorProducts
 And [1100-0300] User click on it
 And [1111-1080] pdpProductPage should be displayed, Within 120 seconds
-And [1200-1302-S] For any element from availableColor
-And [1100-0300-S] User click on it
-And [1200-1302-S] For any element from availableSKU
-And [1100-0300-S] User click on it
+And [8009-0006] user randomly select an available color
+And [8009-0006] user randomly select an available sku
 And [1100-1300] User clicks on the addToBagButton
 And [1111-1080] shoppingBag should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the viewMyBag

@@ -4,10 +4,8 @@ Meta:
 Scenario:  TC03_Underarmour_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] pdpItemPage should be displayed
-When [1200-1302-S] For any element from itemColors
-And [1100-0300-S] User click on it
-And [1200-1302-S] For any element from itemSizes
-And [1100-0300-S] User click on it
+When [8011-0006] user randomly select an available itemColors
+And [8011-0006] user randomly select an available itemSizes
 And [1100-1300] User clicks on the addToBag
 And [1111-1080] bagDialog should be displayed, Within 120 seconds
 And [1101-1140] bagItemName text should contain `plpItemName`

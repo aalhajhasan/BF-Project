@@ -1,6 +1,8 @@
 package com.aspire.bf.steps;
 
 import java.util.Map;
+
+import org.openqa.selenium.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.configurations.TestEventListener;
@@ -25,7 +27,7 @@ public class Mylistener implements TestEventListener {
                 String stepName) {
             
     		
-    		/*AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
+    		AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
     		
             boolean dialogstatus = false;
             if (dialogstatus)
@@ -34,14 +36,35 @@ public class Mylistener implements TestEventListener {
             }
             else 
             {
-            	 if (AspireBrowser.getElementByPropertyNameGlobaly("loveRuelal").isDisplayed())
-                   {
-            		 AspireBrowser.getElementByPropertyNameGlobaly("loveRuelalaClose").click();
-            		 dialogstatus = true;
-                   }
+            	System.out.println("dialog status = " + dialogstatus);
+            	try
+            	{
+            		if (AspireBrowser.getElementByPropertyNameGlobaly("loveRuelal").isDisplayed())
+                    {
+             		 AspireBrowser.getElementByPropertyNameGlobaly("loveRuelalaClose").click();
+             		 dialogstatus = true;
+                    }
+             	  
+            	}
+            	catch (NoSuchElementException e)
+        		{
+        			System.out.println("Catch");
+        			try
+        			{
+        				if (AspireBrowser.getElementByPropertyNameGlobaly("surveyDialog").isDisplayed()) 
+                 	    {
+                 		 AspireBrowser.getElementByPropertyNameGlobaly("closeSurveyDialog").click();
+                 		 dialogstatus = true;
+                 	     }
+        			}
+        			catch (NoSuchElementException x)
+        			{
+        				System.out.println("Catch");
+        			}
+        		}
             }
            
-            aspireBrowserState.setLastAccessedElement(lastelement);*/
+            aspireBrowserState.setLastAccessedElement(lastelement);
         }
 }
 

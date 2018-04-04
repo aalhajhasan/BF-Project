@@ -77,11 +77,11 @@ public interface SaksoffPage {
 	@CssSelector("${pages.saksoff.validPdp}")
 	public AspireWebElements validPdp();
 	
-	@CssSelector("${pages.saksoff.availableColor}")
-	public AspireWebElements availableColor();
+	@CssSelector("${pages.saksoff.color}")
+	public AspireWebElements color();
 	
-	@CssSelector("${pages.saksoff.availableSKU}")
-	public AspireWebElements availableSKU();
+	@CssSelector("${pages.saksoff.sku}")
+	public AspireWebElements sku();
 	
 	@CssSelector("${pages.saksoff.addToBagButton}")
 	public AspireWebElement addToBagButton();

@@ -41,8 +41,8 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.pdpImage}")
 	public AspireWebElement pdpImage();
 	
-	@CssSelector("${pages.ebags.availableColor}")
-	public AspireWebElements availableColor();
+	@CssSelector("${pages.ebags.color}")
+	public AspireWebElements color();
 	
 	@CssSelector("${pages.ebags.ebagsPdpPrice}")
 	public AspireWebElement ebagsPdpPrice();

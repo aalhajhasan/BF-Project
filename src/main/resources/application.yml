@@ -13,17 +13,17 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/barneys/**.story
-           - stories/ebags/**.story
+           #- stories/barneys/**.story
+           #- stories/ebags/**.story
            - stories/gilt/**.story
-           - stories/harrods/**.story
-           - stories/jcrew/**.story
-           - stories/lordandtaylor/**.story
-           - stories/ruelala/**.story
-           - stories/saks/**.story
-           - stories/saksoff/**.story
-           - stories/underarmour/**.story
-          #- 
+           #- stories/harrods/**.story
+           #- stories/jcrew/**.story
+           #- stories/lordandtaylor/**.story
+           #- stories/ruelala/**.story
+           #- stories/saks/**.story
+           #- stories/saksoff/**.story
+           #- stories/underarmour/**.story
+           #- 
           
           
 

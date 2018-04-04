@@ -1,9 +1,9 @@
 aspire:
  dashboard:
     integration:
-      enabled: true
-      host: 172.17.100.33
-      port: 5070
+      enabled: false
+      host: 82.212.71.230
+      port: 5080
       path: api
       protocol: http
       logLevel: FULL

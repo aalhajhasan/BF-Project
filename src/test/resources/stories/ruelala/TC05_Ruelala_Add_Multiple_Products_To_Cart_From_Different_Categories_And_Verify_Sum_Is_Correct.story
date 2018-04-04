@@ -14,8 +14,7 @@ And [1211-1080] ruelalaPLP should be all displayed, Within 120 seconds
 And [1200-1302] For any element from ruelalaPLP
 And [1100-0300] User click on it
 And [8007-0002] user search for validPDP
-And [1200-1302-S] For any element from sizes
-And [1100-0300-S] User click on it
+And [8007-0006] user randomly select an available sizes
 And [1100-1300] User clicks on the addToBagButton
 And [1111-1080] ruelalaBagPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves bagProductOnePrice text in global scope under name firstPrice

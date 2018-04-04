@@ -10,6 +10,7 @@ And [1100-0300] User click on it
 And [1111-1080] registerDialog should be displayed, Within 120 seconds
 And [1100-1340] User fills registerEmailSection with `newUser`
 And [1100-1300] User clicks on the shopNowButton
+And [1111-1080] registerPasswordSection should be displayed, Within 120 seconds
 And [1100-1340] User fills registerPasswordSection with `newPassword`
 And [1100-1300] User clicks on the genderMale
 And [1100-1400] Execute `click` javascript on submitButton

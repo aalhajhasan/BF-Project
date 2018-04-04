@@ -12,10 +12,8 @@ And [1111-1080] underarmourPlp should be displayed, Within 120 seconds
 And [1200-1302] For any element from plpItems
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] pdpItemPage should be displayed, Within 120 seconds
-And [1200-1302-S] For any element from itemColors
-And [1100-0300-S] User click on it
-And [1200-1302-S] For any element from itemSizes
-And [1100-0300-S] User click on it
+And [8011-0006] user randomly select an available itemColors
+And [8011-0006] user randomly select an available itemSizes
 And [1100-1300] User clicks on the addToBag
 And [1111-1080] bagDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the bagAndCheckout

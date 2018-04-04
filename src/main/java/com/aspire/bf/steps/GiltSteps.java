@@ -102,7 +102,6 @@ public class GiltSteps {
 			{
 				randomclick("topNavStore");
 				randomclick("sales");
-				randomclick("products");
 				search(element);
 			}
 		}
@@ -116,10 +115,15 @@ public class GiltSteps {
 	@Then("[8000-0006] user compare between $elementOne , $elementTwo , $elementThree and $elementFour")
 	public boolean imagecompare(String plp , String qv , String pdp , String cart)
 	{
-		String plpImage = plp.substring(plp.indexOf("uploads"), plp.indexOf(","));
-		String qvImage = qv.substring(qv.indexOf("uploads"), qv.indexOf(".jpg")-3);
-		String pdpImage = pdp.substring(pdp.indexOf("uploads"), pdp.indexOf(".jpg")-3);
-		String cartImage = cart.substring(cart.indexOf("uploads"), cart.indexOf(".jpg")-7);
+		String plpImage = plp.substring(plp.indexOf("uploads") + 8 , plp.indexOf(".jpg") - 8);
+		String qvImage = qv.substring(qv.indexOf("uploads") + 8 , qv.indexOf(".jpg") - 3);
+		String pdpImage = pdp.substring(pdp.indexOf("uploads") + 8, pdp.indexOf(".jpg") - 3);
+		String cartImage = cart.substring(cart.indexOf("uploads") + 8, cart.indexOf(".jpg") - 7);
+		
+		System.out.println("plp Image = " + plpImage);
+		System.out.println("qv Image = " + qvImage);
+		System.out.println("pdp Image = " + pdpImage);
+		System.out.println("cart Image = " + cartImage);
 		
 		boolean status = false;
 		if (plpImage.equals(qvImage))
@@ -149,7 +153,25 @@ public class GiltSteps {
 		
 	}
 	
-	
+	@When("[8000-0007] user randomly select an available $element")
+	public void randomselect(String element)
+	{
+		try
+		{
+			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				randomclick(element);
+			}
+			else
+			{
+				System.out.println("Items Not Found");
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	public double convert(String element)   //Isolate numbers from text

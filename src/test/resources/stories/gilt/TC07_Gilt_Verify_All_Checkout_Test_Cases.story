@@ -12,8 +12,6 @@ And [1101-1080] giltLogo should be displayed
 And [1100-1321] User scroll to the promoSection then click it
 Then [1101-1080] promoCodeField should be displayed
 And [1100-1320] User scroll to the checkoutHeader
-And [1101-1080] shippingCharge should be displayed
-And [1101-1080] dutiesCharge should be displayed
 And [1100-1300-S] User clicks on the removeDiscount
 And [1101-1184] the user saves subTotal text in scenario scope under name subTotalValue
 And [1101-1184] the user saves vat text in scenario scope under name vatValue
