@@ -11,5 +11,5 @@ And [1100-1300] User clicks on the ebagsAddToCartButton
 And [1111-1080] ebagsQuickView should be displayed, Within 120 seconds
 And [1101-1181] the user saves ebagsQVPrice text in global scope under name ebagsQVPrice
 And [1101-1181] the user saves ebagsQVName text in global scope under name ebagsQVName
-Then [1101-1100] `ebagsQVName` text should equal to `ebagsPdpName`
+Then [1101-1100] ebagsQVName text should equal to `ebagsPdpName`
 And [8006-0002] User compare between `ebagsPdpPrice` and `ebagsQVPrice`

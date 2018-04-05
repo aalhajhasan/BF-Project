@@ -203,8 +203,8 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.giltZipCodeSection}")
 	public AspireWebElement giltZipCodeSection();
 	
-	@CssSelector("${pages.gilt.phoneSection}")
-	public AspireWebElement phoneSection();
+	@CssSelector("${pages.gilt.giltPhoneSection}")
+	public AspireWebElement giltPhoneSection();
 	
 	@CssSelector("${pages.gilt.giltChangePaymentMethod}")
 	public AspireWebElement giltChangePaymentMethod();

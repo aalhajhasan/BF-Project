@@ -15,8 +15,8 @@ aspire:
         include: 
            #- stories/barneys/**.story
            - stories/ebags/**.story
-           #- stories/gilt/**.story
-           #- stories/harrods/**.story
+           - stories/gilt/**.story
+           - stories/harrods/**.story
            #- stories/jcrew/**.story
            #- stories/lordandtaylor/**.story
            #- stories/ruelala/**.story
