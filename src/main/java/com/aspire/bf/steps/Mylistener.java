@@ -51,19 +51,33 @@ public class Mylistener implements TestEventListener {
         			System.out.println("Catch");
         			try
         			{
-        				if (AspireBrowser.getElementByPropertyNameGlobaly("surveyDialog").isDisplayed()) 
+                		if(AspireBrowser.getElementByPropertyNameGlobaly("giltSurveyDialog").isDisplayed()) 
                  	    {
-                 		 AspireBrowser.getElementByPropertyNameGlobaly("closeSurveyDialog").click();
+                 		 AspireBrowser.getElementByPropertyNameGlobaly("giltCloseSurveyDialog").click();
                  		 dialogstatus = true;
                  	     }
         			}
-        			catch (NoSuchElementException x)
+        			catch (NoSuchElementException e1)
         			{
-        				System.out.println("Catch");
+        				try
+        				{
+        					if (AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackDialog").isDisplayed())
+                     	    {
+                     		 AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackClose").click();
+                     		 dialogstatus = true;
+                     	     }
+        				}
+        				catch (NoSuchElementException e2)
+        				{
+        					
+        				}
         			}
         		}
             }
            
+            
+            
+            
             aspireBrowserState.setLastAccessedElement(lastelement);
         }
 }

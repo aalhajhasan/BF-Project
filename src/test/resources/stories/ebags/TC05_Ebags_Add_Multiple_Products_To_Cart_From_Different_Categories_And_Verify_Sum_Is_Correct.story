@@ -10,11 +10,11 @@ And [8006-0001] user search for ebagsProducts
 And [1211-1080] ebagsProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from ebagsProducts
 And [1100-0360] User move mouse to it
-And [1100-1400] Execute `click` javascript on itemCart
+And [1100-1400] Execute `click` javascript on ebagsItemCart
 And [1111-1080] ebagsQuickView should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the viewCartLink
+And [1100-1300] User clicks on the ebagsViewCartLink
 And [1111-1080] ebagsCartPage should be displayed, Within 120 seconds
-And [1101-1184] the user saves bagProductOnePrice text in scenario scope under name ProductOnePrice
-And [1101-1184] the user saves bagProductTwoPrice text in scenario scope under name ProductTwoPrice
-And [1101-1184] the user saves bagSubTotalPrice text in scenario scope under name ProductTotalPrice
-Then [8006-0007] the user check the sum of `ProductOnePrice` and `ProductTwoPrice` with `ProductTotalPrice`
+And [1101-1184] the user saves ebagsBagProductOnePrice text in scenario scope under name ebagsBagProductOnePrice
+And [1101-1184] the user saves ebagsBagProductTwoPrice text in scenario scope under name ebagsBagProductTwoPrice
+And [1101-1184] the user saves ebagsBagSubTotalPrice text in scenario scope under name ebagsBagSubTotalPrice
+Then [8006-0007] the user check the sum of `ebagsBagProductOnePrice` and `ebagsBagProductTwoPrice` with `ebagsBagSubTotalPrice`

@@ -8,137 +8,137 @@ import com.aspire.automation.web.util.annotation.Page;
 @Page(name = "gilt", url = "${pages.gilt.gilturl}")
 public interface GiltPage {
 
-	@CssSelector("${pages.gilt.registerLink}")
-	public AspireWebElement registerLink();
+	@CssSelector("${pages.gilt.giltRegisterLink}")
+	public AspireWebElement giltRegisterLink();
 	
-	@CssSelector("${pages.gilt.loginDialog}")
-	public AspireWebElement loginDialog();
+	@CssSelector("${pages.gilt.giltLoginDialog}")
+	public AspireWebElement giltLoginDialog();
 	
-	@CssSelector("${pages.gilt.registerDialog}")
-	public AspireWebElement registerDialog();
+	@CssSelector("${pages.gilt.giltRegisterDialog}")
+	public AspireWebElement giltRegisterDialog();
 	
-	@CssSelector("${pages.gilt.registerEmailSection}")
-	public AspireWebElement registerEmailSection();
+	@CssSelector("${pages.gilt.giltRegisterEmailSection}")
+	public AspireWebElement giltRegisterEmailSection();
 	
-	@CssSelector("${pages.gilt.shopNowButton}")
-	public AspireWebElement shopNowButton();
+	@CssSelector("${pages.gilt.giltShopNowButton}")
+	public AspireWebElement giltShopNowButton();
 	
-	@CssSelector("${pages.gilt.registerPasswordSection}")
-	public AspireWebElement registerPasswordSection();
+	@CssSelector("${pages.gilt.giltRegisterPasswordSection}")
+	public AspireWebElement giltRegisterPasswordSection();
 	
-	@CssSelector("${pages.gilt.genderMale}")
-	public AspireWebElement genderMale();
+	@CssSelector("${pages.gilt.giltGenderMale}")
+	public AspireWebElement giltGenderMale();
 	
-	@CssSelector("${pages.gilt.submitButton}")
-	public AspireWebElement submitButton();
+	@CssSelector("${pages.gilt.giltSubmitButton}")
+	public AspireWebElement giltSubmitButton();
 	
-	@CssSelector("${pages.gilt.welcomeDialog}")
-	public AspireWebElement welcomeDialog();
+	@CssSelector("${pages.gilt.giltWelcomeDialog}")
+	public AspireWebElement giltWelcomeDialog();
 	
-	@CssSelector("${pages.gilt.startShopping}")
-	public AspireWebElement startShopping();
+	@CssSelector("${pages.gilt.giltStartShopping}")
+	public AspireWebElement giltStartShopping();
 	
-	@CssSelector("${pages.gilt.accountIcon}")
-	public AspireWebElement accountIcon();
+	@CssSelector("${pages.gilt.giltAccountIcon}")
+	public AspireWebElement giltAccountIcon();
 	
-	@CssSelector("${pages.gilt.signOutLink}")
-	public AspireWebElement signOutLink();
+	@CssSelector("${pages.gilt.giltSignOutLink}")
+	public AspireWebElement giltSignOutLink();
 	
-	@CssSelector("${pages.gilt.signInLink}")
-	public AspireWebElement signInLink();
+	@CssSelector("${pages.gilt.giltSignInLink}")
+	public AspireWebElement giltSignInLink();
 	
-	@CssSelector("${pages.gilt.loginEmailSection}")
-	public AspireWebElement loginEmailSection();
+	@CssSelector("${pages.gilt.giltLoginEmailSection}")
+	public AspireWebElement giltLoginEmailSection();
 	
-	@CssSelector("${pages.gilt.loginPasswordSection}")
-	public AspireWebElement loginPasswordSection();
+	@CssSelector("${pages.gilt.giltLoginPasswordSection}")
+	public AspireWebElement giltLoginPasswordSection();
 	
-	@CssSelector("${pages.gilt.loginSubmitButton}")
-	public AspireWebElement loginSubmitButton();
+	@CssSelector("${pages.gilt.giltLoginSubmitButton}")
+	public AspireWebElement giltLoginSubmitButton();
 	
-	@CssSelector("${pages.gilt.topNavStore}")
-	public AspireWebElements topNavStore();
+	@CssSelector("${pages.gilt.giltTopNavStore}")
+	public AspireWebElements giltTopNavStore();
 	
-	@CssSelector("${pages.gilt.sales}")
-	public AspireWebElements sales();
+	@CssSelector("${pages.gilt.giltSales}")
+	public AspireWebElements giltSales();
 	
-	@CssSelector("${pages.gilt.products}")
-	public AspireWebElements products();
+	@CssSelector("${pages.gilt.giltProducts}")
+	public AspireWebElements giltProducts();
 	
-	@CssSelector("${pages.gilt.productName}")
-	public AspireWebElement productName();
+	@CssSelector("${pages.gilt.giltProductName}")
+	public AspireWebElement giltProductName();
 	
-	@CssSelector("${pages.gilt.productPrice}")
-	public AspireWebElement productPrice();
+	@CssSelector("${pages.gilt.giltProductPrice}")
+	public AspireWebElement giltProductPrice();
 	
-	@CssSelector("${pages.gilt.quickView}")
-	public AspireWebElement quickView();
+	@CssSelector("${pages.gilt.giltQuickView}")
+	public AspireWebElement giltQuickView();
 	
-	@CssSelector("${pages.gilt.quickViewDialog}")
-	public AspireWebElement quickViewDialog();
+	@CssSelector("${pages.gilt.giltQuickViewDialog}")
+	public AspireWebElement giltQuickViewDialog();
 	
-	@CssSelector("${pages.gilt.quickViewProductName}")
-	public AspireWebElement quickViewProductName();
+	@CssSelector("${pages.gilt.giltQuickViewProductName}")
+	public AspireWebElement giltQuickViewProductName();
 	
-	@CssSelector("${pages.gilt.quickViewProductPrice}")
-	public AspireWebElement quickViewProductPrice();
+	@CssSelector("${pages.gilt.giltQuickViewProductPrice}")
+	public AspireWebElement giltQuickViewProductPrice();
 	
-	@CssSelector("${pages.gilt.viewMoreDetails}")
-	public AspireWebElement viewMoreDetails();
+	@CssSelector("${pages.gilt.giltViewMoreDetails}")
+	public AspireWebElement giltViewMoreDetails();
 	
-	@CssSelector("${pages.gilt.pdpPage}")
-	public AspireWebElement pdpPage();
+	@CssSelector("${pages.gilt.giltPdpPage}")
+	public AspireWebElement giltPdpPage();
 	
-	@CssSelector("${pages.gilt.pdpProductPrice}")
-	public AspireWebElement pdpProductPrice();
+	@CssSelector("${pages.gilt.giltPdpProductPrice}")
+	public AspireWebElement giltPdpProductPrice();
 	
-	@CssSelector("${pages.gilt.pdpProductName}")
-	public AspireWebElement pdpProductName();
+	@CssSelector("${pages.gilt.giltPdpProductName}")
+	public AspireWebElement giltPdpProductName();
 	
-	@CssSelector("${pages.gilt.sku}")
-	public AspireWebElements sku();
+	@CssSelector("${pages.gilt.giltSku}")
+	public AspireWebElements giltSku();
 	
-	@CssSelector("${pages.gilt.addToCartButton}")
-	public AspireWebElement addToCartButton();
+	@CssSelector("${pages.gilt.giltAddToCartButton}")
+	public AspireWebElement giltAddToCartButton();
 	
-	@CssSelector("${pages.gilt.cartDialog}")
-	public AspireWebElement cartDialog();
+	@CssSelector("${pages.gilt.giltCartDialog}")
+	public AspireWebElement giltCartDialog();
 	
-	@CssSelector("${pages.gilt.cartProductPrice}")
-	public AspireWebElement cartProductPrice();
+	@CssSelector("${pages.gilt.giltCartProductPrice}")
+	public AspireWebElement giltCartProductPrice();
 	
-	@CssSelector("${pages.gilt.cartProductName}")
-	public AspireWebElement cartProductName();
+	@CssSelector("${pages.gilt.giltCartProductName}")
+	public AspireWebElement giltCartProductName();
 	
-	@CssSelector("${pages.gilt.cartQTY}")
-	public AspireWebElement cartQTY();
+	@CssSelector("${pages.gilt.giltCartQTY}")
+	public AspireWebElement giltCartQTY();
 	
-	@CssSelector("${pages.gilt.cartCloseButton}")
-	public AspireWebElement cartCloseButton();
+	@CssSelector("${pages.gilt.giltCartCloseButton}")
+	public AspireWebElement giltCartCloseButton();
 	
-	@CssSelector("${pages.gilt.cartProductOnePrice}")
-	public AspireWebElement cartProductOnePrice();
+	@CssSelector("${pages.gilt.giltCartProductOnePrice}")
+	public AspireWebElement giltCartProductOnePrice();
 	
-	@CssSelector("${pages.gilt.cartProductTwoPrice}")
-	public AspireWebElement cartProductTwoPrice();
+	@CssSelector("${pages.gilt.giltCartProductTwoPrice}")
+	public AspireWebElement giltCartProductTwoPrice();
 	
-	@CssSelector("${pages.gilt.cartSubTotalPrice}")
-	public AspireWebElement cartSubTotalPrice();
+	@CssSelector("${pages.gilt.giltCartSubTotalPrice}")
+	public AspireWebElement giltCartSubTotalPrice();
 	
-	@CssSelector("${pages.gilt.checkoutNowButton}")
-	public AspireWebElement checkoutNowButton();
+	@CssSelector("${pages.gilt.giltCheckoutNowButton}")
+	public AspireWebElement giltCheckoutNowButton();
 	
-	@CssSelector("${pages.gilt.checkoutHeader}")
-	public AspireWebElement checkoutHeader();
+	@CssSelector("${pages.gilt.giltCheckoutHeader}")
+	public AspireWebElement giltCheckoutHeader();
 	
 	@CssSelector("${pages.gilt.giltLogo}")
 	public AspireWebElement giltLogo();
 	
-	@CssSelector("${pages.gilt.promoSection}")
-	public AspireWebElement promoSection();
+	@CssSelector("${pages.gilt.giltPromoSection}")
+	public AspireWebElement giltPromoSection();
 	
-	@CssSelector("${pages.gilt.promoCodeField}")
-	public AspireWebElement promoCodeField();
+	@CssSelector("${pages.gilt.giltPromoCodeField}")
+	public AspireWebElement giltPromoCodeField();
 	
 	@CssSelector("${pages.gilt.shippingCharge}")
 	public AspireWebElement shippingCharge();
@@ -146,137 +146,137 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.dutiesCharg}")
 	public AspireWebElement dutiesCharg();
 	
-	@CssSelector("${pages.gilt.removeDiscount}")
-	public AspireWebElement removeDiscount();
+	@CssSelector("${pages.gilt.giltRemoveDiscount}")
+	public AspireWebElement giltRemoveDiscount();
 	
-	@CssSelector("${pages.gilt.subTotal}")
-	public AspireWebElement subTotal();
+	@CssSelector("${pages.gilt.giltSubTotal}")
+	public AspireWebElement giltSubTotal();
 	
-	@CssSelector("${pages.gilt.vat}")
-	public AspireWebElement vat();
+	@CssSelector("${pages.gilt.giltVat}")
+	public AspireWebElement giltVat();
 	
-	@CssSelector("${pages.gilt.shipping}")
-	public AspireWebElement shipping();
+	@CssSelector("${pages.gilt.giltShipping}")
+	public AspireWebElement giltShipping();
 	
-	@CssSelector("${pages.gilt.total}")
-	public AspireWebElement total();
+	@CssSelector("${pages.gilt.giltTotal}")
+	public AspireWebElement giltTotal();
 	
-	@CssSelector("${pages.gilt.changeShippingAdress}")
-	public AspireWebElement changeShippingAdress();
+	@CssSelector("${pages.gilt.giltChangeShippingAdress}")
+	public AspireWebElement giltChangeShippingAdress();
 	
-	@CssSelector("${pages.gilt.addNewAddress}")
-	public AspireWebElement addNewAddress();
+	@CssSelector("${pages.gilt.giltAddNewAddress}")
+	public AspireWebElement giltAddNewAddress();
 	
-	@CssSelector("${pages.gilt.saveAndContinueButton}")
-	public AspireWebElement saveAndContinueButton();
+	@CssSelector("${pages.gilt.giltSaveAndContinueButton}")
+	public AspireWebElement giltSaveAndContinueButton();
 	
-	@CssSelector("${pages.gilt.firstNameError}")
-	public AspireWebElement firstNameError();
+	@CssSelector("${pages.gilt.giltFirstNameError}")
+	public AspireWebElement giltFirstNameError();
 	
-	@CssSelector("${pages.gilt.secondNameError}")
-	public AspireWebElement secondNameError();
+	@CssSelector("${pages.gilt.giltLastNameError}")
+	public AspireWebElement giltLastNameError();
 	
-	@CssSelector("${pages.gilt.streetAddressError}")
-	public AspireWebElement streetAddressError();
+	@CssSelector("${pages.gilt.giltStreetAddressError}")
+	public AspireWebElement giltStreetAddressError();
 	
-	@CssSelector("${pages.gilt.cityError}")
-	public AspireWebElement cityError();
+	@CssSelector("${pages.gilt.giltCityError}")
+	public AspireWebElement giltCityError();
 	
-	@CssSelector("${pages.gilt.zipCodeError}")
-	public AspireWebElement zipCodeError();
+	@CssSelector("${pages.gilt.giltZipCodeError}")
+	public AspireWebElement giltZipCodeError();
 	
-	@CssSelector("${pages.gilt.phoneError}")
-	public AspireWebElement phoneError();
+	@CssSelector("${pages.gilt.giltPhoneError}")
+	public AspireWebElement giltPhoneError();
 	
-	@CssSelector("${pages.gilt.firstNameSection}")
-	public AspireWebElement firstNameSection();
+	@CssSelector("${pages.gilt.giltFirstNameSection}")
+	public AspireWebElement giltFirstNameSection();
 	
-	@CssSelector("${pages.gilt.lastNameSection}")
-	public AspireWebElement lastNameSection();
+	@CssSelector("${pages.gilt.giltLastNameSection}")
+	public AspireWebElement giltLastNameSection();
 	
-	@CssSelector("${pages.gilt.streetAddressSection}")
-	public AspireWebElement streetAddressSection();
+	@CssSelector("${pages.gilt.giltStreetAddressSection}")
+	public AspireWebElement giltStreetAddressSection();
 	
-	@CssSelector("${pages.gilt.citySection}")
-	public AspireWebElement citySection();
+	@CssSelector("${pages.gilt.giltCitySection}")
+	public AspireWebElement giltCitySection();
 	
-	@CssSelector("${pages.gilt.zipCodeSection}")
-	public AspireWebElement zipCodeSection();
+	@CssSelector("${pages.gilt.giltZipCodeSection}")
+	public AspireWebElement giltZipCodeSection();
 	
 	@CssSelector("${pages.gilt.phoneSection}")
 	public AspireWebElement phoneSection();
 	
-	@CssSelector("${pages.gilt.changePaymentMethod}")
-	public AspireWebElement changePaymentMethod();
+	@CssSelector("${pages.gilt.giltChangePaymentMethod}")
+	public AspireWebElement giltChangePaymentMethod();
 	
-	@CssSelector("${pages.gilt.addNewPaymentMethod}")
-	public AspireWebElement addNewPaymentMethod();
+	@CssSelector("${pages.gilt.giltAddNewPaymentMethod}")
+	public AspireWebElement giltAddNewPaymentMethod();
 	
-	@CssSelector("${pages.gilt.addPymentMethodButton}")
-	public AspireWebElement addPymentMethodButton();
+	@CssSelector("${pages.gilt.giltAddPymentMethodButton}")
+	public AspireWebElement giltAddPymentMethodButton();
 	
-	@CssSelector("${pages.gilt.cardNumberError}")
-	public AspireWebElement cardNumberError();
+	@CssSelector("${pages.gilt.giltCardNumberError}")
+	public AspireWebElement giltCardNumberError();
 	
-	@CssSelector("${pages.gilt.expirationDateError}")
-	public AspireWebElement expirationDateError();
+	@CssSelector("${pages.gilt.giltExpirationDateError}")
+	public AspireWebElement giltExpirationDateError();
 	
-	@CssSelector("${pages.gilt.securityCodeError}")
-	public AspireWebElement securityCodeError();
+	@CssSelector("${pages.gilt.giltSecurityCodeError}")
+	public AspireWebElement giltSecurityCodeError();
 	
-	@CssSelector("${pages.gilt.cardSection}")
-	public AspireWebElement cardSection();
+	@CssSelector("${pages.gilt.giltCardSection}")
+	public AspireWebElement giltCardSection();
 	
-	@CssSelector("${pages.gilt.month}")
-	public AspireWebElement month();
+	@CssSelector("${pages.gilt.giltMonth}")
+	public AspireWebElement giltMonth();
 	
-	@CssSelector("${pages.gilt.year}")
-	public AspireWebElement year();
+	@CssSelector("${pages.gilt.giltYear}")
+	public AspireWebElement giltYear();
 	
-	@CssSelector("${pages.gilt.securitySection}")
-	public AspireWebElement securitySection();
+	@CssSelector("${pages.gilt.giltSecuritySection}")
+	public AspireWebElement giltSecuritySection();
 	
-	@CssSelector("${pages.gilt.securityCodeSection}")
-	public AspireWebElement securityCodeSection();
+	@CssSelector("${pages.gilt.giltSecurityCodeSection}")
+	public AspireWebElement giltSecurityCodeSection();
 	
-	@CssSelector("${pages.gilt.submitYourOrderButton}")
-	public AspireWebElement submitYourOrderButton();
+	@CssSelector("${pages.gilt.giltSubmitYourOrderButton}")
+	public AspireWebElement giltSubmitYourOrderButton();
 	
-	@CssSelector("${pages.gilt.submitError}")
-	public AspireWebElement submitError();
+	@CssSelector("${pages.gilt.giltSubmitError}")
+	public AspireWebElement giltSubmitError();
 	
-	@CssSelector("${pages.gilt.continueShoppingLink}")
-	public AspireWebElement continueShoppingLink();
+	@CssSelector("${pages.gilt.giltContinueShoppingLink}")
+	public AspireWebElement giltContinueShoppingLink();
 	
-	@CssSelector("${pages.gilt.cartIcon}")
-	public AspireWebElement cartIcon();
+	@CssSelector("${pages.gilt.giltCartIcon}")
+	public AspireWebElement giltCartIcon();
 	
-	@CssSelector("${pages.gilt.cartRemoveProduct}")
-	public AspireWebElements cartRemoveProduct();
+	@CssSelector("${pages.gilt.giltCartRemoveProduct}")
+	public AspireWebElements giltCartRemoveProduct();
 	
-	@CssSelector("${pages.gilt.cartContinueShoppingButton}")
-	public AspireWebElement cartContinueShoppingButton();
+	@CssSelector("${pages.gilt.giltCartContinueShoppingButton}")
+	public AspireWebElement giltCartContinueShoppingButton();
 	
-	@CssSelector("${pages.gilt.availableSize}")
-	public AspireWebElements availableSize();
+	@CssSelector("${pages.gilt.giltAvailableSize}")
+	public AspireWebElements giltAvailableSize();
 	
-	@CssSelector("${pages.gilt.pdpImage}")
-	public AspireWebElement pdpImage();
+	@CssSelector("${pages.gilt.giltPdpImage}")
+	public AspireWebElement giltPdpImage();
 	
-	@CssSelector("${pages.gilt.quickViewImage}")
-	public AspireWebElement quickViewImage();
+	@CssSelector("${pages.gilt.giltQuickViewProductImage}")
+	public AspireWebElement giltQuickViewProductImage();
 	
-	@CssSelector("${pages.gilt.cartImage}")
-	public AspireWebElement cartImage();
+	@CssSelector("${pages.gilt.giltCartImage}")
+	public AspireWebElement giltCartImage();
 	
-	@CssSelector("${pages.gilt.surveyDialog}")
-	public AspireWebElement surveyDialog();
+	@CssSelector("${pages.gilt.giltSurveyDialog}")
+	public AspireWebElement giltSurveyDialog();
 	
-	@CssSelector("${pages.gilt.closeSurveyDialog}")
-	public AspireWebElement closeSurveyDialog();
+	@CssSelector("${pages.gilt.giltCloseSurveyDialog}")
+	public AspireWebElement giltCloseSurveyDialog();
 	
-	@CssSelector("${pages.gilt.plpImage}")
-	public AspireWebElement plpImage();
+	@CssSelector("${pages.gilt.giltPlpImage}")
+	public AspireWebElement giltPlpImage();
 	
 
 }

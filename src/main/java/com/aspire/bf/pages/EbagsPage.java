@@ -26,23 +26,23 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsProductPrice}")
 	public AspireWebElement ebagsProductPrice();
 	
-	@CssSelector("${pages.ebags.pdpProductPage}")
-	public AspireWebElement pdpProductPage();
+	@CssSelector("${pages.ebags.ebagsPdpProductPage}")
+	public AspireWebElement ebagsPdpProductPage();
 	
-	@CssSelector("${pages.ebags.pdpProductPrice}")
-	public AspireWebElement pdpProductPrice();
+	@CssSelector("${pages.ebags.ebagsPdpProductPrice}")
+	public AspireWebElement ebagsPdpProductPrice();
 	
-	@CssSelector("${pages.ebags.pdpProductName}")
-	public AspireWebElement pdpProductName();
+	@CssSelector("${pages.ebags.ebagsPdpProductName}")
+	public AspireWebElement ebagsPdpProductName();
 	
-	@CssSelector("${pages.ebags.plpImage}")
-	public AspireWebElement plpImage();
+	@CssSelector("${pages.ebags.ebagsPlpImage}")
+	public AspireWebElement ebagsPlpImage();
 	
-	@CssSelector("${pages.ebags.pdpImage}")
-	public AspireWebElement pdpImage();
+	@CssSelector("${pages.ebags.ebagsPdpImage}")
+	public AspireWebElement ebagsPdpImage();
 	
-	@CssSelector("${pages.ebags.color}")
-	public AspireWebElements color();
+	@CssSelector("${pages.ebags.ebagsColor}")
+	public AspireWebElements ebagsColor();
 	
 	@CssSelector("${pages.ebags.ebagsPdpPrice}")
 	public AspireWebElement ebagsPdpPrice();
@@ -50,8 +50,8 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsPdpName}")
 	public AspireWebElement ebagsPdpName();
 	
-	@CssSelector("${pages.ebags.addToCartButton}")
-	public AspireWebElement addToCartButton();
+	@CssSelector("${pages.ebags.ebagsAddToCartButton}")
+	public AspireWebElement ebagsAddToCartButton();
 	
 	@CssSelector("${pages.ebags.ebagsQuickView}")
 	public AspireWebElement ebagsQuickView();
@@ -68,125 +68,125 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsQVTotlatPrice}")
 	public AspireWebElement ebagsQVTotlatPrice();
 	
-	@CssSelector("${pages.ebags.viewCartLink}")
-	public AspireWebElement viewCartLink();
+	@CssSelector("${pages.ebags.ebagsViewCartLink}")
+	public AspireWebElement ebagsViewCartLink();
 	
-	@CssSelector("${pages.ebags.cartQuantity}")
-	public AspireWebElement cartQuantity();
+	@CssSelector("${pages.ebags.ebagsCartQuantity}")
+	public AspireWebElement ebagsCartQuantity();
 	 
 	@CssSelector("${pages.ebags.ebagsCartPage}")
 	public AspireWebElement ebagsCartPage();
 	
-	@CssSelector("${pages.ebags.updateQuantity}")
-	public AspireWebElement updateQuantity();
+	@CssSelector("${pages.ebags.ebagsUpdateQuantity}")
+	public AspireWebElement ebagsUpdateQuantity();
 	
-	@CssSelector("${pages.ebags.bagProductOnePrice}")
-	public AspireWebElement bagProductOnePrice();
+	@CssSelector("${pages.ebags.ebagsBagProductOnePrice}")
+	public AspireWebElement ebagsBagProductOnePrice();
 	
-	@CssSelector("${pages.ebags.bagProductTwoPrice}")
-	public AspireWebElement bagProductTwoPrice();
+	@CssSelector("${pages.ebags.ebagsBagProductTwoPrice}")
+	public AspireWebElement ebagsBagProductTwoPrice();
 	
-	@CssSelector("${pages.ebags.bagSubTotalPrice}")
-	public AspireWebElement bagSubTotalPrice();
+	@CssSelector("${pages.ebags.ebagsBagSubTotalPrice}")
+	public AspireWebElement ebagsBagSubTotalPrice();
 	
-	@CssSelector("${pages.ebags.continuwCheckout}")
-	public AspireWebElement continuwCheckout();
+	@CssSelector("${pages.ebags.ebagsContinuwCheckout}")
+	public AspireWebElement ebagsContinuwCheckout();
 	
-	@CssSelector("${pages.ebags.deliveryCheckout}")
-	public AspireWebElement deliveryCheckout();
+	@CssSelector("${pages.ebags.ebagsDeliveryCheckout}")
+	public AspireWebElement ebagsDeliveryCheckout();
 	
-	@CssSelector("${pages.ebags.checkoutContinue}")
-	public AspireWebElement checkoutContinue();
+	@CssSelector("${pages.ebags.ebagsCheckoutContinue}")
+	public AspireWebElement ebagsCheckoutContinue();
 	
-	@CssSelector("${pages.ebags.deliveryEmailAddressError}")
-	public AspireWebElement deliveryEmailAddressError();
+	@CssSelector("${pages.ebags.ebagsDeliveryEmailAddressError}")
+	public AspireWebElement ebagsDeliveryEmailAddressError();
 	
-	@CssSelector("${pages.ebags.deliveryFirstNameError}")
-	public AspireWebElement deliveryFirstNameError();
+	@CssSelector("${pages.ebags.ebagsDeliveryFirstNameError}")
+	public AspireWebElement ebagsDeliveryFirstNameError();
 	
-	@CssSelector("${pages.ebags.deliveryLastNameError}")
-	public AspireWebElement deliveryLastNameError();
+	@CssSelector("${pages.ebags.ebagsDeliveryLastNameError}")
+	public AspireWebElement ebagsDeliveryLastNameError();
 	
-	@CssSelector("${pages.ebags.deliveryAddressError}")
-	public AspireWebElement deliveryAddressError();
+	@CssSelector("${pages.ebags.ebagsDeliveryAddressError}")
+	public AspireWebElement ebagsDeliveryAddressError();
 	
-	@CssSelector("${pages.ebags.deliveryCityError}")
-	public AspireWebElement deliveryCityError();
+	@CssSelector("${pages.ebags.ebagsDeliveryCityError}")
+	public AspireWebElement ebagsDeliveryCityError();
 	
-	@CssSelector("${pages.ebags.deliveryPhoneNumberError}")
-	public AspireWebElement deliveryPhoneNumberError();
+	@CssSelector("${pages.ebags.ebagsDeliveryPhoneNumberError}")
+	public AspireWebElement ebagsDeliveryPhoneNumberError();
 	
-	@CssSelector("${pages.ebags.deliveryFirstName}")
-	public AspireWebElement deliveryFirstName();
+	@CssSelector("${pages.ebags.ebagsDeliveryFirstName}")
+	public AspireWebElement ebagsDeliveryFirstName();
 	
-	@CssSelector("${pages.ebags.deliveryLastName}")
-	public AspireWebElement deliveryLastName();
+	@CssSelector("${pages.ebags.ebagsDeliveryLastName}")
+	public AspireWebElement ebagsDeliveryLastName();
 	
-	@CssSelector("${pages.ebags.deliveryAddress}")
-	public AspireWebElement deliveryAddress();
+	@CssSelector("${pages.ebags.ebagsDeliveryAddress}")
+	public AspireWebElement ebagsDeliveryAddress();
 	
-	@CssSelector("${pages.ebags.deliveryCity}")
-	public AspireWebElement deliveryCity();
+	@CssSelector("${pages.ebags.ebagsDeliveryCity}")
+	public AspireWebElement ebagsDeliveryCity();
 	
-	@CssSelector("${pages.ebags.deliveryZipCode}")
-	public AspireWebElement deliveryZipCode();
+	@CssSelector("${pages.ebags.ebagsDeliveryZipCode}")
+	public AspireWebElement ebagsDeliveryZipCode();
 	
-	@CssSelector("${pages.ebags.deliveryPhoneNumber}")
-	public AspireWebElement deliveryPhoneNumber();
+	@CssSelector("${pages.ebags.ebagsDeliveryPhoneNumber}")
+	public AspireWebElement ebagsDeliveryPhoneNumber();
 	
-	@CssSelector("${pages.ebags.deliveryEmailAddress}")
-	public AspireWebElement deliveryEmailAddress();
+	@CssSelector("${pages.ebags.ebagsDeliveryEmailAddress}")
+	public AspireWebElement ebagsDeliveryEmailAddress();
 	
-	@CssSelector("${pages.ebags.paymentSection}")
-	public AspireWebElement paymentSection();
+	@CssSelector("${pages.ebags.ebagsPaymentSection}")
+	public AspireWebElement ebagsPaymentSection();
 	
-	@CssSelector("${pages.ebags.palceOrderButton}")
-	public AspireWebElement palceOrderButton();
+	@CssSelector("${pages.ebags.ebagsPalceOrderButton}")
+	public AspireWebElement ebagsPalceOrderButton();
 	
-	@CssSelector("${pages.ebags.paymentCardNumberError}")
-	public AspireWebElement paymentCardNumberError();
+	@CssSelector("${pages.ebags.ebagsPaymentCardNumberError}")
+	public AspireWebElement ebagsPaymentCardNumberError();
 	
-	@CssSelector("${pages.ebags.paymentExpirationDateError}")
-	public AspireWebElement paymentExpirationDateError();
+	@CssSelector("${pages.ebags.ebagsPaymentExpirationDateError}")
+	public AspireWebElement ebagsPaymentExpirationDateError();
 	
-	@CssSelector("${pages.ebags.paymentSecurityCodeError}")
-	public AspireWebElement paymentSecurityCodeError();
+	@CssSelector("${pages.ebags.ebagsPaymentSecurityCodeError}")
+	public AspireWebElement ebagsPaymentSecurityCodeError();
 	
-	@CssSelector("${pages.ebags.paymentCardNumber}")
-	public AspireWebElement paymentCardNumber();
+	@CssSelector("${pages.ebags.ebagsPaymentCardNumber}")
+	public AspireWebElement ebagsPaymentCardNumber();
 	
-	@CssSelector("${pages.ebags.paymentExpirationDate}")
-	public AspireWebElement paymentExpirationDate();
+	@CssSelector("${pages.ebags.ebagsPaymentExpirationDate}")
+	public AspireWebElement ebagsPaymentExpirationDate();
 	
-	@CssSelector("${pages.ebags.paymentSecurityCode}")
-	public AspireWebElement paymentSecurityCode();
+	@CssSelector("${pages.ebags.ebagsPaymentSecurityCode}")
+	public AspireWebElement ebagsPaymentSecurityCode();
 	
-	@CssSelector("${pages.ebags.submitError}")
-	public AspireWebElement submitError();
+	@CssSelector("${pages.ebags.ebagsSubmitError}")
+	public AspireWebElement ebagsSubmitError();
 	
-	@CssSelector("${pages.ebags.itemsTotal}")
-	public AspireWebElement itemsTotal();
+	@CssSelector("${pages.ebags.ebagsItemsTotal}")
+	public AspireWebElement ebagsItemsTotal();
 	
-	@CssSelector("${pages.ebags.shipping}")
-	public AspireWebElement shipping();
+	@CssSelector("${pages.ebags.ebagsShipping}")
+	public AspireWebElement ebagsShipping();
 	
-	@CssSelector("${pages.ebags.dutiesAndTaxes}")
-	public AspireWebElement dutiesAndTaxes();
+	@CssSelector("${pages.ebags.ebagsDutiesAndTaxes}")
+	public AspireWebElement ebagsDutiesAndTaxes();
 	
-	@CssSelector("${pages.ebags.orderTotal}")
-	public AspireWebElement orderTotal();
+	@CssSelector("${pages.ebags.ebagsOrderTotal}")
+	public AspireWebElement ebagsOrderTotal();
 	
-	@CssSelector("${pages.ebags.promoCodeSection}")
-	public AspireWebElement promoCodeSection();
+	@CssSelector("${pages.ebags.ebagsPromoCodeSection}")
+	public AspireWebElement ebagsPromoCodeSection();
 	
-	@CssSelector("${pages.ebags.promoCodeSFiled}")
-	public AspireWebElement promoCodeSFiled();
+	@CssSelector("${pages.ebags.ebagsPromoCodeSFiled}")
+	public AspireWebElement ebagsPromoCodeSFiled();
 	
-	@CssSelector("${pages.ebags.itemCart}")
-	public AspireWebElement itemCart();
+	@CssSelector("${pages.ebags.ebagsItemCart}")
+	public AspireWebElement ebagsItemCart();
 	
-	@CssSelector("${pages.ebags.cartIcon}")
-	public AspireWebElement cartIcon();
+	@CssSelector("${pages.ebags.ebagsCartIcon}")
+	public AspireWebElement ebagsCartIcon();
 	
 	
 	

@@ -3,54 +3,54 @@ Meta:
 
 Scenario:  TC06_Harrods_Verify_All_Checkout_Test_Cases
 
-Given [1101-1080] bagPage should be displayed
-When [1100-1300] User clicks on the secureCheckoutNow
-And [1111-1080] startCheckoutPage should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the newCustomerButton
-And [1111-1080] detailsCheckoutPage should be displayed, Within 120 seconds
-And [1101-1184] the user saves checkoutItemsSubtotal text in scenario scope under name itemsSubtotal
-And [1101-1184] the user saves checkoutExcludingUKTaxes text in scenario scope under name excludingUKTaxes
-And [1101-1184] the user saves checkoutLocalTaxes text in scenario scope under name localTaxes
-And [1101-1184] the user saves checkoutImportDuties text in scenario scope under name importDuties
-And [1101-1184] the user saves checkoutDeliveryCharge text in scenario scope under name deliveryCharge
-And [1101-1184] the user saves checkoutTotalToPay text in scenario scope under name totalToPay
-And [8001-0006] `totalToPay` value should be equal to the sum of `itemsSubtotal` , `excludingUKTaxes` , `localTaxes` , `importDuties` and `deliveryCharge`
-And [1100-1300] User clicks on the continueToDeliveryButton
-And [1101-1102] detailsTitleError text is equal to Please select a title case sensitive
-And [1101-1102] detailsFirstNameError text is equal to Please enter a first name case sensitive
-And [1101-1102] detailsLastNameError text is equal to Please enter a last name case sensitive
-And [1101-1102] detailsContactNumberError text is equal to A contact number is required case sensitive
-And [1101-1102] detailsEmailAddressError text is equal to Please enter your email address case sensitive
-And [1100-1601] Select detailsTitle By Value Mr
-And [1100-1340] User fills detailsFirstNameSection with `firstName`
-And [1100-1340] User fills detailsLastNameSection with `lastName`
-And [1100-1340] User fills detailsContactNumberSection with `contactNumber`
-And [1100-1340] User fills detailsEmailAddressSection with `emailAddress`
-And [1100-1300] User clicks on the continueToDeliveryButton
-And [1111-1080] deliveryCheckoutPage should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the continueToPaymentButton
-And [1101-1102] deliveryAddressError text is equal to Please complete address line 1 case sensitive
-And [1101-1102] deliveryCityError text is equal to Please enter a Town/City case sensitive
-And [1100-1340] User fills deliveryAddressSection with `deliveryAddress`
-And [1100-1340] User fills deliveryCitySection with `deliveryCity`
-And [1100-1340] User fills deliveryStateSection with `deliveryState`
-And [1100-1340] User fills deliveryZipCodeSection with `deliveryZipCode`
-And [1100-1300] User clicks on the continueToPaymentButton
-And [1111-1080] paymentCheckoutPage should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the paySecurelyNowButton
-And [1101-1102] paymentCardTypeError text is equal to Please select card type. case sensitive
-And [1101-1102] paymentNameOnCardError text is equal to Please enter the name on your card. case sensitive
-And [1101-1102] paymentCardNumberError text is equal to Please enter the card number. case sensitive
-And [1101-1102] paymentExpireDateError text is equal to Please select the card expiry date. case sensitive
-And [1101-1102] paymentSecurityCodeError text is equal to Please enter your 3- or 4-digit security code. case sensitive
-And [1100-1601] Select paymentCardType By Value 2
-And [1100-1340] User fills paymentCardNumberSection with `paymentCardNumber`
-And [1100-1340] User fills paymentNameOnCardSection with `paymentNameOnCard`
-And [1100-1601] Select paymentExpireMonth By Value 1
-And [1100-1601] Select paymentExpireYear By Value 2037
-And [1100-1340] User fills paymentSecurityCodeSection with `paymentSecurityCode`
-And [1100-1300] User clicks on the paySecurelyNowButton
-And [1111-1080] submitErrorMessage should be displayed, Within 120 seconds
-Then [1101-1102] submitErrorMessage text is equal to `submitErrorMessage` case sensitive
+Given [1101-1080] harrodsBagPage should be displayed
+When [1100-1300] User clicks on the harrodsSecureCheckoutNow
+And [1111-1080] harrodsStartCheckoutPage should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the harrodsNewCustomerButton
+And [1111-1080] harrodsDetailsCheckoutPage should be displayed, Within 120 seconds
+And [1101-1184] the user saves harrodsCheckoutItemsSubtotal text in scenario scope under name harrodsItemsSubtotal
+And [1101-1184] the user saves harrodsCheckoutExcludingUKTaxes text in scenario scope under name harrodsExcludingUKTaxes
+And [1101-1184] the user saves harrodsCheckoutLocalTaxes text in scenario scope under name harrodsLocalTaxes
+And [1101-1184] the user saves harrodsCheckoutImportDuties text in scenario scope under name harrodsImportDuties
+And [1101-1184] the user saves harrodsCheckoutDeliveryCharge text in scenario scope under name harrodsDeliveryCharge
+And [1101-1184] the user saves harrodsCheckoutTotalToPay text in scenario scope under name harrodsTotalToPay
+And [8001-0006] `harrodsTotalToPay` value should be equal to the sum of `harrodsItemsSubtotal` , `harrodsExcludingUKTaxes` , `harrodsLocalTaxes` , `harrodsImportDuties` and `harrodsDeliveryCharge`
+And [1100-1300] User clicks on the harrodsContinueToDeliveryButton
+And [1101-1102] harrodsDetailsTitleError text is equal to Please select a title case sensitive
+And [1101-1102] harrodsDetailsFirstNameError text is equal to Please enter a first name case sensitive
+And [1101-1102] harrodsDetailsLastNameError text is equal to Please enter a last name case sensitive
+And [1101-1102] harrodsDetailsContactNumberError text is equal to A contact number is required case sensitive
+And [1101-1102] harrodsDetailsEmailAddressError text is equal to Please enter your email address case sensitive
+And [1100-1601] Select harrodsDetailsTitle By Value Mr
+And [1100-1340] User fills harrodsDetailsFirstNameSection with `firstName`
+And [1100-1340] User fills harrodsDetailsLastNameSection with `lastName`
+And [1100-1340] User fills harrodsDetailsContactNumberSection with `contactNumber`
+And [1100-1340] User fills harrodsDetailsEmailAddressSection with `emailAddress`
+And [1100-1300] User clicks on the harrodsContinueToDeliveryButton
+And [1111-1080] harrodsDeliveryCheckoutPage should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the harrodsContinueToPaymentButton
+And [1101-1102] harrodsDeliveryAddressError text is equal to Please complete address line 1 case sensitive
+And [1101-1102] harrodsDeliveryCityError text is equal to Please enter a Town/City case sensitive
+And [1100-1340] User fills harrodsDeliveryAddressSection with `deliveryAddress`
+And [1100-1340] User fills harrodsDeliveryCitySection with `deliveryCity`
+And [1100-1340] User fills harrodsDeliveryStateSection with `deliveryState`
+And [1100-1340] User fills harrodsDeliveryZipCodeSection with `deliveryZipCode`
+And [1100-1300] User clicks on the harrodsContinueToPaymentButton
+And [1111-1080] harrodsPaymentCheckoutPage should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the harrodsPaySecurelyNowButton
+And [1101-1102] harrodsPaymentCardTypeError text is equal to Please select card type. case sensitive
+And [1101-1102] harrodsPaymentNameOnCardError text is equal to Please enter the name on your card. case sensitive
+And [1101-1102] harrodsPaymentCardNumberError text is equal to Please enter the card number. case sensitive
+And [1101-1102] harrodsPaymentExpireDateError text is equal to Please select the card expiry date. case sensitive
+And [1101-1102] harrodsPaymentSecurityCodeError text is equal to Please enter your 3- or 4-digit security code. case sensitive
+And [1100-1601] Select harrodsPaymentCardType By Value 2
+And [1100-1340] User fills harrodsPaymentCardNumberSection with `paymentCardNumber`
+And [1100-1340] User fills harrodsPaymentNameOnCardSection with `paymentNameOnCard`
+And [1100-1601] Select harrodsPaymentExpireMonth By Value 1
+And [1100-1601] Select harrodsPaymentExpireYear By Value 2037
+And [1100-1340] User fills harrodsPaymentSecurityCodeSection with `paymentSecurityCode`
+And [1100-1300] User clicks on the harrodsPaySecurelyNowButton
+And [1111-1080] harrodsSubmitErrorMessage should be displayed, Within 120 seconds
+Then [1101-1102] harrodsSubmitErrorMessage text is equal to `submitErrorMessage` case sensitive
 
 

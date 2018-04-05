@@ -7,18 +7,18 @@ Given [1000-9130] Clear cache and cookies
 When [1000-9000] User opens barneys page
 And [1200-1302] For any element from barneysTopNavStore
 And [1100-0400] Execute `click` javascript on the element
-And [1111-1080] salesPage should be displayed, Within 120 seconds
+And [1111-1080] barneysSalesPage should be displayed, Within 120 seconds
 And [1200-1302] For any element from barneysSales
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] barneysPlp should be displayed, Within 120 seconds
 And [1200-1302] For any element from barneysPlpProduct
-And [1100-1581] the user saves productImage attribute of src in global scope under name productImage
-And [1101-1181] the user saves productPrice text in global scope under name productPrice
-And [1101-1181] the user saves productName text in global scope under name productName
+And [1100-1581] the user saves barneysProductImage attribute of src in global scope under name barneysProductImage
+And [1101-1181] the user saves barneysProductPrice text in global scope under name barneysProductPrice
+And [1101-1181] the user saves barneysProductName text in global scope under name barneysProductName
 And [1100-0300] User click on it
 And [1111-1080] barneysPdp should be displayed, Within 120 seconds
-And [1101-1102] pdpName text is equal to `productName` case sensitive
-And [1101-1181] the user saves pdpPrice text in global scope under name pdpPrice
-And [1100-1581] the user saves pdpImage attribute of src in global scope under name pdpImage
-Then [8008-0001] User compare between `pdpPrice` and `productPrice`
-And [8008-0002] user compare between `productImage` and `pdpImage`
+And [1101-1102] barneysPdpName text is equal to `barneysProductName` case sensitive
+And [1101-1181] the user saves barneysPdpPrice text in global scope under name barneysPdpPrice
+And [1100-1581] the user saves barneysPdpImage attribute of src in global scope under name barneysPdpImage
+Then [8008-0001] User compare between `barneysPdpPrice` and `barneysProductPrice`
+And [8008-0002] user compare between `barneysProductImage` and `barneysPdpImage`

@@ -10,221 +10,221 @@ import com.aspire.automation.web.util.annotation.Page;
 @Page(name = "harrods", url = "${pages.harrods.harrodsurl}")
 public interface HarrodsPage {
 
-	@CssSelector("${pages.harrods.topNavStore}")
-	public AspireWebElements topNavStore();
+	@CssSelector("${pages.harrods.harrodsTopNavStore}")
+	public AspireWebElements harrodsTopNavStore();
 	
-	@CssSelector("${pages.harrods.sales}")
-	public AspireWebElements sales();
+	@CssSelector("${pages.harrods.harrodsSales}")
+	public AspireWebElements harrodsSales();
 	
-	@CssSelector("${pages.harrods.products}")
-	public AspireWebElements products();
+	@CssSelector("${pages.harrods.harrodsProducts}")
+	public AspireWebElements harrodsProducts();
 	
-	@CssSelector("${pages.harrods.productName}")
-	public AspireWebElement productName();
+	@CssSelector("${pages.harrods.harrodsProductName}")
+	public AspireWebElement harrodsProductName();
 	
-	@CssSelector("${pages.harrods.productPrice}")
-	public AspireWebElement productPrice();
+	@CssSelector("${pages.harrods.harrodsProductPrice}")
+	public AspireWebElement harrodsProductPrice();
 	
-	@CssSelector("${pages.harrods.quickView}")
-	public AspireWebElement quickView();
+	@CssSelector("${pages.harrods.harrodsQuickView}")
+	public AspireWebElement harrodsQuickView();
 	
-	@CssSelector("${pages.harrods.quickViewDialog}")
-	public AspireWebElement quickViewDialog();
+	@CssSelector("${pages.harrods.harrodsQuickViewDialog}")
+	public AspireWebElement harrodsQuickViewDialog();
 	
-	@CssSelector("${pages.harrods.quickViewProductName}")
-	public AspireWebElement quickViewProductName();
+	@CssSelector("${pages.harrods.harrodsQuickViewProductName}")
+	public AspireWebElement harrodsQuickViewProductName();
 	
-	@CssSelector("${pages.harrods.quickViewProductPrice}")
-	public AspireWebElement quickViewProductPrice();
+	@CssSelector("${pages.harrods.harrodsQuickViewProductPrice}")
+	public AspireWebElement harrodsQuickViewProductPrice();
 	
-	@CssSelector("${pages.harrods.fullDetails}")
-	public AspireWebElement fullDetails();
+	@CssSelector("${pages.harrods.harrodsFullDetails}")
+	public AspireWebElement harrodsFullDetails();
 	
-	@CssSelector("${pages.harrods.productPage}")
-	public AspireWebElement productPage();
+	@CssSelector("${pages.harrods.harrodsProductPage}")
+	public AspireWebElement harrodsProductPage();
 	
-	@CssSelector("${pages.harrods.pdpProductPrice}")
-	public AspireWebElement pdpProductPrice();
+	@CssSelector("${pages.harrods.harrodsPdpProductPrice}")
+	public AspireWebElement harrodsPdpProductPrice();
 	
-	@CssSelector("${pages.harrods.pdpProductName}")
-	public AspireWebElement pdpProductName();
+	@CssSelector("${pages.harrods.harrodsPdpProductName}")
+	public AspireWebElement harrodsPdpProductName();
 	
-	@CssSelector("${pages.harrods.addToBagButton}")
-	public AspireWebElement addToBagButton();
+	@CssSelector("${pages.harrods.harrodsAddToBagButton}")
+	public AspireWebElement harrodsAddToBagButton();
 	
-	@CssSelector("${pages.harrods.bagPage}")
-	public AspireWebElement bagPage();
+	@CssSelector("${pages.harrods.harrodsBagPage}")
+	public AspireWebElement harrodsBagPage();
 	
-	@CssSelector("${pages.harrods.bagProductPrice}")
-	public AspireWebElement bagProductPrice();
+	@CssSelector("${pages.harrods.harrodsBagProductPrice}")
+	public AspireWebElement harrodsBagProductPrice();
 	
-	@CssSelector("${pages.harrods.viewYourBag}")
-	public AspireWebElement viewYourBag();
+	@CssSelector("${pages.harrods.harrodsViewYourBag}")
+	public AspireWebElement harrodsViewYourBag();
 	
-	@CssSelector("${pages.harrods.bagProductName}")
-	public AspireWebElement bagProductName();
+	@CssSelector("${pages.harrods.harrodsBagProductName}")
+	public AspireWebElement harrodsBagProductName();
 	
-	@CssSelector("${pages.harrods.bagQTY}")
-	public AspireWebElement bagQTY();
+	@CssSelector("${pages.harrods.harrodsBagQTY}")
+	public AspireWebElement harrodsBagQTY();
 	
-	@CssSelector("${pages.harrods.quickAddToBagButton}")
-	public AspireWebElement quickAddToBagButton();
+	@CssSelector("${pages.harrods.harrodsQuickAddToBagButton}")
+	public AspireWebElement harrodsQuickAddToBagButton();
 	
-	@CssSelector("${pages.harrods.bagIcon}")
-	public AspireWebElement bagIcon();
+	@CssSelector("${pages.harrods.harrodsBagIcon}")
+	public AspireWebElement harrodsBagIcon();
 	
-	@CssSelector("${pages.harrods.bagViewYourBag}")
-	public AspireWebElement bagViewYourBag();
+	@CssSelector("${pages.harrods.harrodsBagViewYourBag}")
+	public AspireWebElement harrodsBagViewYourBag();
 	
-	@CssSelector("${pages.harrods.bagProductOnePrice}")
-	public AspireWebElement bagProductOnePrice();
+	@CssSelector("${pages.harrods.harrodsBagProductOnePrice}")
+	public AspireWebElement harrodsBagProductOnePrice();
 	
-	@CssSelector("${pages.harrods.bagProductTwoPrice}")
-	public AspireWebElement bagProductTwoPrice();
+	@CssSelector("${pages.harrods.harrodsBagProductTwoPrice}")
+	public AspireWebElement harrodsBagProductTwoPrice();
 	
-	@CssSelector("${pages.harrods.bagSubTotalPrice}")
-	public AspireWebElement bagSubTotalPrice();
+	@CssSelector("${pages.harrods.harrodsBagSubTotalPrice}")
+	public AspireWebElement harrodsBagSubTotalPrice();
 	
-	@CssSelector("${pages.harrods.secureCheckoutNow}")
-	public AspireWebElement secureCheckoutNow();
+	@CssSelector("${pages.harrods.harrodsSecureCheckoutNow}")
+	public AspireWebElement harrodsSecureCheckoutNow();
 	
-	@CssSelector("${pages.harrods.startCheckoutPage}")
-	public AspireWebElement startCheckoutPage();
+	@CssSelector("${pages.harrods.harrodsStartCheckoutPage}")
+	public AspireWebElement harrodsStartCheckoutPage();
 	
-	@CssSelector("${pages.harrods.newCustomerButton}")
-	public AspireWebElement newCustomerButton();
+	@CssSelector("${pages.harrods.harrodsNewCustomerButton}")
+	public AspireWebElement harrodsNewCustomerButton();
 	
-	@CssSelector("${pages.harrods.detailsCheckoutPage}")
-	public AspireWebElement detailsCheckoutPage();
+	@CssSelector("${pages.harrods.harrodsDetailsCheckoutPage}")
+	public AspireWebElement harrodsDetailsCheckoutPage();
 	
-	@CssSelector("${pages.harrods.continueToDeliveryButton}")
-	public AspireWebElement continueToDeliveryButton();
+	@CssSelector("${pages.harrods.harrodsContinueToDeliveryButton}")
+	public AspireWebElement harrodsContinueToDeliveryButton();
 	
-	@CssSelector("${pages.harrods.detailsTitleError}")
-	public AspireWebElement detailsTitleError();
+	@CssSelector("${pages.harrods.harrodsDetailsTitleError}")
+	public AspireWebElement harrodsDetailsTitleError();
 	
-	@CssSelector("${pages.harrods.detailsFirstNameError}")
-	public AspireWebElement detailsFirstNameError();
+	@CssSelector("${pages.harrods.harrodsDetailsFirstNameError}")
+	public AspireWebElement harrodsDetailsFirstNameError();
 	
-	@CssSelector("${pages.harrods.detailsLastNameError}")
-	public AspireWebElement detailsLastNameError();
+	@CssSelector("${pages.harrods.harrodsDetailsLastNameError}")
+	public AspireWebElement harrodsDetailsLastNameError();
 	
-	@CssSelector("${pages.harrods.detailsContactNumberError}")
-	public AspireWebElement detailsContactNumberError();
+	@CssSelector("${pages.harrods.harrodsDetailsContactNumberError}")
+	public AspireWebElement harrodsDetailsContactNumberError();
 	
-	@CssSelector("${pages.harrods.detailsEmailAddressError}")
-	public AspireWebElement detailsEmailAddressError();
+	@CssSelector("${pages.harrods.harrodsDetailsEmailAddressError}")
+	public AspireWebElement harrodsDetailsEmailAddressError();
 	
-	@CssSelector("${pages.harrods.detailsTitle}")
-	public AspireWebElement detailsTitle();
+	@CssSelector("${pages.harrods.harrodsDetailsTitle}")
+	public AspireWebElement harrodsDetailsTitle();
 	
-	@CssSelector("${pages.harrods.detailsFirstNameSection}")
-	public AspireWebElement detailsFirstNameSection();
+	@CssSelector("${pages.harrods.harrodsDetailsFirstNameSection}")
+	public AspireWebElement harrodsDetailsFirstNameSection();
 	
-	@CssSelector("${pages.harrods.detailsLastNameSection}")
-	public AspireWebElement detailsLastNameSection();
+	@CssSelector("${pages.harrods.harrodsDetailsLastNameSection}")
+	public AspireWebElement harrodsDetailsLastNameSection();
 	
-	@CssSelector("${pages.harrods.detailsContactNumberSection}")
-	public AspireWebElement detailsContactNumberSection();
+	@CssSelector("${pages.harrods.harrodsDetailsContactNumberSection}")
+	public AspireWebElement harrodsDetailsContactNumberSection();
 	
-	@CssSelector("${pages.harrods.detailsEmailAddressSection}")
-	public AspireWebElement detailsEmailAddressSection();
+	@CssSelector("${pages.harrods.harrodsDetailsEmailAddressSection}")
+	public AspireWebElement harrodsDetailsEmailAddressSection();
 	
-	@CssSelector("${pages.harrods.deliveryCheckoutPage}")
-	public AspireWebElement deliveryCheckoutPage();
+	@CssSelector("${pages.harrods.harrodsDeliveryCheckoutPage}")
+	public AspireWebElement harrodsDeliveryCheckoutPage();
 	
-	@CssSelector("${pages.harrods.continueToPaymentButton}")
-	public AspireWebElement continueToPaymentButton();
+	@CssSelector("${pages.harrods.harrodsContinueToPaymentButton}")
+	public AspireWebElement harrodsContinueToPaymentButton();
 	
-	@CssSelector("${pages.harrods.deliveryAddressError}")
-	public AspireWebElement deliveryAddressError();
+	@CssSelector("${pages.harrods.harrodsDeliveryAddressError}")
+	public AspireWebElement harrodsDeliveryAddressError();
 	
-	@CssSelector("${pages.harrods.deliveryCityError}")
-	public AspireWebElement deliveryCityError();
+	@CssSelector("${pages.harrods.harrodsDeliveryCityError}")
+	public AspireWebElement harrodsDeliveryCityError();
 	
-	@CssSelector("${pages.harrods.deliveryAddressSection}")
-	public AspireWebElement deliveryAddressSection();
+	@CssSelector("${pages.harrods.harrodsDeliveryAddressSection}")
+	public AspireWebElement harrodsDeliveryAddressSection();
 	
-	@CssSelector("${pages.harrods.deliveryCitySection}")
-	public AspireWebElement deliveryCitySection();
+	@CssSelector("${pages.harrods.harrodsDeliveryCitySection}")
+	public AspireWebElement harrodsDeliveryCitySection();
 	
-	@CssSelector("${pages.harrods.deliveryStateSection}")
-	public AspireWebElement deliveryStateSection();
+	@CssSelector("${pages.harrods.harrodsDeliveryStateSection}")
+	public AspireWebElement harrodsDeliveryStateSection();
 	
-	@CssSelector("${pages.harrods.deliveryZipCodeSection}")
-	public AspireWebElement deliveryZipCodeSection();
+	@CssSelector("${pages.harrods.harrodsDeliveryZipCodeSection}")
+	public AspireWebElement harrodsDeliveryZipCodeSection();
 	
-	@CssSelector("${pages.harrods.paymentCheckoutPage}")
-	public AspireWebElement paymentCheckoutPage();
+	@CssSelector("${pages.harrods.harrodsPaymentCheckoutPage}")
+	public AspireWebElement harrodsPaymentCheckoutPage();
 	
-	@CssSelector("${pages.harrods.paySecurelyNowButton}")
-	public AspireWebElement paySecurelyNowButton();
+	@CssSelector("${pages.harrods.harrodsPaySecurelyNowButton}")
+	public AspireWebElement harrodsPaySecurelyNowButton();
 	
-	@CssSelector("${pages.harrods.paymentCardTypeError}")
-	public AspireWebElement paymentCardTypeError();
+	@CssSelector("${pages.harrods.harrodsPaymentCardTypeError}")
+	public AspireWebElement harrodsPaymentCardTypeError();
 	
-	@CssSelector("${pages.harrods.paymentCardNumberError}")
-	public AspireWebElement paymentCardNumberError();
+	@CssSelector("${pages.harrods.harrodsPaymentCardNumberError}")
+	public AspireWebElement harrodsPaymentCardNumberError();
 	
-	@CssSelector("${pages.harrods.paymentExpireDateError}")
-	public AspireWebElement paymentExpireDateError();
+	@CssSelector("${pages.harrods.harrodsPaymentExpireDateError}")
+	public AspireWebElement harrodsPaymentExpireDateError();
 	
-	@CssSelector("${pages.harrods.paymentSecurityCodeError}")
-	public AspireWebElement paymentSecurityCodeError();
+	@CssSelector("${pages.harrods.harrodsPaymentSecurityCodeError}")
+	public AspireWebElement harrodsPaymentSecurityCodeError();
 	
-	@CssSelector("${pages.harrods.paymentCardType}")
-	public AspireWebElement paymentCardType();
+	@CssSelector("${pages.harrods.harrodsPaymentCardType}")
+	public AspireWebElement harrodsPaymentCardType();
 	
-	@CssSelector("${pages.harrods.paymentCardNumberSection}")
-	public AspireWebElement paymentCardNumberSection();
+	@CssSelector("${pages.harrods.harrodsPaymentCardNumberSection}")
+	public AspireWebElement harrodsPaymentCardNumberSection();
 	
-	@CssSelector("${pages.harrods.paymentExpireMonth}")
-	public AspireWebElement paymentExpireMonth();
+	@CssSelector("${pages.harrods.harrodsPaymentExpireMonth}")
+	public AspireWebElement harrodsPaymentExpireMonth();
 	
-	@CssSelector("${pages.harrods.paymentExpireYear}")
-	public AspireWebElement paymentExpireYear();
+	@CssSelector("${pages.harrods.harrodsPaymentExpireYear}")
+	public AspireWebElement harrodsPaymentExpireYear();
 	
-	@CssSelector("${pages.harrods.paymentSecurityCodeSection}")
-	public AspireWebElement paymentSecurityCodeSection();
+	@CssSelector("${pages.harrods.harrodsPaymentSecurityCodeSection}")
+	public AspireWebElement harrodsPaymentSecurityCodeSection();
 	
-	@CssSelector("${pages.harrods.paymentNameOnCardError}")
-	public AspireWebElement paymentNameOnCardError();
+	@CssSelector("${pages.harrods.harrodsPaymentNameOnCardError}")
+	public AspireWebElement harrodsPaymentNameOnCardError();
 	
-	@CssSelector("${pages.harrods.paymentNameOnCardSection}")
-	public AspireWebElement paymentNameOnCardSection();
+	@CssSelector("${pages.harrods.harrodsPaymentNameOnCardSection}")
+	public AspireWebElement harrodsPaymentNameOnCardSection();
 	
-	@CssSelector("${pages.harrods.submitErrorMessage}")
-	public AspireWebElement submitErrorMessage();
+	@CssSelector("${pages.harrods.harrodsSubmitErrorMessage}")
+	public AspireWebElement harrodsSubmitErrorMessage();
 	
-	@CssSelector("${pages.harrods.addedButton}")
-	public AspireWebElement addedButton();
+	@CssSelector("${pages.harrods.harrodsAddedButton}")
+	public AspireWebElement harrodsAddedButton();
 	
-	@CssSelector("${pages.harrods.moreThanOneQTY}")
-	public AspireWebElements moreThanOneQTY();
+	@CssSelector("${pages.harrods.harrodsMoreThanOneQTY}")
+	public AspireWebElements harrodsMoreThanOneQTY();
 	
-	@CssSelector("${pages.harrods.quickViewImage}")
-	public AspireWebElement quickViewImage();
+	@CssSelector("${pages.harrods.harrodsQuickViewImage}")
+	public AspireWebElement harrodsQuickViewImage();
 	
-	@CssSelector("${pages.harrods.pdpImage}")
-	public AspireWebElement pdpImage();
+	@CssSelector("${pages.harrods.harrodsPdpImage}")
+	public AspireWebElement harrodsPdpImage();
 	
-	@CssSelector("${pages.harrods.checkoutItemsSubtotal}")
-	public AspireWebElement checkoutItemsSubtotal();
+	@CssSelector("${pages.harrods.harrodsCheckoutItemsSubtotal}")
+	public AspireWebElement harrodsCheckoutItemsSubtotal();
 	
-	@CssSelector("${pages.harrods.checkoutExcludingUKTaxes}")
-	public AspireWebElement checkoutExcludingUKTaxes();
+	@CssSelector("${pages.harrods.harrodsCheckoutExcludingUKTaxes}")
+	public AspireWebElement harrodsCheckoutExcludingUKTaxes();
 	
-	@CssSelector("${pages.harrods.checkoutLocalTaxes}")
-	public AspireWebElement checkoutLocalTaxes();
+	@CssSelector("${pages.harrods.harrodsCheckoutLocalTaxes}")
+	public AspireWebElement harrodsCheckoutLocalTaxes();
 	
-	@CssSelector("${pages.harrods.checkoutImportDuties}")
-	public AspireWebElement checkoutImportDuties();
+	@CssSelector("${pages.harrods.harrodsCheckoutImportDuties}")
+	public AspireWebElement harrodsCheckoutImportDuties();
 	
-	@CssSelector("${pages.harrods.checkoutDeliveryCharge}")
-	public AspireWebElement checkoutDeliveryCharge();
+	@CssSelector("${pages.harrods.harrodsCheckoutDeliveryCharge}")
+	public AspireWebElement harrodsCheckoutDeliveryCharge();
 	
-	@CssSelector("${pages.harrods.checkoutTotalToPa}")
-	public AspireWebElement checkoutTotalToPa();
+	@CssSelector("${pages.harrods.harrodsCheckoutTotalToPay}")
+	public AspireWebElement harrodsCheckoutTotalToPay();
 	
 	
 	

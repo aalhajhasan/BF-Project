@@ -3,11 +3,11 @@ Meta:
 
 Scenario: TC05_Gilt_Verify_price_correctness_after_updating_item_QTY
 
-Given [1101-1080] cartDialog should be displayed
-When [1101-1100] cartProductName text should equal to `productName`
-And [1101-1184] the user saves cartProductPrice text in scenario scope under name cartProductPriceBefore
-And [1100-1601-S] Select cartQTY By Value 2
-And [8000-0001] User hits 2 with `cartProductPriceBefore`
-And [1101-1184] the user saves cartProductPrice text in scenario scope under name cartProductPriceAfter
-Then [8000-0002] User compare between `cartProductPriceBefore` and `cartProductPriceAfter`
-And [1100-1601] Select cartQTY By Value 1
+Given [1101-1080] giltCartDialog should be displayed
+When [1101-1100] giltCartProductName text should equal to `giltProductName`
+And [1101-1184] the user saves giltCartProductPrice text in scenario scope under name giltCartProductPriceBefore
+And [1100-1601-S] Select giltCartQTY By Value 2
+And [8000-0001] User hits 2 with `giltCartProductPriceBefore`
+And [1101-1184] the user saves giltCartProductPrice text in scenario scope under name giltCartProductPriceAfter
+Then [8000-0002] User compare between `giltCartProductPriceBefore` and `giltCartProductPriceAfter`
+And [1100-1601] Select giltCartQTY By Value 1

@@ -14,8 +14,8 @@ aspire:
         enabled: true   
         include: 
            #- stories/barneys/**.story
-           #- stories/ebags/**.story
-           - stories/gilt/**.story
+           - stories/ebags/**.story
+           #- stories/gilt/**.story
            #- stories/harrods/**.story
            #- stories/jcrew/**.story
            #- stories/lordandtaylor/**.story
@@ -41,7 +41,7 @@ spring:
 logging:
   level: 
     com:
-      aspire: DEBUG
+      aspire: ERROR
   file: application_zurqan.log  
 
 
