@@ -10,15 +10,15 @@ And [8003-0003] user search for saksoffProducts
 And [1211-1080] saksoffProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from saksoffProducts
 And [1100-0300] User click on it
-And [8003-0003] user search for productSKUSelection
-And [8003-0003] user search for validPdp
-And [8003-0009] user randomly select an available color
-And [8003-0009] user randomly select an available sku
-And [1100-1300] User clicks on the addToBagButton
-And [1111-1080] shoppingBag should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the bagCheckoutButton
+And [8003-0003] user search for saksoffProductSKUSelection
+And [8003-0003] user search for saksoffValidPdp
+And [8003-0009] user randomly select an available saksoffColor
+And [8003-0009] user randomly select an available saksoffSku
+And [1100-1300] User clicks on the saksoffAddToBagButton
+And [1111-1080] saksoffShoppingBag should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the saksoffBagCheckoutButton
 And [1111-1080] saksoffBagPage should be displayed, Within 120 seconds
-And [1101-1184] the user saves bagProductOnePrice text in scenario scope under name ProductOnePrice
-And [1101-1184] the user saves bagProductTwoPrice text in scenario scope under name ProductTwoPrice
-And [1101-1184] the user saves bagSubTotalPrice text in scenario scope under name ProductTotalPrice
-Then [8003-0007] the user check the sum of `ProductOnePrice` and `ProductTwoPrice` with `ProductTotalPrice`
+And [1101-1184] the user saves saksoffBagProductOnePrice text in scenario scope under name saksoffProductOnePrice
+And [1101-1184] the user saves saksoffBagProductTwoPrice text in scenario scope under name saksoffProductTwoPrice
+And [1101-1184] the user saves saksoffBagSubTotalPrice text in scenario scope under name saksoffProductTotalPrice
+Then [8003-0007] the user check the sum of `saksoffProductOnePrice` and `saksoffProductTwoPrice` with `saksoffProductTotalPrice`

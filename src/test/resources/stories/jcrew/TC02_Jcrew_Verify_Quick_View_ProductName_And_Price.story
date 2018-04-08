@@ -10,13 +10,13 @@ And [1200-1302] For any element from jcrewSales
 And [1100-0400] Execute `click` javascript on the element
 And [8010-0001] user search for jcrewProducts
 And [1200-1302] For any element from jcrewProducts
-And [1101-1181] the user saves plpItemName text in global scope under name plpItemName
-And [1100-1581] the user saves plpItemImage attribute of src in global scope under name plpItemImage
-And [1101-1181] the user saves plpItemPrice text in global scope under name plpItemPrice
+And [1101-1181] the user saves jcrewPlpItemName text in global scope under name jcrewPlpItemName
+And [1100-1581] the user saves jcrewPlpItemImage attribute of src in global scope under name jcrewPlpItemImage
+And [1101-1181] the user saves jcrewPlpItemPrice text in global scope under name jcrewPlpItemPrice
 And [1100-0360] User move mouse to it
-And [1100-1300] User clicks on the quickShop
-And [1111-1080] quickShopDialog should be displayed, Within 120 seconds
-And [1101-1102] quickShopItemName text is equal to `plpItemName` case sensitive
-And [1101-1181] the user saves quickShopItemPrice text in global scope under name quickShopItemPrice
-And [1100-1581] the user saves quickShopItemImage attribute of src in global scope under name quickShopItemImage
-Then [8010-0002] User compare between `plpItemPrice` and `quickShopItemPrice`
+And [1100-1300] User clicks on the jcrewQuickShop
+And [1111-1080] jcrewQuickShopDialog should be displayed, Within 120 seconds
+And [1101-1102] jcrewQuickShopItemName text is equal to `jcrewPlpItemName` case sensitive
+And [1101-1181] the user saves jcrewQuickShopItemPrice text in global scope under name jcrewQuickShopItemPrice
+And [1100-1581] the user saves jcrewQuickShopItemImage attribute of src in global scope under name jcrewQuickShopItemImage
+Then [8010-0002] User compare between `jcrewPlpItemPrice` and `jcrewQuickShopItemPrice`

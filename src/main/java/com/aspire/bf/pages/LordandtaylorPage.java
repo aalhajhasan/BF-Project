@@ -30,68 +30,68 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.previewThisProductIcon}")
 	public AspireWebElement previewThisProductIcon();
 	
-	@CssSelector("${pages.lordandtaylor.quickViewDialog}")
-	public AspireWebElement quickViewDialog();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewDialog}")
+	public AspireWebElement lordandtaylorQuickViewDialog();
 	
-	@CssSelector("${pages.lordandtaylor.quickViewProductName}")
-	public AspireWebElement quickViewProductName();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewProductName}")
+	public AspireWebElement lordandtaylorQuickViewProductName();
 	
-	@CssSelector("${pages.lordandtaylor.quickViewProductPrice}")
-	public AspireWebElement quickViewProductPrice();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewProductPrice}")
+	public AspireWebElement lordandtaylorQuickViewProductPrice();
 	
-	@CssSelector("${pages.lordandtaylor.quickViewImage}")
-	public AspireWebElement quickViewImage();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewImage}")
+	public AspireWebElement lordandtaylorQuickViewImage();
 	
 	@CssSelector("${pages.lordandtaylor.productImage}")
 	public AspireWebElement productImage();
 	
-	@CssSelector("${pages.lordandtaylor.viewProductDetail}")
-	public AspireWebElement viewProductDetail();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorViewProductDetail}")
+	public AspireWebElement lordandtaylorViewProductDetail();
 	
-	@CssSelector("${pages.lordandtaylor.pdpProductPage}")
-	public AspireWebElement pdpProductPage();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPdpProductPage}")
+	public AspireWebElement lordandtaylorPdpProductPage();
 	
-	@CssSelector("${pages.lordandtaylor.pdpImage}")
-	public AspireWebElement pdpImage();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPdpImage}")
+	public AspireWebElement lordandtaylorPdpImage();
 	
-	@CssSelector("${pages.lordandtaylor.pdpProductPrice}")
-	public AspireWebElement pdpProductPrice();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPdpProductPrice}")
+	public AspireWebElement lordandtaylorPdpProductPrice();
 	
-	@CssSelector("${pages.lordandtaylor.pdpProductName}")
-	public AspireWebElement pdpProductName();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPdpProductName}")
+	public AspireWebElement lordandtaylorPdpProductName();
 	
-	@CssSelector("${pages.lordandtaylor.color}")
-	public AspireWebElements color();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorColor}")
+	public AspireWebElements lordandtaylorColor();
 	
-	@CssSelector("${pages.lordandtaylor.sku}")
-	public AspireWebElements sku();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorSku}")
+	public AspireWebElements lordandtaylorSku();
 	
-	@CssSelector("${pages.lordandtaylor.addToBagButton}")
-	public AspireWebElement addToBagButton();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorAddToBagButton}")
+	public AspireWebElement lordandtaylorAddToBagButton();
 	
-	@CssSelector("${pages.lordandtaylor.shoppingBag}")
-	public AspireWebElement shoppingBag();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorShoppingBag}")
+	public AspireWebElement lordandtaylorShoppingBag();
 	
-	@CssSelector("${pages.lordandtaylor.bagProductPrice}")
-	public AspireWebElement bagProductPrice();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorBagProductPrice}")
+	public AspireWebElement lordandtaylorBagProductPrice();
 	
-	@CssSelector("${pages.lordandtaylor.viewMyBag}")
-	public AspireWebElement viewMyBag();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorViewMyBag}")
+	public AspireWebElement lordandtaylorViewMyBag();
 	
-	@CssSelector("${pages.lordandtaylor.bagPage}")
-	public AspireWebElement bagPage();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorBagPage}")
+	public AspireWebElement lordandtaylorBagPage();
 	
-	@CssSelector("${pages.lordandtaylor.editLink}")
-	public AspireWebElement editLink();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorEditLink}")
+	public AspireWebElement lordandtaylorEditLink();
 	
-	@CssSelector("${pages.lordandtaylor.editDialog}")
-	public AspireWebElement editDialog();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorEditDialog}")
+	public AspireWebElement lordandtaylorEditDialog();
 	
-	@CssSelector("${pages.lordandtaylor.quantity}")
-	public AspireWebElement quantity();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorQuantity}")
+	public AspireWebElement lordandtaylorQuantity();
 	
-	@CssSelector("${pages.lordandtaylor.applyButton}")
-	public AspireWebElement applyButton();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorApplyButton}")
+	public AspireWebElement lordandtaylorApplyButton();
 	
 	@CssSelector("${pages.lordandtaylor.productOnePrice}")
 	public AspireWebElement productOnePrice();
@@ -102,14 +102,14 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.productTotalPrice}")
 	public AspireWebElement productTotalPrice();
 	
-	@CssSelector("${pages.lordandtaylor.checkoutButton}")
-	public AspireWebElement checkoutButton();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCheckoutButton}")
+	public AspireWebElement lordandtaylorCheckoutButton();
 	
-	@CssSelector("${pages.lordandtaylor.checkoutDialog}")
-	public AspireWebElement checkoutDialog();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCheckoutDialog}")
+	public AspireWebElement lordandtaylorCheckoutDialog();
 	
-	@CssSelector("${pages.lordandtaylor.checkoutAsGuest}")
-	public AspireWebElement checkoutAsGuest();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCheckoutAsGuest}")
+	public AspireWebElement lordandtaylorCheckoutAsGuest();
 	
 	
 	

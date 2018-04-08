@@ -31,47 +31,47 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.saksProductPrice}")
 	public AspireWebElement saksProductPrice();
 	
-	@CssSelector("${pages.saks.previewThisProductIcon}")
-	public AspireWebElement previewThisProductIcon();
+	@CssSelector("${pages.saks.saksPreviewThisProductIcon}")
+	public AspireWebElement saksPreviewThisProductIcon();
 	
-	@CssSelector("${pages.saks.quickViewDialog}")
-	public AspireWebElement quickViewDialog();
+	@CssSelector("${pages.saks.saksQuickViewDialog}")
+	public AspireWebElement saksQuickViewDialog();
 	
-	@CssSelector("${pages.saks.quickViewProductName}")
-	public AspireWebElement quickViewProductName();
+	@CssSelector("${pages.saks.saksQuickViewProductName}")
+	public AspireWebElement saksQuickViewProductName();
 	
-	@CssSelector("${pages.saks.quickViewProductPrice}")
-	public AspireWebElement quickViewProductPrice();
+	@CssSelector("${pages.saks.saksQuickViewProductPrice}")
+	public AspireWebElement saksQuickViewProductPrice();
 	
-	@CssSelector("${pages.saks.quickViewImage}")
-	public AspireWebElement quickViewImage();
+	@CssSelector("${pages.saks.saksQuickViewImage}")
+	public AspireWebElement saksQuickViewImage();
 	
-	@CssSelector("${pages.saks.viewProductDetail}")
-	public AspireWebElement viewProductDetail();
+	@CssSelector("${pages.saks.saksViewProductDetail}")
+	public AspireWebElement saksViewProductDetail();
 	
-	@CssSelector("${pages.saks.pdpProductPage}")
-	public AspireWebElement pdpProductPage();
+	@CssSelector("${pages.saks.saksPdpProductPage}")
+	public AspireWebElement saksPdpProductPage();
 	
-	@CssSelector("${pages.saks.pdpProductPrice}")
-	public AspireWebElement pdpProductPrice();
+	@CssSelector("${pages.saks.saksPdpProductPrice}")
+	public AspireWebElement saksPdpProductPrice();
 	
-	@CssSelector("${pages.saks.pdpProductName}")
-	public AspireWebElement pdpProductName();
+	@CssSelector("${pages.saks.saksPdpProductName}")
+	public AspireWebElement saksPdpProductName();
 	
-	@CssSelector("${pages.saks.pdpImage}")
-	public AspireWebElement pdpImage();
+	@CssSelector("${pages.saks.saksPdpImage}")
+	public AspireWebElement saksPdpImage();
 	
-	@CssSelector("${pages.saks.addToBagButton}")
-	public AspireWebElement addToBagButton();
+	@CssSelector("${pages.saks.saksAddToBagButton}")
+	public AspireWebElement saksAddToBagButton();
 	
-	@CssSelector("${pages.saks.shoppingBag}")
-	public AspireWebElement shoppingBag();
+	@CssSelector("${pages.saks.saksShoppingBag}")
+	public AspireWebElement saksShoppingBag();
 	
-	@CssSelector("${pages.saks.bagProductPrice}")
-	public AspireWebElement bagProductPrice();
+	@CssSelector("${pages.saks.saksBagProductPrice}")
+	public AspireWebElement saksBagProductPrice();
 	
-	@CssSelector("${pages.saks.bagProductName}")
-	public AspireWebElement bagProductName();
+	@CssSelector("${pages.saks.saksBagProductName}")
+	public AspireWebElement saksBagProductName();
 	
 	@CssSelector("${pages.saks.saksBagQTY}")
 	public AspireWebElement saksBagQTY();
@@ -79,165 +79,165 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.productSKUSelection}")
 	public AspireWebElements productSKUSelection();
 	
-	@CssSelector("${pages.saks.sku}")
-	public AspireWebElements sku();
+	@CssSelector("${pages.saks.saksSku}")
+	public AspireWebElements saksSku();
 	
-	@CssSelector("${pages.saks.bagCloseButton}")
-	public AspireWebElement bagCloseButton();
+	@CssSelector("${pages.saks.saksBagCloseButton}")
+	public AspireWebElement saksBagCloseButton();
 	
 	
-	@CssSelector("${pages.saks.bagCheckoutButton}")
-	public AspireWebElement bagCheckoutButton();
+	@CssSelector("${pages.saks.saksBagCheckoutButton}")
+	public AspireWebElement saksBagCheckoutButton();
 	
-	@CssSelector("${pages.saks.bagProductPriceAfter}")
-	public AspireWebElement bagProductPriceAfter();
+	@CssSelector("${pages.saks.saksBagProductPriceAfter}")
+	public AspireWebElement saksBagProductPriceAfter();
 	
-	@CssSelector("${pages.saks.quantity}")
-	public AspireWebElement quantity();
+	@CssSelector("${pages.saks.saksQuantity}")
+	public AspireWebElement saksQuantity();
 	
 	@CssSelector("${pages.saks.saksBagPage}")
 	public AspireWebElement saksBagPage();
 	
-	@CssSelector("${pages.saks.color}")
-	public AspireWebElements color();
+	@CssSelector("${pages.saks.saksColor}")
+	public AspireWebElements saksColor();
 	
-	@CssSelector("${pages.saks.bagProductOnePrice}")
-	public AspireWebElement bagProductOnePrice();
+	@CssSelector("${pages.saks.saksBagProductOnePrice}")
+	public AspireWebElement saksBagProductOnePrice();
 	
-	@CssSelector("${pages.saks.bagProductTwoPrice}")
-	public AspireWebElement bagProductTwoPrice();
+	@CssSelector("${pages.saks.saksBagProductTwoPrice}")
+	public AspireWebElement saksBagProductTwoPrice();
 	
-	@CssSelector("${pages.saks.bagSubTotalPrice}")
-	public AspireWebElement bagSubTotalPrice();
+	@CssSelector("${pages.saks.saksBagSubTotalPrice}")
+	public AspireWebElement saksBagSubTotalPrice();
 	
 	@CssSelector("${pages.saks.saksCheckoutButton}")
 	public AspireWebElement saksCheckoutButton();
 	
-	@CssSelector("${pages.saks.checkoutDialog}")
-	public AspireWebElement checkoutDialog();
+	@CssSelector("${pages.saks.saksCheckoutDialog}")
+	public AspireWebElement saksCheckoutDialog();
 	
-	@CssSelector("${pages.saks.checkoutAsGuest}")
-	public AspireWebElement checkoutAsGuest();
+	@CssSelector("${pages.saks.saksCheckoutAsGuest}")
+	public AspireWebElement saksCheckoutAsGuest();
 	
-	@CssSelector("${pages.saks.checkoutPage}")
-	public AspireWebElement checkoutPage();
+	@CssSelector("${pages.saks.saksCheckoutPage}")
+	public AspireWebElement saksCheckoutPage();
 	
-	@CssSelector("${pages.saks.continueCheckoutButton}")
-	public AspireWebElement continueCheckoutButton();
+	@CssSelector("${pages.saks.saksContinueCheckoutButton}")
+	public AspireWebElement saksContinueCheckoutButton();
 	
-	@CssSelector("${pages.saks.checkoutFirstNameError}")
-	public AspireWebElement checkoutFirstNameError();
+	@CssSelector("${pages.saks.saksCheckoutFirstNameError}")
+	public AspireWebElement saksCheckoutFirstNameError();
 	
-	@CssSelector("${pages.saks.checkoutLastNameError}")
-	public AspireWebElement checkoutLastNameError();
+	@CssSelector("${pages.saks.saksCheckoutLastNameError}")
+	public AspireWebElement saksCheckoutLastNameError();
 	
-	@CssSelector("${pages.saks.checkoutAddressError}")
-	public AspireWebElement checkoutAddressError();
+	@CssSelector("${pages.saks.saksCheckoutAddressError}")
+	public AspireWebElement saksCheckoutAddressError();
 	
-	@CssSelector("${pages.saks.checkoutCityError}")
-	public AspireWebElement checkoutCityError();
+	@CssSelector("${pages.saks.saksCheckoutCityError}")
+	public AspireWebElement saksCheckoutCityError();
 	
-	@CssSelector("${pages.saks.checkoutEmailAddressError}")
-	public AspireWebElement checkoutEmailAddressError();
+	@CssSelector("${pages.saks.saksCheckoutEmailAddressError}")
+	public AspireWebElement saksCheckoutEmailAddressError();
 	
-	@CssSelector("${pages.saks.checkoutPhoneNumberError}")
-	public AspireWebElement checkoutPhoneNumberError();
+	@CssSelector("${pages.saks.saksCheckoutPhoneNumberError}")
+	public AspireWebElement saksCheckoutPhoneNumberError();
 	
-	@CssSelector("${pages.saks.checkoutFirstName}")
-	public AspireWebElement checkoutFirstName();
+	@CssSelector("${pages.saks.saksCheckoutFirstName}")
+	public AspireWebElement saksCheckoutFirstName();
 	
-	@CssSelector("${pages.saks.checkoutLastName}")
-	public AspireWebElement checkoutLastName();
+	@CssSelector("${pages.saks.saksCheckoutLastName}")
+	public AspireWebElement saksCheckoutLastName();
 	
-	@CssSelector("${pages.saks.checkoutAddress}")
-	public AspireWebElement checkoutAddress();
+	@CssSelector("${pages.saks.saksCheckoutAddress}")
+	public AspireWebElement saksCheckoutAddress();
 	
-	@CssSelector("${pages.saks.checkoutCity}")
-	public AspireWebElement checkoutCity();
+	@CssSelector("${pages.saks.saksCheckoutCity}")
+	public AspireWebElement saksCheckoutCity();
 	
-	@CssSelector("${pages.saks.checkoutEmailAddress}")
-	public AspireWebElement checkoutEmailAddress();
+	@CssSelector("${pages.saks.saksCheckoutEmailAddress}")
+	public AspireWebElement saksCheckoutEmailAddress();
 	
-	@CssSelector("${pages.saks.checkoutPhoneNumber}")
-	public AspireWebElement checkoutPhoneNumber();
+	@CssSelector("${pages.saks.saksCheckoutPhoneNumber}")
+	public AspireWebElement saksCheckoutPhoneNumber();
 	
-	@CssSelector("${pages.saks.checkoutState}")
-	public AspireWebElement checkoutState();
+	@CssSelector("${pages.saks.saksCheckoutState}")
+	public AspireWebElement saksCheckoutState();
 	
-	@CssSelector("${pages.saks.checkoutZipCode}")
-	public AspireWebElement checkoutZipCode();
+	@CssSelector("${pages.saks.saksCheckoutZipCode}")
+	public AspireWebElement saksCheckoutZipCode();
 	
-	@CssSelector("${pages.saks.paymentPage}")
-	public AspireWebElement paymentPage();
+	@CssSelector("${pages.saks.saksPaymentPage}")
+	public AspireWebElement saksPaymentPage();
 	
-	@CssSelector("${pages.saks.paymentContinueCheckout}")
-	public AspireWebElement paymentContinueCheckout();
+	@CssSelector("${pages.saks.saksPaymentContinueCheckout}")
+	public AspireWebElement saksPaymentContinueCheckout();
 	
-	@CssSelector("${pages.saks.paymentCCNError}")
-	public AspireWebElement paymentCCNError();
+	@CssSelector("${pages.saks.saksPaymentCCNError}")
+	public AspireWebElement saksPaymentCCNError();
 	
-	@CssSelector("${pages.saks.paymentNameOnCardError}")
-	public AspireWebElement paymentNameOnCardError();
+	@CssSelector("${pages.saks.saksPaymentNameOnCardError}")
+	public AspireWebElement saksPaymentNameOnCardError();
 	
-	@CssSelector("${pages.saks.paymentExpirationError}")
-	public AspireWebElement paymentExpirationError();
+	@CssSelector("${pages.saks.saksPaymentExpirationError}")
+	public AspireWebElement saksPaymentExpirationError();
 	
-	@CssSelector("${pages.saks.paymentSecurityCodeError}")
-	public AspireWebElement paymentSecurityCodeError();
+	@CssSelector("${pages.saks.saksPaymentSecurityCodeError}")
+	public AspireWebElement saksPaymentSecurityCodeError();
 	
-	@CssSelector("${pages.saks.paymentType}")
-	public AspireWebElement paymentType();
+	@CssSelector("${pages.saks.saksPaymentType}")
+	public AspireWebElement saksPaymentType();
 	
-	@CssSelector("${pages.saks.paymentCCNE}")
-	public AspireWebElement paymentCCNE();
+	@CssSelector("${pages.saks.saksPaymentCCNE}")
+	public AspireWebElement saksPaymentCCNE();
 	
-	@CssSelector("${pages.saks.paymentNameOnCard}")
-	public AspireWebElement paymentNameOnCard();
+	@CssSelector("${pages.saks.saksPaymentNameOnCard}")
+	public AspireWebElement saksPaymentNameOnCard();
 	
-	@CssSelector("${pages.saks.paymentExpirationMonth}")
-	public AspireWebElement paymentExpirationMonth();
+	@CssSelector("${pages.saks.saksPaymentExpirationMonth}")
+	public AspireWebElement saksPaymentExpirationMonth();
 	
-	@CssSelector("${pages.saks.paymentExpirationYear}")
-	public AspireWebElement paymentExpirationYear();
+	@CssSelector("${pages.saks.saksPaymentExpirationYear}")
+	public AspireWebElement saksPaymentExpirationYear();
 	
-	@CssSelector("${pages.saks.paymentSecurityCode}")
-	public AspireWebElement paymentSecurityCode();
+	@CssSelector("${pages.saks.saksPaymentSecurityCode}")
+	public AspireWebElement saksPaymentSecurityCode();
 	
-	@CssSelector("${pages.saks.checkoutOrderSummery}")
-	public AspireWebElement checkoutOrderSummery();
+	@CssSelector("${pages.saks.saksCheckoutOrderSummery}")
+	public AspireWebElement saksCheckoutOrderSummery();
 	
-	@CssSelector("${pages.saks.securityCode}")
-	public AspireWebElement securityCode();
+	@CssSelector("${pages.saks.saksSecurityCode}")
+	public AspireWebElement saksSecurityCode();
 	
-	@CssSelector("${pages.saks.placeOrderButton}")
-	public AspireWebElement placeOrderButton();
+	@CssSelector("${pages.saks.saksPlaceOrderButton}")
+	public AspireWebElement saksPlaceOrderButton();
 	
-	@CssSelector("${pages.saks.submitErrorMessage}")
-	public AspireWebElement submitErrorMessage();
+	@CssSelector("${pages.saks.saksSubmitErrorMessage}")
+	public AspireWebElement saksSubmitErrorMessage();
 	
-	@CssSelector("${pages.saks.validPdp}")
-	public AspireWebElements validPdp();
+	@CssSelector("${pages.saks.saksValidPdp}")
+	public AspireWebElements saksValidPdp();
 	
-	@CssSelector("${pages.saks.checkoutTitle}")
-	public AspireWebElement checkoutTitle();
+	@CssSelector("${pages.saks.saksCheckoutTitle}")
+	public AspireWebElement saksCheckoutTitle();
 	
-	@CssSelector("${pages.saks.itemTotal}")
-	public AspireWebElement itemTotal();
+	@CssSelector("${pages.saks.saksItemTotal}")
+	public AspireWebElement saksItemTotal();
 	
-	@XPathSelector("${pages.saks.shipping}")
-	public AspireWebElement shipping();
+	@XPathSelector("${pages.saks.saksShipping}")
+	public AspireWebElement saksShipping();
 	
-	@CssSelector("${pages.saks.promotionalSavings}")
-	public AspireWebElement promotionalSavings();
+	@CssSelector("${pages.saks.saksPromotionalSavings}")
+	public AspireWebElement saksPromotionalSavings();
 	
-	@XPathSelector("${pages.saks.landedCost}")
-	public AspireWebElement landedCost();
+	@XPathSelector("${pages.saks.saksLandedCost}")
+	public AspireWebElement saksLandedCost();
 	
-	@CssSelector("${pages.saks.dutiesAndTaxes}")
-	public AspireWebElement dutiesAndTaxes();
+	@CssSelector("${pages.saks.saksDutiesAndTaxes}")
+	public AspireWebElement saksDutiesAndTaxes();
 	
-	@CssSelector("${pages.saks.orderTotal}")
-	public AspireWebElement orderTotal();
+	@CssSelector("${pages.saks.saksOrderTotal}")
+	public AspireWebElement saksOrderTotal();
 	
 	
 	

@@ -24,80 +24,80 @@ public interface UnderarmourPage {
 	@CssSelector("${pages.underarmour.underarmourCountryClose}")
 	public AspireWebElement underarmourCountryClose();
 	
-	@CssSelector("${pages.underarmour.newArrivalsSection}")
-	public AspireWebElement newArrivalsSection();
+	@CssSelector("${pages.underarmour.underarmourNewArrivalsSection}")
+	public AspireWebElement underarmourNewArrivalsSection();
 	
-	@CssSelector("${pages.underarmour.newArrivalsCategory}")
-	public AspireWebElements newArrivalsCategory();
+	@CssSelector("${pages.underarmour.underarmourNewArrivalsCategory}")
+	public AspireWebElements underarmourNewArrivalsCategory();
 	
 	@CssSelector("${pages.underarmour.underarmourPlp}")
 	public AspireWebElement underarmourPlp();
 	
-	@CssSelector("${pages.underarmour.plpItems}")
-	public AspireWebElements plpItems();
+	@CssSelector("${pages.underarmour.underarmourPlpItems}")
+	public AspireWebElements underarmourPlpItems();
 	
-	@CssSelector("${pages.underarmour.plpItemName}")
-	public AspireWebElement plpItemName();
+	@CssSelector("${pages.underarmour.underarmourPlpItemName}")
+	public AspireWebElement underarmourPlpItemName();
 	
-	@CssSelector("${pages.underarmour.plpItemPrice}")
-	public AspireWebElement plpItemPrice();
+	@CssSelector("${pages.underarmour.underarmourPlpItemPrice}")
+	public AspireWebElement underarmourPlpItemPrice();
 	
-	@CssSelector("${pages.underarmour.plpItemImage}")
-	public AspireWebElement plpItemImage();
+	@CssSelector("${pages.underarmour.underarmourPlpItemImage}")
+	public AspireWebElement underarmourPlpItemImage();
 	
-	@CssSelector("${pages.underarmour.plpItemQuickView}")
-	public AspireWebElement plpItemQuickView();
+	@CssSelector("${pages.underarmour.underarmourPlpItemQuickView}")
+	public AspireWebElement underarmourPlpItemQuickView();
 	
-	@CssSelector("${pages.underarmour.pdpItemPage}")
-	public AspireWebElement pdpItemPage();
+	@CssSelector("${pages.underarmour.underarmourPdpItemPage}")
+	public AspireWebElement underarmourPdpItemPage();
 	
-	@CssSelector("${pages.underarmour.pdpItemName}")
-	public AspireWebElement pdpItemName();
+	@CssSelector("${pages.underarmour.underarmourPdpItemName}")
+	public AspireWebElement underarmourPdpItemName();
 	
-	@CssSelector("${pages.underarmour.pdpItemPrice}")
-	public AspireWebElement pdpItemPrice();
+	@CssSelector("${pages.underarmour.underarmourPdpItemPrice}")
+	public AspireWebElement underarmourPdpItemPrice();
 	
-	@CssSelector("${pages.underarmour.pdpItemImage}")
-	public AspireWebElement pdpItemImage();
+	@CssSelector("${pages.underarmour.underarmourPdpItemImage}")
+	public AspireWebElement underarmourPdpItemImage();
 	
-	@CssSelector("${pages.underarmour.itemColors}")
-	public AspireWebElements itemColors();
+	@CssSelector("${pages.underarmour.underarmourItemColors}")
+	public AspireWebElements underarmourItemColors();
 	
-	@CssSelector("${pages.underarmour.itemSizes}")
-	public AspireWebElements itemSizes();
+	@CssSelector("${pages.underarmour.underarmourItemSizes}")
+	public AspireWebElements underarmourItemSizes();
 	
-	@CssSelector("${pages.underarmour.addToBag}")
-	public AspireWebElement addToBag();
+	@CssSelector("${pages.underarmour.underarmourAddToBag}")
+	public AspireWebElement underarmourAddToBag();
 	
-	@CssSelector("${pages.underarmour.bagDialog}")
-	public AspireWebElement bagDialog();
+	@CssSelector("${pages.underarmour.underarmourBagDialog}")
+	public AspireWebElement underarmourBagDialog();
 	
-	@CssSelector("${pages.underarmour.bagItemName}")
-	public AspireWebElement bagItemName();
+	@CssSelector("${pages.underarmour.underarmourBagItemName}")
+	public AspireWebElement underarmourBagItemName();
 	
-	@CssSelector("${pages.underarmour.bagItemPrice}")
-	public AspireWebElement bagItemPrice();
+	@CssSelector("${pages.underarmour.underarmourBagItemPrice}")
+	public AspireWebElement underarmourBagItemPrice();
 	
-	@CssSelector("${pages.underarmour.bagAndCheckout}")
-	public AspireWebElement bagAndCheckout();
+	@CssSelector("${pages.underarmour.underarmourBagAndCheckout}")
+	public AspireWebElement underarmourBagAndCheckout();
 	
-	@CssSelector("${pages.underarmour.bagPage}")
-	public AspireWebElement bagPage();
+	@CssSelector("${pages.underarmour.underarmourBagPage}")
+	public AspireWebElement underarmourBagPage();
 	
-	@CssSelector("${pages.underarmour.quantity}")
-	public AspireWebElement quantity();
+	@CssSelector("${pages.underarmour.underarmourQuantity}")
+	public AspireWebElement underarmourQuantity();
 	
-	@CssSelector("${pages.underarmour.bagItemPriceAfter}")
-	public AspireWebElement bagItemPriceAfter();
+	@CssSelector("${pages.underarmour.underarmourBagItemPriceAfter}")
+	public AspireWebElement underarmourBagItemPriceAfter();
 	
-	@CssSelector("${pages.underarmour.bagItemOnePrice}")
-	public AspireWebElement bagItemOnePrice();
+	@CssSelector("${pages.underarmour.underarmourBagItemOnePrice}")
+	public AspireWebElement underarmourBagItemOnePrice();
 	
-	@CssSelector("${pages.underarmour.bagItemTwoPrice}")
-	public AspireWebElement bagItemTwoPrice();
+	@CssSelector("${pages.underarmour.underarmourBagItemTwoPrice}")
+	public AspireWebElement underarmourBagItemTwoPrice();
 	
-	@CssSelector("${pages.underarmour.bagItemsTotalPrice}")
-	public AspireWebElement bagItemsTotalPrice();
+	@CssSelector("${pages.underarmour.underarmourBagItemsTotalPrice}")
+	public AspireWebElement underarmourBagItemsTotalPrice();
 	
 	
 	

@@ -12,10 +12,10 @@ And [1100-0300] User click on it
 And [8007-0002] user search for ruelalaPLP
 And [1211-1080] ruelalaPLP should be all displayed, Within 120 seconds
 And [1200-1302] For any element from ruelalaPLP
-And [1101-1181] the user saves productPrice text in global scope under name productPrice
-And [1101-1181] the user saves productName text in global scope under name productName
+And [1101-1181] the user saves ruelalaProductPrice text in global scope under name ruelalaProductPrice
+And [1101-1181] the user saves ruelalaProductName text in global scope under name ruelalaProductName
 And [1100-0300] User click on it
-And [1111-1080] ruelalaPDP should be displayed, Within 120 seconds
-And [1101-1102] pdpName text is equal to `productName` case sensitive
-And [1101-1181] the user saves pdpPrice text in global scope under name pdpPrice
-Then [8007-0001] User compare between `productPrice` and `pdpPrice`
+And [1111-1080] ruelalaPdp should be displayed, Within 120 seconds
+And [1101-1102] ruelalaPdpName text is equal to `ruelalaProductName` case sensitive
+And [1101-1181] the user saves ruelalaPdpPrice text in global scope under name ruelalaPdpPrice
+Then [8007-0001] User compare between `ruelalaProductPrice` and `ruelalaPdpPrice`

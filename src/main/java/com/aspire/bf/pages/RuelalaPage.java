@@ -9,26 +9,26 @@ import com.aspire.automation.web.util.annotation.Page;
 
 public interface RuelalaPage {
 
-	@CssSelector("${pages.ruelala.newMemberDialog}")
-	public AspireWebElement newMemberDialog();
+	@CssSelector("${pages.ruelala.ruelalaNewMemberDialog}")
+	public AspireWebElement ruelalaNewMemberDialog();
 	
-	@CssSelector("${pages.ruelala.memberEmail}")
-	public AspireWebElement memberEmail();
+	@CssSelector("${pages.ruelala.ruelalaMemberEmail}")
+	public AspireWebElement ruelalaMemberEmail();
 	
-	@CssSelector("${pages.ruelala.continueButton}")
-	public AspireWebElement continueButton();
+	@CssSelector("${pages.ruelala.ruelalaContinueButton}")
+	public AspireWebElement ruelalaContinueButton();
 	
-	@CssSelector("${pages.ruelala.memberPassword}")
-	public AspireWebElement memberPassword();
+	@CssSelector("${pages.ruelala.ruelalaMemberPassword}")
+	public AspireWebElement ruelalaMemberPassword();
 	
-	@CssSelector("${pages.ruelala.startShopping}")
-	public AspireWebElement startShopping();
+	@CssSelector("${pages.ruelala.ruelalaStartShopping}")
+	public AspireWebElement ruelalaStartShopping();
 	
-	@CssSelector("${pages.ruelala.welcomeMate}")
-	public AspireWebElement welcomeMate();
+	@CssSelector("${pages.ruelala.ruelalaWelcomeMate}")
+	public AspireWebElement ruelalaWelcomeMate();
 	
-	@CssSelector("${pages.ruelala.shopNowButton}")
-	public AspireWebElement shopNowButton();
+	@CssSelector("${pages.ruelala.ruelalaShopNowButton}")
+	public AspireWebElement ruelalaShopNowButton();
 	
 	@CssSelector("${pages.ruelala.ruelalaTopNav}")
 	public AspireWebElements ruelalaTopNav();
@@ -42,20 +42,20 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.loveRuelalaClose}")
 	public AspireWebElement loveRuelalaClose();
 	
-	@CssSelector("${pages.ruelala.productPrice}")
-	public AspireWebElement productPrice();
+	@CssSelector("${pages.ruelala.ruelalaProductPrice}")
+	public AspireWebElement ruelalaProductPrice();
 	
-	@CssSelector("${pages.ruelala.productName}")
-	public AspireWebElement productName();
+	@CssSelector("${pages.ruelala.ruelalaProductName}")
+	public AspireWebElement ruelalaProductName();
 	
-	@CssSelector("${pages.ruelala.ruelalaPDP}")
-	public AspireWebElement ruelalaPDP();
+	@CssSelector("${pages.ruelala.ruelalaPdp}")
+	public AspireWebElement ruelalaPdp();
 	
-	@CssSelector("${pages.ruelala.pdpName}")
-	public AspireWebElement pdpName();
+	@CssSelector("${pages.ruelala.ruelalaPdpName}")
+	public AspireWebElement ruelalaPdpName();
 	
-	@CssSelector("${pages.ruelala.pdpPrice}")
-	public AspireWebElement pdpPrice();
+	@CssSelector("${pages.ruelala.ruelalaPdpPrice}")
+	public AspireWebElement ruelalaPdpPrice();
 	
 	@CssSelector("${pages.ruelala.ruelalaSales}")
 	public AspireWebElements ruelalaSales();
@@ -63,80 +63,80 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.ruelalaSalesTwo}")
 	public AspireWebElements ruelalaSalesTwo();
 	
-	@CssSelector("${pages.ruelala.sizes}")
-	public AspireWebElements sizes();
+	@CssSelector("${pages.ruelala.ruelalaSizes}")
+	public AspireWebElements ruelalaSizes();
 	
-	@CssSelector("${pages.ruelala.addToBagButton}")
-	public AspireWebElement addToBagButton();
+	@CssSelector("${pages.ruelala.ruelalaAddToBagButton}")
+	public AspireWebElement ruelalaAddToBagButton();
 	
-	@CssSelector("${pages.ruelala.validPDP}")
-	public AspireWebElement validPDP();
+	@CssSelector("${pages.ruelala.ruelalaValidPdp}")
+	public AspireWebElement ruelalaValidPdp();
 	
-	@CssSelector("${pages.ruelala.bagProductName}")
-	public AspireWebElement bagProductName();
+	@CssSelector("${pages.ruelala.ruelalaBagProductName}")
+	public AspireWebElement ruelalaBagProductName();
 	
-	@CssSelector("${pages.ruelala.bagProductPrice}")
-	public AspireWebElement bagProductPrice();
+	@CssSelector("${pages.ruelala.ruelalaBagProductPrice}")
+	public AspireWebElement ruelalaBagProductPrice();
 	
-	@CssSelector("${pages.ruelala.bagQty}")
-	public AspireWebElement bagQty();
+	@CssSelector("${pages.ruelala.ruelalaBagQty}")
+	public AspireWebElement ruelalaBagQty();
 	
-	@CssSelector("${pages.ruelala.bagProductTotalPrice}")
-	public AspireWebElement bagProductTotalPrice();
+	@CssSelector("${pages.ruelala.ruelalaBagProductTotalPrice}")
+	public AspireWebElement ruelalaBagProductTotalPrice();
 	
-	@CssSelector("${pages.ruelala.bagProductOnePrice}")
-	public AspireWebElement bagProductOnePrice();
+	@CssSelector("${pages.ruelala.ruelalaBagProductOnePrice}")
+	public AspireWebElement ruelalaBagProductOnePrice();
 	
-	@CssSelector("${pages.ruelala.bagProductTwoPrice}")
-	public AspireWebElement bagProductTwoPrice();
+	@CssSelector("${pages.ruelala.ruelalaBagProductTwoPrice}")
+	public AspireWebElement ruelalaBagProductTwoPrice();
 	
-	@CssSelector("${pages.ruelala.proceedToCheckout}")
-	public AspireWebElement proceedToCheckout();
+	@CssSelector("${pages.ruelala.ruelalaProceedToCheckout}")
+	public AspireWebElement ruelalaProceedToCheckout();
 	
-	@CssSelector("${pages.ruelala.checkoutPage}")
-	public AspireWebElement checkoutPage();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutPage}")
+	public AspireWebElement ruelalaCheckoutPage();
 	
-	@CssSelector("${pages.ruelala.placeOrder}")
-	public AspireWebElement placeOrder();
+	@CssSelector("${pages.ruelala.ruelalaPlaceOrder}")
+	public AspireWebElement ruelalaPlaceOrder();
 	
-	@CssSelector("${pages.ruelala.checkoutFirstName}")
-	public AspireWebElement checkoutFirstName();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutFirstName}")
+	public AspireWebElement ruelalaCheckoutFirstName();
 	
-	@CssSelector("${pages.ruelala.checkoutLastName}")
-	public AspireWebElement checkoutLastName();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutLastName}")
+	public AspireWebElement ruelalaCheckoutLastName();
 	
-	@CssSelector("${pages.ruelala.checkoutAddress}")
-	public AspireWebElement checkoutAddress();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutAddress}")
+	public AspireWebElement ruelalaCheckoutAddress();
 	
-	@CssSelector("${pages.ruelala.checkoutcity}")
-	public AspireWebElement checkoutcity();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutcity}")
+	public AspireWebElement ruelalaCheckoutcity();
 	
-	@CssSelector("${pages.ruelala.checkoutZipCode}")
-	public AspireWebElement checkoutZipCode();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutZipCode}")
+	public AspireWebElement ruelalaCheckoutZipCode();
 	
-	@CssSelector("${pages.ruelala.checkoutPhoneNumber}")
-	public AspireWebElement checkoutPhoneNumber();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutPhoneNumber}")
+	public AspireWebElement ruelalaCheckoutPhoneNumber();
 	
-	@CssSelector("${pages.ruelala.checkoutState}")
-	public AspireWebElement checkoutState();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutState}")
+	public AspireWebElement ruelalaCheckoutState();
 	
-	@CssSelector("${pages.ruelala.checkoutNameOnCard}")
-	public AspireWebElement checkoutNameOnCard();
+	@CssSelector("${pages.ruelala.ruelalaCheckoutNameOnCard}")
+	public AspireWebElement ruelalaCheckoutNameOnCard();
 	
-	@CssSelector("${pages.ruelala.paymentCardNumber}")
-	public AspireWebElement paymentCardNumber();
+	@CssSelector("${pages.ruelala.ruelalaPaymentCardNumber}")
+	public AspireWebElement ruelalaPaymentCardNumber();
 	
-	@CssSelector("${pages.ruelala.paymentCardExpirationMonth}")
-	public AspireWebElement paymentCardExpirationMonth();
+	@CssSelector("${pages.ruelala.ruelalaPaymentCardExpirationMonth}")
+	public AspireWebElement ruelalaPaymentCardExpirationMonth();
 	
-	@CssSelector("${pages.ruelala.paymentCardExpirationYear}")
-	public AspireWebElement paymentCardExpirationYear();
+	@CssSelector("${pages.ruelala.ruelalaPaymentCardExpirationYear}")
+	public AspireWebElement ruelalaPaymentCardExpirationYear();
 	
-	@CssSelector("${pages.ruelala.paymentSecurityCode}")
-	public AspireWebElement paymentSecurityCode();
+	@CssSelector("${pages.ruelala.ruelalaPaymentSecurityCode}")
+	public AspireWebElement ruelalaPaymentSecurityCode();
 	
-	@CssSelector("${pages.ruelala.submitError}")
-	public AspireWebElement submitError();
+	@CssSelector("${pages.ruelala.ruelalaSubmitError}")
+	public AspireWebElement ruelalaSubmitError();
 	
 	@CssSelector("${pages.ruelala.ruelalaBagPage}")
 	public AspireWebElement ruelalaBagPage();

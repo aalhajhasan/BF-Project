@@ -21,8 +21,8 @@ public interface JcrewPage {
 	@CssSelector("${pages.jcrew.jcrewTopNav}")
 	public AspireWebElements jcrewTopNav();
 	
-	@CssSelector("${pages.jcrew.xButton}")
-	public AspireWebElement xButton();
+	@CssSelector("${pages.jcrew.jcrewXButton}")
+	public AspireWebElement jcrewXButton();
 	
 	@CssSelector("${pages.jcrew.jcrewSales}")
 	public AspireWebElements jcrewSales();
@@ -30,185 +30,185 @@ public interface JcrewPage {
 	@CssSelector("${pages.jcrew.jcrewProducts}")
 	public AspireWebElements jcrewProducts();
 	
-	@CssSelector("${pages.jcrew.plpItemName}")
-	public AspireWebElement plpItemName();
+	@CssSelector("${pages.jcrew.jcrewPlpItemName}")
+	public AspireWebElement jcrewPlpItemName();
 	
-	@CssSelector("${pages.jcrew.plpItemPrice}")
-	public AspireWebElement plpItemPrice();
+	@CssSelector("${pages.jcrew.jcrewPlpItemPrice}")
+	public AspireWebElement jcrewPlpItemPrice();
 	
-	@CssSelector("${pages.jcrew.plpItemImage}")
-	public AspireWebElement plpItemImage();
+	@CssSelector("${pages.jcrew.jcrewPlpItemImage}")
+	public AspireWebElement jcrewPlpItemImage();
 	
-	@CssSelector("${pages.jcrew.quickShop}")
-	public AspireWebElement quickShop();
+	@CssSelector("${pages.jcrew.jcrewQuickShop}")
+	public AspireWebElement jcrewQuickShop();
 	
-	@CssSelector("${pages.jcrew.quickShopDialog}")
-	public AspireWebElement quickShopDialog();
+	@CssSelector("${pages.jcrew.jcrewQuickShopDialog}")
+	public AspireWebElement jcrewQuickShopDialog();
 	
-	@CssSelector("${pages.jcrew.quickShopItemName}")
-	public AspireWebElement quickShopItemName();
+	@CssSelector("${pages.jcrew.jcrewQuickShopItemName}")
+	public AspireWebElement jcrewQuickShopItemName();
 	
-	@CssSelector("${pages.jcrew.quickShopItemPrice}")
-	public AspireWebElement quickShopItemPrice();
+	@CssSelector("${pages.jcrew.jcrewQuickShopItemPrice}")
+	public AspireWebElement jcrewQuickShopItemPrice();
 	
-	@CssSelector("${pages.jcrew.quickShopItemImage}")
-	public AspireWebElement quickShopItemImage();
+	@CssSelector("${pages.jcrew.jcrewQuickShopItemImage}")
+	public AspireWebElement jcrewQuickShopItemImage();
 	
-	@CssSelector("${pages.jcrew.bagDialog}")
-	public AspireWebElement bagDialog();
+	@CssSelector("${pages.jcrew.jcrewBagDialog}")
+	public AspireWebElement jcrewBagDialog();
 	
-	@CssSelector("${pages.jcrew.quickShopViewFullDetails}")
-	public AspireWebElement quickShopViewFullDetails();
+	@CssSelector("${pages.jcrew.jcrewQuickShopViewFullDetails}")
+	public AspireWebElement jcrewQuickShopViewFullDetails();
 	
-	@CssSelector("${pages.jcrew.itemDetailsPage}")
-	public AspireWebElement itemDetailsPage();
+	@CssSelector("${pages.jcrew.jcrewItemDetailsPage}")
+	public AspireWebElement jcrewItemDetailsPage();
 	
-	@CssSelector("${pages.jcrew.itemName}")
-	public AspireWebElement itemName();
+	@CssSelector("${pages.jcrew.jcrewItemName}")
+	public AspireWebElement jcrewItemName();
 	
-	@CssSelector("${pages.jcrew.itemPrice}")
-	public AspireWebElement itemPrice();
+	@CssSelector("${pages.jcrew.jcrewItemPrice}")
+	public AspireWebElement jcrewItemPrice();
 	
-	@CssSelector("${pages.jcrew.itemImage}")
-	public AspireWebElement itemImage();
+	@CssSelector("${pages.jcrew.jcrewItemImage}")
+	public AspireWebElement jcrewItemImage();
 	
-	@CssSelector("${pages.jcrew.itemColors}")
-	public AspireWebElements itemColors();
+	@CssSelector("${pages.jcrew.jcrewItemColors}")
+	public AspireWebElements jcrewItemColors();
 	
-	@CssSelector("${pages.jcrew.itemSizes}")
-	public AspireWebElements itemSizes();
+	@CssSelector("${pages.jcrew.jcrewItemSizes}")
+	public AspireWebElements jcrewItemSizes();
 	
-	@CssSelector("${pages.jcrew.itemAddToBag}")
-	public AspireWebElement itemAddToBag();
+	@CssSelector("${pages.jcrew.jcrewItemAddToBag}")
+	public AspireWebElement jcrewItemAddToBag();
 	
-	@CssSelector("${pages.jcrew.bagItemName}")
-	public AspireWebElement bagItemName();
+	@CssSelector("${pages.jcrew.jcrewBagItemName}")
+	public AspireWebElement jcrewBagItemName();
 	
-	@CssSelector("${pages.jcrew.bagItemPrice}")
-	public AspireWebElement bagItemPrice();
+	@CssSelector("${pages.jcrew.jcrewBagItemPrice}")
+	public AspireWebElement jcrewBagItemPrice();
 	
-	@CssSelector("${pages.jcrew.bagChceckout}")
-	public AspireWebElement bagChceckout();
+	@CssSelector("${pages.jcrew.jcrewBagChceckout}")
+	public AspireWebElement jcrewBagChceckout();
 	
-	@CssSelector("${pages.jcrew.bagItemOnePrice}")
-	public AspireWebElement bagItemOnePrice();
+	@CssSelector("${pages.jcrew.jcrewBagItemOnePrice}")
+	public AspireWebElement jcrewBagItemOnePrice();
 	
-	@CssSelector("${pages.jcrew.bagItemTwoPrice}")
-	public AspireWebElement bagItemTwoPrice();
+	@CssSelector("${pages.jcrew.jcrewBagItemTwoPrice}")
+	public AspireWebElement jcrewBagItemTwoPrice();
 	
-	@CssSelector("${pages.jcrew.bagItemsTotalPrice}")
-	public AspireWebElement bagItemsTotalPrice();
+	@CssSelector("${pages.jcrew.jcrewBagItemsTotalPrice}")
+	public AspireWebElement jcrewBagItemsTotalPrice();
 	
-	@CssSelector("${pages.jcrew.itemsBagPage}")
-	public AspireWebElement itemsBagPage();
+	@CssSelector("${pages.jcrew.jcrewItemsBagPage}")
+	public AspireWebElement jcrewItemsBagPage();
 	
-	@CssSelector("${pages.jcrew.checkoutNow}")
-	public AspireWebElement checkoutNow();
+	@CssSelector("${pages.jcrew.jcrewCheckoutNow}")
+	public AspireWebElement jcrewCheckoutNow();
 	
-	@CssSelector("${pages.jcrew.checkoutPage}")
-	public AspireWebElement checkoutPage();
+	@CssSelector("${pages.jcrew.jcrewCheckoutPage}")
+	public AspireWebElement jcrewCheckoutPage();
 	
-	@CssSelector("${pages.jcrew.checkoutAsGuest}")
-	public AspireWebElement checkoutAsGuest();
+	@CssSelector("${pages.jcrew.jcrewCheckoutAsGuest}")
+	public AspireWebElement jcrewCheckoutAsGuest();
 	
-	@CssSelector("${pages.jcrew.checkoutShippingPage}")
-	public AspireWebElement checkoutShippingPage();
+	@CssSelector("${pages.jcrew.jcrewCheckoutShippingPage}")
+	public AspireWebElement jcrewCheckoutShippingPage();
 	
-	@CssSelector("${pages.jcrew.continueButton}")
-	public AspireWebElement continueButton();
+	@CssSelector("${pages.jcrew.jcrewContinueButton}")
+	public AspireWebElement jcrewContinueButton();
 	
-	@CssSelector("${pages.jcrew.firstNameError}")
-	public AspireWebElement firstNameError();
+	@CssSelector("${pages.jcrew.jcrewFirstNameError}")
+	public AspireWebElement jcrewFirstNameError();
 	
-	@CssSelector("${pages.jcrew.lastNameError}")
-	public AspireWebElement lastNameError();
+	@CssSelector("${pages.jcrew.jcrewLastNameError}")
+	public AspireWebElement jcrewLastNameError();
 	
-	@CssSelector("${pages.jcrew.streetAddressError}")
-	public AspireWebElement streetAddressError();
+	@CssSelector("${pages.jcrew.jcrewStreetAddressError}")
+	public AspireWebElement jcrewStreetAddressError();
 	
-	@CssSelector("${pages.jcrew.cityError}")
-	public AspireWebElement cityError();
+	@CssSelector("${pages.jcrew.jcrewCityError}")
+	public AspireWebElement jcrewCityError();
 	
-	@CssSelector("${pages.jcrew.postalCodeError}")
-	public AspireWebElement postalCodeError();
+	@CssSelector("${pages.jcrew.jcrewPostalCodeError}")
+	public AspireWebElement jcrewPostalCodeError();
 	
-	@CssSelector("${pages.jcrew.phoneNumberError}")
-	public AspireWebElement phoneNumberError();
+	@CssSelector("${pages.jcrew.jcrewPhoneNumberError}")
+	public AspireWebElement jcrewPhoneNumberError();
 			
-	@CssSelector("${pages.jcrew.firstName}")
-	public AspireWebElement firstName();		
+	@CssSelector("${pages.jcrew.jcrewFirstName}")
+	public AspireWebElement jcrewFirstName();		
 			
-	@CssSelector("${pages.jcrew.lastName}")
-	public AspireWebElement lastName();		
+	@CssSelector("${pages.jcrew.jcrewLastName}")
+	public AspireWebElement jcrewLastName();		
 			
-	@CssSelector("${pages.jcrew.streetAddress}")
-	public AspireWebElement streetAddress();	
+	@CssSelector("${pages.jcrew.jcrewStreetAddress}")
+	public AspireWebElement jcrewStreetAddress();	
 	
-	@CssSelector("${pages.jcrew.city}")
-	public AspireWebElement city();
+	@CssSelector("${pages.jcrew.jcrewCity}")
+	public AspireWebElement jcrewCity();
 	
-	@CssSelector("${pages.jcrew.postalCode}")
-	public AspireWebElement postalCode();
+	@CssSelector("${pages.jcrew.jcrewPostalCode}")
+	public AspireWebElement jcrewPostalCode();
 	
-	@CssSelector("${pages.jcrew.phoneNumber}")
-	public AspireWebElement phoneNumber();
+	@CssSelector("${pages.jcrew.jcrewPhoneNumber}")
+	public AspireWebElement jcrewPhoneNumber();
 	
-	@CssSelector("${pages.jcrew.checkYourAddressDialog}")
-	public AspireWebElement checkYourAddressDialog();
+	@CssSelector("${pages.jcrew.jcrewCheckYourAddressDialog}")
+	public AspireWebElement jcrewCheckYourAddressDialog();
 	
-	@CssSelector("${pages.jcrew.useAddressAsEntered}")
-	public AspireWebElement useAddressAsEntered();
+	@CssSelector("${pages.jcrew.jcrewUseAddressAsEntered}")
+	public AspireWebElement jcrewUseAddressAsEntered();
 	
-	@CssSelector("${pages.jcrew.shippingContinueButton}")
-	public AspireWebElement shippingContinueButton();
+	@CssSelector("${pages.jcrew.jcrewShippingContinueButton}")
+	public AspireWebElement jcrewShippingContinueButton();
 	
-	@CssSelector("${pages.jcrew.checkoutBillingPage}")
-	public AspireWebElement checkoutBillingPage();
+	@CssSelector("${pages.jcrew.jcrewCheckoutBillingPage}")
+	public AspireWebElement jcrewCheckoutBillingPage();
 	
-	@CssSelector("${pages.jcrew.billingContinueButton}")
-	public AspireWebElement billingContinueButton();
+	@CssSelector("${pages.jcrew.jcrewBillingContinueButton}")
+	public AspireWebElement jcrewBillingContinueButton();
 	
-	@CssSelector("${pages.jcrew.cardNumberError}")
-	public AspireWebElement cardNumberError();
+	@CssSelector("${pages.jcrew.jcrewCardNumberError}")
+	public AspireWebElement jcrewCardNumberError();
 	
-	@CssSelector("${pages.jcrew.securityCodeError}")
-	public AspireWebElement securityCodeError();
+	@CssSelector("${pages.jcrew.jcrewSecurityCodeError}")
+	public AspireWebElement jcrewSecurityCodeError();
 	
-	@CssSelector("${pages.jcrew.expirationDateError}")
-	public AspireWebElement expirationDateError();
+	@CssSelector("${pages.jcrew.jcrewExpirationDateError}")
+	public AspireWebElement jcrewExpirationDateError();
 	
-	@CssSelector("${pages.jcrew.nameOnCardError}")
-	public AspireWebElement nameOnCardError();
+	@CssSelector("${pages.jcrew.jcrewNameOnCardError}")
+	public AspireWebElement jcrewNameOnCardError();
 	
-	@CssSelector("${pages.jcrew.emailAddressError}")
-	public AspireWebElement emailAddressError();
+	@CssSelector("${pages.jcrew.jcrewEmailAddressError}")
+	public AspireWebElement jcrewEmailAddressError();
 	
-	@CssSelector("${pages.jcrew.cardNumber}")
-	public AspireWebElement cardNumber();
+	@CssSelector("${pages.jcrew.jcrewCardNumber}")
+	public AspireWebElement jcrewCardNumber();
 	
-	@CssSelector("${pages.jcrew.securityCode}")
-	public AspireWebElement securityCode();
+	@CssSelector("${pages.jcrew.jcrewSecurityCode}")
+	public AspireWebElement jcrewSecurityCode();
 	
-	@CssSelector("${pages.jcrew.expirationMonth}")
-	public AspireWebElement expirationMonth();
+	@CssSelector("${pages.jcrew.jcrewExpirationMonth}")
+	public AspireWebElement jcrewExpirationMonth();
 	
-	@CssSelector("${pages.jcrew.expirationYear}")
-	public AspireWebElement expirationYear();
+	@CssSelector("${pages.jcrew.jcrewExpirationYear}")
+	public AspireWebElement jcrewExpirationYear();
 	
-	@CssSelector("${pages.jcrew.nameOnCard}")
-	public AspireWebElement nameOnCard();
+	@CssSelector("${pages.jcrew.jcrewNameOnCard}")
+	public AspireWebElement jcrewNameOnCard();
 	
-	@CssSelector("${pages.jcrew.emailAddress}")
-	public AspireWebElement emailAddress();
+	@CssSelector("${pages.jcrew.jcrewEmailAddress}")
+	public AspireWebElement jcrewEmailAddress();
 	
-	@CssSelector("${pages.jcrew.checkoutReviewPage}")
-	public AspireWebElement checkoutReviewPage();
+	@CssSelector("${pages.jcrew.jcrewCheckoutReviewPage}")
+	public AspireWebElement jcrewCheckoutReviewPage();
 	
-	@CssSelector("${pages.jcrew.placeMyOrder}")
-	public AspireWebElement placeMyOrder();
+	@CssSelector("${pages.jcrew.jcrewPlaceMyOrder}")
+	public AspireWebElement jcrewPlaceMyOrder();
 	
-	@CssSelector("${pages.jcrew.submitError}")
-	public AspireWebElement submitError();
+	@CssSelector("${pages.jcrew.jcrewSubmitError}")
+	public AspireWebElement jcrewSubmitError();
 	
 	
 	

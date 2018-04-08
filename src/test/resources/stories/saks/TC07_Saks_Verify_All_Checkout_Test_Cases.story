@@ -5,49 +5,49 @@ Scenario:  TC07_Saks_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] saksBagPage should be displayed
 When [1100-1321] User scroll to the saksCheckoutButton then click it
-And [1111-1080] checkoutDialog should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the checkoutAsGuest
-And [1111-1080] checkoutPage should be displayed, Within 120 seconds
-And [1100-1321] User scroll to the continueCheckoutButton then click it
-And [1101-1102] checkoutFirstNameError text is equal to Please enter a valid first name. case sensitive
-And [1101-1102] checkoutLastNameError text is equal to Please enter a valid last name. case sensitive
-And [1101-1102] checkoutAddressError text is equal to Please enter a valid street address for your shipping address. case sensitive
-And [1101-1102] checkoutCityError text is equal to Please enter a city. case sensitive
-And [1101-1102] checkoutEmailAddressError text is equal to Please enter a valid email address. case sensitive
-And [1101-1102] checkoutPhoneNumberError text is equal to Please enter a valid phone number. case sensitive
-And [1100-1601] Select checkoutTitle By Value 3
-And [1100-1340] User fills checkoutFirstName with `firstName`
-And [1100-1340] User fills checkoutLastName with `lastName`
-And [1100-1340] User fills checkoutAddress with `checkoutAddress`
-And [1100-1340] User fills checkoutCity with `checkoutCity`
-And [1100-1340] User fills checkoutState with `checkoutState`
-And [1100-1340] User fills checkoutZipCode with `checkoutZipCode`
-And [1100-1340] User fills checkoutEmailAddress with `checkoutEmailAddress`
-And [1100-1340] User fills checkoutPhoneNumber with `checkoutPhoneNumber`
-And [1100-1300] User clicks on the continueCheckoutButton
-And [1111-1080] paymentPage should be displayed, Within 120 seconds
-And [1100-1320] User scroll to the paymentContinueCheckout
+And [1111-1080] saksCheckoutDialog should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the saksCheckoutAsGuest
+And [1111-1080] saksCheckoutPage should be displayed, Within 120 seconds
+And [1100-1321] User scroll to the saksContinueCheckoutButton then click it
+And [1101-1102] saksCheckoutFirstNameError text is equal to Please enter a valid first name. case sensitive
+And [1101-1102] saksCheckoutLastNameError text is equal to Please enter a valid last name. case sensitive
+And [1101-1102] saksCheckoutAddressError text is equal to Please enter a valid street address for your shipping address. case sensitive
+And [1101-1102] saksCheckoutCityError text is equal to Please enter a city. case sensitive
+And [1101-1102] saksCheckoutEmailAddressError text is equal to Please enter a valid email address. case sensitive
+And [1101-1102] saksCheckoutPhoneNumberError text is equal to Please enter a valid phone number. case sensitive
+And [1100-1601] Select saksCheckoutTitle By Value 3
+And [1100-1340] User fills saksCheckoutFirstName with `firstName`
+And [1100-1340] User fills saksCheckoutLastName with `lastName`
+And [1100-1340] User fills saksCheckoutAddress with `checkoutAddress`
+And [1100-1340] User fills saksCheckoutCity with `checkoutCity`
+And [1100-1340] User fills saksCheckoutState with `checkoutState`
+And [1100-1340] User fills saksCheckoutZipCode with `checkoutZipCode`
+And [1100-1340] User fills saksCheckoutEmailAddress with `checkoutEmailAddress`
+And [1100-1340] User fills saksCheckoutPhoneNumber with `checkoutPhoneNumber`
+And [1100-1300] User clicks on the saksContinueCheckoutButton
+And [1111-1080] saksPaymentPage should be displayed, Within 120 seconds
+And [1100-1320] User scroll to the saksPaymentContinueCheckout
 And [1100-0300] User click on it
-And [1101-1102] paymentCCNError text is equal to Please supply a valid credit card number. case sensitive
-And [1101-1102] paymentNameOnCardError text is equal to Please supply the name displayed on the credit card. case sensitive
-And [1101-1102] paymentExpirationError text is equal to Please supply a valid expiration date. case sensitive
-And [1101-1102] paymentSecurityCodeError text is equal to Please supply the security code for your credit card. case sensitive
-And [1100-1601] Select paymentType By Value VISA
-And [1100-1340] User fills paymentCCNE with `paymentCardNumber`
-And [1100-1340] User fills paymentNameOnCard with `firstName`
-And [1100-1601] Select paymentExpirationMonth By Value 1
-And [1100-1601] Select paymentExpirationYear By Value 2030
-And [1100-1340] User fills paymentSecurityCode with `paymentSecurityCode`
-And [1100-1300] User clicks on the paymentContinueCheckout
-And [1100-1320] User scroll to the checkoutOrderSummery
-And [1101-1181] the user saves itemTotal text in global scope under name itemTotal
-And [1101-1181] the user saves shipping text in global scope under name shipping
-And [1101-1181] the user saves promotionalSavings text in global scope under name promotionalSavings
-And [1101-1181] the user saves landedCost text in global scope under name landedCost
-And [1101-1181] the user saves dutiesAndTaxes text in global scope under name dutiesAndTaxes
-And [1101-1181] the user saves orderTotal text in global scope under name orderTotal
-And [8002-0008] `orderTotal` price should be matched with the summation of `itemTotal` , `shipping` , `promotionalSavings` , `landedCost` and `dutiesAndTaxes` 
-And [1100-1340] User fills securityCode with `paymentSecurityCode`
-And [1100-1300] User clicks on the placeOrderButton
-Then [1111-1080] submitErrorMessage should be displayed, Within 120 seconds
-And [1101-1102] submitErrorMessage text is equal to `submitErrorMessage` case sensitive
+And [1101-1102] saksPaymentCCNError text is equal to Please supply a valid credit card number. case sensitive
+And [1101-1102] saksPaymentNameOnCardError text is equal to Please supply the name displayed on the credit card. case sensitive
+And [1101-1102] saksPaymentExpirationError text is equal to Please supply a valid expiration date. case sensitive
+And [1101-1102] saksPaymentSecurityCodeError text is equal to Please supply the security code for your credit card. case sensitive
+And [1100-1601] Select saksPaymentType By Value VISA
+And [1100-1340] User fills saksPaymentCCNE with `paymentCardNumber`
+And [1100-1340] User fills saksPaymentNameOnCard with `firstName`
+And [1100-1601] Select saksPaymentExpirationMonth By Value 1
+And [1100-1601] Select saksPaymentExpirationYear By Value 2030
+And [1100-1340] User fills saksPaymentSecurityCode with `paymentSecurityCode`
+And [1100-1300] User clicks on the saksPaymentContinueCheckout
+And [1100-1320] User scroll to the saksCheckoutOrderSummery
+And [1101-1181] the user saves saksItemTotal text in global scope under name saksItemTotal
+And [1101-1181] the user saves saksShipping text in global scope under name saksShipping
+And [1101-1181] the user saves saksPromotionalSavings text in global scope under name saksPromotionalSavings
+And [1101-1181] the user saves saksLandedCost text in global scope under name saksLandedCost
+And [1101-1181] the user saves saksDutiesAndTaxes text in global scope under name saksDutiesAndTaxes
+And [1101-1181] the user saves saksOrderTotal text in global scope under name saksOrderTotal
+And [8002-0008] `saksOrderTotal` price should be matched with the summation of `saksItemTotal` , `saksShipping` , `saksPromotionalSavings` , `saksLandedCost` and `saksDutiesAndTaxes` 
+And [1100-1340] User fills saksSecurityCode with `paymentSecurityCode`
+And [1100-1300] User clicks on the saksPlaceOrderButton
+Then [1111-1080] saksSubmitErrorMessage should be displayed, Within 120 seconds
+And [1101-1102] saksSubmitErrorMessage text is equal to `submitErrorMessage` case sensitive

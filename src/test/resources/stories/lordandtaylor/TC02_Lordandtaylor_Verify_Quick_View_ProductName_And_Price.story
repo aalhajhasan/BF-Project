@@ -9,12 +9,12 @@ And [1200-0302] For any of the elements
 And [1100-0300] User click on it
 And [1211-1080] lordandtaylorProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from lordandtaylorProducts
-And [1100-1581] the user saves productImage attribute of src in global scope under name productImage
-And [1101-1181] the user saves lordandtaylorProductName text in global scope under name productName
-And [1101-1181] the user saves lordandtaylorProductPrice text in global scope under name productPrice
+And [1100-1581] the user saves lordandtaylorProductImage attribute of src in global scope under name lordandtaylorProductImage
+And [1101-1181] the user saves lordandtaylorProductName text in global scope under name lordandtaylorProductName
+And [1101-1181] the user saves lordandtaylorProductPrice text in global scope under name lordandtaylorProductPrice
 And [1100-1300] User clicks on the previewThisProductIcon
-And [1111-1080] quickViewDialog should be displayed, Within 120 seconds
-Then [1101-1100] quickViewProductName text should equal to `productName`
-And [1101-1181] the user saves quickViewProductPrice text in global scope under name quickViewPrice
-And [8009-0001] User compare between `productPrice` and `quickViewPrice`
-And [1100-1581] the user saves quickViewImage attribute of data-default-image-set in global scope under name quickViewImage
+And [1111-1080] lordandtaylorQuickViewDialog should be displayed, Within 120 seconds
+Then [1101-1100] lordandtaylorQuickViewProductName text should equal to `lordandtaylorProductName`
+And [1101-1181] the user saves lordandtaylorQuickViewProductPrice text in global scope under name lordandtaylorQuickViewPrice
+And [8009-0001] User compare between `lordandtaylorProductPrice` and `lordandtaylorQuickViewPrice`
+And [1100-1581] the user saves lordandtaylorQuickViewImage attribute of data-default-image-set in global scope under name lordandtaylorQuickViewImage
