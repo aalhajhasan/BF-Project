@@ -33,7 +33,7 @@ public class EbagsSteps {
 		}
 		try
 		{
-			if (element.equals("addToBagButton"))
+			if (element.equals("ebagsAddToCartButton"))
 			{
 				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			    {
@@ -52,7 +52,7 @@ public class EbagsSteps {
 			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ebagsTopNav").size());
 			   AspireBrowser.getElementsByPropertyNameGlobaly("ebagsTopNav").index(value1).click();
 			   
-			   if (element.equals("productSKUSelection") || element.equals("addToBagButton") || element.equals("validPdp"))
+			   if (element.equals("ebagsAddToCartButton"))
 			   {
 				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ebagsProducts").size());
 				   AspireBrowser.getElementsByPropertyNameGlobaly("ebagsProducts").index(value3).click();
@@ -110,41 +110,6 @@ public class EbagsSteps {
 		
 	}
 	
-	
-	@When("[8006-0004] user check $element with $value")
-	public void checkQTY(String element, String value) throws InterruptedException
-	{
-		int qty = Integer.parseInt(element.substring(10));
-		int checkvalue = Integer.parseInt(value);
-		
-		if (qty == checkvalue)
-		{
-			System.out.println("valid quantity");
-		}
-		else
-		{
-			   AspireBrowser.getElementByPropertyNameGlobaly("bagCloseButton").click();
-			
-			   Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ebagsTopNav").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("ebagsTopNav").index(value1).click();
-			
-			search(".product-quantity, .add-to-bag");
-			
-			Thread.sleep(10000);
-			
-			Random random = new Random();
-			int  randomvalue1 = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableColor").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("availableColor").index(randomvalue1).click();
-			int  randomvalue = random.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").size());
-			AspireBrowser.getElementsByPropertyNameGlobaly("availableSKU").index(randomvalue).click();
-			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
-			
-			Thread.sleep(10000);
-			
-			checkQTY(element,value);
-		}
-	}
 	
 	
 	public double hitNumber;

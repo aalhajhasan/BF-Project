@@ -68,22 +68,23 @@ public class JcrewSteps {
 	
 	
 	@Then("[8010-0003] user compare between $elementOne , $elementTwo and $elementThree")  //Custom step used to compare between two image as a string 
-	public void imagecompare(String plp , String qv , String pdp)
+	public boolean imagecompare(String plp , String qv , String pdp)
 	{
-		/*String plpImage = plp.substring(plp.indexOf("uploads") + 5, plp.indexOf("_"));
-		String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
-		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);*/
+		    String plpImage = plp.substring(plp.indexOf("com") + 4, plp.indexOf("?"));
+			String qvImage = qv.substring(qv.indexOf("com") + 4, qv.indexOf("?"));
+			String pdpImage = pdp.substring(pdp.indexOf("com") + 4, pdp.indexOf("?"));
+			System.out.println("plp image = " + plp);
+			System.out.println("qv image = " + qv);
+			System.out.println("pdp image = " + pdp);
+			System.out.println("plp image = " + plpImage);
+			System.out.println("qv image = " + qvImage);
+			System.out.println("pdp image = " + pdpImage);
 		
 		
-		System.out.println("qv image = " + plp);
-		System.out.println("qv image = " + qv);
-		System.out.println("pdp image = " + pdp);
-		
-		
-		/*boolean status = false;
-		if (plpImage.equals(qvImage))
+		boolean status = false;
+		if (plpImage.contains(qvImage))
 		{
-			if(qvImage.equals(pdpImage))
+			if(qvImage.contains(pdpImage))
 			{
 				status = true;
 			}
@@ -97,7 +98,7 @@ public class JcrewSteps {
 			status = false;
 		}
 		
-		return status;*/
+		return status;
 		
 	}
 	

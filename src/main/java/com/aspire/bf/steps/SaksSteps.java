@@ -26,36 +26,27 @@ public class SaksSteps {
 	@When("[8002-0001] user search for $element")  //Custom step for searching on specific element
 	public void search(String element) throws InterruptedException 
 	{
-		if (element.equals(".product-quantity, .add-to-bag"))
-		{
-			element = "validPdp";
-		}
+		
 		try
 		{
-			if (element.equals("addToBagButton"))
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			{
-				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
-			    {
-				   System.out.println("valid PLP");
-			    }
+				System.out.println("Valid Page");
 			}
-			else if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
-			   {
-			    
-				System.out.println("valid PLP");
-			    
-			   }
-	        else 
-	        {
-	        	randomclick("saksTopNav");
-	        	randomclick("saksSales");
-			   if (element.equals("productSKUSelection") || element.equals("addToBagButton") || element.equals("validPdp"))
-			   {
-				   randomclick("saksProducts");
-			   }
-			   
-			   search(element);
-	        }
+			else
+			{
+				System.out.println("Element not found in this page");
+				randomclick("saksTopNav");
+				randomclick("saksSales");
+				if(element.equals("saksProductSKUSelection") || element.equals("saksValidPdp"))
+				{
+					randomclick("saksProducts");
+				}
+				
+			  search(element);
+			}
+			
+			
 		}
 		catch (NoSuchElementException e)
 		{
@@ -128,9 +119,9 @@ public class SaksSteps {
 			search(".product-quantity, .add-to-bag");
 			
 			Thread.sleep(10000);
-			randomclick("availableColor");
-			randomclick("availableSKU");
-			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
+			randomclick("saksColor");
+			randomclick("saksSku");
+			AspireBrowser.getElementByPropertyNameGlobaly("saksAddToBagButton").click();
 			
 			Thread.sleep(10000);
 			

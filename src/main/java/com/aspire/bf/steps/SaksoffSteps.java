@@ -74,24 +74,19 @@ public class SaksoffSteps {
 		}
 		try
 		{
-			if (element.equals("addToBagButton"))
+			if (element.equals("saksoffAddToBagButton"))
 			{
 				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			    {
 				   System.out.println("valid PLP");
 			    }
 			}
-			else if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
-			   {
-			    
-				System.out.println("valid PLP");
-			    
-			   }
+			
 	        else 
 	        {
 	        	randomclick("saksoffTopNav");
 			   
-			   if (element.equals("productSKUSelection") || element.equals("addToBagButton") || element.equals("validPdp"))
+			   if (element.equals("saksoffProductSKUSelection") || element.equals("saksoffAddToBagButton") || element.equals("saksoffValidPdp"))
 			   {
 				   randomclick("saksoffProducts");
 			   }
@@ -119,15 +114,15 @@ public class SaksoffSteps {
 		}
 		else
 		{
-			   AspireBrowser.getElementByPropertyNameGlobaly("bagCloseButton").click();
+			   AspireBrowser.getElementByPropertyNameGlobaly("saksoffBagCloseButton").click();
 			   randomclick("saksoffTopNav");
 			
 			search(".product-quantity, .add-to-bag");
 			
 			Thread.sleep(10000);
-			randomclick("availableColor");
-			randomclick("availableSKU");
-			AspireBrowser.getElementByPropertyNameGlobaly("addToBagButton").click();
+			randomclick("saksoffColor");
+			randomclick("saksoffSku");
+			AspireBrowser.getElementByPropertyNameGlobaly("saksoffAddToBagButton").click();
 			
 			Thread.sleep(10000);
 			

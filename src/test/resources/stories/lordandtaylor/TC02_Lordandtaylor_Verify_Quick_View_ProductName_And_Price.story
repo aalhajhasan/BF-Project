@@ -12,7 +12,7 @@ And [1200-1302] For any element from lordandtaylorProducts
 And [1100-1581] the user saves lordandtaylorProductImage attribute of src in global scope under name lordandtaylorProductImage
 And [1101-1181] the user saves lordandtaylorProductName text in global scope under name lordandtaylorProductName
 And [1101-1181] the user saves lordandtaylorProductPrice text in global scope under name lordandtaylorProductPrice
-And [1100-1300] User clicks on the previewThisProductIcon
+And [1100-1300] User clicks on the lordandtaylorPreviewThisProductIcon
 And [1111-1080] lordandtaylorQuickViewDialog should be displayed, Within 120 seconds
 Then [1101-1100] lordandtaylorQuickViewProductName text should equal to `lordandtaylorProductName`
 And [1101-1181] the user saves lordandtaylorQuickViewProductPrice text in global scope under name lordandtaylorQuickViewPrice

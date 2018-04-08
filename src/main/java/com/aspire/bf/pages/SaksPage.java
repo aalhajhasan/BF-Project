@@ -76,8 +76,8 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.saksBagQTY}")
 	public AspireWebElement saksBagQTY();
 	
-	@CssSelector("${pages.saks.productSKUSelection}")
-	public AspireWebElements productSKUSelection();
+	@CssSelector("${pages.saks.saksProductSKUSelection}")
+	public AspireWebElements saksProductSKUSelection();
 	
 	@CssSelector("${pages.saks.saksSku}")
 	public AspireWebElements saksSku();

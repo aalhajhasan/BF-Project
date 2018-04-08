@@ -100,8 +100,8 @@ public class GiltSteps {
 			}
 			else
 			{
-				randomclick("topNavStore");
-				randomclick("sales");
+				randomclick("giltTopNavStore");
+				randomclick("giltSales");
 				search(element);
 			}
 		}

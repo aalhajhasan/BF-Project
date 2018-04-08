@@ -27,8 +27,8 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorProductPrice}")
 	public AspireWebElement lordandtaylorProductPrice();
 	
-	@CssSelector("${pages.lordandtaylor.previewThisProductIcon}")
-	public AspireWebElement previewThisProductIcon();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPreviewThisProductIcon}")
+	public AspireWebElement lordandtaylorPreviewThisProductIcon();
 	
 	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewDialog}")
 	public AspireWebElement lordandtaylorQuickViewDialog();
@@ -42,8 +42,8 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewImage}")
 	public AspireWebElement lordandtaylorQuickViewImage();
 	
-	@CssSelector("${pages.lordandtaylor.productImage}")
-	public AspireWebElement productImage();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorProductImage}")
+	public AspireWebElement lordandtaylorProductImage();
 	
 	@CssSelector("${pages.lordandtaylor.lordandtaylorViewProductDetail}")
 	public AspireWebElement lordandtaylorViewProductDetail();
@@ -93,14 +93,14 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorApplyButton}")
 	public AspireWebElement lordandtaylorApplyButton();
 	
-	@CssSelector("${pages.lordandtaylor.productOnePrice}")
-	public AspireWebElement productOnePrice();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorProductOnePrice}")
+	public AspireWebElement lordandtaylorProductOnePrice();
 	
-	@CssSelector("${pages.lordandtaylor.productTwoPrice}")
-	public AspireWebElement productTwoPrice();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorProductTwoPrice}")
+	public AspireWebElement lordandtaylorProductTwoPrice();
 	
-	@CssSelector("${pages.lordandtaylor.productTotalPrice}")
-	public AspireWebElement productTotalPrice();
+	@CssSelector("${pages.lordandtaylor.lordandtaylorProductTotalPrice}")
+	public AspireWebElement lordandtaylorProductTotalPrice();
 	
 	@CssSelector("${pages.lordandtaylor.lordandtaylorCheckoutButton}")
 	public AspireWebElement lordandtaylorCheckoutButton();
