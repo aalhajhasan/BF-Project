@@ -20,7 +20,7 @@ And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] harrodsProductPage should be displayed, Within 120 seconds
 And [8001-0005] user search for harrodsMoreThanOneQTY
 And [1100-1300] User clicks on the harrodsQuickAddToBagButton
-And [1111-1080] harrodsAddedButton should be displayed, Within 120 seconds
+And [1111-1080] harrodsViewYourBag should be displayed, Within 120 seconds
 And [1100-1371] User moves mouse to harrodsBagIcon and click on harrodsBagViewYourBag
 And [1111-1080] harrodsBagPage should be displayed, Within 120 seconds
 And [1101-1184] the user saves harrodsBagProductOnePrice text in scenario scope under name harrodsProductOnePrice

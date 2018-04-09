@@ -6,6 +6,7 @@ Scenario:  TC05_Jcrew_Add_Multiple_Products_To_Cart_From_Different_Categories_An
 Given [1101-1080] jcrewItemDetailsPage should be displayed
 When [1200-1302] For any element from jcrewTopNav
 And [1100-0400] Execute `click` javascript on the element
+And [1111-1080] jcrewSales should be displayed, Within 120 seconds
 And [1200-1302] For any element from jcrewSales
 And [1100-0400] Execute `click` javascript on the element
 And [8010-0001] user search for jcrewProducts

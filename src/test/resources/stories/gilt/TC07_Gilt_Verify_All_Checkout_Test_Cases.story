@@ -46,6 +46,7 @@ And [1100-1601] Select giltYear By Value 2032
 And [1100-1340] User fills giltSecuritySection with `securityCardCode`
 And [1100-1300] User clicks on the giltAddPymentMethodButton
 And [1012-1000] page is loaded, within 120 seconds
+And [1111-1000] giltSecurityCodeSection should be clickable, Within 120 seconds
 And [1100-1340-S] User fills giltSecurityCodeSection with `securityCardCode`
 And [1100-1320] User scroll to the giltCheckoutHeader
 Then [1111-1000] giltSubmitYourOrderButton should be clickable, Within 120 seconds

@@ -6,6 +6,7 @@ Scenario:  TC02_Jcrew_Verify_Quick_View_ProductName_And_Price
 Given [1000-9001] User on jcrew page
 When [1200-1302] For any element from jcrewTopNav
 And [1100-0400] Execute `click` javascript on the element
+And [1111-1080] jcrewSales should be displayed, Within 120 seconds
 And [1200-1302] For any element from jcrewSales
 And [1100-0400] Execute `click` javascript on the element
 And [8010-0001] user search for jcrewProducts

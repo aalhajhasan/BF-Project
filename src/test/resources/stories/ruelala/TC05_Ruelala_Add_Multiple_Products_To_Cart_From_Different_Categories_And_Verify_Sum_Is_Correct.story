@@ -5,7 +5,7 @@ Scenario:  TC05_Ruelala_Add_Multiple_Products_To_Cart_From_Different_Categories_
 
 Given [1101-1080] ruelalaBagPage should be displayed
 When [1200-1302] For any element from ruelalaTopNav
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0300] User click on it
 And [1211-1080] ruelalaSales should be all displayed, Within 120 seconds
 And [1200-1302] For any element from ruelalaSales
 And [1100-0300] User click on it

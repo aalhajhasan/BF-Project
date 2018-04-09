@@ -74,9 +74,9 @@ public class RuelalaSteps {
 	        else 
 	        	
 	        {
-	        	if (element.equals("validPDP"))
+	        	if (element.equals("ruelalaValidPdp"))
 	        	{
-	        		if (AspireBrowser.getElementByPropertyNameGlobaly("validPDP").isEnabled())
+	        		if (AspireBrowser.getElementByPropertyNameGlobaly("ruelalaValidPdp").isDisplayed())
 	        		{
 	        			System.out.println("Valid PDP");
 	        		}
@@ -118,8 +118,8 @@ public class RuelalaSteps {
 	@When("[8007-0003] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
-		double number = convert(data);
-		hitNumber = number * Double.parseDouble(value);
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
 	}
 	
 	

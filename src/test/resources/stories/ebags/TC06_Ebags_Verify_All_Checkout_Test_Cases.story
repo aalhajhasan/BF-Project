@@ -5,7 +5,7 @@ Scenario:  TC06_Ebags_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] ebagsCartPage should be displayed
 When [1100-1300] User clicks on the ebagsContinuwCheckout
-!-- And [1111-1080] ebagsDeliveryCheckout should be displayed, Within 120 seconds
+And [1111-1080] ebagsDeliveryCheckout should be displayed, Within 120 seconds
 And [1101-1181] the user saves ebagsItemsTotal text in global scope under name ebagsItemsTotal
 And [1101-1181] the user saves ebagsShipping text in global scope under name ebagsShipping
 And [1101-1181] the user saves ebagsDutiesAndTaxes text in global scope under name ebagsDutiesAndTaxes

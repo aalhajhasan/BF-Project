@@ -8,13 +8,13 @@ When [1100-1300] User clicks on the harrodsSecureCheckoutNow
 And [1111-1080] harrodsStartCheckoutPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the harrodsNewCustomerButton
 And [1111-1080] harrodsDetailsCheckoutPage should be displayed, Within 120 seconds
-And [1101-1184] the user saves harrodsCheckoutItemsSubtotal text in scenario scope under name harrodsItemsSubtotal
-And [1101-1184] the user saves harrodsCheckoutExcludingUKTaxes text in scenario scope under name harrodsExcludingUKTaxes
-And [1101-1184] the user saves harrodsCheckoutLocalTaxes text in scenario scope under name harrodsLocalTaxes
-And [1101-1184] the user saves harrodsCheckoutImportDuties text in scenario scope under name harrodsImportDuties
-And [1101-1184] the user saves harrodsCheckoutDeliveryCharge text in scenario scope under name harrodsDeliveryCharge
-And [1101-1184] the user saves harrodsCheckoutTotalToPay text in scenario scope under name harrodsTotalToPay
-And [8001-0006] `harrodsTotalToPay` value should be equal to the sum of `harrodsItemsSubtotal` , `harrodsExcludingUKTaxes` , `harrodsLocalTaxes` , `harrodsImportDuties` and `harrodsDeliveryCharge`
+!-- And [1101-1184] the user saves harrodsCheckoutItemsSubtotal text in scenario scope under name harrodsItemsSubtotal
+!-- And [1101-1184] the user saves harrodsCheckoutExcludingUKTaxes text in scenario scope under name harrodsExcludingUKTaxes
+!-- And [1101-1184] the user saves harrodsCheckoutLocalTaxes text in scenario scope under name harrodsLocalTaxes
+!-- And [1101-1184] the user saves harrodsCheckoutImportDuties text in scenario scope under name harrodsImportDuties
+!-- And [1101-1184] the user saves harrodsCheckoutDeliveryCharge text in scenario scope under name harrodsDeliveryCharge
+!-- And [1101-1184] the user saves harrodsCheckoutTotalToPay text in scenario scope under name harrodsTotalToPay
+!-- And [8001-0006] `harrodsTotalToPay` value should be equal to the sum of `harrodsItemsSubtotal` , `harrodsExcludingUKTaxes` , `harrodsLocalTaxes` , `harrodsImportDuties` and `harrodsDeliveryCharge`
 And [1100-1300] User clicks on the harrodsContinueToDeliveryButton
 And [1101-1102] harrodsDetailsTitleError text is equal to Please select a title case sensitive
 And [1101-1102] harrodsDetailsFirstNameError text is equal to Please enter a first name case sensitive
