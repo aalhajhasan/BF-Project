@@ -99,7 +99,8 @@ public interface UnderarmourPage {
 	@CssSelector("${pages.underarmour.underarmourBagItemsTotalPrice}")
 	public AspireWebElement underarmourBagItemsTotalPrice();
 	
-	
+	@CssSelector("${pages.underarmour.underarmourProceedToCheckout}")
+	public AspireWebElement underarmourProceedToCheckout();
 	
 	
 	

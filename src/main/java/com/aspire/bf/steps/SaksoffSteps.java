@@ -70,7 +70,7 @@ public class SaksoffSteps {
 	{
 		if (element.equals(".product-quantity, .add-to-bag"))
 		{
-			element = "validPdp";
+			element = "saksValidPdp";
 		}
 		try
 		{

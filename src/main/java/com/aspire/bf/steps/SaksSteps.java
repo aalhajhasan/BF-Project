@@ -74,16 +74,16 @@ public class SaksSteps {
 	
 	
 	@Then("[8002-0003] user compare between $elementOne and $elementTwo")  //Custom step used to compare between two image as a string 
-	public boolean imagecompare(String qv , String pdp)
+	public void imagecompare(String qv , String pdp)
 	{
 		
-		String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
-		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);
+		/*String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
+		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);*/
 		
-		System.out.println("qv image = " + qvImage);
-		System.out.println("pdp image = " + pdpImage);
+		System.out.println("qv image = " + qv);
+		System.out.println("pdp image = " + pdp);
 		
-		boolean status = false;
+		/*boolean status = false;
 		if (qvImage.equals(pdpImage))
 		{
 			status = true;
@@ -93,7 +93,7 @@ public class SaksSteps {
 			status = false;
 		}
 		
-		return status;
+		return status;*/
 		
 	}
 	

@@ -7,9 +7,9 @@ Given [1100-1300] User clicks on the giltSubmitYourOrderButton
 When [1111-1080] giltSubmitError should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the giltContinueShoppingLink
 And [1100-1300] User clicks on the giltCartIcon
-And [1200-1302-S] For any element from giltCartRemoveProduct
-And [1100-0400-S] Execute `click` javascript on the element
-And [1100-1300] User clicks on the giltCartRemoveProduct
+And [1111-1080] giltCartIcon should be displayed, Within 120 seconds
+And [1100-1300] User clicks on the giltCartItemOneRemove
+And [1100-1300] User clicks on the giltCartItemTwoRemove
 And [1101-1080] giltCartContinueShoppingButton should be displayed
 And [1100-0400-S] Execute `click` javascript on the element
 And [1100-1300] User clicks on the giltAccountIcon

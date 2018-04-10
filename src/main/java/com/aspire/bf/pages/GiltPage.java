@@ -278,5 +278,9 @@ public interface GiltPage {
 	@CssSelector("${pages.gilt.giltPlpImage}")
 	public AspireWebElement giltPlpImage();
 	
-
+	@CssSelector("${pages.gilt.giltCartItemOneRemove}")
+	public AspireWebElement giltCartItemOneRemove();
+	
+	@CssSelector("${pages.gilt.giltCartItemTwoRemove}")
+	public AspireWebElement giltCartItemTwoRemove();
 }

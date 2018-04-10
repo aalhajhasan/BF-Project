@@ -103,6 +103,7 @@ public class HarrodsSteps {
 	        else 
 	        {
 	           randomclick("harrodsTopNavStore");
+	           Thread.sleep(10000);
 	           randomclick("harrodsSales");
 			   
 			   Thread.sleep(10000);
@@ -110,6 +111,7 @@ public class HarrodsSteps {
 			   if (element.equals("harrodsMoreThanOneQTY"))
 			   {
 				   randomclick("harrodsProducts");
+				   Thread.sleep(10000);
 			   }
 			   
 			   search(element);
