@@ -18,6 +18,6 @@ And [1100-1581] the user saves giltPlpImage attribute of src in global scope und
 And [1100-0360] User move mouse to it
 And [1100-1400] Execute `click` javascript on giltQuickView
 And [1111-1080] giltQuickViewDialog should be displayed, Within 120 seconds
-Then [1101-1100] giltQuickViewProductName text should equal to `giltProductName`
-And [1101-1100] giltQuickViewProductPrice text should equal to `giltProductPrice`
+Then [1101-1140] giltQuickViewProductName text should contain `giltProductName`
+And [1101-1140] giltQuickViewProductPrice text should contain `giltProductPrice`
 And [1100-1581] the user saves giltQuickViewProductImage attribute of data-zoom-src in global scope under name giltQuickViewProductImage

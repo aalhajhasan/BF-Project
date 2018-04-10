@@ -16,7 +16,7 @@ And [1101-1181] the user saves saksProductName text in global scope under name s
 And [1101-1181] the user saves saksProductPrice text in global scope under name saksProductPrice
 And [1100-1300] User clicks on the saksPreviewThisProductIcon
 And [1111-1080] saksQuickViewDialog should be displayed, Within 120 seconds
-Then [1101-1100] saksQuickViewProductName text should equal to `saksProductName`
+Then [1101-1140] saksQuickViewProductName text should contain `saksProductName`
 And [1101-1181] the user saves saksQuickViewProductPrice text in global scope under name saksQuickViewPrice
 And [8002-0002] User compare between `saksProductPrice` and `saksQuickViewPrice`
 And [1100-1581] the user saves saksQuickViewImage attribute of data-default-image-set in global scope under name saksQuickViewImage

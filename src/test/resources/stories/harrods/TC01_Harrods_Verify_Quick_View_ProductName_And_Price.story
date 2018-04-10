@@ -20,6 +20,6 @@ And [1100-0320] User scroll to it
 And [1100-0360] User move mouse to it
 And [1100-1300] User clicks on the harrodsQuickView
 And [1111-1080] harrodsQuickViewDialog should be displayed, Within 120 seconds
-Then [1101-1100] harrodsQuickViewProductName text should equal to `harrodsProductName`
-And [1101-1100] harrodsQuickViewProductPrice text should equal to `harrodsProductPrice`
+Then [1101-1140] harrodsQuickViewProductName text should contain `harrodsProductName`
+And [1101-1140] harrodsQuickViewProductPrice text should contain `harrodsProductPrice`
 And [1100-1581] the user saves harrodsQuickViewImage attribute of src in global scope under name harrodsQuickViewImage

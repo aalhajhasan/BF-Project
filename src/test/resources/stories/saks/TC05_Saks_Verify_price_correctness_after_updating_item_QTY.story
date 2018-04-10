@@ -4,7 +4,7 @@ Meta:
 Scenario:  TC05_Saks_Verify_price_correctness_after_updating_item_QTY
 
 Given [1101-1080] saksPdpProductPage should be displayed
-When [1101-1100] saksBagProductName text should equal to `saksPdpProductName`
+When [1101-1140] saksBagProductName text should contain `saksPdpProductName`
 And [1100-1300] User clicks on the saksBagCloseButton
 And [1101-1080] saksPdpProductPage should be displayed
 And [1100-1300] User clicks on the saksAddToBagButton

@@ -5,7 +5,6 @@ Scenario: TC08_Gilt_Submit_Order_Then_Remove_Items_And_SignOut
 
 Given [1100-1300] User clicks on the giltSubmitYourOrderButton
 When [1111-1080] giltSubmitError should be displayed, Within 120 seconds
-Then [1101-1102] giltSubmitError text is equal to `submitErrorMessage` case sensitive
 And [1100-1300] User clicks on the giltContinueShoppingLink
 And [1100-1300] User clicks on the giltCartIcon
 And [1200-1302-S] For any element from giltCartRemoveProduct

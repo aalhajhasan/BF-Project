@@ -14,7 +14,7 @@ Then [1101-1080] giltPromoCodeField should be displayed
 And [1100-1320] User scroll to the giltCheckoutHeader
 And [1100-1300-S] User clicks on the giltRemoveDiscount
 And [1101-1184] the user saves giltSubTotal text in scenario scope under name giltSubTotalValue
-And [1101-1184] the user saves giltVat text in scenario scope under name giltVatValue
+And [1101-1184-S] the user saves giltVat text in scenario scope under name giltVatValue
 And [1101-1184] the user saves giltShipping text in scenario scope under name giltShippingValue
 And [1101-1184] the user saves giltTotal text in scenario scope under name giltTotalValue
 And [8000-0004] `giltTotalValue` price should be matched with the summation of `giltSubTotalValue` and `giltVatValue` and `giltShippingValue`

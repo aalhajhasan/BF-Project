@@ -83,7 +83,7 @@ public interface BarneysPage {
 	public AspireWebElements barneysBagQuantity();
 	
 	@CssSelector("${pages.barneys.barneysContinueButton}")
-	public AspireWebElements barneysContinueButton();
+	public AspireWebElement barneysContinueButton();
 	
 	@CssSelector("${pages.barneys.barneysShippingFirstNameError}")
 	public AspireWebElement barneysShippingFirstNameError();

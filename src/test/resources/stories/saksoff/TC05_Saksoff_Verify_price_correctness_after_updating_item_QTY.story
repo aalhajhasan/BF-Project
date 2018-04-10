@@ -4,7 +4,7 @@ Meta:
 Scenario:  TC05_Saksoff_Verify_price_correctness_after_updating_item_QTY
 
 Given [1101-1080] saksoffPdpProductPage should be displayed
-When [1101-1100] saksoffBagProductName text should equal to `saksoffPdpProductName`
+When [1101-1140] saksoffBagProductName text should contain `saksoffPdpProductName`
 And [1100-1300] User clicks on the saksoffBagCloseButton
 And [1101-1080] saksoffPdpProductPage should be displayed
 And [1100-1300] User clicks on the saksoffAddToBagButton

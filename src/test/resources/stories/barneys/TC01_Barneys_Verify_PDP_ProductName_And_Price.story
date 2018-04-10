@@ -17,7 +17,7 @@ And [1101-1181] the user saves barneysProductPrice text in global scope under na
 And [1101-1181] the user saves barneysProductName text in global scope under name barneysProductName
 And [1100-0300] User click on it
 And [1111-1080] barneysPdp should be displayed, Within 120 seconds
-And [1101-1102] barneysPdpName text is equal to `barneysProductName` case sensitive
+And [1101-1140] barneysPdpName text should contain `barneysProductName`
 And [1101-1181] the user saves barneysPdpPrice text in global scope under name barneysPdpPrice
 And [1100-1581] the user saves barneysPdpImage attribute of src in global scope under name barneysPdpImage
 Then [8008-0001] User compare between `barneysPdpPrice` and `barneysProductPrice`

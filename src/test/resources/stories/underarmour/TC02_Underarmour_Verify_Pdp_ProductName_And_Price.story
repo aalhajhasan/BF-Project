@@ -15,7 +15,7 @@ And [1101-1181] the user saves underarmourPlpItemPrice text in global scope unde
 And [1100-0360] User move mouse to it
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] underarmourPdpItemPage should be displayed, Within 120 seconds
-And [1101-1102] underarmourPdpItemName text is equal to `underarmourPlpItemName` case sensitive
+And [1101-1140] underarmourPdpItemName text should contain `underarmourPlpItemName`
 And [1101-1181] the user saves underarmourPdpItemPrice text in global scope under name underarmourPdpItemPrice
 And [1100-1581] the user saves underarmourPdpItemImage attribute of src in global scope under name underarmourPdpItemImage
 Then [8011-0001] User compare between `underarmourPlpItemPrice` and `underarmourPdpItemPrice`
