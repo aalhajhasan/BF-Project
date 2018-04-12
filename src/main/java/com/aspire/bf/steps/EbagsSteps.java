@@ -159,15 +159,14 @@ public class EbagsSteps {
 	
 	
 	@When("[8006-0008] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")
-	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String promotionalSavings, String dutiesAndTaxes)
+	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String dutiesAndTaxes)
 	{
 		double orderTotalvalue = convert(orderTotal);
 		double itemTotalvalue = convert(itemTotal);
 		double shippingvalue = convert(shipping);
-		double promotionalSavingsvalue = convert(promotionalSavings);
 		double dutiesAndTaxesvalue = convert(dutiesAndTaxes);
 		
-		double sum = itemTotalvalue + shippingvalue + promotionalSavingsvalue + dutiesAndTaxesvalue;
+		double sum = itemTotalvalue + shippingvalue + dutiesAndTaxesvalue;
 		
 		if (sum ==  orderTotalvalue)
 		{
@@ -203,6 +202,13 @@ public class EbagsSteps {
 	}
 	
 	
+	@When("[8006-0010] sleep after last action for $element seconds")
+	public void sleep (String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
 	
 	
 	

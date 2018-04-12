@@ -3,6 +3,7 @@ package com.aspire.bf.pages;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
+import com.aspire.automation.web.util.annotation.IDSelector;
 import com.aspire.automation.web.util.annotation.Page;
 
 @Page(name = "ebags", url = "${pages.ebags.ebagsurl}")
@@ -89,13 +90,13 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsBagSubTotalPrice}")
 	public AspireWebElement ebagsBagSubTotalPrice();
 	
-	@CssSelector("${pages.ebags.ebagsContinuwCheckout}")
-	public AspireWebElement ebagsContinuwCheckout();
+	@CssSelector("${pages.ebags.ebagsContinuoCheckout}")
+	public AspireWebElement ebagsContinuoCheckout();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryCheckout}")
+	@IDSelector("${pages.ebags.ebagsDeliveryCheckout}")
 	public AspireWebElement ebagsDeliveryCheckout();
 	
-	@CssSelector("${pages.ebags.ebagsCheckoutContinue}")
+	@IDSelector("${pages.ebags.ebagsCheckoutContinue}")
 	public AspireWebElement ebagsCheckoutContinue();
 	
 	@CssSelector("${pages.ebags.ebagsDeliveryEmailAddressError}")
@@ -116,31 +117,31 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsDeliveryPhoneNumberError}")
 	public AspireWebElement ebagsDeliveryPhoneNumberError();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryFirstName}")
+	@IDSelector("${pages.ebags.ebagsDeliveryFirstName}")
 	public AspireWebElement ebagsDeliveryFirstName();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryLastName}")
+	@IDSelector("${pages.ebags.ebagsDeliveryLastName}")
 	public AspireWebElement ebagsDeliveryLastName();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryAddress}")
+	@IDSelector("${pages.ebags.ebagsDeliveryAddress}")
 	public AspireWebElement ebagsDeliveryAddress();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryCity}")
+	@IDSelector("${pages.ebags.ebagsDeliveryCity}")
 	public AspireWebElement ebagsDeliveryCity();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryZipCode}")
+	@IDSelector("${pages.ebags.ebagsDeliveryZipCode}")
 	public AspireWebElement ebagsDeliveryZipCode();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryPhoneNumber}")
+	@IDSelector("${pages.ebags.ebagsDeliveryPhoneNumber}")
 	public AspireWebElement ebagsDeliveryPhoneNumber();
 	
-	@CssSelector("${pages.ebags.ebagsDeliveryEmailAddress}")
+	@IDSelector("${pages.ebags.ebagsDeliveryEmailAddress}")
 	public AspireWebElement ebagsDeliveryEmailAddress();
 	
-	@CssSelector("${pages.ebags.ebagsPaymentSection}")
+	@IDSelector("${pages.ebags.ebagsPaymentSection}")
 	public AspireWebElement ebagsPaymentSection();
 	
-	@CssSelector("${pages.ebags.ebagsPalceOrderButton}")
+	@IDSelector("${pages.ebags.ebagsPalceOrderButton}")
 	public AspireWebElement ebagsPalceOrderButton();
 	
 	@CssSelector("${pages.ebags.ebagsPaymentCardNumberError}")
@@ -152,13 +153,13 @@ public interface EbagsPage {
 	@CssSelector("${pages.ebags.ebagsPaymentSecurityCodeError}")
 	public AspireWebElement ebagsPaymentSecurityCodeError();
 	
-	@CssSelector("${pages.ebags.ebagsPaymentCardNumber}")
+	@IDSelector("${pages.ebags.ebagsPaymentCardNumber}")
 	public AspireWebElement ebagsPaymentCardNumber();
 	
-	@CssSelector("${pages.ebags.ebagsPaymentExpirationDate}")
+	@IDSelector("${pages.ebags.ebagsPaymentExpirationDate}")
 	public AspireWebElement ebagsPaymentExpirationDate();
 	
-	@CssSelector("${pages.ebags.ebagsPaymentSecurityCode}")
+	@IDSelector("${pages.ebags.ebagsPaymentSecurityCode}")
 	public AspireWebElement ebagsPaymentSecurityCode();
 	
 	@CssSelector("${pages.ebags.ebagsSubmitError}")

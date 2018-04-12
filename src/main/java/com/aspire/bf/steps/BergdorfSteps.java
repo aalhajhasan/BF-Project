@@ -8,12 +8,18 @@ import java.util.regex.Pattern;
 
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.internal.FindsById;
 import org.openqa.selenium.support.ui.Select;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
+import com.aspire.automation.web.AspireWebDriver;
 import com.aspire.automation.web.util.AspireBrowser;
+import com.aspire.automation.web.util.AspireBrowserAction;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.Browser;
@@ -24,6 +30,8 @@ import com.aspire.bf.pages.BergdorfPage;
 
 public class BergdorfSteps {
 
+	AspireWebDriver test = new AspireWebDriver();
+	
 	
 	@Browser("bergdorf")
 	AspireBrowser<BergdorfPage> bergdorfPage;
@@ -101,8 +109,8 @@ public class BergdorfSteps {
 	@When("[8012-0004] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
-		double number = convert(data);
-		hitNumber = number * Double.parseDouble(value);
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
 	}
 	
 	
@@ -124,9 +132,36 @@ public class BergdorfSteps {
 	}
 	
 	
+	@When("[8012-0006] sleep after last action for $element seconds")
+	public void sleep(String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
 	
 	
-	
+	@When("[8012-0007] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")
+	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String dutiesAndTaxes)
+	{
+		double orderTotalvalue = convert(orderTotal);
+		double itemTotalvalue = convert(itemTotal);
+		double shippingvalue = convert(shipping);
+		double dutiesAndTaxesvalue = convert(dutiesAndTaxes);
+		
+		double sum = itemTotalvalue + shippingvalue + dutiesAndTaxesvalue;
+		
+		if (sum ==  orderTotalvalue)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+		
+	}
 	
 	
 	

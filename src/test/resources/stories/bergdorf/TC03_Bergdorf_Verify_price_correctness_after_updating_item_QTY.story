@@ -15,3 +15,6 @@ And [1100-1300] User clicks on the bergdorfBagUpdate
 And [8012-0004] User hits `bergdorfProductPrice` with 2
 And [1101-1181] the user saves bergdorfBagTotalPrice text in global scope under name bergdorfBagTotalPrice
 Then [8012-0005] User compare between `bergdorfProductPrice` and `bergdorfBagTotalPrice`
+And [1100-1300] User clicks on the bergdorfBagEditItem
+And [1100-1340] User fills bergdorfBagQuantity with 1
+And [1100-1300] User clicks on the bergdorfBagUpdate

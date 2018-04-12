@@ -14,7 +14,7 @@ aspire:
         enabled: true   
         include: 
            #- stories/barneys/**.story
-           #- stories/ebags/**.story
+           - stories/ebags/**.story
            #- stories/gilt/**.story
            #- stories/harrods/**.story
            #- stories/jcrew/**.story
@@ -23,7 +23,8 @@ aspire:
            #- stories/saks/**.story
            #- stories/saksoff/**.story
            #- stories/underarmour/**.story
-           - stories/bergdorf/**.story
+           #- stories/bergdorf/**.story
+           #- stories/bergdorf/**.story
           
           
 
