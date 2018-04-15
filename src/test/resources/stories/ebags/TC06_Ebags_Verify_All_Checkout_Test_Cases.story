@@ -28,8 +28,8 @@ And [1100-1340] User fills ebagsDeliveryCity with `checkoutCity`
 And [1100-1340] User fills ebagsDeliveryZipCode with `checkoutZipCode`
 And [1100-1340] User fills ebagsDeliveryPhoneNumber with `checkoutPhoneNumber`
 And [1100-1400] Execute `click` javascript on ebagsCheckoutContinue
-And [1000-6010] Focus on Frame cc-frame
 And [1100-1400] Execute `click` javascript on ebagsPalceOrderButton
+And [1000-6010] Focus on Frame cc-frame
 And [8006-0010] sleep after last action for 10000 seconds
 And [1101-1102] ebagsPaymentCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] ebagsPaymentExpirationDateError text is equal to Expiration date is required case sensitive

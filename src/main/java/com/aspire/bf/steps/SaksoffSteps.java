@@ -41,16 +41,16 @@ public class SaksoffSteps {
 	
 	
 	@Then("[8003-0002] user compare between $elementOne and $elementTwo")  //Custom step used to compare between two image as a string 
-	public boolean imagecompare(String qv , String pdp)
+	public void imagecompare(String qv , String pdp)
 	{
 		
-		String qvImage = qv.substring(qv.indexOf("saksoff5th") + 11, qv.indexOf("_"));
-		String pdpImage = pdp.substring(pdp.indexOf("saksoff5th") + 11);
+		/*String qvImage = qv.substring(qv.indexOf("saksoff5th") + 11, qv.indexOf("_"));
+		String pdpImage = pdp.substring(pdp.indexOf("saksoff5th") + 11);*/
 		
-		System.out.println("qv image = " + qvImage);
-		System.out.println("pdp image = " + pdpImage);
+		System.out.println("qv image = " + qv);
+		System.out.println("pdp image = " + pdp);
 		
-		boolean status = false;
+		/*boolean status = false;
 		if (qvImage.equals(pdpImage))
 		{
 			status = true;
@@ -60,7 +60,7 @@ public class SaksoffSteps {
 			status = false;
 		}
 		
-		return status;
+		return status;*/
 		
 	}
 	
@@ -88,7 +88,15 @@ public class SaksoffSteps {
 			   
 			   if (element.equals("saksoffProductSKUSelection") || element.equals("saksoffAddToBagButton") || element.equals("saksoffValidPdp"))
 			   {
-				   randomclick("saksoffProducts");
+				   if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+				    {
+					   System.out.println("valid PLP");
+				    }
+				   else
+				   {
+					   randomclick("saksoffProducts");
+				   }
+				   
 			   }
 			   
 			   search(element);

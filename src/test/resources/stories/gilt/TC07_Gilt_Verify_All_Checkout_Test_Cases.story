@@ -12,12 +12,12 @@ And [1101-1080] giltLogo should be displayed
 And [1100-1321] User scroll to the giltPromoSection then click it
 Then [1101-1080] giltPromoCodeField should be displayed
 And [1100-1320] User scroll to the giltCheckoutHeader
-And [1100-1300-S] User clicks on the giltRemoveDiscount
-And [1101-1184] the user saves giltSubTotal text in scenario scope under name giltSubTotalValue
-And [1101-1184-S] the user saves giltVat text in scenario scope under name giltVatValue
-And [1101-1184] the user saves giltShipping text in scenario scope under name giltShippingValue
-And [1101-1184] the user saves giltTotal text in scenario scope under name giltTotalValue
-And [8000-0004] `giltTotalValue` price should be matched with the summation of `giltSubTotalValue` and `giltVatValue` and `giltShippingValue`
+!-- And [1100-1300-S] User clicks on the giltRemoveDiscount
+!-- And [1101-1184] the user saves giltSubTotal text in scenario scope under name giltSubTotalValue
+!-- And [1101-1184-S] the user saves giltVat text in scenario scope under name giltVatValue
+!-- And [1101-1184] the user saves giltShipping text in scenario scope under name giltShippingValue
+!-- And [1101-1184] the user saves giltTotal text in scenario scope under name giltTotalValue
+!-- And [8000-0004] `giltTotalValue` price should be matched with the summation of `giltSubTotalValue` and `giltVatValue` and `giltShippingValue`
 And [1100-1300] User clicks on the giltChangeShippingAdress
 And [1100-1321] User scroll to the giltAddNewAddress then click it
 And [1100-1300] User clicks on the giltSaveAndContinueButton
@@ -46,7 +46,7 @@ And [1100-1601] Select giltYear By Value 2032
 And [1100-1340] User fills giltSecuritySection with `securityCardCode`
 And [1100-1300] User clicks on the giltAddPymentMethodButton
 And [1012-1000] page is loaded, within 120 seconds
-And [1111-1080] giltSecurityCodeSection should be displayed, Within 120 seconds
+And [1111-1080-S] giltSecurityCodeSection should be displayed, Within 120 seconds
 And [1100-1340-S] User fills giltSecurityCodeSection with `securityCardCode`
 And [1100-1320] User scroll to the giltCheckoutHeader
 Then [1111-1000] giltSubmitYourOrderButton should be clickable, Within 120 seconds

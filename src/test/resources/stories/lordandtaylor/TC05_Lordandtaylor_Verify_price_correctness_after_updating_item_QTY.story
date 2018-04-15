@@ -5,7 +5,7 @@ Scenario:  TC05_Lordandtaylor_Verify_price_correctness_after_updating_item_QTY
 
 Given [1101-1080] lordandtaylorBagPage should be displayed
 When [8009-0003] User hits `lordandtaylorPdpPrice` with 2
-And [1100-1300] User clicks on the lordandtaylorEditLink
+And [1100-1400] Execute `click` javascript on lordandtaylorEditLink
 And [1111-1080] lordandtaylorEditDialog should be displayed, Within 120 seconds
 And [1100-1310] Clear lordandtaylorQuantity field
 And [1100-1340] User fills lordandtaylorQuantity with 2

@@ -7,6 +7,7 @@ Given [1101-1080] saksBagPage should be displayed
 When [1100-1321] User scroll to the saksCheckoutButton then click it
 And [1111-1080] saksCheckoutDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the saksCheckoutAsGuest
+And [8002-0010] sleep after last action for 10000 seconds
 And [1111-1080] saksCheckoutPage should be displayed, Within 120 seconds
 And [1100-1321] User scroll to the saksContinueCheckoutButton then click it
 And [1101-1102] saksCheckoutFirstNameError text is equal to Please enter a valid first name. case sensitive

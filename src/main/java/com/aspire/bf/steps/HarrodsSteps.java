@@ -97,7 +97,7 @@ public class HarrodsSteps {
 		{
 			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0 )
 			{
-				System.out.println("valid PLP");
+				System.out.println("valid Page");
 			}
 		
 	        else 
@@ -105,7 +105,6 @@ public class HarrodsSteps {
 	           randomclick("harrodsTopNavStore");
 	           Thread.sleep(10000);
 	           randomclick("harrodsSales");
-			   
 			   Thread.sleep(10000);
 			   
 			   if (element.equals("harrodsMoreThanOneQTY"))

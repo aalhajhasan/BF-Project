@@ -221,6 +221,16 @@ public class SaksSteps {
 	}
 	
 	
+	
+	@When("[8002-0010] sleep after last action for $element seconds")
+	public void sleep (String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
+	
+	
 	public double convert(String element)   //Isolate numbers from text
 	{   
 		double result = 0;
