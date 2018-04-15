@@ -136,8 +136,8 @@ public class SaksoffSteps {
 	@When("[8003-0005] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
-		double number = convert(data);
-		hitNumber = number * Double.parseDouble(value);
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
 	}
 	
 	@Then("[8003-0006] User compare between $valueOne and $valueTwo")  //Custom step

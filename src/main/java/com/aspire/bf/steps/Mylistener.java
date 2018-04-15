@@ -69,7 +69,18 @@ public class Mylistener implements TestEventListener {
         				}
         				catch (NoSuchElementException e2)
         				{
-        					
+        					try
+        					{
+        						if (AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialog").isDisplayed())
+                         	    {
+                         		 AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialogCloseButton").click();
+                         		 dialogstatus = true;
+                         	     }
+        					}
+        					catch (NoSuchElementException e3)
+        					{
+        						
+        					}
         				}
         			}
         		}

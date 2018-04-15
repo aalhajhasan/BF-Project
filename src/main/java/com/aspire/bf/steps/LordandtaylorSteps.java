@@ -73,8 +73,8 @@ public class LordandtaylorSteps {
 	@When("[8009-0003] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
-		double number = convert(data);
-		hitNumber = number * Double.parseDouble(value);
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
 	}
 	
 	

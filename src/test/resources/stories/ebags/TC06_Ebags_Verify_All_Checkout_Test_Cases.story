@@ -13,9 +13,6 @@ And [1101-1181] the user saves ebagsShipping text in global scope under name eba
 And [1101-1181] the user saves ebagsDutiesAndTaxes text in global scope under name ebagsDutiesAndTaxes
 And [1101-1181] the user saves ebagsOrderTotal text in global scope under name ebagsOrderTotal
 And [8006-0008] `ebagsOrderTotal` price should be matched with the summation of `ebagsItemsTotal` , `ebagsShipping` and `ebagsDutiesAndTaxes`
-And [1111-1080] ebagsPromoCodeSection should be displayed, Within 120 seconds
-And [1100-0300] User click on it
-And [1111-1080] ebagsPromoCodeSFiled should be displayed, Within 120 seconds
 And [1100-1321] User scroll to the ebagsCheckoutContinue then click it
 And [1101-1102] ebagsDeliveryEmailAddressError text is equal to Email address is required case sensitive
 And [1101-1102] ebagsDeliveryFirstNameError text is equal to First name is required case sensitive
@@ -35,12 +32,14 @@ And [1111-1080] ebagsPaymentSection should be displayed, Within 120 seconds
 And [8006-0010] sleep after last action for 10000 seconds
 And [1100-1400] Execute `click` javascript on ebagsPalceOrderButton
 And [8006-0010] sleep after last action for 10000 seconds
-!-- And [1101-1102] ebagsPaymentCardNumberError text is equal to Card number is required case sensitive
-!-- And [1101-1102] ebagsPaymentExpirationDateError text is equal to Expiration date is required case sensitive
-!-- And [1101-1102] ebagsPaymentSecurityCodeError text is equal to Security code is required case sensitive
+And [1000-6010] Focus on Frame cc-frame
+And [1101-1102] ebagsPaymentCardNumberError text is equal to Card number is required case sensitive
+And [1101-1102] ebagsPaymentExpirationDateError text is equal to Expiration date is required case sensitive
+And [1101-1102] ebagsPaymentSecurityCodeError text is equal to Security code is required case sensitive
 And [1100-1340] User fills ebagsPaymentCardNumber with `paymentCardNumber`
 And [1100-1340] User fills ebagsPaymentExpirationDate with `paymentExpirationDate`
 And [1100-1340] User fills ebagsPaymentSecurityCode with `paymentSecurityCode`
+And [1000-6020] Focus on parent Frame
 And [1100-1400] Execute `click` javascript on ebagsPalceOrderButton
 Then [1111-1080] ebagsSubmitError should be displayed, Within 120 seconds
 And [1101-1102] ebagsSubmitError text is equal to `submitErrorMessage` case sensitive

@@ -95,7 +95,7 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.ruelalaProceedToCheckout}")
 	public AspireWebElement ruelalaProceedToCheckout();
 	
-	@ClassNameSelector("${pages.ruelala.ruelalaCheckoutPage}")
+	@IDSelector("${pages.ruelala.ruelalaCheckoutPage}")
 	public AspireWebElement ruelalaCheckoutPage();
 	
 	@IDSelector("${pages.ruelala.ruelalaPlaceOrder}")

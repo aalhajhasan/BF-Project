@@ -76,9 +76,10 @@ public class RuelalaSteps {
 	        {
 	        	if (element.equals("ruelalaValidPdp"))
 	        	{
-	        		if (AspireBrowser.getElementByPropertyNameGlobaly("ruelalaValidPdp").isDisplayed())
+	        		 String x= AspireBrowser.getElementByPropertyNameGlobaly("ruelalaValidPdp").getElement().getAttribute("disabled");
+	        		if (x.equals("true"))
 	        		{
-	        			System.out.println("Valid PDP");
+	        			System.out.println("Valid PDP ");
 	        		}
 	        		else 
 	        		{   
@@ -182,7 +183,13 @@ public class RuelalaSteps {
 	
 	
 	
-	
+	@When("[8007-0007] sleep after last action for $element seconds")
+	public void sleep (String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
 	
 	
 	

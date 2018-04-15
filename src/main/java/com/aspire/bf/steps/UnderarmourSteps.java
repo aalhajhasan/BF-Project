@@ -71,8 +71,8 @@ public class UnderarmourSteps {
 	@When("[8011-0003] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
-		double number = convert(data);
-		hitNumber = number * Double.parseDouble(value);
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
 	}
 	
 	
@@ -134,7 +134,14 @@ public class UnderarmourSteps {
 	}
 	
 	
-	
+
+	@When("[8011-0007] sleep after last action for $element seconds")
+	public void sleep (String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
 	
 	
 	

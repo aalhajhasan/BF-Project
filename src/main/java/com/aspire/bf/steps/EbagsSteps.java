@@ -116,8 +116,8 @@ public class EbagsSteps {
 	@When("[8006-0005] User hits $value with $data")  //Custom step
 	public void hit(String value,String data)
 	{
-		double number = convert(data);
-		hitNumber = number * Double.parseDouble(value);
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
 	}
 	
 	

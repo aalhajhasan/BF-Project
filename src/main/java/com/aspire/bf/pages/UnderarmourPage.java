@@ -3,6 +3,7 @@ package com.aspire.bf.pages;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
+import com.aspire.automation.web.util.annotation.IDSelector;
 import com.aspire.automation.web.util.annotation.Page;
 
 @Page(name = "underarmour", url = "${pages.underarmour.underarmoururl}")
@@ -102,9 +103,95 @@ public interface UnderarmourPage {
 	@CssSelector("${pages.underarmour.underarmourProceedToCheckout}")
 	public AspireWebElement underarmourProceedToCheckout();
 	
+	@IDSelector("${pages.underarmour.underarmourDeliveryCheckout}")
+	public AspireWebElement underarmourDeliveryCheckout();
 	
+	@IDSelector("${pages.underarmour.underarmourCheckoutContinue}")
+	public AspireWebElement underarmourCheckoutContinue();
 	
+	@CssSelector("${pages.underarmour.underarmourDeliveryEmailAddressError}")
+	public AspireWebElement underarmourDeliveryEmailAddressError();
 	
+	@CssSelector("${pages.underarmour.underarmourDeliveryFirstNameError}")
+	public AspireWebElement underarmourDeliveryFirstNameError();
+	
+	@CssSelector("${pages.underarmour.underarmourDeliveryLastNameError}")
+	public AspireWebElement underarmourDeliveryLastNameError();
+	
+	@CssSelector("${pages.underarmour.underarmourDeliveryAddressError}")
+	public AspireWebElement underarmourDeliveryAddressError();
+	
+	@CssSelector("${pages.underarmour.underarmourDeliveryCityError}")
+	public AspireWebElement underarmourDeliveryCityError();
+	
+	@CssSelector("${pages.underarmour.underarmourDeliveryPhoneNumberError}")
+	public AspireWebElement underarmourDeliveryPhoneNumberError();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryFirstName}")
+	public AspireWebElement underarmourDeliveryFirstName();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryLastName}")
+	public AspireWebElement underarmourDeliveryLastName();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryAddress}")
+	public AspireWebElement underarmourDeliveryAddress();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryCity}")
+	public AspireWebElement underarmourDeliveryCity();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryZipCode}")
+	public AspireWebElement underarmourDeliveryZipCode();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryPhoneNumber}")
+	public AspireWebElement underarmourDeliveryPhoneNumber();
+	
+	@IDSelector("${pages.underarmour.underarmourDeliveryEmailAddress}")
+	public AspireWebElement underarmourDeliveryEmailAddress();
+	
+	@IDSelector("${pages.underarmour.underarmourPaymentSection}")
+	public AspireWebElement underarmourPaymentSection();
+	
+	@IDSelector("${pages.underarmour.underarmourPalceOrderButton}")
+	public AspireWebElement underarmourPalceOrderButton();
+	
+	@CssSelector("${pages.underarmour.underarmourPaymentCardNumberError}")
+	public AspireWebElement underarmourPaymentCardNumberError();
+	
+	@CssSelector("${pages.underarmour.underarmourPaymentExpirationDateError}")
+	public AspireWebElement underarmourPaymentExpirationDateError();
+	
+	@CssSelector("${pages.underarmour.underarmourPaymentSecurityCodeError}")
+	public AspireWebElement underarmourPaymentSecurityCodeError();
+	
+	@IDSelector("${pages.underarmour.underarmourPaymentCardNumber}")
+	public AspireWebElement underarmourPaymentCardNumber();
+	
+	@IDSelector("${pages.underarmour.underarmourPaymentExpirationDate}")
+	public AspireWebElement underarmourPaymentExpirationDate();
+	
+	@IDSelector("${pages.underarmour.underarmourPaymentSecurityCode}")
+	public AspireWebElement underarmourPaymentSecurityCode();
+	
+	@CssSelector("${pages.underarmour.underarmourSubmitError}")
+	public AspireWebElement underarmourSubmitError();
+	
+	@CssSelector("${pages.underarmour.underarmourItemsTotal}")
+	public AspireWebElement underarmourItemsTotal();
+	
+	@CssSelector("${pages.underarmour.underarmourShipping}")
+	public AspireWebElement underarmourShipping();
+	
+	@CssSelector("${pages.underarmour.underarmourDutiesAndTaxes}")
+	public AspireWebElement underarmourDutiesAndTaxes();
+	
+	@CssSelector("${pages.underarmour.underarmourOrderTotal}")
+	public AspireWebElement underarmourOrderTotal();
+	
+	@IDSelector("${pages.underarmour.underarmourFeedBackDialog}")
+	public AspireWebElement underarmourFeedBackDialog();
+	
+	@IDSelector("${pages.underarmour.underarmourFeedBackDialogCloseButton}")
+	public AspireWebElement underarmourFeedBackDialogCloseButton();
 	
 	
 	
