@@ -21,6 +21,6 @@ And [1100-1340] User fills ruelalaPaymentCardNumber with `paymentCardNumber`
 And [1100-1601] Select ruelalaPaymentCardExpirationMonth By Value number:1
 And [1100-1601] Select ruelalaPaymentCardExpirationYear By Value number:2032
 And [1100-1340] User fills ruelalaPaymentSecurityCode with `paymentSecurityCode`
-And [1000-6010] Focus on Frame envoyId
+And [1000-6020] Focus on parent Frame
 And [1100-1300] User clicks on the ruelalaPlaceOrder
 Then [1111-1080] ruelalaSubmitError should be displayed, Within 120 seconds

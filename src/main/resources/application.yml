@@ -13,7 +13,8 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-           - stories/barneys/**.story
+           #- stories/barneys/**.story
+           - stories/bergdorf/**.story
            - stories/ebags/**.story
            - stories/gilt/**.story
            - stories/harrods/**.story
@@ -24,7 +25,7 @@ aspire:
            - stories/saks/**.story
            - stories/saksoff/**.story
            - stories/underarmour/**.story
-           - stories/bergdorf/**.story
+           
            
           
           

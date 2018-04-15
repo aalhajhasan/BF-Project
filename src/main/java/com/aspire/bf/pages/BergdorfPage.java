@@ -167,11 +167,14 @@ public interface BergdorfPage {
 	@CssSelector("${pages.bergdorf.bergdorfPromoCodeSFiled}")
 	public AspireWebElement bergdorfPromoCodeSFiled();
 	
+	@CssSelector("${pages.bergdorf.bergdorfSimilarDialog}")
+	public AspireWebElement bergdorfSimilarDialog();
 	
+	@CssSelector("${pages.bergdorf.bergdorfSimilarDialogNoThanks}")
+	public AspireWebElement bergdorfSimilarDialogNoThanks();
 	
-	
-	
-	
+	@CssSelector("${pages.bergdorf.bergdorfColor}")
+	public AspireWebElement bergdorfColor();
 	
 	
 	

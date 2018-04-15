@@ -15,5 +15,5 @@ And [1100-0300] User click on it
 And [1111-1080] barneysPdp should be displayed, Within 120 seconds
 And [8008-0006] user randomly select an available size
 And [1111-1080] barneysAddToBagButton should be displayed, Within 120 seconds
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0300] User click on it
 Then [1111-1080] barneysMyBagDialog should be displayed, Within 120 seconds

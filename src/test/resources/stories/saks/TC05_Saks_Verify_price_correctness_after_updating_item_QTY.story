@@ -14,7 +14,7 @@ And [8003-0004] user check `saksBagQTY` with 2
 And [1101-1181] the user saves saksBagProductPrice text in global scope under name saksBagPrice
 And [1100-1300] User clicks on the saksBagCheckoutButton
 And [1111-1080] saksBagPage should be displayed, Within 120 seconds
-And [8002-0005] User hits 2 with `saksBagPrice`
+And [8002-0005] User hits `saksBagPrice` with 2
 And [1101-1181] the user saves saksBagProductPriceAfter text in global scope under name saksBagPriceAfter
 Then [8002-0006] User compare between `saksBagPrice` and `saksBagPriceAfter`
 And [1100-1310] Clear saksQuantity field

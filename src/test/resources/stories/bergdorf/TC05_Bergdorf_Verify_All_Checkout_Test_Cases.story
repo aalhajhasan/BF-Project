@@ -25,8 +25,6 @@ And [1100-1340] User fills bergdorfCheckoutAddress with `checkoutEmailAddress`
 And [1100-1340] User fills bergdorfCheckoutCity with `checkoutCity`
 And [1100-1340] User fills bergdorfCheckoutPhone with `checkoutPhoneNumber`
 And [1100-1300] User clicks on the bergdorfCheckoutContinue
-And [1111-1080] bergdorfCheckoutPayment should be displayed, Within 120 seconds
-And [8012-0006] sleep after last action for 10000 seconds
 And [1100-1321] User scroll to the bergdorfCheckoutPlaceOrder then click it
 And [8012-0006] sleep after last action for 10000 seconds
 And [1000-6010] Focus on Frame cc-frame

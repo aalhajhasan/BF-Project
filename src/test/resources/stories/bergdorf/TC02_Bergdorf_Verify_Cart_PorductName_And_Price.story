@@ -17,6 +17,7 @@ And [1100-0300] User click on it
 And [1111-1080] bergdorfProductPage should be displayed, Within 120 seconds
 And [8012-0001] user search for bergdorfValidPdp
 And [8012-0002] user randomly select an available bergdorfSku
+And [8012-0002] user randomly select an available bergdorfColor
 And [1101-1181] the user saves bergdorfProductName text in global scope under name bergdorfProductName
 And [1101-1181] the user saves bergdorfProductPrice text in global scope under name bergdorfProductPrice
 And [1100-1300] User clicks on the bergdorfAddToshoppingBag

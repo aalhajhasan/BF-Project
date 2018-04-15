@@ -21,7 +21,7 @@ public class Mylistener implements TestEventListener {
     	
     	@Autowired
     	AspireBrowserState aspireBrowserState;
-    	
+    	public boolean dialogstatus;
     	@Override
         public void beforeStep(String storyName, String scenarioName, Map<String, String> exampleData,
                 String stepName) {
@@ -29,13 +29,7 @@ public class Mylistener implements TestEventListener {
     		
     		AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
     		
-            boolean dialogstatus = false;
-            if (dialogstatus)
-            {
-            	System.out.println("dialog status = " + dialogstatus);
-            }
-            else 
-            {
+
             	System.out.println("dialog status = " + dialogstatus);
             	try
             	{
@@ -48,7 +42,7 @@ public class Mylistener implements TestEventListener {
             	}
             	catch (NoSuchElementException e)
         		{
-        			System.out.println("Catch");
+        			System.out.println("Catch Ruelal");
         			try
         			{
                 		if(AspireBrowser.getElementByPropertyNameGlobaly("giltSurveyDialog").isDisplayed()) 
@@ -59,6 +53,7 @@ public class Mylistener implements TestEventListener {
         			}
         			catch (NoSuchElementException e1)
         			{
+        				System.out.println("Catch Gilt");
         				try
         				{
         					if (AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackDialog").isDisplayed())
@@ -69,6 +64,7 @@ public class Mylistener implements TestEventListener {
         				}
         				catch (NoSuchElementException e2)
         				{
+        					System.out.println("Catch Barneys");
         					try
         					{
         						if (AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialog").isDisplayed())
@@ -79,12 +75,24 @@ public class Mylistener implements TestEventListener {
         					}
         					catch (NoSuchElementException e3)
         					{
-        						
+        						System.out.println("Catch Underarmour");
+        						try
+            					{
+            						if (AspireBrowser.getElementByPropertyNameGlobaly("bergdorfSimilarDialog").isDisplayed())
+                             	    {
+                             		 AspireBrowser.getElementByPropertyNameGlobaly("bergdorfSimilarDialogNoThanks").scrollToElement().click();
+                             		 dialogstatus = true;
+                             	     }
+            					}
+            					catch (NoSuchElementException e4)
+            					{
+            						System.out.println("Catch Bergdorf");
+            					}
         					}
         				}
         			}
         		}
-            }
+            
            
             
             

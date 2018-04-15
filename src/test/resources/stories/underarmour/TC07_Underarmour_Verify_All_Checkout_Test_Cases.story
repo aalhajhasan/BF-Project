@@ -29,8 +29,6 @@ And [1100-1340] User fills underarmourDeliveryCity with `checkoutCity`
 And [1100-1340] User fills underarmourDeliveryZipCode with `checkoutZipCode`
 And [1100-1340] User fills underarmourDeliveryPhoneNumber with `checkoutPhoneNumber`
 And [1100-1400] Execute `click` javascript on underarmourCheckoutContinue
-And [1111-1080] underarmourPaymentSection should be displayed, Within 120 seconds
-And [8006-0010] sleep after last action for 10000 seconds
 And [1100-1400] Execute `click` javascript on underarmourPalceOrderButton
 And [8006-0010] sleep after last action for 10000 seconds
 And [1000-6010] Focus on Frame cc-frame

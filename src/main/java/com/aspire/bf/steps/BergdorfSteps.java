@@ -131,7 +131,7 @@ public class BergdorfSteps {
 		
 	}
 	
-	
+	@Then("[8012-0006] sleep after last action for $element seconds")
 	@When("[8012-0006] sleep after last action for $element seconds")
 	public void sleep(String element) throws InterruptedException
 	{

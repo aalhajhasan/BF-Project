@@ -28,11 +28,9 @@ And [1100-1340] User fills ebagsDeliveryCity with `checkoutCity`
 And [1100-1340] User fills ebagsDeliveryZipCode with `checkoutZipCode`
 And [1100-1340] User fills ebagsDeliveryPhoneNumber with `checkoutPhoneNumber`
 And [1100-1400] Execute `click` javascript on ebagsCheckoutContinue
-And [1111-1080] ebagsPaymentSection should be displayed, Within 120 seconds
-And [8006-0010] sleep after last action for 10000 seconds
+And [1000-6010] Focus on Frame cc-frame
 And [1100-1400] Execute `click` javascript on ebagsPalceOrderButton
 And [8006-0010] sleep after last action for 10000 seconds
-And [1000-6010] Focus on Frame cc-frame
 And [1101-1102] ebagsPaymentCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] ebagsPaymentExpirationDateError text is equal to Expiration date is required case sensitive
 And [1101-1102] ebagsPaymentSecurityCodeError text is equal to Security code is required case sensitive
@@ -42,5 +40,5 @@ And [1100-1340] User fills ebagsPaymentSecurityCode with `paymentSecurityCode`
 And [1000-6020] Focus on parent Frame
 And [1100-1400] Execute `click` javascript on ebagsPalceOrderButton
 Then [1111-1080] ebagsSubmitError should be displayed, Within 120 seconds
-And [1101-1102] ebagsSubmitError text is equal to `submitErrorMessage` case sensitive
+
 
