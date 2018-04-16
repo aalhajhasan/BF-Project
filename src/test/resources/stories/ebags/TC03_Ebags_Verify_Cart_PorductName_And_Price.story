@@ -1,5 +1,5 @@
 Meta:
-@ReportName Ebags
+@ReportName ebags
 
 Scenario:  TC03_Ebags_Verify_Cart_PorductName_And_Price
 

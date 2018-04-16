@@ -1,5 +1,5 @@
 Meta:
-@ReportName Bergdorf
+@ReportName Bergdorf GoodMan
 
 Scenario:  TC03_Bergdorf_Verify_price_correctness_after_updating_item_QTY
 

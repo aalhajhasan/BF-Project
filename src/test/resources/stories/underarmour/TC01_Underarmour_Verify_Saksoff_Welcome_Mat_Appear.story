@@ -1,5 +1,5 @@
 Meta:
-@ReportName Underarmour
+@ReportName Under Armour
 
 Scenario:  TC01_Underarmour_Verify_Saksoff_Welcome_Mat_Appear
 

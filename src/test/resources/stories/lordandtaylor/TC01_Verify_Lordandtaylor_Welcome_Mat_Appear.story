@@ -1,5 +1,5 @@
 Meta:
-@ReportName LordandTaylor
+@ReportName Lord And Taylor
 
 Scenario:  TC01_Verify_Lordandtaylor_Welcome_Mat_Appear
 

@@ -1,5 +1,5 @@
 Meta:
-@ReportName Underarmour
+@ReportName Under Armour
 
 Scenario:  TC07_Underarmour_Verify_All_Checkout_Test_Cases
 

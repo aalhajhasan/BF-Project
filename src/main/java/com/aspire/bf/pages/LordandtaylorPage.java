@@ -33,6 +33,9 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewDialog}")
 	public AspireWebElement lordandtaylorQuickViewDialog();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPdpPrice}")
+	public AspireWebElement lordandtaylorPdpPrice();
+	
 	@CssSelector("${pages.lordandtaylor.lordandtaylorQuickViewProductName}")
 	public AspireWebElement lordandtaylorQuickViewProductName();
 	

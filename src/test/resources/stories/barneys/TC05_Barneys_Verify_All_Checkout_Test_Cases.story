@@ -1,5 +1,5 @@
 Meta:
-@ReportName Barneys
+@ReportName Barneys NewWork
 
 Scenario:  TC05_Barneys_Verify_All_Checkout_Test_Cases
 

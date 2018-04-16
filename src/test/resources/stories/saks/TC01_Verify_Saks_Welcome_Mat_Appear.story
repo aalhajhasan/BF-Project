@@ -1,5 +1,5 @@
 Meta:
-@ReportName Saks
+@ReportName Saks Fifth Avenue
 
 Scenario:  TC01_Saks_Verify_Welcome_Mat_Appear
 

@@ -1,5 +1,5 @@
 Meta:
-@ReportName LordandTaylor
+@ReportName Lord And Taylor
 
 Scenario:  TC04_Lordandtaylor_Verify_Cart_PorductName_And_Price
 

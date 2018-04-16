@@ -1,5 +1,5 @@
 Meta:
-@ReportName Saks Fifth Avenue
+@ReportName Saks Fifth Avenue OFF 5TH
 
 Scenario:  TC07_Saksoff_Verify_All_Checkout_Test_Cases
 

@@ -1,5 +1,5 @@
 Meta:
-@ReportName Underarmour
+@ReportName Under Armour
 
 Scenario:  TC03_Underarmour_Verify_Cart_PorductName_And_Price
 

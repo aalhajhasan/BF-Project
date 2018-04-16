@@ -1,5 +1,5 @@
 Meta:
-@ReportName Underarmour
+@ReportName Under Armour
 
 Scenario:  TC02_Underarmour_Verify_Pdp_ProductName_And_Price
 

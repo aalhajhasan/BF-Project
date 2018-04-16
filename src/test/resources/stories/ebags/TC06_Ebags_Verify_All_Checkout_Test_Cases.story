@@ -1,5 +1,5 @@
 Meta:
-@ReportName Ebags
+@ReportName ebags
 
 Scenario:  TC06_Ebags_Verify_All_Checkout_Test_Cases
 

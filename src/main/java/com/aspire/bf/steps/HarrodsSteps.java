@@ -108,9 +108,17 @@ public class HarrodsSteps {
 			   Thread.sleep(10000);
 			   
 			   if (element.equals("harrodsMoreThanOneQTY"))
-			   {
-				   randomclick("harrodsProducts");
-				   Thread.sleep(10000);
+			   {   
+				   if (AspireBrowser.getElementsByPropertyNameGlobaly("harrodsProducts").allIsDisplayed())
+				   {
+					   randomclick("harrodsProducts");
+				   }
+			      else
+			       {
+			    	  randomclick("harrodsTopNavStore");
+			    	  randomclick("harrodsSales");
+			       }
+				  
 			   }
 			   
 			   search(element);

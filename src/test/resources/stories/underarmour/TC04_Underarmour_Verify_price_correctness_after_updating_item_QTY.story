@@ -1,5 +1,5 @@
 Meta:
-@ReportName Underarmour
+@ReportName Under Armour
 
 Scenario:  TC04_Underarmour_Verify_price_correctness_after_updating_item_QTY
 
