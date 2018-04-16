@@ -50,7 +50,6 @@ And [1100-1601] Select harrodsPaymentExpireMonth By Value 1
 And [1100-1601] Select harrodsPaymentExpireYear By Value 2037
 And [1100-1340] User fills harrodsPaymentSecurityCodeSection with `paymentSecurityCode`
 And [1100-1300] User clicks on the harrodsPaySecurelyNowButton
-And [1111-1080] harrodsSubmitErrorMessage should be displayed, Within 120 seconds
-Then [1101-1102] harrodsSubmitErrorMessage text is equal to `submitErrorMessage` case sensitive
+Then [1111-1080] harrodsSubmitErrorMessage should be displayed, Within 120 seconds
 
 

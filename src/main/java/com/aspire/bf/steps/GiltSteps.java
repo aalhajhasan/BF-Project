@@ -16,6 +16,8 @@ import com.aspire.bf.pages.GiltPage;
 @Component
 
 public class GiltSteps {
+	
+	
 	@Browser("gilt")
 	AspireBrowser<GiltPage> giltPage;
 	
