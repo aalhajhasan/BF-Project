@@ -51,4 +51,3 @@ And [8002-0008] `saksOrderTotal` price should be matched with the summation of `
 And [1100-1340] User fills saksSecurityCode with `paymentSecurityCode`
 And [1100-1300] User clicks on the saksPlaceOrderButton
 Then [1111-1080] saksSubmitErrorMessage should be displayed, Within 120 seconds
-And [1101-1102] saksSubmitErrorMessage text is equal to `submitErrorMessage` case sensitive
