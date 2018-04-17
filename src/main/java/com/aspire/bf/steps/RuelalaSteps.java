@@ -39,7 +39,7 @@ public class RuelalaSteps {
 		
 	}
 	
-	
+	public String x="";
 	@When("[8007-0002] user search for $element")  //Custom step for searching on specific element
 	public void search(String element) throws InterruptedException 
 	{
@@ -56,17 +56,27 @@ public class RuelalaSteps {
 			    }
 				else 
 				{
-					if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
-			           {
-						   randomclick("ruelalaSalesTwo");
-						   search(element);
-			           }
-					else
-			           {
+					try
+					{
+						if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
+				           {
+							   randomclick("ruelalaSalesTwo");
+							   search(element);
+				           }
+						else
+				           {
+							  randomclick("ruelalaTopNav");
+							  randomclick("ruelalaSales");
+							  search(element);
+				           }
+					}
+					catch (NoSuchElementException e1)
+					{
 						  randomclick("ruelalaTopNav");
 						  randomclick("ruelalaSales");
 						  search(element);
-			           }
+					}
+					
 				}
 
 			}
@@ -76,44 +86,56 @@ public class RuelalaSteps {
 	        {
 	        	if (element.equals("ruelalaValidPdp"))
 	        	{
-	        		 String x= AspireBrowser.getElementByPropertyNameGlobaly("ruelalaValidPdp").getElement().getAttribute("disabled");
-	        		if (x.equals("true"))
+	        		try
 	        		{
-	        			System.out.println("Valid PDP ");
+	        			sleep("5000");
+	        				x = AspireBrowser.getElementByPropertyNameGlobaly("ruelalaSoldOutMessage").text().toString();
+	        			if (x.equals("Sorry, this item is completely sold out.")  || x.equals("Ships In U.S. Only"))
+		        		{
+		        			randomclick("ruelalaTopNav");
+		        		    randomclick("ruelalaSales");
+		        		    try
+							{
+								if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
+						           {
+									   randomclick("ruelalaSalesTwo");
+									   randomclick("ruelalaPLP");
+									   search(element);
+						           }
+								else
+						           {
+									
+									  randomclick("ruelalaPLP");
+									  search(element);
+						           }
+							}
+							catch (NoSuchElementException e1)
+							{
+								randomclick("ruelalaTopNav");
+								  randomclick("ruelalaSales");
+								  randomclick("ruelalaPLP");
+								  search(element);
+							}
+		        		}
+		        		else 
+		        		{   
+		        			System.out.println("Valid PDP");
+		        		}
+                  }
+	        		
+	        		catch (NoSuchElementException e3)
+	        		{
+	        			System.out.println("Catch");
 	        		}
-	        		else 
-	        		{   
-	        			
-	        			randomclick("ruelalaTopNav");
-	        		    randomclick("ruelalaSales");
-	        			if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
-	     	           {
-	        				randomclick("ruelalaSalesTwo");
-	        				randomclick("ruelalaPLP");
-	     				    search(element);
-	     	           }
-	        			else
-	        			{
-	        				randomclick("ruelalaPLP");
-	     				    search(element);
-	        			}
-	        		}
-	        	}
-	           
-	           else
-	           {
-	        	   randomclick("ruelalaTopNav");
-	        	   randomclick("ruelalaSales");
-	           }
-	           
 	        }
 		}
+		
+	}
 		catch (NoSuchElementException e)
 		{
 			System.out.println("Catch");
 		}
 	}
-	
 	
 	public double hitNumber;
 	@When("[8007-0003] User hits $value with $data")  //Custom step
@@ -225,6 +247,14 @@ public class RuelalaSteps {
 	{
 		Random rand = new Random();
 		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
-		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+		if(element.equals("ruelalaTopNav") || element.equals("ruelalaSales") || element.equals("ruelalaPLP"))
+		{
+			AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).hoverThenClick();
+		}
+		else
+		{
+			AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+		}
+		
 	}
 }

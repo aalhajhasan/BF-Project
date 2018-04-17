@@ -14,6 +14,5 @@ And [1111-1080] lordandtaylorBagPage should be displayed, Within 120 seconds
 Then [8009-0004] User compare between `lordandtaylorPdpPrice` and `lordandtaylorBagPrice`
 And [1100-1400] Execute `click` javascript on lordandtaylorEditLink
 And [1111-1080] lordandtaylorEditDialog should be displayed, Within 120 seconds
-And [1100-1310] Clear lordandtaylorQuantity field
 And [1100-1340] User fills lordandtaylorQuantity with 1
 And [1100-1300] User clicks on the lordandtaylorApplyButton

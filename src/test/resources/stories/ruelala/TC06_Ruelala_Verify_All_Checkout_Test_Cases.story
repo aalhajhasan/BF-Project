@@ -17,6 +17,7 @@ And [1100-1340] User fills ruelalaCheckoutEmail with `checkoutEmailAddress`
 And [1100-1340] User fills ruelalaCheckoutZipCode with `checkoutZipCode`
 And [1100-1340] User fills ruelalaCheckoutPhoneNumber with `checkoutPhoneNumber`
 And [1000-6010] Focus on Frame cc-frame
+And [8007-0007] sleep after last action for 5000 seconds
 And [1100-1340] User fills ruelalaPaymentCardNumber with `paymentCardNumber`
 And [1100-1601] Select ruelalaPaymentCardExpirationMonth By Value number:1
 And [1100-1601] Select ruelalaPaymentCardExpirationYear By Value number:2032

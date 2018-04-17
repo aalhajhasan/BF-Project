@@ -17,6 +17,9 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.ruelalaMemberEmail}")
 	public AspireWebElement ruelalaMemberEmail();
 	
+	@CssSelector("${pages.ruelala.ruelalaSoldOutMessage}")
+	public AspireWebElement ruelalaSoldOutMessage();
+	
 	@CssSelector("${pages.ruelala.ruelalaContinueButton}")
 	public AspireWebElement ruelalaContinueButton();
 	

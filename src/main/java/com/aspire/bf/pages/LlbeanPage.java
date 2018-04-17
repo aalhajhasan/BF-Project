@@ -177,8 +177,14 @@ public interface LlbeanPage {
 	@CssSelector("${pages.llbean.llbeanCheckoutExpirationMonth}")
 	public AspireWebElement llbeanCheckoutExpirationMonth();
 	
+	@CssSelector("${pages.llbean.llbeanCheckoutExpirationMonthS}")
+	public AspireWebElements llbeanCheckoutExpirationMonthS();
+	
 	@CssSelector("${pages.llbean.llbeanCheckoutExpirationYear}")
 	public AspireWebElement llbeanCheckoutExpirationYear();
+	
+	@CssSelector("${pages.llbean.llbeanCheckoutExpirationYearS}")
+	public AspireWebElements llbeanCheckoutExpirationYearS();
 	
 	@CssSelector("${pages.llbean.llbeanPlaceOrder}")
 	public AspireWebElement llbeanPlaceOrder();
@@ -189,9 +195,11 @@ public interface LlbeanPage {
 	@CssSelector("${pages.llbean.llbeanShoppingBag}")
 	public AspireWebElement llbeanShoppingBag();
 	
+	@CssSelector("${pages.llbean.llbeanShipToDialog}")
+	public AspireWebElement llbeanShipToDialog();
 	
-	
-	
+	@CssSelector("${pages.llbean.llbeanShipToDialogClose}")
+	public AspireWebElement llbeanShipToDialogClose();
 	
 	
 	

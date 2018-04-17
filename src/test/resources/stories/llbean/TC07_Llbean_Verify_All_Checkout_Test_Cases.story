@@ -33,10 +33,13 @@ And [1111-1080] llbeanCheckoutSecurityCodeError should be displayed, Within 120 
 And [1100-1340] User fills llbeanCheckoutName with `firstName`
 And [1100-1340] User fills llbeanCheckoutCreditCardNumber with `visaCreditCard`
 And [1100-1340] User fills llbeanCheckoutSecurityCode with `securityCardCode`
-And [1100-1321] User scroll to the llbeanBillingContinue then click it
-And [1100-1601] Select llbeanCheckoutExpirationMonth By Value 1
-And [1100-1601] Select llbeanCheckoutExpirationYear By Value 2030
-And [1100-1321] User scroll to the llbeanBillingContinue then click it
+And [1100-1300] User clicks on the llbeanCheckoutExpirationMonth
+And [1200-1302] For any element from llbeanCheckoutExpirationMonthS
+And [1100-0300] User click on it
+And [1100-1300] User clicks on the llbeanCheckoutExpirationYear
+And [1200-1302] For any element from llbeanCheckoutExpirationYearS
+And [1100-0300] User click on it
+And [1100-1300] User clicks on the llbeanBillingContinue
 And [1111-1080] llbeanCheckoutPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the llbeanPlaceOrder
 Then [1111-1080] llbeanSubmitError should be displayed, Within 120 seconds

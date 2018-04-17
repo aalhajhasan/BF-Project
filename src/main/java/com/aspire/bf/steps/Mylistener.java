@@ -87,6 +87,18 @@ public class Mylistener implements TestEventListener {
             					catch (NoSuchElementException e4)
             					{
             						System.out.println("Catch Bergdorf");
+            						try
+                					{
+                						if (AspireBrowser.getElementByPropertyNameGlobaly("llbeanShipToDialog").isDisplayed())
+                                 	    {
+                                 		 AspireBrowser.getElementByPropertyNameGlobaly("llbeanShipToDialogClose").scrollToElement().click();
+                                 		 dialogstatus = true;
+                                 	     }
+                					}
+                					catch (NoSuchElementException e5)
+                					{
+                						System.out.println("Catch L.LBean");
+                					}
             					}
         					}
         				}

@@ -14,8 +14,8 @@ And [1211-1080] saksProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from saksProducts
 And [1101-1181] the user saves saksProductName text in global scope under name saksProductName
 And [1101-1181] the user saves saksProductPrice text in global scope under name saksProductPrice
-And [1100-0360] User move mouse to it
-And [1100-1300] User clicks on the saksPreviewThisProductIcon
+And [1100-0371] User move mouse to it and click on saksPreviewThisProductIcon
+!-- And [1100-1300] User clicks on the saksPreviewThisProductIcon
 And [1111-1080] saksQuickViewDialog should be displayed, Within 120 seconds
 Then [1101-1140] saksQuickViewProductName text should contain `saksProductName`
 And [1101-1181] the user saves saksQuickViewProductPrice text in global scope under name saksQuickViewPrice
