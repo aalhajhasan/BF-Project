@@ -23,10 +23,12 @@ public class GiltSteps {
 	
 	public double hitNumber;
 	@When("[8000-0001] User hits $value with $data")
-	public void hit(String value,String data)
+	public void hit(String value,String data) throws InterruptedException
 	{
 		double number = convert(value);
 		hitNumber = number * Double.parseDouble(data);
+		
+		sleep("5000");
 	}
 	
 	@Then("[8000-0002] User compare between $valueOne and $valueTwo")  //Custom step
@@ -174,6 +176,33 @@ public class GiltSteps {
 			System.out.println("Catch");
 		}
 	}
+	
+	
+	@Then("[8000-0008] sleep after last action for $element seconds")
+	@When("[8000-0008] sleep after last action for $element seconds")
+	public void sleep(String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	public double convert(String element)   //Isolate numbers from text

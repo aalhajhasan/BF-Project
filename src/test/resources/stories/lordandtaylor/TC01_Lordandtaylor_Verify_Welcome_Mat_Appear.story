@@ -1,7 +1,7 @@
 Meta:
 @ReportName Lord And Taylor
 
-Scenario:  TC01_Verify_Lordandtaylor_Welcome_Mat_Appear
+Scenario:  TC01_Lordandtaylor_Verify_Welcome_Mat_Appear
 
 Given [1000-9130] Clear cache and cookies
 When [1000-9000] User opens lordandtaylor page

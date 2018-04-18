@@ -12,8 +12,6 @@ And [1200-1302] For any element from lastcallSales
 And [1100-0400] Execute `click` javascript on the element
 And [8014-0001] user search for lastcallPlpPage
 And [1211-1080] lastcallProducts should be all displayed, Within 120 seconds
-And [1111-1080] lastcallPdp should be displayed, Within 120 seconds
-And [8014-0001] user search for lastcallValidPdp
 And [1200-1302] For any element from lastcallProducts
 And [1101-1181] the user saves lastcallProductName text in global scope under name lastcallProductName
 And [1101-1181] the user saves lastcallProductPrice text in global scope under name lastcallProductPrice

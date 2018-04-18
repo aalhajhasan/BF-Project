@@ -16,6 +16,6 @@ And [1100-1300] User clicks on the giltGenderMale
 And [1100-1400] Execute `click` javascript on giltSubmitButton
 Then [1111-1080] giltWelcomeDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the giltStartShopping
-And [1100-1300] User clicks on the giltAccountIcon
-And [1100-1300] User clicks on the giltSignOutLink
-Then [1111-1080] giltRegisterLink should be displayed, Within 120 seconds
+!-- And [1100-1300] User clicks on the giltAccountIcon
+!-- And [1100-1300] User clicks on the giltSignOutLink
+!-- Then [1111-1080] giltRegisterLink should be displayed, Within 120 seconds

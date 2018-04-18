@@ -1,7 +1,7 @@
 Meta:
 @ReportName Ruelala
 
-Scenario:  TC01_Verify_Ruelala_Welcome_Mat_Appear
+Scenario:  TC01_Ruelala_Verify_Welcome_Mat_Appear
 
 Given [1000-9130] Clear cache and cookies
 When [1000-9000] User opens ruelala page

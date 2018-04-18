@@ -18,9 +18,9 @@ aspire:
            #- stories/ebags/**.story
            #- stories/gilt/**.story
            #- stories/harrods/**.story
-           #- stories/jcrew/**.story
+           - stories/jcrew/**.story
            #- stories/landsend/**.story
-           - stories/lastcall/**.story
+           #- stories/lastcall/**.story
            #- stories/llbean/**.story
            #- stories/lordandtaylor/**.story
            #- stories/ruelala/**.story

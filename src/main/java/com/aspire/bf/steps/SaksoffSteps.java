@@ -88,14 +88,23 @@ public class SaksoffSteps {
 			   
 			   if (element.equals("saksoffProductSKUSelection") || element.equals("saksoffAddToBagButton") || element.equals("saksoffValidPdp"))
 			   {
-				   if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
-				    {
-					   System.out.println("valid PLP");
-				    }
-				   else
+				   try
 				   {
-					   randomclick("saksoffProducts");
+					   if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+				         {
+					   System.out.println("valid PDP");
+				         }
+					  else
+					   {
+						   randomclick("saksoffProducts");
+					   }
 				   }
+				   catch (NoSuchElementException e)
+					{
+						System.out.println("Catch");
+						randomclick("saksoffProducts");
+					}
+				   
 				   
 			   }
 			   

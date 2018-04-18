@@ -1,7 +1,7 @@
 Meta:
 @ReportName Bergdorf GoodMan
 
-Scenario:  TC01_Verify_Bergdorf_Welcome_Mat_Appear
+Scenario:  TC01_Bergdorf_Verify_Welcome_Mat_Appear
 
 Given [1000-9130] Clear cache and cookies
 When [1000-9000] User opens bergdorf page

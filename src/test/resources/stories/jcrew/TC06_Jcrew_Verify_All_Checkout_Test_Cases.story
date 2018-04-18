@@ -22,8 +22,8 @@ And [1100-1340] User fills jcrewCity with `city`
 And [1100-1340-S] User fills jcrewPostalCode with `postalCode`
 And [1100-1340] User fills jcrewPhoneNumber with `phoneNumber`
 And [1100-1300] User clicks on the jcrewContinueButton
-And [1111-1080] jcrewCheckYourAddressDialog should be displayed, Within 120 seconds
-And [1100-1300] User clicks on the jcrewUseAddressAsEntered
+And [1111-1080-S] jcrewCheckYourAddressDialog should be displayed, Within 120 seconds
+And [1100-1300-S] User clicks on the jcrewUseAddressAsEntered
 And [1100-1300] User clicks on the jcrewShippingContinueButton
 And [1111-1080] jcrewCheckoutBillingPage should be displayed, Within 120 seconds
 And [1100-1321] User scroll to the jcrewBillingContinueButton then click it
