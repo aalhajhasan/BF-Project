@@ -43,27 +43,34 @@ public class LordandtaylorSteps {
 	
 	
 	@Then("[8009-0002] user compare between $element , $elementOne and $elementTwo")  //Custom step used to compare between two image as a string 
-	public void imagecompare(String plp, String qv , String pdp)
+	public boolean imagecompare(String plp, String qv , String pdp)
 	{
-		/*String plpImage = plp.substring(beginIndex, endIndex);
-		String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
-		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);*/
+		    String plpImage = plp.substring(plp.indexOf("LordandTaylor") +14 , plp.indexOf("_"));
+			String qvImage = qv.substring(qv.indexOf("LordandTaylor") + 14 , qv.indexOf("_"));
+			String pdpImage = pdp.substring(pdp.indexOf("LordandTaylor") + 14); 
 		
-		System.out.println("plp image = " + plp);
-		System.out.println("qv image = " + qv);
-		System.out.println("pdp image = " + pdp);
+		   System.out.println("plp image = " + plpImage);
+		   System.out.println("qv image = " + qvImage);
+		   System.out.println("pdp image = " + pdpImage);
 		
-		/*boolean status = false;
-		if (qvImage.equals(pdpImage))
+		boolean status = false;
+		if (plpImage.equals(qvImage))
 		{
-			status = true;
+			if(qvImage.equals(pdpImage))
+			{
+				status = true;
+			}
+			else
+			{
+				status = false;
+			}
 		}
 		else
 		{
 			status = false;
 		}
 		
-		return status;*/
+		return status;
 		
 	}
 	
@@ -140,7 +147,14 @@ public class LordandtaylorSteps {
 	
 	
 	
-	
+	@Then("[8009-0006] sleep after last action for $element seconds")
+	@When("[8009-0006] sleep after last action for $element seconds")
+	public void sleep(String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
 	
 	
 	

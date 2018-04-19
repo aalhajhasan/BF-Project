@@ -42,5 +42,5 @@ And [8006-0010] sleep after last action for 10000 seconds
 And [1000-6020] Focus on parent Frame
 And [1100-1400] Execute `click` javascript on underarmourPalceOrderButton
 Then [1111-1080] underarmourSubmitError should be displayed, Within 120 seconds
-
+And [1000-9140] Close the browser
 

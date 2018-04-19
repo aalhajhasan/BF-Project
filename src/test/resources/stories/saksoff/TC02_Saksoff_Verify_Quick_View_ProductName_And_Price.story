@@ -13,6 +13,7 @@ And [1101-1181] the user saves saksoffProductName text in global scope under nam
 And [1101-1181] the user saves saksoffProductPrice text in global scope under name saksoffProductPrice
 And [1100-1300] User clicks on the saksoffPreviewThisProductIcon
 And [1111-1080] saksoffQuickViewDialog should be displayed, Within 120 seconds
+And [8003-0010] sleep after last action for 5000 seconds
 Then [1101-1140] saksoffQuickViewProductName text should contain `saksoffProductName`
 And [1101-1181] the user saves saksoffQuickViewProductPrice text in global scope under name saksoffQuickViewPrice
 And [8003-0001] User compare between `saksoffProductPrice` and `saksoffQuickViewPrice`

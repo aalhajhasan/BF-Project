@@ -37,67 +37,73 @@ public class Mylistener implements TestEventListener {
                     {
              		 AspireBrowser.getElementByPropertyNameGlobaly("loveRuelalaClose").click();
              		 dialogstatus = true;
+             		System.out.println("Ruelala Dialog closed");
                     }
              	  
             	}
             	catch (NoSuchElementException e)
         		{
-        			System.out.println("Catch Ruelal");
+        			
         			try
         			{
                 		if(AspireBrowser.getElementByPropertyNameGlobaly("giltSurveyDialog").isDisplayed()) 
                  	    {
                  		 AspireBrowser.getElementByPropertyNameGlobaly("giltCloseSurveyDialog").click();
                  		 dialogstatus = true;
+                 		System.out.println("Gilt Dialog closed");
                  	     }
         			}
         			catch (NoSuchElementException e1)
         			{
-        				System.out.println("Catch Gilt");
+        				
         				try
         				{
         					if (AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackDialog").isDisplayed())
                      	    {
                      		 AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackClose").click();
                      		 dialogstatus = true;
+                     		System.out.println("Barneys Dialog closed");
                      	     }
         				}
         				catch (NoSuchElementException e2)
         				{
-        					System.out.println("Catch Barneys");
+        					
         					try
         					{
         						if (AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialog").isDisplayed())
                          	    {
                          		 AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialogCloseButton").click();
                          		 dialogstatus = true;
+                         		System.out.println("Under Armour Dialog closed");
                          	     }
         					}
         					catch (NoSuchElementException e3)
         					{
-        						System.out.println("Catch Underarmour");
+        						
         						try
             					{
             						if (AspireBrowser.getElementByPropertyNameGlobaly("bergdorfSimilarDialog").isDisplayed())
                              	    {
                              		 AspireBrowser.getElementByPropertyNameGlobaly("bergdorfSimilarDialogNoThanks").scrollToElement().click();
                              		 dialogstatus = true;
+                             		System.out.println("Bergdorf Dialog closed");
                              	     }
             					}
             					catch (NoSuchElementException e4)
             					{
-            						System.out.println("Catch Bergdorf");
+            						
             						try
                 					{
                 						if (AspireBrowser.getElementByPropertyNameGlobaly("llbeanShipToDialog").isDisplayed())
                                  	    {
                                  		 AspireBrowser.getElementByPropertyNameGlobaly("llbeanShipToDialogClose").scrollToElement().click();
                                  		 dialogstatus = true;
+                                 		System.out.println("L.L.Bean Dialog closed");
                                  	     }
                 					}
                 					catch (NoSuchElementException e5)
                 					{
-                						System.out.println("Catch L.LBean");
+                						
                 					}
             					}
         					}

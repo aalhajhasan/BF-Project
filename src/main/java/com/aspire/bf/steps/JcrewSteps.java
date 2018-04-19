@@ -70,9 +70,12 @@ public class JcrewSteps {
 	@Then("[8010-0003] user compare between $elementOne , $elementTwo and $elementThree")  //Custom step used to compare between two image as a string 
 	public boolean imagecompare(String plp , String qv , String pdp)
 	{
-		    String plpImage = plp.substring(plp.indexOf("com") + 4, plp.indexOf("?"));
+		   String plpImage = plp.substring(plp.indexOf("com") + 4, plp.indexOf("?"));
 			String qvImage = qv.substring(qv.indexOf("com") + 4, qv.indexOf("?"));
 			String pdpImage = pdp.substring(pdp.indexOf("com") + 4, pdp.indexOf("?"));
+			
+			
+			
 			System.out.println("plp image = " + plp);
 			System.out.println("qv image = " + qv);
 			System.out.println("pdp image = " + pdp);

@@ -25,3 +25,4 @@ And [1100-1340] User fills ruelalaPaymentSecurityCode with `paymentSecurityCode`
 And [1000-6020] Focus on parent Frame
 And [1100-1300] User clicks on the ruelalaPlaceOrder
 Then [1111-1080] ruelalaSubmitError should be displayed, Within 120 seconds
+And [1000-9140] Close the browser

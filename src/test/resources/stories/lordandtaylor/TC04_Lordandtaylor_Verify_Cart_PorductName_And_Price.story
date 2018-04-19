@@ -12,4 +12,4 @@ And [1111-1080] lordandtaylorShoppingBag should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the lordandtaylorViewMyBag
 And [1111-1080] lordandtaylorBagPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves lordandtaylorBagProductPrice text in global scope under name lordandtaylorBagPrice
-Then [8009-0001] User compare between `lordandtaylorBagPrice` and `lordandtaylorPdpPrice`
+Then [8009-0001] User compare between `lordandtaylorBagPrice` and `lordandtaylorPdpProductPrice`

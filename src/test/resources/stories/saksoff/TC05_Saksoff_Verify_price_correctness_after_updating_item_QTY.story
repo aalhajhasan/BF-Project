@@ -19,3 +19,4 @@ And [1101-1181] the user saves saksoffBagProductPriceAfter text in global scope 
 Then [8003-0006] User compare between `saksoffBagPrice` and `saksoffBagPriceAfter`
 And [1100-1310] Clear saksoffQuantity field
 And [1100-1340] User fills saksoffQuantity with 1
+And [8003-0010] sleep after last action for 5000 seconds

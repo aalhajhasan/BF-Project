@@ -11,7 +11,7 @@ And [8009-0005] the user check the sum of `lordandtaylorProductOnePrice` and `lo
 And [1100-1300] User clicks on the lordandtaylorCheckoutButton
 And [1111-1080] lordandtaylorCheckoutDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the lordandtaylorCheckoutAsGuest
-
+And [1000-9140] Close the browser
 
 
 

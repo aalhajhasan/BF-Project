@@ -12,13 +12,13 @@ And [1100-1321] User scroll to the jcrewContinueButton then click it
 And [1101-1102] jcrewFirstNameError text is equal to Please enter a first name. case sensitive
 And [1101-1102] jcrewLastNameError text is equal to Please enter a last name. case sensitive
 And [1101-1102] jcrewStreetAddressError text is equal to Please enter a valid street address. case sensitive
-And [1101-1102] jcrewCityError text is equal to Please enter a valid city. case sensitive
+And [1101-1102-S] jcrewCityError text is equal to Please enter a valid city. case sensitive
 And [1101-1102-S] jcrewPostalCodeError text is equal to Please enter a valid postal code. case sensitive
 And [1101-1102] jcrewPhoneNumberError text is equal to Please enter a phone number. case sensitive
 And [1100-1340] User fills jcrewFirstName with `firstName`
 And [1100-1340] User fills jcrewLastName with `lastName`
 And [1100-1340] User fills jcrewStreetAddress with `streetAddress`
-And [1100-1340] User fills jcrewCity with `city`
+And [1100-1340-S] User fills jcrewCity with `city`
 And [1100-1340-S] User fills jcrewPostalCode with `postalCode`
 And [1100-1340] User fills jcrewPhoneNumber with `phoneNumber`
 And [1100-1300] User clicks on the jcrewContinueButton
@@ -42,5 +42,5 @@ And [1100-1300] User clicks on the jcrewBillingContinueButton
 And [1111-1080] jcrewCheckoutReviewPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the jcrewPlaceMyOrder
 Then [1111-1080] jcrewSubmitError should be displayed, Within 120 seconds
-
+And [1000-9140] Close the browser
 

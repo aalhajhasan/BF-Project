@@ -37,9 +37,11 @@ public class SaksSteps {
 			{
 				System.out.println("Element not found in this page");
 				randomclick("saksTopNav");
+				sleep("5000");
 				randomclick("saksSales");
 				if(element.equals("saksProductSKUSelection") || element.equals("saksValidPdp"))
 				{
+					sleep("5000");
 					randomclick("saksProducts");
 				}
 				
@@ -74,16 +76,16 @@ public class SaksSteps {
 	
 	
 	@Then("[8002-0003] user compare between $elementOne and $elementTwo")  //Custom step used to compare between two image as a string 
-	public void imagecompare(String qv , String pdp)
+	public boolean imagecompare(String qv , String pdp)
 	{
 		
-		/*String qvImage = qv.substring(qv.indexOf("uploads") + 5, qv.indexOf("_"));
-		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);*/
+		String qvImage = qv.substring(qv.indexOf("saks") + 5, qv.indexOf("_"));
+		String pdpImage = pdp.substring(pdp.indexOf("saks") + 5);
 		
-		System.out.println("qv image = " + qv);
-		System.out.println("pdp image = " + pdp);
+		System.out.println("qv image = " + qvImage);
+		System.out.println("pdp image = " + pdpImage);
 		
-		/*boolean status = false;
+		boolean status = false;
 		if (qvImage.equals(pdpImage))
 		{
 			status = true;
@@ -93,7 +95,7 @@ public class SaksSteps {
 			status = false;
 		}
 		
-		return status;*/
+		return status;
 		
 	}
 	
@@ -221,7 +223,7 @@ public class SaksSteps {
 	}
 	
 	
-	
+	@Then("[8002-0010] sleep after last action for $element seconds")
 	@When("[8002-0010] sleep after last action for $element seconds")
 	public void sleep (String element) throws InterruptedException
 	{
@@ -256,6 +258,10 @@ public class SaksSteps {
 		Random rand = new Random();
 		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
 		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+		if(element.equals("saksSales") || element.equals("saksProducts"))
+		{
+			AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
+		}
 	}
 	
 }

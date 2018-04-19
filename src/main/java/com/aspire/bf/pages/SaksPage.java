@@ -73,7 +73,7 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.saksBagProductName}")
 	public AspireWebElement saksBagProductName();
 	
-	@CssSelector("${pages.saks.saksBagQTY}")
+	@XPathSelector("${pages.saks.saksBagQTY}")
 	public AspireWebElement saksBagQTY();
 	
 	@CssSelector("${pages.saks.saksProductSKUSelection}")

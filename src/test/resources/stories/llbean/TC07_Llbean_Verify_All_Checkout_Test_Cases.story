@@ -43,7 +43,7 @@ And [1100-1300] User clicks on the llbeanBillingContinue
 And [1111-1080] llbeanCheckoutPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the llbeanPlaceOrder
 Then [1111-1080] llbeanSubmitError should be displayed, Within 120 seconds
-
+And [1000-9140] Close the browser
 
 
 

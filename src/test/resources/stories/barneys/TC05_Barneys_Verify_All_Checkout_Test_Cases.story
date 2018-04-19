@@ -50,6 +50,6 @@ And [1100-1340] User fills barneysPaymentSecurityCode with `paymentSecurityCode`
 And [1100-1340] User fills barneysBillingEmail with `checkoutEmailAddress`
 And [1100-1300] User clicks on the barneysContinuePaymentButton
 Then [1111-1080] barneysErrorMessage should be displayed, Within 120 seconds
-
+And [1000-9140] Close the browser
 
 
