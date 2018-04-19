@@ -114,10 +114,11 @@ public class UnderarmourSteps {
 	
 	
 	@When("[8011-0006] user randomly select an available $element")
-	public void randomselect(String element)
+	public void randomselect(String element) throws InterruptedException
 	{
 		try
-		{
+		{    sleep("5000");
+		
 			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			{
 				randomclick(element);

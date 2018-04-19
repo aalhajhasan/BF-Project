@@ -5,7 +5,7 @@ Scenario:  TC07_Underarmour_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] underarmourBagPage should be displayed
 When [1100-1400] Execute `click` javascript on underarmourProceedToCheckout
-And [8011-0007] sleep after last action for 15000 seconds
+And [8011-0007] sleep after last action for 10000 seconds
 And [1000-6010] Focus on Frame envoyId
 And [1111-1080] underarmourDeliveryCheckout should be displayed, Within 120 seconds
 And [1101-1181] the user saves underarmourItemsTotal text in global scope under name underarmourItemsTotal
@@ -29,8 +29,8 @@ And [1100-1340] User fills underarmourDeliveryCity with `checkoutCity`
 And [1100-1340] User fills underarmourDeliveryZipCode with `checkoutZipCode`
 And [1100-1340] User fills underarmourDeliveryPhoneNumber with `checkoutPhoneNumber`
 And [1100-1400] Execute `click` javascript on underarmourCheckoutContinue
+And [8006-0010] sleep after last action for 5000 seconds
 And [1100-1400] Execute `click` javascript on underarmourPalceOrderButton
-And [8006-0010] sleep after last action for 10000 seconds
 And [1000-6010] Focus on Frame cc-frame
 And [1101-1102] underarmourPaymentCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] underarmourPaymentExpirationDateError text is equal to Expiration date is required case sensitive
@@ -38,7 +38,7 @@ And [1101-1102] underarmourPaymentSecurityCodeError text is equal to Security co
 And [1100-1340] User fills underarmourPaymentCardNumber with `paymentCardNumber`
 And [1100-1340] User fills underarmourPaymentExpirationDate with `paymentExpirationDate`
 And [1100-1340] User fills underarmourPaymentSecurityCode with `paymentSecurityCode`
-And [8006-0010] sleep after last action for 10000 seconds
+And [8006-0010] sleep after last action for 5000 seconds
 And [1000-6020] Focus on parent Frame
 And [1100-1400] Execute `click` javascript on underarmourPalceOrderButton
 Then [1111-1080] underarmourSubmitError should be displayed, Within 120 seconds
