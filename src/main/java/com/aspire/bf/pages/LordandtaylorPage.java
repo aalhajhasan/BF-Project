@@ -114,13 +114,17 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorCheckoutAsGuest}")
 	public AspireWebElement lordandtaylorCheckoutAsGuest();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorBagPageError}")
+	public AspireWebElement lordandtaylorBagPageError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorRemoveLink}")
+	public AspireWebElements lordandtaylorRemoveLink();
+	 
+	@CssSelector("${pages.lordandtaylor.lordandtaylorRemoveLinkConfirm}")
+	public AspireWebElement lordandtaylorRemoveLinkConfirm();
 	
-	
-	
-	
-	
-	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorItems}")
+	public AspireWebElement lordandtaylorItems();
 	
 	
 	

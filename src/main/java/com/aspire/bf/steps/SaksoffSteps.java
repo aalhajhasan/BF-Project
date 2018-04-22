@@ -133,8 +133,8 @@ public class SaksoffSteps {
 		{
 			   AspireBrowser.getElementByPropertyNameGlobaly("saksoffBagCloseButton").click();
 			   randomclick("saksoffTopNav");
-			
-			search(".product-quantity, .add-to-bag");
+			   randomclick("saksoffProducts");
+			   search(".product-quantity, .add-to-bag");
 			
 			Thread.sleep(10000);
 			randomclick("saksoffColor");

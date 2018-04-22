@@ -16,8 +16,7 @@ And [1101-1181] the user saves saksProductName text in global scope under name s
 And [1101-1181] the user saves saksProductPrice text in global scope under name saksProductPrice
 And [1100-0360] User move mouse to it
 And [8002-0010] sleep after last action for 2000 seconds
-And [1111-1010] saksPreviewThisProductIcon should be visible, Within 60 seconds
-And [1100-0371] User move mouse to it and click on saksPreviewThisProductIcon
+And [1100-1300] User clicks on the saksPreviewThisProductIcon
 And [1111-1080] saksQuickViewDialog should be displayed, Within 120 seconds
 And [8002-0010] sleep after last action for 2000 seconds
 Then [1101-1140] saksQuickViewProductName text should contain `saksProductName`

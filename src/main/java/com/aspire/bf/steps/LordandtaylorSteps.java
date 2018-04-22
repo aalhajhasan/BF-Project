@@ -126,12 +126,13 @@ public class LordandtaylorSteps {
 	
 	
 	@When("[8009-0006] user randomly select an available $element")
-	public void randomselect(String element)
+	public void randomselect(String element) throws InterruptedException
 	{
 		try
 		{
 			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			{
+				sleep("5000");
 				randomclick(element);
 			}
 			else
@@ -147,8 +148,8 @@ public class LordandtaylorSteps {
 	
 	
 	
-	@Then("[8009-0006] sleep after last action for $element seconds")
-	@When("[8009-0006] sleep after last action for $element seconds")
+	@Then("[8009-0007] sleep after last action for $element seconds")
+	@When("[8009-0007] sleep after last action for $element seconds")
 	public void sleep(String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);
@@ -157,7 +158,66 @@ public class LordandtaylorSteps {
 	}
 	
 	
-	
+	public int count = 0;
+	public int items = 0;
+	@Then("[8009-0008] check items before navigate to checkout")
+	public void check() throws InterruptedException
+	{
+		try
+		{
+			String itemsN = AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorItems").text().toString();
+			final Pattern pattern = Pattern.compile("\\d");
+			final Matcher matcher = pattern.matcher(itemsN);
+			if (matcher.find()) 
+			{
+			    
+			    items = Integer.parseInt(matcher.group(0));
+			    System.out.println("Items Number: " +  items);
+			    
+			}
+			if (AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorBagPageError").isDisplayed())
+			{ 
+				while(count < 2)
+				{
+					while (items > 0 )
+					{
+						randomclick("lordandtaylorRemoveLink");
+						AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorRemoveLinkConfirm").click();
+						sleep("2000");
+						items--;
+					}
+					randomclick("lordandtaylorTopNav");
+					randomclick("lordandtaylorProducts");
+					randomselect("lordandtaylorColor");
+					randomselect("lordandtaylorSku");
+					AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorAddToBagButton").click();
+					sleep("500");
+					AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorViewMyBag").within(120).toBeClickable().click();
+					try
+					{
+						if (AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorBagPageError").isDisplayed())
+						{
+							count = 0;
+							check();
+						}
+						else
+						{
+							count++;
+						}
+					}
+					catch (NoSuchElementException e1)
+					{
+						count++;
+					}
+				}
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
+		
 	
 	
 	
@@ -186,6 +246,10 @@ public class LordandtaylorSteps {
 		Random rand = new Random();
 		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
 		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+		if(element.equals("lordandtaylorProducts"))
+		{
+			AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
+		}
 	}
 
 	public double convert(String element)   //Isolate numbers from text

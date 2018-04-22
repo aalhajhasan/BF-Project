@@ -17,3 +17,4 @@ And [1100-1300] User clicks on the lordandtaylorAddToBagButton
 And [1111-1080] lordandtaylorShoppingBag should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the lordandtaylorViewMyBag
 Then [1111-1080] lordandtaylorBagPage should be displayed, Within 120 seconds
+And [8009-0008] check items before navigate to checkout
