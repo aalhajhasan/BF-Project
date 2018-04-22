@@ -3,6 +3,9 @@ package com.aspire.bf.steps;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.jbehave.core.annotations.When;
+import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
@@ -17,6 +20,102 @@ import com.aspire.bf.pages.NeimanMarcusPage;
 public class NeimanMarcusSteps {
 	@Browser("neimanmarcus")
 	AspireBrowser<NeimanMarcusPage> neimanmarcusPage;
+	
+	
+	@When("[8015-0001] user search for $element")  //Custom step for searching on specific element
+	public void search(String element) throws InterruptedException 
+	{
+		if(element.equals("neimanmarcusPlpPage"))
+		{
+		try
+		{
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			    {
+				   System.out.println("Valid PLP");
+			    }
+			
+	        
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+			try
+			{
+				if(AspireBrowser.getElementsByPropertyNameGlobaly("neimanmarcusSales").size() > 0)
+				{
+					randomclick("neimanmarcusSales");
+					search(element);
+				}
+			
+			}
+			catch (NoSuchElementException e1)
+			{
+				randomclick("neimanmarcusTopNav");
+	        	randomclick("neimanmarcusSales");
+			}
+
+		   search(element);
+		}
+	}
+		else if(element.equals("neimanmarcusValidPdp"))
+		{
+			try
+			{
+					if (AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
+				    {
+					   System.out.println("valid PDP");
+				    }
+		        
+			}
+			catch (NoSuchElementException e)
+			{
+				System.out.println("Catch");
+				randomclick("neimanmarcusTopNav");
+	        	randomclick("neimanmarcusSales");
+	        	search("neimanmarcusPlpPage");
+	        	randomclick("neimanmarcusProducts");
+	        	
+			   search(element);
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
