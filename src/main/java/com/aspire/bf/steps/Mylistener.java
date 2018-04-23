@@ -103,7 +103,19 @@ public class Mylistener implements TestEventListener {
                 					}
                 					catch (NoSuchElementException e5)
                 					{
-                						
+                						/*try
+                    					{
+                    						if (AspireBrowser.getElementByPropertyNameGlobaly("neimanmarcusErrorDialog").isDisplayed())
+                                     	    {
+                                     		 AspireBrowser.getElementByPropertyNameGlobaly("neimanmarcusErrorDialogClose").scrollToElement().click();
+                                     		 dialogstatus = true;
+                                     		System.out.println("Neiman Marcus Dialog closed");
+                                     	     }
+                    					}
+                    					catch (NoSuchElementException e6)
+                    					{
+                    						
+                    					}*/
                 					}
             					}
         					}
