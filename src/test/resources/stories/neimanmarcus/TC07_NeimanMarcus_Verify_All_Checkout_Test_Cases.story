@@ -38,7 +38,7 @@ And [1100-1601] Select neimanmarcusPaymentType By Value VISA
 And [1100-1340] User fills neimanmarcusCheckoutCardNumber with `paymentCardNumber`
 And [1100-1340] User fills neimanmarcusCheckoutSecurityCode with `paymentSecurityCode`
 And [1100-1601] Select neimanmarcusExpirationMonth By Value 07
-And [1100-1601] Select neimanmarcusExpirationYear By Value 2028
+And [1100-1601] Select neimanmarcusExpirationYear By Value 2021
 And [1100-1300] User clicks on the neimanmarcusCheckoutPlaceOrder
 Then [1111-1080] neimanmarcusCheckoutSubmitError should be displayed, Within 120 seconds
 And [1000-9140] Close the browser
