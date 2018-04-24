@@ -239,6 +239,7 @@ public interface SaksPage {
 	@CssSelector("${pages.saks.saksOrderTotal}")
 	public AspireWebElement saksOrderTotal();
 	
-	
+	@CssSelector("${pages.saks.saksProductImage}")
+	public AspireWebElement saksProductImage();
 	
 }
