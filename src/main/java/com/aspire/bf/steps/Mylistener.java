@@ -30,13 +30,13 @@ public class Mylistener implements TestEventListener {
     		AspireWebElement lastelement = aspireBrowserState.getLastAccessedElement();
     		
 
-            	System.out.println("dialog status = " + dialogstatus);
+            	//System.out.println("dialog status = " + dialogstatus);
             	try
             	{
             		if (AspireBrowser.getElementByPropertyNameGlobaly("loveRuelal").isDisplayed())
                     {
              		 AspireBrowser.getElementByPropertyNameGlobaly("loveRuelalaClose").click();
-             		 dialogstatus = true;
+             		 //dialogstatus = true;
              		System.out.println("Ruelala Dialog closed");
                     }
              	  
@@ -49,7 +49,7 @@ public class Mylistener implements TestEventListener {
                 		if(AspireBrowser.getElementByPropertyNameGlobaly("giltSurveyDialog").isDisplayed()) 
                  	    {
                  		 AspireBrowser.getElementByPropertyNameGlobaly("giltCloseSurveyDialog").click();
-                 		 dialogstatus = true;
+                 		 //dialogstatus = true;
                  		System.out.println("Gilt Dialog closed");
                  	     }
         			}
@@ -61,7 +61,7 @@ public class Mylistener implements TestEventListener {
         					if (AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackDialog").isDisplayed())
                      	    {
                      		 AspireBrowser.getElementByPropertyNameGlobaly("barneysFeedbackClose").click();
-                     		 dialogstatus = true;
+                     		 //dialogstatus = true;
                      		System.out.println("Barneys Dialog closed");
                      	     }
         				}
@@ -73,7 +73,7 @@ public class Mylistener implements TestEventListener {
         						if (AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialog").isDisplayed())
                          	    {
                          		 AspireBrowser.getElementByPropertyNameGlobaly("underarmourFeedBackDialogCloseButton").click();
-                         		 dialogstatus = true;
+                         		 //dialogstatus = true;
                          		System.out.println("Under Armour Dialog closed");
                          	     }
         					}
@@ -85,7 +85,7 @@ public class Mylistener implements TestEventListener {
             						if (AspireBrowser.getElementByPropertyNameGlobaly("bergdorfSimilarDialog").isDisplayed())
                              	    {
                              		 AspireBrowser.getElementByPropertyNameGlobaly("bergdorfSimilarDialogNoThanks").scrollToElement().click();
-                             		 dialogstatus = true;
+                             		 //dialogstatus = true;
                              		System.out.println("Bergdorf Dialog closed");
                              	     }
             					}
@@ -97,7 +97,7 @@ public class Mylistener implements TestEventListener {
                 						if (AspireBrowser.getElementByPropertyNameGlobaly("llbeanShipToDialog").isDisplayed())
                                  	    {
                                  		 AspireBrowser.getElementByPropertyNameGlobaly("llbeanShipToDialogClose").scrollToElement().click();
-                                 		 dialogstatus = true;
+                                 		 //dialogstatus = true;
                                  		System.out.println("L.L.Bean Dialog closed");
                                  	     }
                 					}

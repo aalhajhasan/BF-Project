@@ -5,7 +5,7 @@ Scenario:  TC05_Bergdorf_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] bergdorfBagPage should be displayed
 When [1100-1300] User clicks on the bergdorfCheckoutButton
-And [8012-0006] sleep after last action for 10000 seconds
+And [8012-0006] sleep after last action for 20000 seconds
 And [1000-6010] Focus on Frame envoyId
 And [1111-1080] bergdorfCheckoutPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves bergdorfItemsTotal text in global scope under name bergdorfItemsTotal
