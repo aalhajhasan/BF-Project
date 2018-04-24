@@ -4,6 +4,9 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.jbehave.core.annotations.Then;
+import org.jbehave.core.annotations.When;
+import org.openqa.selenium.NoSuchElementException;
 import org.springframework.stereotype.Component;
 import com.aspire.automation.annotation.Steps;
 import com.aspire.automation.web.util.AspireBrowser;
@@ -21,11 +24,53 @@ public class LanebryantSteps {
 	AspireBrowser<LanebryantPage> lanebryantPage;
 	
 	
+	@Then("[8016-0001] sleep after last action for $element seconds")
+	@When("[8016-0001] sleep after last action for $element seconds")
+	public void sleep(String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
+	
+	@Then("[8016-0002] user compare between $elementOne , $elementTwo and $elementThree")  //Custom step used to compare between two image as a string 
+	public boolean imagecompare(String plp , String qv)
+	{
+		  System.out.println("plp image = " + plp);
+		  System.out.println("qv image = " + qv);
+		 
+		boolean status = false;
+		if (plp.equals(qv))
+		{
+		     status = true;
+		}
+		else
+		{
+			status = false;
+		}
+		
+		return status;
+		
+	}
 	
 	
-	
-	
-	
+	@When("[8016-0003] user randomly select an available $element")
+	public void randomselect(String element) throws InterruptedException
+	{
+		try
+		{   sleep("5000");
+			if (AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
+			{
+				 randomclick(element);
+			}
+		   
+		}
+		
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	
