@@ -16,7 +16,6 @@ aspire:
            #- stories/barneys/**.story
            #- stories/bergdorf/**.story
            #- stories/ebags/**.story
-            - stories/eddiebauer/**.story
            #- stories/gilt/**.story
            
            #- stories/jcrew/**.story
