@@ -218,8 +218,27 @@ public class LordandtaylorSteps {
 		}
 	}
 		
-	
-	
+	@When("[8009-0009] user search for $element")  //Custom step for searching on specific element
+	public void search(String element) throws InterruptedException 
+	{
+		try
+		{
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
+			{
+				System.out.println("Valid PDP");
+			}
+			else 
+			{
+				randomclick("lordandtaylorTopNav");
+				randomclick("lordandtaylorProducts");
+				search(element);
+			}
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
 	

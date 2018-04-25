@@ -126,7 +126,8 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorItems}")
 	public AspireWebElement lordandtaylorItems();
 	
-	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorValidPdp}")
+	public AspireWebElements lordandtaylorValidPdp();
 	
 	
 	
