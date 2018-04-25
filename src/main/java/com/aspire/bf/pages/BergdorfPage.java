@@ -1,6 +1,5 @@
 package com.aspire.bf.pages;
 
-import org.openqa.selenium.WebElement;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
