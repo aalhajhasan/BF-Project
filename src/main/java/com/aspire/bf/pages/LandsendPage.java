@@ -4,7 +4,6 @@ import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.AspireWebElements;
 import com.aspire.automation.web.util.annotation.CssSelector;
 import com.aspire.automation.web.util.annotation.Page;
-import com.aspire.automation.web.util.annotation.XPathSelector;
 
 
 @Page(name = "landsend", url = "${pages.landsend.landsendurl}")
