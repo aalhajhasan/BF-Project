@@ -50,8 +50,8 @@ public interface LanebryantPage {
 	@CssSelector("${pages.lanebryant.lanebryantViewFullDetails}")
 	public AspireWebElement lanebryantViewFullDetails();
 	
-	@CssSelector("${pages.lanebryant.lanebryantValidPdp}")
-	public AspireWebElement lanebryantValidPdp();
+	@CssSelector("${pages.lanebryant.lanebryantPdp}")
+	public AspireWebElement lanebryantPdp();
 	
 	@CssSelector("${pages.lanebryant.lanebryantPdpName}")
 	public AspireWebElement lanebryantPdpName();
@@ -77,15 +77,20 @@ public interface LanebryantPage {
 	@CssSelector("${pages.lanebryant.lanebryantSizeGroup}")
 	public AspireWebElements lanebryantSizeGroup();
 	
+	@CssSelector("${pages.lanebryant.lanebryantBagName}")
+	public AspireWebElement lanebryantBagName();
 	
+	@CssSelector("${pages.lanebryant.lanebryantBagPrice}")
+	public AspireWebElement lanebryantBagPrice();
 	
+	@CssSelector("${pages.lanebryant.lanebryantBagIcon}")
+	public AspireWebElement lanebryantBagIcon();
 	
+	@CssSelector("${pages.lanebryant.lanebryantBagCheckout}")
+	public AspireWebElement lanebryantBagCheckout();
 	
-	
-	
-	
-	
-	
+	@CssSelector("${pages.lanebryant.lanebryantBagPage}")
+	public AspireWebElement lanebryantBagPage();
 	
 	
 	

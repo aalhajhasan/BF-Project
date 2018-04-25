@@ -19,7 +19,7 @@ aspire:
            #- stories/gilt/**.story
            
            #- stories/jcrew/**.story
-            - stories/lanebryant/**.story
+           
            #- stories/lastcall/**.story
            #- stories/llbean/**.story
            #- stories/lordandtaylor/**.story

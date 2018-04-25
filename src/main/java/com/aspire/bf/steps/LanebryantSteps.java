@@ -34,13 +34,18 @@ public class LanebryantSteps {
 	}
 	
 	@Then("[8016-0002] user compare between $elementOne , $elementTwo and $elementThree")  //Custom step used to compare between two image as a string 
-	public boolean imagecompare(String plp , String qv)
+	public boolean imagecompare(String plp , String qv, String pdp)
 	{
-		  System.out.println("plp image = " + plp);
-		  System.out.println("qv image = " + qv);
+		String plpImage = plp.substring(plp.indexOf("lanebryantProdATG") + 18, plp.indexOf("?"));
+        String qvImage = plp.substring(qv.indexOf("lanebryantProdATG") + 18, qv.indexOf("?"));
+		String pdpImage = plp.substring(pdp.indexOf("lanebryantProdATG") + 18, pdp.indexOf("?"));
+		
+         System.out.println("plp image = " + plpImage);
+         System.out.println("qv image = " + qvImage);
+         System.out.println("pdp image = " + pdpImage);
 		 
 		boolean status = false;
-		if (plp.equals(qv))
+		if (plpImage.equals(qvImage) && qvImage.equals(pdpImage))
 		{
 		     status = true;
 		}
@@ -59,7 +64,7 @@ public class LanebryantSteps {
 	{
 		try
 		{   sleep("5000");
-			if (AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).allIsDisplayed())
 			{
 				 randomclick(element);
 			}
@@ -142,8 +147,21 @@ public class LanebryantSteps {
 	public void randomclick(String element)
 	{
 		Random rand = new Random();
-		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
-		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+		if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() == 1)
+		{
+			AspireBrowser.getElementsByPropertyNameGlobaly(element).index(0).js("arguments[0].click();", null);
+		}
+		else
+		{  try {
+			      int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
+			      AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
+		       }
+		    catch (NoSuchElementException e)
+		       {
+			System.out.println("Catch");
+		       }
+		}
+		
 	}
 	
 }
