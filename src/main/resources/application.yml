@@ -23,12 +23,13 @@ aspire:
            #- stories/lanebryant/**.story
            - stories/lastcall/**.story
            - stories/llbean/**.story
+           - stories/lordandtaylor/**.story 
            - stories/neimanmarcus/**.story
            - stories/ruelala/**.story
            - stories/saks/**.story
            - stories/saksoff/**.story
            - stories/underarmour/**.story
-           #- stories/lordandtaylor/**.story          
+                    
           
           
 
