@@ -177,7 +177,7 @@ public class LordandtaylorSteps {
 			}
 			if (AspireBrowser.getElementByPropertyNameGlobaly("lordandtaylorBagPageError").isDisplayed())
 			{ 
-				while(count < 2)
+				while(count < 1)
 				{
 					while (items > 0 )
 					{

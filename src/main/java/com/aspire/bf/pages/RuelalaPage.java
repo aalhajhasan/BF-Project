@@ -32,6 +32,9 @@ public interface RuelalaPage {
 	@CssSelector("${pages.ruelala.ruelalaWelcomeMate}")
 	public AspireWebElement ruelalaWelcomeMate();
 	
+	@CssSelector("${pages.ruelala.ruelalaRegisterCheckBox}")
+	public AspireWebElement ruelalaRegisterCheckBox();
+	
 	@CssSelector("${pages.ruelala.ruelalaShopNowButton}")
 	public AspireWebElement ruelalaShopNowButton();
 	

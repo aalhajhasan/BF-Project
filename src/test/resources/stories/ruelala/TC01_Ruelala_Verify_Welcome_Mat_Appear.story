@@ -10,6 +10,7 @@ And [1100-1340] User fills ruelalaMemberEmail with `newUser`
 And [1100-1300] User clicks on the ruelalaContinueButton
 And [1111-1080] ruelalaMemberPassword  should be displayed, Within 120 seconds
 And [1100-1340] User fills ruelalaMemberPassword with `newPassword`
+And [1100-1300] User clicks on the ruelalaRegisterCheckBox
 And [1100-1300] User clicks on the ruelalaStartShopping
 Then [1111-1080] ruelalaWelcomeMate should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the ruelalaShopNowButton
