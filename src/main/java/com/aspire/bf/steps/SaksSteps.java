@@ -37,11 +37,12 @@ public class SaksSteps {
 			{
 				System.out.println("Element not found in this page");
 				randomclick("saksTopNav");
-				sleep("5000");
+				sleep("15000");
 				randomclick("saksSales");
+				sleep("15000");
 				if(element.equals("saksProductSKUSelection") || element.equals("saksValidPdp"))
 				{
-					sleep("5000");
+					sleep("15000");
 					randomclick("saksProducts");
 				}
 				
@@ -223,8 +224,8 @@ public class SaksSteps {
 	}
 	
 	
-	@Then("[8002-0010] sleep after last action for $element seconds")
-	@When("[8002-0010] sleep after last action for $element seconds")
+	@Then("[8002-0010] sleep after last action for $element Milliseconds")
+	@When("[8002-0010] sleep after last action for $element Milliseconds")
 	public void sleep (String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

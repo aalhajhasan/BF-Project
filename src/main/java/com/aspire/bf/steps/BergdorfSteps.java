@@ -77,10 +77,11 @@ public class BergdorfSteps {
 		{
 			System.out.println("Catch");
 			randomclick("bergdorfTopNav");
+			sleep("10000");
         	randomclick("bergdorfSales");
-        	
+        	sleep("10000");
         	randomclick("bergdorfProducts");
-        	
+        	sleep("10000");
 		   search(element);
 		}
 	}
@@ -131,8 +132,8 @@ public class BergdorfSteps {
 		
 	}
 	
-	@Then("[8012-0006] sleep after last action for $element seconds")
-	@When("[8012-0006] sleep after last action for $element seconds")
+	@Then("[8012-0006] sleep after last action for $element Milliseconds")
+	@When("[8012-0006] sleep after last action for $element Milliseconds")
 	public void sleep(String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

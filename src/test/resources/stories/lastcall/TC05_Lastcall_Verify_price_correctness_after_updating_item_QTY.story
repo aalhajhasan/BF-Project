@@ -15,7 +15,7 @@ And [1100-1300] User clicks on the lastcallBagUpdate
 And [8014-0005] User hits `lastcallBagProductPrice` with 2
 And [1101-1181] the user saves lastcallBagTotalPrice text in global scope under name lastcallBagTotalPrice
 Then [8014-0006] User compare between `lastcallBagProductPrice` and `lastcallBagTotalPrice`
-And [8014-0004] sleep after last action for 10000 seconds
+And [8014-0004] sleep after last action for 10000 Milliseconds
 And [1100-1300] User clicks on the lastcallBagEditItem
 And [1111-1080] lastcallBagQuantity should be displayed, Within 120 seconds
 And [1100-1340] User fills lastcallBagQuantity with 1

@@ -70,7 +70,7 @@ public class SaksoffSteps {
 	{
 		if (element.equals(".product-quantity, .add-to-bag"))
 		{
-			element = "saksValidPdp";
+			element = "saksoffValidPdp";
 		}
 		try
 		{
@@ -239,8 +239,8 @@ public class SaksoffSteps {
 		}
 	}
 	
-	@Then("[8003-0010] sleep after last action for $element seconds")
-	@When("[8003-0010] sleep after last action for $element seconds")
+	@Then("[8003-0010] sleep after last action for $element Milliseconds")
+	@When("[8003-0010] sleep after last action for $element Milliseconds")
 	public void sleep (String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

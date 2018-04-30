@@ -4,7 +4,8 @@ Meta:
 Scenario:  TC01_Barneys_Verify_PDP_ProductName_And_Price
 
 Given [1000-9130] Clear cache and cookies
-When [1000-9000] User opens barneys page
+When [1000-3000] User maximize browser window
+And [1000-9000] User opens barneys page
 And [1200-1302] For any element from barneysTopNavStore
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] barneysSalesPage should be displayed, Within 120 seconds

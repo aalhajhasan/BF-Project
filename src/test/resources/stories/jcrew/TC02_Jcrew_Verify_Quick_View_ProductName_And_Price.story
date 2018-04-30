@@ -15,7 +15,7 @@ And [1101-1181] the user saves jcrewPlpItemName text in global scope under name 
 And [1100-1581] the user saves jcrewPlpItemImage attribute of src in global scope under name jcrewPlpItemImage
 And [1101-1181] the user saves jcrewPlpItemPrice text in global scope under name jcrewPlpItemPrice
 And [1100-0360] User move mouse to it
-And [1100-1300] User clicks on the jcrewQuickShop
+And [1100-1400] Execute `click` javascript on jcrewQuickShop
 And [1111-1080] jcrewQuickShopDialog should be displayed, Within 120 seconds
 And [1111-1101] jcrewQuickShopItemName text is equal to `jcrewPlpItemName` case sensitive, Within 120 seconds
 And [1101-1181] the user saves jcrewQuickShopItemPrice text in global scope under name jcrewQuickShopItemPrice

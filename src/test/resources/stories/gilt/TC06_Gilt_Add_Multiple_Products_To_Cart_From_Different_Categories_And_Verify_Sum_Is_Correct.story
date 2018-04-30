@@ -15,7 +15,7 @@ And [1200-1302] For any element from giltProducts
 And [1100-0300] User click on it
 And [1111-1080] giltPdpPage should be displayed, Within 120 seconds
 And [8000-0007] user randomly select an available giltSku
-And [1100-1300] User clicks on the giltAddToCartButton
+And [1100-1400] Execute `click` javascript on giltAddToCartButton
 And [1111-1080] giltCartDialog should be displayed, Within 120 seconds
 And [1101-1184] the user saves giltCartProductOnePrice text in scenario scope under name giltProductOnePrice
 And [1101-1184] the user saves giltCartProductTwoPrice text in scenario scope under name giltProductTwoPrice

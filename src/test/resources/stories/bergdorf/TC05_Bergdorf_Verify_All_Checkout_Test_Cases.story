@@ -5,7 +5,7 @@ Scenario:  TC05_Bergdorf_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] bergdorfBagPage should be displayed
 When [1100-1300] User clicks on the bergdorfCheckoutButton
-And [8012-0006] sleep after last action for 20000 seconds
+And [8012-0006] sleep after last action for 20000 Milliseconds
 And [1000-6010] Focus on Frame envoyId
 And [1111-1080] bergdorfCheckoutPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves bergdorfItemsTotal text in global scope under name bergdorfItemsTotal
@@ -28,7 +28,7 @@ And [1100-1340] User fills bergdorfCheckoutCity with `checkoutCity`
 And [1100-1340] User fills bergdorfCheckoutPhone with `checkoutPhoneNumber`
 And [1100-1300] User clicks on the bergdorfCheckoutContinue
 And [1100-1321] User scroll to the bergdorfCheckoutPlaceOrder then click it
-And [8012-0006] sleep after last action for 5000 seconds
+And [8012-0006] sleep after last action for 5000 Milliseconds
 And [1000-6010] Focus on Frame cc-frame
 And [1101-1102] bergdorfCheckoutCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] bergdorfCheckoutExpirationDateError text is equal to Expiration date is required case sensitive

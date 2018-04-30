@@ -34,10 +34,10 @@ And [1100-1340] User fills giltCitySection with `city`
 And [1100-1340] User fills giltZipCodeSection with `zipCode`
 And [1100-1340] User fills giltPhoneSection with `phoneNumber`
 And [1100-1300] User clicks on the giltSaveAndContinueButton
-And [8000-0008] sleep after last action for 5000 seconds
+And [8000-0008] sleep after last action for 5000 Milliseconds
 And [1100-1300-S] User clicks on the giltChangePaymentMethod
 And [1100-1321-S] User scroll to the giltAddNewPaymentMethod then click it
-And [8000-0008] sleep after last action for 5000 seconds
+And [8000-0008] sleep after last action for 5000 Milliseconds
 And [1100-1300] User clicks on the giltAddPymentMethodButton
 !-- And [1101-1140] giltCardNumberError text should contain Card Number is required.
 And [1101-1140] giltExpirationDateError text should contain Please enter a valid expiration date.
@@ -47,7 +47,7 @@ And [1100-1601] Select giltMonth By Value 07
 And [1100-1601] Select giltYear By Value 2032
 And [1100-1340] User fills giltSecuritySection with `securityCardCode`
 And [1100-1300] User clicks on the giltAddPymentMethodButton
-And [8000-0008] sleep after last action for 10000 seconds
+And [8000-0008] sleep after last action for 10000 Milliseconds
 And [1111-1080-S] giltSecurityCodeSection should be displayed, Within 120 seconds
 And [1100-1340-S] User fills giltSecurityCodeSection with `securityCardCode`
 And [1100-1320] User scroll to the giltCheckoutHeader

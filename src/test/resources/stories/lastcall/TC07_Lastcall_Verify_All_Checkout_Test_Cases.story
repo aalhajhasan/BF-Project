@@ -5,7 +5,7 @@ Scenario:  TC07_Lastcall_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] lastcallBagPage should be displayed
 When [1100-1300] User clicks on the lastcallCheckoutButton
-And [8014-0004] sleep after last action for 10000 seconds
+And [8014-0004] sleep after last action for 10000 Milliseconds
 And [1000-6010] Focus on Frame envoyId
 And [1111-1080] lastcallCheckoutPage should be displayed, Within 120 seconds
 And [1101-1181] the user saves lastcallItemsTotal text in global scope under name lastcallItemsTotal
@@ -28,7 +28,7 @@ And [1100-1340] User fills lastcallCheckoutCity with `checkoutCity`
 And [1100-1340] User fills lastcallCheckoutPhone with `checkoutPhoneNumber`
 And [1100-1300] User clicks on the lastcallCheckoutContinue
 And [1100-1321] User scroll to the lastcallCheckoutPlaceOrder then click it
-And [8014-0004] sleep after last action for 10000 seconds
+And [8014-0004] sleep after last action for 10000 Milliseconds
 And [1000-6010] Focus on Frame cc-frame
 And [1101-1102] lastcallCheckoutCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] lastcallCheckoutExpirationDateError text is equal to Expiration date is required case sensitive

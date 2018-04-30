@@ -202,7 +202,7 @@ public class EbagsSteps {
 	}
 	
 	
-	@When("[8006-0010] sleep after last action for $element seconds")
+	@When("[8006-0010] sleep after last action for $element Milliseconds")
 	public void sleep (String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

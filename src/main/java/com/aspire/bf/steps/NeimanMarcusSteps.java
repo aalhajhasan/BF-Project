@@ -101,8 +101,8 @@ public class NeimanMarcusSteps {
 	}
 	
 	
-	@Then("[8015-0003] sleep after last action for $element seconds")
-	@When("[8015-0003] sleep after last action for $element seconds")
+	@Then("[8015-0003] sleep after last action for $element Milliseconds")
+	@When("[8015-0003] sleep after last action for $element Milliseconds")
 	public void sleep(String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

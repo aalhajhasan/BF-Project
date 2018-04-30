@@ -125,8 +125,8 @@ public class LastCallSteps {
 	
 	
 	
-	@Then("[8014-0004] sleep after last action for $element seconds")
-	@When("[8014-0004] sleep after last action for $element seconds")
+	@Then("[8014-0004] sleep after last action for $element Milliseconds")
+	@When("[8014-0004] sleep after last action for $element Milliseconds")
 	public void sleep(String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);
