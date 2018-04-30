@@ -4,7 +4,7 @@ Meta:
 Scenario:  TC07_Llbean_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] llbeanBagPage should be displayed
-When [1100-1300] User clicks on the llbeanContinueToCheckout
+When [1100-1400] Execute `click` javascript on llbeanContinueToCheckout
 And [1111-1080] llbeanCheckoutPage should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the llbeanNewCustomers
 And [1100-1340] User fills llbeanEmail with `newUser`

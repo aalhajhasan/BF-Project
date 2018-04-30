@@ -37,12 +37,12 @@ public class SaksSteps {
 			{
 				System.out.println("Element not found in this page");
 				randomclick("saksTopNav");
-				sleep("10000");
+				sleep("15000");
 				randomclick("saksSales");
-				sleep("10000");
+				sleep("15000");
 				if(element.equals("saksProductSKUSelection") || element.equals("saksValidPdp"))
 				{
-					sleep("5000");
+					sleep("15000");
 					randomclick("saksProducts");
 				}
 				
