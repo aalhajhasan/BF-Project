@@ -5,7 +5,7 @@ Scenario:  TC06_Ebags_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] ebagsCartPage should be displayed
 When [1100-1300] User clicks on the ebagsContinuoCheckout
-And [8006-0010] sleep after last action for 20000 seconds
+And [8006-0010] sleep after last action for 20000 Milliseconds
 And [1000-6010] Focus on Frame envoyId
 And [1111-1080] ebagsDeliveryCheckout should be displayed, Within 30 seconds
 And [1101-1181] the user saves ebagsItemsTotal text in global scope under name ebagsItemsTotal
@@ -28,10 +28,10 @@ And [1100-1340] User fills ebagsDeliveryCity with `checkoutCity`
 And [1100-1340] User fills ebagsDeliveryZipCode with `checkoutZipCode`
 And [1100-1340] User fills ebagsDeliveryPhoneNumber with `checkoutPhoneNumber`
 And [1100-1400] Execute `click` javascript on ebagsCheckoutContinue
-And [8006-0010] sleep after last action for 3000 seconds
+And [8006-0010] sleep after last action for 3000 Milliseconds
 And [1100-1400] Execute `click` javascript on ebagsPalceOrderButton
 And [1000-6010] Focus on Frame cc-frame
-And [8006-0010] sleep after last action for 2000 seconds
+And [8006-0010] sleep after last action for 2000 Milliseconds
 And [1101-1102] ebagsPaymentCardNumberError text is equal to Card number is required case sensitive
 And [1101-1102] ebagsPaymentExpirationDateError text is equal to Expiration date is required case sensitive
 And [1101-1102] ebagsPaymentSecurityCodeError text is equal to Security code is required case sensitive

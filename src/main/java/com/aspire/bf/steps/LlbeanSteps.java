@@ -136,8 +136,8 @@ public class LlbeanSteps {
 	}
 	
 	
-	@Then("[8013-0006] sleep after last action for $element seconds")
-	@When("[8013-0006] sleep after last action for $element seconds")
+	@Then("[8013-0006] sleep after last action for $element Milliseconds")
+	@When("[8013-0006] sleep after last action for $element Milliseconds")
 	public void sleep(String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

@@ -136,7 +136,7 @@ public class UnderarmourSteps {
 	
 	
 
-	@When("[8011-0007] sleep after last action for $element seconds")
+	@When("[8011-0007] sleep after last action for $element Milliseconds")
 	public void sleep (String element) throws InterruptedException
 	{
 		int sleep = Integer.parseInt(element);

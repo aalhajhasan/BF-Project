@@ -18,7 +18,7 @@ And [1100-1581] the user saves saksProductImage attribute of data-image in globa
 And [1100-0360] User move mouse to it
 And [1100-1400] Execute `click` javascript on saksPreviewThisProductIcon
 And [1111-1080] saksQuickViewDialog should be displayed, Within 120 seconds
-And [8002-0010] sleep after last action for 2000 seconds
+And [8002-0010] sleep after last action for 2000 Milliseconds
 Then [1101-1140] saksQuickViewProductName text should contain `saksProductName`
 And [1101-1181] the user saves saksQuickViewProductPrice text in global scope under name saksQuickViewPrice
 And [8002-0002] User compare between `saksProductPrice` and `saksQuickViewPrice`

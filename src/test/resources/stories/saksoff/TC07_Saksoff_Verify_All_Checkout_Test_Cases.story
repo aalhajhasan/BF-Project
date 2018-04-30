@@ -5,7 +5,7 @@ Scenario:  TC07_Saksoff_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] saksoffBagPage should be displayed
 When [1100-1321] User scroll to the saksoffCheckoutButton then click it
-And [8003-0010] sleep after last action for 5000 seconds
+And [8003-0010] sleep after last action for 5000 Milliseconds
 And [1111-1080] saksoffCheckoutDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the saksoffCheckoutAsGuest
 And [1111-1080] saksoffCheckoutPage should be displayed, Within 120 seconds
@@ -28,7 +28,7 @@ And [1100-1340] User fills saksoffCheckoutEmailAddress with `checkoutEmailAddres
 And [1100-1340] User fills saksoffCheckoutPhoneNumber with `checkoutPhoneNumber`
 And [1100-1300] User clicks on the saksoffContinueCheckoutButton
 And [1111-1080] saksoffPaymentPage should be displayed, Within 120 seconds
-And [8003-0010] sleep after last action for 5000 seconds
+And [8003-0010] sleep after last action for 5000 Milliseconds
 And [1100-1320] User scroll to the saksoffPaymentContinueCheckout
 And [1100-0300] User click on it
 And [1101-1102] saksoffPaymentCCNError text is equal to Please supply a valid credit card number. case sensitive
@@ -42,7 +42,7 @@ And [1100-1601] Select saksoffPaymentExpirationMonth By Value 1
 And [1100-1601] Select saksoffPaymentExpirationYear By Value 2030
 And [1100-1340] User fills saksoffPaymentSecurityCode with `paymentSecurityCode`
 And [1100-1300] User clicks on the saksoffPaymentContinueCheckout
-And [8003-0010] sleep after last action for 5000 seconds
+And [8003-0010] sleep after last action for 5000 Milliseconds
 And [1100-1320] User scroll to the saksoffCheckoutOrderSummery
 And [1101-1181] the user saves saksoffItemTotal text in global scope under name saksoffItemTotal
 And [1101-1181] the user saves saksoffShipping text in global scope under name saksoffShipping
