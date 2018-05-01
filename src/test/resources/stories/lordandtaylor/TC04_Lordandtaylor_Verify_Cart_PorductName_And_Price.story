@@ -5,7 +5,6 @@ Scenario:  TC04_Lordandtaylor_Verify_Cart_PorductName_And_Price
 
 Given [1101-1080] lordandtaylorPdpProductPage should be displayed
 When [8009-0009] user search for lordandtaylorValidPdp
-And [1100-1581] the user saves lordandtaylorPdpImage attribute of data-image in global scope under name lordandtaylorPdpImage
 And [8009-0006] user randomly select an available lordandtaylorColor
 And [8009-0006] user randomly select an available lordandtaylorSku
 And [1101-1181] the user saves lordandtaylorPdpProductPrice text in global scope under name lordandtaylorPdpProductPrice

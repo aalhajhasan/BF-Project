@@ -29,8 +29,9 @@ And [1100-1340] User fills saksoffCheckoutPhoneNumber with `checkoutPhoneNumber`
 And [1100-1400] Execute `click` javascript on saksoffContinueCheckoutButton
 And [1111-1080] saksoffPaymentPage should be displayed, Within 120 seconds
 And [8003-0010] sleep after last action for 5000 Milliseconds
-And [1100-1320] User scroll to the saksoffPaymentContinueCheckout
+And [1100-1321] User scroll to the saksoffPaymentContinueCheckout then click it
 And [1100-0400] Execute `click` javascript on the element
+And [8003-0010] sleep after last action for 5000 Milliseconds
 And [1101-1102] saksoffPaymentCCNError text is equal to Please supply a valid credit card number. case sensitive
 And [1101-1102] saksoffPaymentNameOnCardError text is equal to Please supply the name displayed on the credit card. case sensitive
 And [1101-1102] saksoffPaymentExpirationError text is equal to Please supply a valid expiration date. case sensitive

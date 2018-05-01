@@ -129,13 +129,83 @@ public interface LordandtaylorPage {
 	@CssSelector("${pages.lordandtaylor.lordandtaylorValidPdp}")
 	public AspireWebElements lordandtaylorValidPdp();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorContinueCheckout}")
+	public AspireWebElement lordandtaylorContinueCheckout();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorFirstNameError}")
+	public AspireWebElement lordandtaylorFirstNameError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorLastNameError}")
+	public AspireWebElement lordandtaylorLastNameError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorAddressError}")
+	public AspireWebElement lordandtaylorAddressError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCityError}")
+	public AspireWebElement lordandtaylorCityError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorEmailError}")
+	public AspireWebElement lordandtaylorEmailError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPhoneError}")
+	public AspireWebElement lordandtaylorPhoneError();
 	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorFirstName}")
+	public AspireWebElement lordandtaylorFirstName();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorLastName}")
+	public AspireWebElement lordandtaylorLastName();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorAddress}")
+	public AspireWebElement lordandtaylorAddress();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCity}")
+	public AspireWebElement lordandtaylorCity();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorEmail}")
+	public AspireWebElement lordandtaylorEmail();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPhone}")
+	public AspireWebElement lordandtaylorPhone();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPaymentContinueCheckout}")
+	public AspireWebElement lordandtaylorPaymentContinueCheckout();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCreditCardError}")
+	public AspireWebElement lordandtaylorCreditCardError();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorNameOnCardError}")
+	public AspireWebElement lordandtaylorNameOnCardError();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorExpirationError}")
+	public AspireWebElement lordandtaylorExpirationError();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorSecurityCodeError}")
+	public AspireWebElement lordandtaylorSecurityCodeError();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorCreditCard}")
+	public AspireWebElement lordandtaylorCreditCard();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorNameOnCard}")
+	public AspireWebElement lordandtaylorNameOnCard();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorSecurityCode}")
+	public AspireWebElement lordandtaylorSecurityCode();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorExpirationMonth}")
+	public AspireWebElement lordandtaylorExpirationMonth();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorExpirationYear}")
+	public AspireWebElement lordandtaylorExpirationYear();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorSecurityNumber}")
+	public AspireWebElement lordandtaylorSecurityNumber();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorPlaceOrder}")
+	public AspireWebElement lordandtaylorPlaceOrder();
+	
+	@CssSelector("${pages.lordandtaylor.lordandtaylorSubmitError}")
+	public AspireWebElement lordandtaylorSubmitError();
 	
 	
 	

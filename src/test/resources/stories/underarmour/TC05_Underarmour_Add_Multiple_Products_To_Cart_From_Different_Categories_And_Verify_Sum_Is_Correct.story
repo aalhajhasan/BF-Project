@@ -14,7 +14,7 @@ And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] underarmourPdpItemPage should be displayed, Within 120 seconds
 And [8011-0006] user randomly select an available underarmourItemColors
 And [8011-0006] user randomly select an available underarmourItemSizes
-And [1100-1300] User clicks on the underarmourAddToBag
+And [1100-1400] Execute `click` javascript on underarmourAddToBag
 And [1111-1080] underarmourBagDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the underarmourBagAndCheckout
 And [1111-1080] underarmourBagPage should be displayed, Within 120 seconds

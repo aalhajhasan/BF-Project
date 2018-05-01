@@ -24,9 +24,9 @@ And [1101-1102] neimanmarcusCheckoutStateError text is equal to Please provide a
 And [1101-1102] neimanmarcusCheckoutPhoneError text is equal to Please provide an entry for the Phone Number field. case sensitive
 And [1100-1340] User fills neimanmarcusCheckoutFirstName with `firstName`
 And [1100-1340] User fills neimanmarcusCheckoutLastName with `lastName`
-And [1100-1340] User fills neimanmarcusCheckoutAddress with `Address`
-And [1100-1340] User fills neimanmarcusCheckoutCity with `City`
-And [1100-1340] User fills neimanmarcusCheckoutState with `State`
+And [1100-1340] User fills neimanmarcusCheckoutAddress with `address`
+And [1100-1340] User fills neimanmarcusCheckoutCity with `city`
+And [1100-1340] User fills neimanmarcusCheckoutState with `state`
 And [1100-1340] User fills neimanmarcusCheckoutPhone with `contactNumber`
 And [1100-1340] User fills neimanmarcusCheckoutEmail with `emailAddress`
 And [1100-1300] User clicks on the neimanmarcusCheckoutContinue
