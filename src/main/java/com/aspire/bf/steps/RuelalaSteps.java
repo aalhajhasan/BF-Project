@@ -48,7 +48,8 @@ public class RuelalaSteps {
 		try
 		{
 			if (element.equals("ruelalaPLP"))
-			{
+			{   
+				sleep("5000");
 				if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			    {
 				   System.out.println("Valid PLP");
@@ -58,22 +59,31 @@ public class RuelalaSteps {
 				{
 					try
 					{
+						sleep("5000");
 						if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
 				           {
+							   sleep("5000");
 							   randomclick("ruelalaSalesTwo");
+							   sleep("5000");
 							   search(element);
 				           }
 						else
 				           {
+							  sleep("5000");
 							  randomclick("ruelalaTopNav");
+							  sleep("5000");
 							  randomclick("ruelalaSales");
+							  sleep("5000");
 							  search(element);
 				           }
 					}
 					catch (NoSuchElementException e1)
 					{
+						  sleep("5000");
 						  randomclick("ruelalaTopNav");
+						  sleep("5000");
 						  randomclick("ruelalaSales");
+						  sleep("5000");
 						  search(element);
 					}
 					
@@ -92,28 +102,39 @@ public class RuelalaSteps {
 	        				x = AspireBrowser.getElementByPropertyNameGlobaly("ruelalaSoldOutMessage").text().toString();
 	        			if (x.equals("Sorry, this item is completely sold out.")  || x.equals("Ships In U.S. Only"))
 		        		{
+	        				sleep("5000");
 		        			randomclick("ruelalaTopNav");
+		        			sleep("5000");
 		        		    randomclick("ruelalaSales");
+		        		    sleep("5000");
 		        		    try
 							{
 								if(AspireBrowser.getElementsByPropertyNameGlobaly("ruelalaSalesTwo").size() > 0)	
 						           {
+									   sleep("5000");
 									   randomclick("ruelalaSalesTwo");
+									   sleep("5000");
 									   randomclick("ruelalaPLP");
+									   sleep("5000");
 									   search(element);
 						           }
 								else
 						           {
-									
+									  sleep("5000");
 									  randomclick("ruelalaPLP");
+									  sleep("5000");
 									  search(element);
 						           }
 							}
 							catch (NoSuchElementException e1)
-							{
-								randomclick("ruelalaTopNav");
+							{      
+								  sleep("5000");
+								  randomclick("ruelalaTopNav");
+								  sleep("5000");
 								  randomclick("ruelalaSales");
+								  sleep("5000");
 								  randomclick("ruelalaPLP");
+								  sleep("5000");
 								  search(element);
 							}
 		        		}

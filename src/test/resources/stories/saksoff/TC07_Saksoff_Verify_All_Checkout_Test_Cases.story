@@ -42,8 +42,8 @@ And [1100-1340] User fills saksoffPaymentNameOnCard with `firstName`
 And [1100-1601] Select saksoffPaymentExpirationMonth By Value 1
 And [1100-1601] Select saksoffPaymentExpirationYear By Value 2030
 And [1100-1340] User fills saksoffPaymentSecurityCode with `paymentSecurityCode`
-And [1100-1400] Execute `click` javascript on saksoffPaymentContinueCheckout
-And [8003-0010] sleep after last action for 5000 Milliseconds
+And [1100-1300] User clicks on the saksoffPaymentContinueCheckout
+And [8003-0010] sleep after last action for 10000 Milliseconds
 And [1100-1320] User scroll to the saksoffCheckoutOrderSummery
 And [1101-1181] the user saves saksoffItemTotal text in global scope under name saksoffItemTotal
 And [1101-1181] the user saves saksoffShipping text in global scope under name saksoffShipping

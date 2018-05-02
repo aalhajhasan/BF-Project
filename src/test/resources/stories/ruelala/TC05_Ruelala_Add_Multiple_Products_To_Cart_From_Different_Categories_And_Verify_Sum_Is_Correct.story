@@ -12,7 +12,7 @@ And [1100-0300] User click on it
 And [8007-0002] user search for ruelalaPLP
 And [1211-1080] ruelalaPLP should be all displayed, Within 120 seconds
 And [1200-1302] For any element from ruelalaPLP
-And [1100-0300] User click on it
+And [1100-0400] Execute `click` javascript on the element
 And [8007-0002] user search for ruelalaValidPdp
 And [8007-0006] user randomly select an available ruelalaSizes
 And [1100-1300] User clicks on the ruelalaAddToBagButton

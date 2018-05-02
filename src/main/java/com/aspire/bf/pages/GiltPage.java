@@ -283,4 +283,15 @@ public interface GiltPage {
 	
 	@CssSelector("${pages.gilt.giltCartItemTwoRemove}")
 	public AspireWebElement giltCartItemTwoRemove();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
