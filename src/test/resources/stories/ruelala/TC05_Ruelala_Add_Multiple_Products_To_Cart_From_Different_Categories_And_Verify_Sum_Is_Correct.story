@@ -7,10 +7,12 @@ Given [1101-1080] ruelalaBagPage should be displayed
 When [1200-1302] For any element from ruelalaTopNav
 And [1100-0300] User click on it
 And [1211-1080] ruelalaSales should be all displayed, Within 120 seconds
+And [8007-0007] sleep after last action for 5000 Milliseconds
 And [1200-1302] For any element from ruelalaSales
 And [1100-0300] User click on it
 And [8007-0002] user search for ruelalaPLP
 And [1211-1080] ruelalaPLP should be all displayed, Within 120 seconds
+And [8007-0007] sleep after last action for 5000 Milliseconds
 And [1200-1302] For any element from ruelalaPLP
 And [1100-0400] Execute `click` javascript on the element
 And [8007-0002] user search for ruelalaValidPdp
