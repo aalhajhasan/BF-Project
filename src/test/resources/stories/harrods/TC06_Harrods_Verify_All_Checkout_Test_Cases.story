@@ -49,6 +49,7 @@ And [1100-1340] User fills harrodsPaymentNameOnCardSection with `paymentNameOnCa
 And [1100-1601] Select harrodsPaymentExpireMonth By Value 1
 And [1100-1601] Select harrodsPaymentExpireYear By Value 2037
 And [1100-1340] User fills harrodsPaymentSecurityCodeSection with `paymentSecurityCode`
+And [8001-0008] sleep after last action for 5000 Milliseconds
 And [1100-1300] User clicks on the harrodsPaySecurelyNowButton
 Then [1111-1080] harrodsSubmitErrorMessage should be displayed, Within 120 seconds
 And [1000-9140] Close the browser

@@ -1,5 +1,5 @@
 Meta:
-@ReportName LastCall
+@ReportName Last Call
 
 Scenario:  TC07_Lastcall_Verify_All_Checkout_Test_Cases
 

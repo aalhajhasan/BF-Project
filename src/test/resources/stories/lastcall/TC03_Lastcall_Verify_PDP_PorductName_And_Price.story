@@ -1,5 +1,5 @@
 Meta:
-@ReportName LastCall
+@ReportName Last Call
 
 Scenario:  TC03_Lastcall_Verify_PDP_PorductName_And_Price
 

@@ -132,17 +132,16 @@ public class HarrodsSteps {
 	
 	
 	@Then("[8001-0006] user compare between $elementTwo and $elementThree")
-	public void imagecompare(String qv , String pdp)
+	public boolean imagecompare(String qv , String pdp)
 	{
 		
-		/*String qvImage = qv.substring(qv.indexOf("product"), qv.indexOf(".jpg")-2);
-		String pdpImage = pdp.substring(pdp.indexOf("product"), pdp.indexOf(".jpg"));*/
+		 String qvImage = qv.substring(qv.indexOf("product"), qv.indexOf(".jpg")-2);
+		 String pdpImage = pdp.substring(pdp.indexOf("product"), pdp.indexOf(".jpg"));
+			
+		 System.out.println("qv image = " + qvImage);
+		 System.out.println("pdp image = " + pdpImage);
 		
-		
-		System.out.println("qv image = " + qv);
-		System.out.println("pdp image = " + pdp);
-		
-		/*boolean status = false;
+		boolean status = false;
 		if (qvImage.equals(pdpImage))
 		{
 			
@@ -153,7 +152,7 @@ public class HarrodsSteps {
 			status = false;
 		}
 		
-		return status;*/
+		return status;
 		
 	}
 	
@@ -211,7 +210,14 @@ public class HarrodsSteps {
 	}
 	
 	
-	
+	@Then("[8001-0008] sleep after last action for $element Milliseconds")
+	@When("[8001-0008] sleep after last action for $element Milliseconds")
+	public void sleep(String element) throws InterruptedException
+	{
+		int sleep = Integer.parseInt(element);
+		Thread.sleep(sleep);
+				
+	}
 	
 	public double convert(String element)  //Isolate numbers from text
 	{   double result = 0;

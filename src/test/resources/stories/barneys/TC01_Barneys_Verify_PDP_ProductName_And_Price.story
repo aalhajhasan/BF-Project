@@ -1,5 +1,5 @@
 Meta:
-@ReportName Barneys NewWork
+@ReportName Barneys New York
 
 Scenario:  TC01_Barneys_Verify_PDP_ProductName_And_Price
 

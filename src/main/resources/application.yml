@@ -16,9 +16,9 @@ aspire:
           #- stories/barneys/**.story
           #- stories/bergdorf/**.story
           #- stories/ebags/**.story
-          - stories/eddiebauer/**.story
+          #- stories/eddiebauer/**.story
           #- stories/gilt/**.story
-          #- stories/harrods/**.story
+          - stories/harrods/**.story
           #- stories/jcrew/**.story
           #- stories/landsend/**.story
           #- stories/lanebryant/**.story

@@ -1,5 +1,5 @@
 Meta:
-@ReportName Barneys NewWork
+@ReportName Barneys New York
 
 Scenario:  TC03_Barneys_Verify_price_correctness_after_updating_item_QTY
 

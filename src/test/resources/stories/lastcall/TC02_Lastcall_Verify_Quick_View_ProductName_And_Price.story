@@ -1,5 +1,5 @@
 Meta:
-@ReportName LastCall
+@ReportName Last Call
 
 Scenario:  TC02_Lastcall_Verify_Quick_View_ProductName_And_Price
 

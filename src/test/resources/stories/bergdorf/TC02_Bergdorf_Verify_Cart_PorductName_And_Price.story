@@ -1,5 +1,5 @@
 Meta:
-@ReportName Bergdorf GoodMan
+@ReportName Bergdorf Goodman
 
 Scenario:  TC02_Bergdorf_Verify_Cart_PorductName_And_Price
 

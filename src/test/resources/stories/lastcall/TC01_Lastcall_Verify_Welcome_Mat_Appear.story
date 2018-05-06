@@ -1,5 +1,5 @@
 Meta:
-@ReportName LastCall
+@ReportName Last Call
 
 Scenario:  TC01_Lastcall_Verify_Welcome_Mat_Appear
 

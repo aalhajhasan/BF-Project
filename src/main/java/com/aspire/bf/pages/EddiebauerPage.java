@@ -176,7 +176,8 @@ public interface EddiebauerPage {
 	@CssSelector("${pages.eddiebauer.eddiebauerSubmitError}")
 	public AspireWebElement eddiebauerSubmitError();
 	
-	
+	@CssSelector("${pages.eddiebauer.eddiebauerSubmitOrder}")
+	public AspireWebElement eddiebauerSubmitOrder();
 	
 	
 	

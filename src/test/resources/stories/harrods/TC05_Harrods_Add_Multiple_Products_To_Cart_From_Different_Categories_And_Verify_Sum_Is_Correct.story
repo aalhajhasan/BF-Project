@@ -14,6 +14,7 @@ And [1200-1302] For any element from harrodsProducts
 And [1100-0320] User scroll to it
 And [1100-0360] User move mouse to it
 And [1100-1300] User clicks on the harrodsQuickView
+And [8001-0008] sleep after last action for 5000 Milliseconds
 And [1111-0080] It should be displayed, Within 120 seconds
 And [1111-1000] harrodsFullDetails should be clickable, Within 120 seconds
 And [1100-0400] Execute `click` javascript on the element

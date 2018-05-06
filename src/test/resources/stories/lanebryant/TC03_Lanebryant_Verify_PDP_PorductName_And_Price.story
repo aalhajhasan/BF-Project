@@ -1,5 +1,5 @@
 Meta:
-@ReportName Lane Bryant
+@ReportName Lane Bryant Brands
 
 Scenario:  TC03_Lanebryant_Verify_PDP_PorductName_And_Price
 

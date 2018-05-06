@@ -1,5 +1,5 @@
 Meta:
-@ReportName Saks Fifth Avenue
+@ReportName Saks
 
 Scenario:  TC05_Saks_Verify_price_correctness_after_updating_item_QTY
 

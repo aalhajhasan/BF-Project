@@ -1,5 +1,5 @@
 Meta:
-@ReportName Bergdorf GoodMan
+@ReportName Bergdorf Goodman
 
 Scenario:  TC04_Bergdorf_Add_Multiple_Products_To_Cart_From_Different_Categories_And_Verify_Sum_Is_Correct
 

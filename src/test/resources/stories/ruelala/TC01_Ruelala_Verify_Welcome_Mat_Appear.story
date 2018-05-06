@@ -1,5 +1,5 @@
 Meta:
-@ReportName Ruelala
+@ReportName Rue La La
 
 Scenario:  TC01_Ruelala_Verify_Welcome_Mat_Appear
 

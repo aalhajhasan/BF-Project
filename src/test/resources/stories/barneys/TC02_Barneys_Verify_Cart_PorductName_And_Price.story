@@ -1,5 +1,5 @@
 Meta:
-@ReportName Barneys NewWork
+@ReportName Barneys New York
 
 Scenario:  TC02_Barneys_Verify_Cart_PorductName_And_Price
 

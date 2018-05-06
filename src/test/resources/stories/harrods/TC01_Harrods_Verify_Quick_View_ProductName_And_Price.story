@@ -20,6 +20,7 @@ And [1101-1181] the user saves harrodsProductPrice text in global scope under na
 And [1100-0320] User scroll to it
 And [1100-0360] User move mouse to it
 And [1100-1300] User clicks on the harrodsQuickView
+And [8001-0008] sleep after last action for 5000 Milliseconds
 And [1111-1080] harrodsQuickViewDialog should be displayed, Within 120 seconds
 Then [1101-1140] harrodsQuickViewProductName text should contain `harrodsProductName`
 And [1101-1140] harrodsQuickViewProductPrice text should contain `harrodsProductPrice`

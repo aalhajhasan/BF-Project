@@ -1,5 +1,5 @@
 Meta:
-@ReportName LastCall
+@ReportName Last Call
 
 Scenario:  TC05_Lastcall_Verify_price_correctness_after_updating_item_QTY
 

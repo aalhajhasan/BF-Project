@@ -1,5 +1,5 @@
 Meta:
-@ReportName Bergdorf GoodMan
+@ReportName Bergdorf Goodman
 
 Scenario:  TC05_Bergdorf_Verify_All_Checkout_Test_Cases
 

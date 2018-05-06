@@ -1,5 +1,5 @@
 Meta:
-@ReportName Saks Fifth Avenue
+@ReportName Saks
 
 Scenario:  TC04_Saks_Verify_Cart_PorductName_And_Price
 

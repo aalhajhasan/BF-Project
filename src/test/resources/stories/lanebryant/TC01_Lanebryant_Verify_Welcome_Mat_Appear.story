@@ -1,5 +1,5 @@
 Meta:
-@ReportName Lane Bryant
+@ReportName Lane Bryant Brands
 
 Scenario:  TC01_Lanebryant_Verify_Welcome_Mat_Appear
 

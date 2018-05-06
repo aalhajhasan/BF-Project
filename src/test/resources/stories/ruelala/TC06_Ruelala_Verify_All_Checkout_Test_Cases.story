@@ -1,5 +1,5 @@
 Meta:
-@ReportName Ruelala
+@ReportName Rue La La
 
 Scenario:  TC06_Ruelala_Verify_All_Checkout_Test_Cases
 

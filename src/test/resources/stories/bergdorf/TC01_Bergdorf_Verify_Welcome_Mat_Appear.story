@@ -1,5 +1,5 @@
 Meta:
-@ReportName Bergdorf GoodMan
+@ReportName Bergdorf Goodman
 
 Scenario:  TC01_Bergdorf_Verify_Welcome_Mat_Appear
 

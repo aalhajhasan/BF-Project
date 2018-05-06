@@ -1,5 +1,5 @@
 Meta:
-@ReportName Ruelala
+@ReportName Rue La La
 
 Scenario:  TC03_Ruelala_Verify_Cart_PorductName_And_Price
 

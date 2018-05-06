@@ -1,5 +1,5 @@
 Meta:
-@ReportName LastCall
+@ReportName Last Call
 
 Scenario:  TC04_Lastcall_Verify_Cart_PorductName_And_Price
 
