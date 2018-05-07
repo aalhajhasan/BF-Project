@@ -1,7 +1,7 @@
 Meta:
 @ReportName Under Armour
 
-Scenario:  TC01_Underarmour_Verify_Saksoff_Welcome_Mat_Appear
+Scenario:  TC01_Underarmour_Verify_Welcome_Mat_Appear
 
 Given [1000-9130] Clear cache and cookies
 When [1000-3000] User maximize browser window

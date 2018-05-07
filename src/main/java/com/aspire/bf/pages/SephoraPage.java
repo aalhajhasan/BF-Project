@@ -1,5 +1,141 @@
 package com.aspire.bf.pages;
 
+import com.aspire.automation.web.util.AspireWebElement;
+import com.aspire.automation.web.util.AspireWebElements;
+import com.aspire.automation.web.util.annotation.CssSelector;
+import com.aspire.automation.web.util.annotation.Page;
+
+@Page(name = "sephora", url = "${pages.sephora.sephoraUrl}")
+
 public interface SephoraPage {
 
+	@CssSelector("${pages.sephora.sephoraTopNav}")
+	public AspireWebElement sephoraTopNav();
+	
+	@CssSelector("${pages.sephora.sephoraProducts}")
+	public AspireWebElements sephoraProducts();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

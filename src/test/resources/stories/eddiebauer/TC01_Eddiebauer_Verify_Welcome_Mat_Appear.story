@@ -1,7 +1,7 @@
 Meta:
 @ReportName Eddie Bauer
 
-Scenario:  TC01_Eddiebauer_Verify_Quick_View_ProductName_And_Price
+Scenario:  TC01_Eddiebauer_Verify_Welcome_Mat_Appear
 
 Given [1000-9130] Clear cache and cookies
 When [1000-3000] User maximize browser window

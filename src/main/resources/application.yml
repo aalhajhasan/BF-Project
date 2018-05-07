@@ -18,8 +18,7 @@ aspire:
           #- stories/ebags/**.story
           #- stories/eddiebauer/**.story
           #- stories/gilt/**.story
-          - stories/harrods/**.story
-          #- stories/jcrew/**.story
+          #- stories/harrods/**.story
           #- stories/landsend/**.story
           #- stories/lanebryant/**.story
           #- stories/lastcall/**.story
@@ -29,6 +28,7 @@ aspire:
           #- stories/ruelala/**.story
           #- stories/saks/**.story
           #- stories/saksoff/**.story
+          - stories/sephora/**.story
           #- stories/underarmour/**.story
           
           
