@@ -1,7 +1,7 @@
 Meta:
 @ReportName Under Armour
 
-Scenario:  TC07_Underarmour_Verify_All_Checkout_Test_Cases
+Scenario:  TC06_Underarmour_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] underarmourBagPage should be displayed
 When [1100-1400] Execute `click` javascript on underarmourProceedToCheckout
