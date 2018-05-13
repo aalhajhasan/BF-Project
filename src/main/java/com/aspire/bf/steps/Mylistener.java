@@ -118,7 +118,20 @@ public class Mylistener implements TestEventListener {
                     					}
                     					catch (NoSuchElementException | InterruptedException e6)
                     					{
-                    						
+                    						try
+                        					{
+                        						if (AspireBrowser.getElementByPropertyNameGlobaly("herroomFeed").isDisplayed())
+                                         	    {
+                                         		 AspireBrowser.getElementByPropertyNameGlobaly("herroomFeedClose").scrollToElement().click();
+                                         		 //dialogstatus = true;
+                                         		 Thread.sleep(5000);
+                                         		 System.out.println("Her Room Dialog closed");
+                                         	     }
+                        					}
+                        					catch (NoSuchElementException | InterruptedException e7)
+                        					{
+                        						
+                        					}
                     					}
                 					}
             					}

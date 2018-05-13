@@ -19,8 +19,8 @@ aspire:
           #- stories/eddiebauer/**.story
           #- stories/gilt/**.story
           #- stories/harrods/**.story
-          #- stories/herroom/**.story
-          - stories/hisroom/**.story
+          - stories/herroom/**.story
+          #- stories/hisroom/**.story
           #- stories/landsend/**.story
           #- stories/lanebryant/**.story
           #- stories/lastcall/**.story
