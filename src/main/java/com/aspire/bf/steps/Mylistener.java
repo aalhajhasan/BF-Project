@@ -9,6 +9,9 @@ import com.aspire.automation.configurations.TestEventListener;
 import com.aspire.automation.web.util.AspireBrowser;
 import com.aspire.automation.web.util.AspireWebElement;
 import com.aspire.automation.web.util.helper.AspireBrowserState;
+import com.aspire.bf.pages.HisRoomPage;
+import com.aspire.sci.test.AspireAutomationBFApplicationTest;
+
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -103,19 +106,20 @@ public class Mylistener implements TestEventListener {
                 					}
                 					catch (NoSuchElementException e5)
                 					{
-                						/*try
+                						try
                     					{
-                    						if (AspireBrowser.getElementByPropertyNameGlobaly("neimanmarcusErrorDialog").isDisplayed())
+                    						if (AspireBrowser.getElementByPropertyNameGlobaly("hisroomFeed").isDisplayed())
                                      	    {
-                                     		 AspireBrowser.getElementByPropertyNameGlobaly("neimanmarcusErrorDialogClose").scrollToElement().click();
-                                     		 dialogstatus = true;
-                                     		 System.out.println("Neiman Marcus Dialog closed");
+                                     		 AspireBrowser.getElementByPropertyNameGlobaly("hisroomFeedClose").scrollToElement().click();
+                                     		 //dialogstatus = true;
+                                     		 Thread.sleep(5000);
+                                     		 System.out.println("His Room Dialog closed");
                                      	     }
                     					}
-                    					catch (NoSuchElementException e6)
+                    					catch (NoSuchElementException | InterruptedException e6)
                     					{
                     						
-                    					}*/
+                    					}
                 					}
             					}
         					}
