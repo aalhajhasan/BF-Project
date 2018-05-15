@@ -40,7 +40,7 @@ And [1100-1340] User fills eddiebauerSecurityCode with `paymentSecurityCode`
 And [1100-1400] Execute `click` javascript on eddiebauerShippingContinue
 And [1100-1400] Execute `click` javascript on eddiebauerSubmitOrder
 Then [1111-1080] eddiebauerSubmitError should be displayed, Within 120 seconds
-
+And [1000-9140] Close the browser
 
 
 

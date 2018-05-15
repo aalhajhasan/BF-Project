@@ -14,13 +14,14 @@ aspire:
         enabled: true   
         include: 
           #- stories/barneys/**.story
+          - stories/bcbg/**.story
           #- stories/bergdorf/**.story
           #- stories/ebags/**.story
           #- stories/eddiebauer/**.story
           #- stories/gilt/**.story
           #- stories/harrods/**.story
           #- stories/herroom/**.story
-          - stories/hisroom/**.story
+          #- stories/hisroom/**.story
           #- stories/landsend/**.story
           #- stories/lanebryant/**.story
           #- stories/lastcall/**.story

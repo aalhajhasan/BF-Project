@@ -18,4 +18,4 @@ And [1101-1181] the user saves herroomPdpPrice text in global scope under name h
 And [1100-1581] the user saves herroomPdpImage attribute of src in global scope under name herroomPdpImage
 !-- And [5101-1103] verify that text `herroomPdpName` starts with text `herroomProductName`
 Then [8033-0001] User compare between `herroomProductPrice` and `herroomPdpPrice`
-And [8033-0008] user compare between `hisroomProductImage` and `hisroomPdpImage`
+And [8033-0008] user compare between `herroomProductImage` and `herroomPdpImage`

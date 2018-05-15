@@ -159,11 +159,11 @@ public class HerRoomSteps {
 	@Then("[8033-0008] user compare between $elementOne and $elementTwo")
 	public boolean imagecompare(String plp , String pdp)
 	{
-		   String plpImage = plp.substring(plp.indexOf("image") + 6 , plp.indexOf("?"));
-			String pdpImage = pdp.substring(pdp.indexOf("image") + 6, pdp.indexOf("?"));
+		String plpImage = plp.substring(plp.indexOf("image") + 6 , plp.indexOf("-"));
+		String pdpImage = pdp.substring(pdp.indexOf("image") + 6, pdp.indexOf("-"));
 			
-			System.out.println("plp Image = " + plpImage);
-			System.out.println("pdp Image = " + pdpImage);
+		System.out.println("plp Image = " + plp);
+		System.out.println("pdp Image = " + pdp);
 		
 		boolean status = false;
 		if (plpImage.equals(pdpImage))
