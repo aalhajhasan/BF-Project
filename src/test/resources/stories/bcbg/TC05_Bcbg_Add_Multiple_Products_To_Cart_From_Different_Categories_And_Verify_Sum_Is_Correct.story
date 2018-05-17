@@ -9,9 +9,12 @@ And [1111-0000] It should be clickable, Within 120 seconds
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] bcbgProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from bcbgProducts
+And [1100-1581] the user saves bcbgProductImage attribute of src in global scope under name bcbgProductImage
 And [1100-0400] Execute `click` javascript on the element
 And [1111-1080] bcbgPdp should be displayed, Within 120 seconds
 And [8028-0004] user randomly select an available bcbgSizes
+And [8028-0004] user randomly select an available bcbgColor
+And [8028-0001] sleep after last action for 5000 Milliseconds
 And [1100-1400] Execute `click` javascript on bcbgAddToBag
 And [1111-1080] bcbgCartDialog should be displayed, Within 120 seconds
 And [1100-1400] Execute `click` javascript on bcbgViewShoppingBag

@@ -89,11 +89,12 @@ public class BcbgSteps {
 	
 	
 	@When("[8028-0004] user randomly select an available $element")
-	public void randomselect(String element)
+	public void randomselect(String element) throws InterruptedException
 	{
 		try
-		
-		{   if (element.equals("bcbgSizes"))
+		{   
+			sleep("5000");
+			if (element.equals("bcbgSizes"))
 		   {
 			   if (AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
 			   {
