@@ -6,7 +6,7 @@ Scenario:  TC02_Pacsun_Verify_Quick_View_ProductName_And_Price
 Given [1000-9001] User on pacsun page
 When [1200-1302] For any element from pacsunTopNav
 And [1100-0360] User move mouse to it
-And [1100-0300] User click on it
+And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] pacsunProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from pacsunProducts
 And [1101-1181] the user saves pacsunProductName text in global scope under name pacsunProductName

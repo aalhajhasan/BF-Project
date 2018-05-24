@@ -48,14 +48,12 @@ public class EbagsSteps {
 			   }
 	        else 
 	        {
-			   Random rand = new Random();
-			   int  value1 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ebagsTopNav").size());
-			   AspireBrowser.getElementsByPropertyNameGlobaly("ebagsTopNav").index(value1).click();
+	        	randomclick("ebagsTopNav");
 			   
 			   if (element.equals("ebagsAddToCartButton"))
 			   {
-				   int  value3 = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly("ebagsProducts").size());
-				   AspireBrowser.getElementsByPropertyNameGlobaly("ebagsProducts").index(value3).click();
+				   randomclick("ebagsProducts");
+				   
 			   }
 			   
 			   search(element);
