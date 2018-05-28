@@ -4,7 +4,7 @@ Meta:
 Scenario:  TC07_Pacsun_Verify_All_Checkout_Test_Cases
 
 Given [1101-1080] pacsunCartPage should be displayed
-When [1100-1300] User clicks on the pacsunCheckout
+When [1100-1400] Execute `click` javascript on pacsunCheckout
 And [8029-0003] sleep after last action for 15000 Milliseconds
 And [1000-6010] Focus on Frame envoyId
 And [1100-1321] User scroll to the pacsunDeliveryContinue then click it
@@ -27,14 +27,14 @@ And [1100-1340] User fills pacsunCheckoutPostalCode with `checkoutPostalCode`
 !-- And [1101-1181] the user saves pacsunDutiesAndTaxes text in global scope under name pacsunDutiesAndTaxes
 !-- And [1101-1181] the user saves pacsunOrderTotal text in global scope under name pacsunOrderTotal
 !-- And [8029-0007] `pacsunOrderTotal` price should be matched with the summation of `pacsunItemsTotal` , `pacsunShipping` and `pacsunDutiesAndTaxes`
-And [1100-1321] User scroll to the pacsunDeliveryContinue then click it
+And [1100-1400] Execute `click` javascript on pacsunDeliveryContinue
 And [8029-0003] sleep after last action for 5000 Milliseconds
 And [1000-6010] Focus on Frame cc-frame
 And [1100-1340] User fills pacsunCheckoutCardNumber with `paymentCardNumber`
 And [1100-1340] User fills pacsunCheckoutExpirationDate with `paymentExpirationDate`
 And [1100-1340] User fills pacsunCheckoutSecurityCode with `paymentSecurityCode`
 And [1000-6020] Focus on parent Frame
-And [1100-1321] User scroll to the pacsunPaymentContinue then click it
+And [1100-1400] Execute `click` javascript on pacsunPlaceOrder
 Then [1111-1080] pacsunCheckoutSubmitError should be displayed, Within 120 seconds
 And [1000-9140] Close the browser
 
