@@ -7,7 +7,7 @@ Given [1101-1080] lordandtaylorBagPage should be displayed
 When [1100-1300] User clicks on the lordandtaylorCheckoutButton
 And [1111-1080] lordandtaylorCheckoutDialog should be displayed, Within 120 seconds
 And [1100-1300] User clicks on the lordandtaylorCheckoutAsGuest
-And [8009-0007] sleep after last action for 10000 Milliseconds
+And [8009-0007] sleep after last action for 15000 Milliseconds
 And [1100-1321] User scroll to the lordandtaylorContinueCheckout then click it
 And [1101-1102] lordandtaylorFirstNameError text is equal to Please enter a valid first name. case sensitive
 And [1101-1102] lordandtaylorLastNameError text is equal to Please enter a valid last name. case sensitive

@@ -20,7 +20,7 @@ import com.aspire.bf.pages.GeneralPantsPage;
 public class GeneralPantsSteps {
 
 	@Browser("generalPants")
-	AspireBrowser<GeneralPantsPage> generalPants;
+	AspireBrowser<GeneralPantsPage> generalPantsPage;
 	
 	
 	@Then("[8025-0001] sleep after last action for $element Milliseconds")
@@ -37,7 +37,8 @@ public class GeneralPantsSteps {
 	public void search(String element) throws InterruptedException
 	{
 		try
-		{
+		{   sleep("2000");
+			AspireBrowser.getLastAccessedPage();
 			if(AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
 			{ 
 				if(AspireBrowser.getElementByPropertyNameGlobaly(element).getElement().getText().equals("Unfortunately, this item is not available for sale internationally"))
@@ -99,6 +100,8 @@ public class GeneralPantsSteps {
 		{
 			System.out.println("Catch");
 		}
+		
+		sleep("3000");
 	}
 	
 	
@@ -151,9 +154,78 @@ public class GeneralPantsSteps {
 	
 	
 	
+	public int items = 0;
+	@When("[8025-0008] check items before navigate to checkout")
+	public void check() throws InterruptedException
+	{
+		try
+		{
+		    
+			if (AspireBrowser.getLastAccessedPage().focusOnFrame("envoyId").getElementsByPropertyName("generalPantsCheckoutError").size() > 0)
+			{ 
+				AspireBrowser.getLastAccessedPage().focusOnFrame("envoyId").getElementByPropertyName("generalPantsCheckoutReturn").click();
+				sleep("3000");
+				String itemsN = AspireBrowser.getElementByPropertyNameGlobaly("generalPantsCartItems").text().toString();
+				final Pattern pattern = Pattern.compile("\\d");
+				final Matcher matcher = pattern.matcher(itemsN);
+				if (matcher.find()) 
+				{
+				    
+				    items = Integer.parseInt(matcher.group(0));
+				    System.out.println("Items Number: " +  items);
+				    
+				}
+				while(items > 0)
+				{
+					randomclick("generalPantsCartRemove");
+					sleep("3000");
+				}
+				randomclick("generalPantsTopNav");
+				sleep("3000");
+				randomclick("generalPantsSales");
+				sleep("3000");
+				randomclick("generalPantsProducts");
+				sleep("3000");
+				String element = AspireBrowser.getElementByPropertyNameGlobaly("generalPantsValidPdp").toString();
+				search(element);
+				String sizes = AspireBrowser.getElementByPropertyNameGlobaly("generalPantsSizes").toString();
+				randomselect(sizes);
+				AspireBrowser.getElementByPropertyNameGlobaly("generalPantsAddToBag").click();
+				AspireBrowser.getElementByPropertyNameGlobaly("generalPantsCartCheckout").click();
+				sleep("3000");
+				AspireBrowser.getElementByPropertyNameGlobaly("generalPantsCheckout").click();
+				sleep("3000");
+				check();
+			}	
+		}
+		catch (NoSuchElementException e)
+		{
+			System.out.println("Catch");
+		}
+	}
 	
 	
-	
+	@When("[8025-0009] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")
+	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String dutiesAndTaxes)
+	{
+		double orderTotalvalue = convert(orderTotal);
+		double itemTotalvalue = convert(itemTotal);
+		double shippingvalue = convert(shipping);
+		double dutiesAndTaxesvalue = convert(dutiesAndTaxes);
+		
+		double sum = itemTotalvalue + shippingvalue + dutiesAndTaxesvalue;
+		
+		if (sum ==  orderTotalvalue)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+		
+	}
 	
 	
 	

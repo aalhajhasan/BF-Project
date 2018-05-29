@@ -14,28 +14,28 @@ aspire:
         enabled: true   
         include: 
           #- stories/barneys/**.story
-          #- stories/bcbg/**.story
-          #- stories/bergdorf/**.story
-          #- stories/ebags/**.story
-          #- stories/eddiebauer/**.story
-          - stories/generalpants/**.story
-          #- stories/gilt/**.story
+          - stories/bcbg/**.story
+          - stories/bergdorf/**.story
+          - stories/ebags/**.story
+          - stories/eddiebauer/**.story
+          #- stories/generalpants/**.story
+          - stories/gilt/**.story
           #- stories/harrods/**.story
-          #- stories/herroom/**.story
-          #- stories/hisroom/**.story
+          - stories/herroom/**.story
+          - stories/hisroom/**.story
           #- stories/landsend/**.story
           #- stories/lanebryant/**.story
-          #- stories/lastcall/**.story
-          #- stories/llbean/**.story
-          #- stories/lordandtaylor/**.story 
-          #- stories/neimanmarcus/**.story
+          - stories/lastcall/**.story
+          - stories/llbean/**.story
+          - stories/lordandtaylor/**.story 
+          - stories/neimanmarcus/**.story
           #- stories/nordstrom/**.story
-          #- stories/pacsun/**.story
-          #- stories/ruelala/**.story
-          #- stories/saks/**.story
-          #- stories/saksoff/**.story
+          - stories/pacsun/**.story
+          - stories/ruelala/**.story
+          - stories/saks/**.story
+          - stories/saksoff/**.story
           #- stories/sephora/**.story
-          #- stories/underarmour/**.story
+          - stories/underarmour/**.story
           
           
                     
