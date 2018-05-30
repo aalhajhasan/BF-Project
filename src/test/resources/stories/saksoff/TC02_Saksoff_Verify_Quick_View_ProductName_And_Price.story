@@ -11,7 +11,8 @@ And [1211-1080] saksoffProducts should be all displayed, Within 120 seconds
 And [1200-1302] For any element from saksoffProducts
 And [1101-1181] the user saves saksoffProductName text in global scope under name saksoffProductName
 And [1101-1181] the user saves saksoffProductPrice text in global scope under name saksoffProductPrice
-And [1100-1300] User clicks on the saksoffPreviewThisProductIcon
+And [1100-0360] User move mouse to it
+And [1100-1400] Execute `click` javascript on saksoffPreviewThisProductIcon
 And [1111-1080] saksoffQuickViewDialog should be displayed, Within 120 seconds
 And [8003-0010] sleep after last action for 5000 Milliseconds
 Then [1101-1140] saksoffQuickViewProductName text should contain `saksoffProductName`

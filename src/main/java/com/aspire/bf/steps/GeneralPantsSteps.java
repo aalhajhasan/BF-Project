@@ -34,24 +34,25 @@ public class GeneralPantsSteps {
 	
 	
 	@When("[8025-0002] user search for $element")
-	public void search(String element) throws InterruptedException
+	public void search(String elemente) throws InterruptedException
 	{
 		try
-		{   sleep("2000");
+		{   sleep("5000");
 			AspireBrowser.getLastAccessedPage();
-			if(AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
-			{ 
-				if(AspireBrowser.getElementByPropertyNameGlobaly(element).getElement().getText().equals("Unfortunately, this item is not available for sale internationally"))
+			String element = ".add-to-bag .restrictionMessage";
+			String text = generalPantsPage.cssElement(element).getElement().getText().toString();
+            System.out.println(text);
+			 if(text.equals("Unfortunately, this item is not available for sale internationally"))
 				{
 					randomclick("generalPantsTopNav");
-					sleep("3000");
+					sleep("5000");
 					randomclick("generalPantsSales");
-					sleep("3000");
+					sleep("5000");
 					randomclick("generalPantsProducts");
-					sleep("3000");
+					sleep("5000");
 					search(element);
 				}
-			}
+			
 		}
 		catch (NoSuchElementException e)
 		{
@@ -89,7 +90,7 @@ public class GeneralPantsSteps {
 	{
 		try
 		{   sleep("3000");
-			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).allIsDisplayed())
+			if (AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
 			{
 				 randomclick(element);
 			}
@@ -227,8 +228,22 @@ public class GeneralPantsSteps {
 		
 	}
 	
-	
-	
+	public String element;
+	@When("[8025-0009] user click on $element")
+	public void click(String elemente) throws InterruptedException
+	{
+		sleep("5000");
+		
+		if (elemente.equals("generalPantsAddToBag"))
+		{
+			element = ".add-to-bag .columns .button.red.ng-scope";
+		}
+		else if(elemente.equals("generalPantsCartCheckout"))
+		{
+			element = ".small-6 a.button.small.red";
+		}
+		generalPantsPage.cssElement(element).getElement().click();
+	}
 	
 	
 	
@@ -349,7 +364,7 @@ public class GeneralPantsSteps {
 	{
 		Random rand = new Random();
 		int  random = rand.nextInt(AspireBrowser.getElementsByPropertyNameGlobaly(element).size());
-		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).js("arguments[0].click();", null);
+		AspireBrowser.getElementsByPropertyNameGlobaly(element).index(random).click();
 	}
 	
 	

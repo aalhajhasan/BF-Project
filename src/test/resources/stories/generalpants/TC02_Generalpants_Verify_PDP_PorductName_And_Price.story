@@ -7,12 +7,12 @@ Given [1000-9001] User on generalPants page
 When [1200-1302] For any element from generalPantsTopNav
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] generalPantsSales should be all displayed, Within 120 seconds
-And [8025-0001] sleep after last action for 2000 Milliseconds
-And [1200-0302] For any of the elements
+And [8025-0001] sleep after last action for 5000 Milliseconds
+And [1200-1302] For any element from generalPantsSales
 And [1100-0400] Execute `click` javascript on the element
 And [1211-1080] generalPantsProducts should be all displayed, Within 120 seconds
 And [8025-0001] sleep after last action for 8000 Milliseconds
-And [1200-0302] For any of the elements
+And [1200-1302] For any element from generalPantsProducts
 And [1101-1181] the user saves generalPantsProductName text in global scope under name generalPantsProductName
 And [1101-1181] the user saves generalPantsProductPrice text in global scope under name generalPantsProductPrice
 And [1100-0400] Execute `click` javascript on the element
