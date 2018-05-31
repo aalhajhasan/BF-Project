@@ -25,7 +25,7 @@ aspire:
           #- stories/lordandtaylor/**.story 
           #- stories/neimanmarcus/**.story
           #- stories/pacsun/**.story
-           - stories/partycitycanada/**.story
+          - stories/partycitycanada/**.story
           #- stories/ruelala/**.story
           #- stories/saks/**.story
           #- stories/saksoff/**.story
