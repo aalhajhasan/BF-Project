@@ -99,8 +99,49 @@ public class PartyCityCanadaSteps {
 	}
 	
 	
+	public double hitNumber;
+	@When("[8019-0005] User hits $value with $data")  //Custom step
+	public void hit(String value,String data)
+	{
+		double number = convert(value);
+		hitNumber = number * Double.parseDouble(data);
+	}
 	
 	
+	@Then("[8019-0006] User compare between $valueOne and $valueTwo")  //Custom step
+	public boolean comparetwoprice(String valueOne, String valueTwo)
+	{
+		double priceB = convert(valueOne);
+		double priceA = convert(valueTwo);
+		
+		if ((priceB == hitNumber) && (priceA/priceB != 1))
+		{
+			return true;
+		}
+		else
+		{
+		    return false;
+		}
+		
+	}
+	
+	@Then("[8019-0007] the user check the sum of $valueOne and $valueTwo with $total")  //Custom step
+	public boolean summation(String valueOne, String valueTwo, String total)
+	{
+		double priceOne = convert(valueOne);
+		double priceTwo = convert(valueTwo);
+		double sum = convert(total);
+		double sumPrice = priceOne + priceTwo;
+		
+		if (sum == sumPrice)
+		{
+			return true;
+		}
+		else
+		{
+		    return false;
+		}
+	}
 	
 	
 	
