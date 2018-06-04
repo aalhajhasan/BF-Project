@@ -13,22 +13,23 @@ aspire:
       defaultloader:
         enabled: true   
         include: 
-          - stories/bcbg/**.story
-          - stories/bergdorf/**.story
-          - stories/ebags/**.story
-          - stories/eddiebauer/**.story
-          - stories/gilt/**.story
-          - stories/herroom/**.story
-          - stories/hisroom/**.story
-          - stories/lastcall/**.story
-          - stories/llbean/**.story
-          - stories/lordandtaylor/**.story 
-          - stories/neimanmarcus/**.story
-          - stories/pacsun/**.story
-          - stories/ruelala/**.story
-          - stories/saks/**.story
-          - stories/saksoff/**.story
-          - stories/underarmour/**.story
+          #- stories/bcbg/**.story
+          #- stories/bergdorf/**.story
+          #- stories/ebags/**.story
+          #- stories/eddiebauer/**.story
+          #- stories/gilt/**.story
+          #- stories/herroom/**.story
+          #- stories/hisroom/**.story
+          #- stories/lastcall/**.story
+          #- stories/llbean/**.story
+          #- stories/lordandtaylor/**.story 
+          #- stories/neimanmarcus/**.story
+          #- stories/pacsun/**.story
+          - stories/partycitycanada/**.story
+          #- stories/ruelala/**.story
+          #- stories/saks/**.story
+          #- stories/saksoff/**.story
+          #- stories/underarmour/**.story
           
           
                     
