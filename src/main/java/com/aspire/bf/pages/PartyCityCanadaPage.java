@@ -66,29 +66,41 @@ public interface PartyCityCanadaPage {
 	@CssSelector("${pages.partycity.partycityAddToBasket}")
 	public AspireWebElement partycityAddToBasket();
 	
+	@CssSelector("${pages.partycity.partycityCartDialog}")
+	public AspireWebElement partycityCartDialog();
 	
+	@CssSelector("${pages.partycity.partycityCartName}")
+	public AspireWebElement partycityCartName();
 	
+	@CssSelector("${pages.partycity.partycityCartPrice}")
+	public AspireWebElement partycityCartPrice();
 	
+	@CssSelector("${pages.partycity.partycityCart}")
+	public AspireWebElement partycityCart();
 	
+	@CssSelector("${pages.partycity.partycityViewBasket}")
+	public AspireWebElement partycityViewBasket();
 	
+	@CssSelector("${pages.partycity.partycityCartPage}")
+	public AspireWebElement partycityCartPage();
 	
+	@CssSelector("${pages.partycity.partycityCartPriceB}")
+	public AspireWebElement partycityCartPriceB();
 	
+	@CssSelector("${pages.partycity.partycityCartUpdate}")
+	public AspireWebElement partycityCartUpdate();
 	
+	@CssSelector("${pages.partycity.partycityCartPriceOne}")
+	public AspireWebElement partycityCartPriceOne();
 	
+	@CssSelector("${pages.partycity.partycityCartPriceTwo}")
+	public AspireWebElement partycityCartPriceTwo();
 	
+	@CssSelector("${pages.partycity.partycityCartPriceTotal}")
+	public AspireWebElement partycityCartPriceTotal();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@CssSelector("${pages.partycity.partycityCartCheckout}")
+	public AspireWebElement partycityCartCheckout();
 	
 	
 	
