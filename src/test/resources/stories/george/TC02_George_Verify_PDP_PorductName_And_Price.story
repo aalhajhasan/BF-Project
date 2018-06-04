@@ -8,6 +8,7 @@ Given [1000-9001] User on george page
 When [1200-1302] For any element from georgeTopNav
 And [1100-0360] User move mouse to it
 And [1100-0400] Execute `click` javascript on the element
+And [8032-0001] sleep after last action for 5000 Milliseconds
 And [1200-1302] For any element from categotries
 And [1100-0360] User move mouse to it
 And [1100-0400] Execute `click` javascript on the element
@@ -16,4 +17,4 @@ And [1200-1302] For any element from georgeProducts
 And [1101-1181] the user saves georgeProductsName text in global scope under name georgeProductsName
 And [1101-1181] the user saves georgeProductsPrice text in global scope under name georgeProductsPrice
 And [1100-1581] the user saves georgeProductsImage attribute of src in global scope under name georgeProductsImage
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0300] User click on it

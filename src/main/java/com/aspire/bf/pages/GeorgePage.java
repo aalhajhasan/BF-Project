@@ -43,9 +43,7 @@ public interface GeorgePage {
     @CssSelector("${pages.george.georgeProductsImage}")
   	public AspireWebElement georgeProductsImage();
     
-    @CssSelector("${pages.george.georgePDP}")
-   	public AspireWebElement georgePDP();
-    
+
     @CssSelector("${pages.george.georgePdpName}")
    	public AspireWebElement georgePdpName();
     
@@ -57,5 +55,17 @@ public interface GeorgePage {
     
     @CssSelector("${pages.george.georgeValidPdp}")
    	public AspireWebElements georgeValidPdp();
+    
+    @CssSelector("${pages.george.georgePDP}")
+   	public AspireWebElement georgePDP();
+    
+    @CssSelector("${pages.george.georgeAddToBasket}")
+   	public AspireWebElement georgeAddToBasket();
+    
+    @CssSelector("${pages.george.georgeCheckBasket}")
+   	public AspireWebElement georgeCheckBasket();
+ 
+    @CssSelector("${pages.george.georgeSelectSize}")
+   	public AspireWebElements georgeSelectSize();
     
 }
