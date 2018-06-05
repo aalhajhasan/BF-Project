@@ -94,24 +94,7 @@ public class BcbgSteps {
 		try
 		{   
 			sleep("5000");
-			if (element.equals("bcbgSizes"))
-		   {
-			   if (AspireBrowser.getElementByPropertyNameGlobaly(element).isDisplayed())
-			   {
-				 Random rand = new Random();
-				 int  random = rand.nextInt(AspireBrowser.getElementByPropertyNameGlobaly(element).asSelect().getOptions().size());
-				 AspireBrowser.getElementByPropertyNameGlobaly(element).asSelect().selectByIndex(random);
-			   }
-		   }
-		else
-		{
-			if(AspireBrowser.getElementsByPropertyNameGlobaly(element).size() > 0)
-			{
-				randomclick(element);
-			}
-		}
-			
-		   
+			randomclick(element);  
 		}
 		
 		catch (NoSuchElementException e)

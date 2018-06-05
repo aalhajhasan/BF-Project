@@ -63,7 +63,7 @@ public interface BcbgPage {
 	public AspireWebElements bcbgColor();
 	
 	@CssSelector("${pages.bcbg.bcbgSizes}")
-	public AspireWebElement bcbgSizes();
+	public AspireWebElements bcbgSizes();
 	
 	@CssSelector("${pages.bcbg.bcbgAddToBag}")
 	public AspireWebElement bcbgAddToBag();
