@@ -144,7 +144,27 @@ public class PartyCityCanadaSteps {
 	}
 	
 	
-	
+	@When("[8019-0008] $orderTotal price should be matched with the summation of $itemTotal , $shipping and $dutiesAndTaxes")
+	public boolean checkoutsummation(String orderTotal, String itemTotal, String shipping, String dutiesAndTaxes)
+	{
+		double orderTotalvalue = convert(orderTotal);
+		double itemTotalvalue = convert(itemTotal);
+		double shippingvalue = convert(shipping);
+		double dutiesAndTaxesvalue = convert(dutiesAndTaxes);
+		
+		double sum = itemTotalvalue + shippingvalue + dutiesAndTaxesvalue;
+		
+		if (sum ==  orderTotalvalue)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+		
+	}
 	
 	
 	

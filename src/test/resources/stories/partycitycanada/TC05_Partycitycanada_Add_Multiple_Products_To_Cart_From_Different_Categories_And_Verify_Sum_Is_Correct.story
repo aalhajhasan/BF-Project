@@ -12,7 +12,7 @@ And [1200-1302] For any element from partycityCategory
 And [1100-0400] Execute `click` javascript on the element
 And [8019-0002] user search for partycityPlp
 And [1200-1302] For any element from partycityProducts
-And [1100-0400] Execute `click` javascript on the element
+And [1100-0300] User click on it
 And [1111-1080] partycityPdp should be displayed, Within 120 seconds
 And [8019-0004] user randomly select an available partycityColors
 And [1100-1400] Execute `click` javascript on partycityAddToBasket
